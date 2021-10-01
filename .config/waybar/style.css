@@ -37,7 +37,7 @@
 @define-color tray @workspacesfocused;
 @define-color sound #EBCB8B;
 @define-color network #5D7096;
-@define-color memory #546484;
+@define-color memory #434C5E;
 @define-color cpu #596A8D;
 @define-color temp #4D5C78;
 @define-color layout #5e81ac;
@@ -187,7 +187,7 @@
     padding: 0 0.6em;
 }
 #custom-weather {
-    background: @mode;
+    background: #5D7096;
     font-weight: bold;
     padding: 0 0.6em;
 }

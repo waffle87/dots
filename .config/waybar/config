@@ -2,9 +2,9 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     // Module order
-    "modules-left": [ "clock", "pulseaudio", "network"],
+    "modules-left": [ "clock", "custom/weather", "pulseaudio", "network"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": [ "cpu", "temperature", "battery", "tray"],
+    "modules-right": [ "cpu", "memory", "temperature", "battery", "tray"],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -19,7 +19,6 @@
             "6": "<span color=\"#5e81ac\"></span>",
         }
     },
-    
     "sway/window": {
         "format": "{}",
         "max-length": 50, 
@@ -39,6 +38,9 @@
         "max-length": 13,
         "min-length": 13,
         "tooltip": false
+    },  
+    "memory": {
+        "format": "{}% "
     },
     "temperature": {
         //"thermal-zone": 1,
