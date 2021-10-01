@@ -1,0 +1,104 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+env:
+  TERM: alacritty
+
+# Window configuration
+window:
+  padding:
+    x: 5
+    y: 0
+  opacity: 1.0
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+  gtk_theme_variant: None
+
+scrolling:
+  history: 10000
+  multiplier: 3 # How many lines to jump when scrolling
+
+# Font configuration
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic 
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+
+  size: 12
+
+# Colors (Nord)
+colors:
+   # Default colors
+   primary:
+     background: '#2e3440'
+     foreground: '#D8DEE9'
+
+   # Normal colors
+   normal:
+     black:   '#3B4252'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#88C0D0'
+     white:   '#E5E9F0'
+
+   # Bright colors
+   bright:
+     black:   '#4C566A'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#8FBCBB'
+     white:   '#ECEFF4'
+
+
+  # Search colors
+  #search:
+    #matches:
+      #foreground: '#A3BE8C'
+      #background: '#2e3440'
+    #focused_match:
+      #foreground: '#BF616A'
+      #background: '#2e3440'
+    #bar:
+      #background: '#81A1C1'
+      #foreground: '#2e3440'
+
+  # Selection colors
+  #selection:
+    #text: CellBackground
+    #background: CellForeground
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  shape: Block
+  blinking: Off
+  unfocused_hollow: true
+  thickness: 0.15
+
+live_config_reload: true
+
+# Shell
+shell:
+  program: /usr/bin/zsh
+
+mouse:
+  hide_when_typing: false
