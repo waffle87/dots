@@ -1,0 +1,38 @@
+window {
+margin: 5px;
+border: 2px solid #5e81ac;
+background-color: #5e81ac;
+}
+
+#input {
+margin: 5px;
+border: 2px solid #3b4252;
+background-color: #3b4252;
+color: #777778;
+}
+
+#inner-box {
+margin: 5px;
+border: 2px solid #3b4252;
+background-color: #3b4252;
+}
+
+#outer-box {
+margin: 5px;
+border: 2px solid #434c5e;
+background-color: #434c5e;
+}
+
+#text {
+margin: 5px;
+border: 2px solid #5e81ac;
+background-color: #5e81ac;
+}
+
+#entry:selected {
+background-color: #5e81ac;
+}
+
+#text:selected {
+color: #3b4252;
+} 
