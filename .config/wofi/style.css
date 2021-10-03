@@ -1,7 +1,7 @@
 window {
 margin: 5px;
-border: 2px solid #5e81ac;
-background-color: #5e81ac;
+border: 5px solid #88c0d0;
+background-color: #88c0d0;
 }
 
 #input {
@@ -25,12 +25,13 @@ background-color: #434c5e;
 
 #text {
 margin: 5px;
-border: 2px solid #5e81ac;
-background-color: #5e81ac;
+color: #434c5e;
+border: 2px solid #88c0d0;
+background-color: #88c0d0;
 }
 
 #entry:selected {
-background-color: #5e81ac;
+background-color: #88c0d0;
 }
 
 #text:selected {

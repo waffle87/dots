@@ -11,12 +11,12 @@
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
-            "1": "<span color=\"#5e81ac\"></span>",
-            "2": "<span color=\"#5e81ac\"></span>",
-            "3": "<span color=\"#5e81ac\"></span>",
-            "4": "<span color=\"#5e81ac\"></span>",
-            "5": "<span color=\"#5e81ac\"></span>",
-            "6": "<span color=\"#5e81ac\"></span>",
+            "1": "<span color=\"#88c0d0\"></span>",
+            "2": "<span color=\"#88c0d0\"></span>",
+            "3": "<span color=\"#88c0d0\"></span>",
+            "4": "<span color=\"#88c0d0\"></span>",
+            "5": "<span color=\"#88c0d0\"></span>",
+            "6": "<span color=\"#88c0d0\"></span>",
         }
     },
     "sway/window": {

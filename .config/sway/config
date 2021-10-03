@@ -1,14 +1,14 @@
 # Config for sway
 
-font pango:SourceCodePro Medium 10 # window border font
+font pango:SourceCodePro 10px # window border font
 default_border pixel 3
 default_floating_border pixel 3
 gaps inner 9
 
 # class                 border  backgr. text    indica. child_border
-client.focused          #5e81ac #5e81ac #D8DEE9 #5e81ac #5e81ac
-client.unfocused        #3b4252 #3b4252 #D8DEE9 #3b4252 #3b4252
-client.urgent           #BF616A #BF616A #D8DEE9 #BF616A #BF616A 
+client.focused          #88c0d0 #88c0d0 #e5e9f0 #88c0d0 #88c0d0
+client.unfocused        #3b4252 #3b4252 #e5e9f0 #3b4252 #3b4252
+client.urgent           #BF616A #BF616A #e5e9f0 #BF616A #BF616A 
 
 ### Variables
 set $mod Mod4
@@ -26,7 +26,7 @@ set $screenshot grim -g "$(slurp)" - | wl-copy
 set $colorpick grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
 
 # Set wallpaper
-output * bg /home/jack/Pictures/sand_dunes.png fill
+output * bg /home/jack/Pictures/kittyboard.png fill
 
 # Idle configuration (value in sec)
 exec swayidle -w \
