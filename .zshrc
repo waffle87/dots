@@ -18,3 +18,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 export PROMPT_EOL_MARK="" # To avoid outputting % after unterminated lines
+
+# Alias
+alias goneline="git log --pretty=oneline"

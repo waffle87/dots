@@ -1,6 +1,6 @@
 # Config for sway
 
-font pango:SourceCodePro 10px # window border font
+font pango:Cantarell 10px # window border font
 default_border pixel 3
 default_floating_border pixel 3
 gaps inner 9
