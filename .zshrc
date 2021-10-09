@@ -4,6 +4,7 @@ export PATH
 
 export ZSH="/home/jack/.oh-my-zsh"
 eval "$(starship init zsh)" # Starship prompt
+export GPG_TTY=$(tty)
 
 plugins=(zsh-autosuggestions copydir zsh-syntax-highlighting)
 
@@ -20,4 +21,5 @@ fi
 export PROMPT_EOL_MARK="" # To avoid outputting % after unterminated lines
 
 # Alias
-alias goneline="git log --pretty=oneline"
+alias gitoneline="git log --pretty=oneline"
+alias upgkbd="sudo kmonad kmonad/keymap/user/waffle/apple_laptop.kbd"
