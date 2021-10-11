@@ -3,7 +3,7 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     // Module order
-    "modules-left": [ "clock", "custom/weather", "pulseaudio", "network"],
+    "modules-left": [ "custom/power", "clock", "custom/weather", "pulseaudio", "network"],
     "modules-center": ["sway/workspaces"],
     "modules-right": [ "cpu", "memory", "temperature", "battery", "tray"],
     // Modules configuration
@@ -107,4 +107,9 @@
         "exec": "curl 'https://wttr.in/?format=1'",
         "interval": 1800
     },
+    "custom/power": {
+        "format": "",
+        "interval": "once",
+        "on-click": "wlogout"
+      }
 }

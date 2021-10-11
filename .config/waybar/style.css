@@ -260,6 +260,12 @@
     background: @backlight;
 }
 
+#custom-power {
+  background: @nord_bg_blue;
+  color: #D8DEE9;
+  padding: 0 0.6em;
+}
+
 #clock {
     background: @nord_bg_blue;
     color: #D8DEE9;
