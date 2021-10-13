@@ -84,7 +84,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+        "on-click": "pactl set-sink-mute 0 toggle"
     },
 
     "battery": {
