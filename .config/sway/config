@@ -5,7 +5,7 @@ default_border pixel 3
 default_floating_border pixel 3
 gaps inner 9
 
-# class                 border  backgr. text    indica. child_border
+# class                 border  backgr. text    flag    child_border
 client.focused          #88c0d0 #88c0d0 #e5e9f0 #88c0d0 #88c0d0
 client.unfocused        #3b4252 #3b4252 #e5e9f0 #3b4252 #3b4252
 client.urgent           #BF616A #BF616A #e5e9f0 #BF616A #BF616A 
@@ -77,11 +77,18 @@ input "1452:657:bcm5974" {
 
   # Brightness (requires brightnessctl)
     bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
-    bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+    bindsym XF86MonBrightnessUp   exec brightnessctl set +10%
     
   # Audio
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+  # Meida Controls (playerctl package)
+    bindsym XF86AudioPlay  exec playerctl play-pause
+    bindsym XF86AudioPause exec playerctl pause
+    bindsym XF86AudioStop  exec playerctl stop
+    bindsym XF86AudioNext  exec playerctl next
+    bindsym XF86AudioPrev  exec playerctl previous
 
   ## Moving around:
   # Move your focus around (mod + hjkl)

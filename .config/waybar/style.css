@@ -191,6 +191,13 @@
     font-weight: bold;
     padding: 0 0.6em;
 }
+
+#custom-eth {
+    background: #5D7096;
+    font-weight: bold;
+    padding: 0 0.6em;
+}
+
 #custom-pacman {
     background: @nord_light;
     color: @nord_dark_font;

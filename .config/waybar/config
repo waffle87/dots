@@ -3,7 +3,7 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     // Module order
-    "modules-left": [ "custom/power", "clock", "custom/weather", "pulseaudio", "network"],
+    "modules-left": [ "clock", "custom/eth", "custom/weather", "pulseaudio", "network"],
     "modules-center": ["sway/workspaces"],
     "modules-right": [ "cpu", "memory", "temperature", "battery", "tray"],
     // Modules configuration
@@ -110,6 +110,11 @@
     "custom/power": {
         "format": "",
         "interval": "once",
-        "on-click": "wlogout"
+        "on-click": "./.config/waybar/pm.sh"
+    },
+    "custom/eth": {
+        "format": " {}",
+        "exec": "$HOME/.config/waybar/eth.sh", 
+        "interval": 600
       }
 }
