@@ -32,6 +32,7 @@
 @define-color dark      #434C5E;
 @define-color blue      #D8DEE9;
 @define-color red       #BF616A;
+@define-color orange    #d08770;
 @define-color left_bg   #546484;
 @define-color rght_bg   #434C5E;
 @define-color workspacesfocused #4C566A;
@@ -63,8 +64,7 @@
 #pulseaudio,
 #temperature,
 #custom-weather,
-#custom-eth,
-#tray {
+#custom-eth {
     padding-left: 0.6em;
     padding-right: 0.6em;
 }
@@ -205,18 +205,24 @@
 
 
 #pulseaudio {
-    background: @left_bg;
+    background: @rght_bg;
     color: @light;
 }
 
+
 #pulseaudio.muted {
-    background: @red;
+    background: @orange;
     color: @light;
 }
+
+
 #pulseaudio.source-muted {
-    background: @red;
+    background: @orange;
     color: @light;
 }
+
+
 #tray {
-    background: @rght_bg;
+    background: @left_bg;
+    padding: 0 0.4em;
 }

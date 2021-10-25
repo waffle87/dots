@@ -26,7 +26,7 @@ set $screenshot grim -g "$(slurp)" - | wl-copy
 set $colorpick grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
 
 # Set wallpaper
-output * bg /home/jack/Pictures/kittyboard.png fill
+output * bg /home/jack/Pictures/ocean.png fill
 
 # Idle configuration (value in sec)
 exec swayidle -w \

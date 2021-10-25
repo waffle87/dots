@@ -3,9 +3,9 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     // Module order
-    "modules-left": [ "clock", "custom/eth", "custom/weather", "pulseaudio", "network"],
+    "modules-left": [ "clock", "custom/eth", "custom/weather", "network"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": [ "cpu", "memory", "temperature", "battery", "tray"],
+    "modules-right": [ "cpu", "memory", "temperature", "pulseaudio", "battery"],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -67,14 +67,14 @@
     },
     "pulseaudio": {
         "scroll-step": 3, // %, can be a float
-        "format": "{icon} {volume}% {format_source}",
+        "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         //"format-source": "{volume}% ",
         //"format-source-muted": "",
-        "format-source": "",
-        "format-source-muted": "",
+        //"format-source": "",
+        //"format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
