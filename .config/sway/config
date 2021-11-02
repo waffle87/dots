@@ -28,12 +28,6 @@ set $colorpick grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0
 # Set wallpaper
 output * bg /home/jack/Pictures/ocean.png fill
 
-# Idle configuration (value in sec)
-exec swayidle -w \
-          timeout 900 'swaylock -f -c 000000' \
-          timeout 1800 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f -c 3b4252'
-
 # Apply GTK-3 themes
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
