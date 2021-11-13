@@ -6,7 +6,7 @@ env:
 # Window configuration
 window:
   padding:
-    x: 5
+    x: 7
     y: 0
   opacity: 1.0
   startup_mode: Windowed

@@ -101,7 +101,6 @@
 #temperature.warning,
 #battery.warning {
     background: @warning;
-    color: @dark;
 }
 
 /* Each warning that should blink */
