@@ -3,9 +3,10 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     // Module order
-    "modules-left": [ "clock", "custom/eth", "custom/weather", "network"],
+    "modules-left": [ "clock", "custom/eth", "network", "custom/weather"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": [ "cpu", "memory", "temperature", "pulseaudio", "battery"],
+    "modules-right": [ "memory", "temperature", "pulseaudio", "battery"],
+    
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
@@ -29,7 +30,7 @@
         "spacing": 5
     },
     "clock": {
-        "format": "  {:%H:%M   %e %b}",
+        "format": "<span color=\"#bf616a\"></span>  {:%H:%M  <span color=\"#bf616a\"></span> %e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>",
     },
@@ -41,7 +42,7 @@
         "tooltip": false
     },  
     "memory": {
-        "format": "{}% "
+        "format": "<span color=\"#a3be8c\"></span> {}%"
     },
     "temperature": {
         //"thermal-zone": 1,
@@ -49,14 +50,14 @@
         "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input",
         "critical-threshold": 80,
         "format-critical": "  {temperatureC}°C",
-        "format": "{icon}  {temperatureC}°C",
+        "format": "<span color=\"#b48ead\">{icon}</span>  {temperatureC}°C",
         "format-icons": [""],
         "max-length": 7,
         "min-length": 7
     },
     "network": {
         // "interface": "wlan0", // (Optional) To force the use of this interface,
-        "format-wifi": "  {essid}",
+        "format-wifi": "<span color=\"#ebcb8b\"></span>  {essid}",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "",
@@ -67,7 +68,7 @@
     },
     "pulseaudio": {
         "scroll-step": 3, // %, can be a float
-        "format": "{icon} {volume}%",
+        "format": "<span color=\"#5e81ac\">{icon}</span> {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -93,7 +94,7 @@
             "warning": 20,
             "critical": 10
         },
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}% <span color=\"#8fbcbb\">{icon}</span>",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
@@ -113,8 +114,20 @@
         "on-click": "./.config/waybar/pm.sh"
     },
     "custom/eth": {
-        "format": " {}",
+        "format": "<span color=\"#d08770\"></span> {}",
         "exec": "$HOME/.config/waybar/eth.sh", 
         "interval": 600
-      }
+    },
+    "custom/media": {
+    "format": "{icon} {}",
+    "return-type": "json",
+    "max-length": 25,
+    "format-icons": {
+        "spotify": "",
+        "default": "🎜"
+    },
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    }
 }

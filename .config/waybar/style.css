@@ -48,7 +48,6 @@
 /* The whole bar */
 #waybar {
     background: @bg;
-    color: @light;
     font-family: "Cantarell", "Font Awesome 5 Free";
     font-size: 13px;
     font-weight: bold;
@@ -62,7 +61,6 @@
 #memory,
 #network,
 #pulseaudio,
-#temperature,
 #custom-weather,
 #custom-eth {
     padding-left: 0.6em;
@@ -142,22 +140,26 @@
 
 #custom-weather {
     background: @left_bg;
+    color: @bg;
     font-weight: bold;
     padding: 0 0.6em;
 }
 
 #custom-eth {
     background: @left_bg;
+    color: @bg;
     font-weight: bold;
     padding: 0 0.6em;
 }
 
 #network {
     background: @left_bg;
+    color: @bg;
 }
 
 #memory {
     background: @rght_bg;
+    color: @light; 
 }
 
 #cpu {
@@ -184,12 +186,13 @@
 
 #battery {
     background: @rght_bg;
+    color: @light;
 }
 
 
 #clock {
     background: @left_bg;
-    color: @light;
+    color: @bg;
 }
 
 
