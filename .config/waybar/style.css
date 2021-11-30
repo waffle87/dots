@@ -79,9 +79,14 @@
 /* Each critical module */
 #memory.critical,
 #cpu.critical,
-#temperature.critical,
 #battery.critical {
     color: @critical;
+}
+
+#temperature.critical {
+  color: @critical;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
 
 /* Each critical that should blink */
@@ -99,6 +104,7 @@
 #temperature.warning,
 #battery.warning {
     background: @warning;
+    color: @bg;
 }
 
 /* Each warning that should blink */

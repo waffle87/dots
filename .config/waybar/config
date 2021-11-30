@@ -63,6 +63,7 @@
         "format-disconnected": "",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "family": "ipv4",
+        "max-length": 12,
         "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
     },
@@ -95,7 +96,7 @@
             "critical": 10
         },
         "format": "{capacity}% <span color=\"#8fbcbb\">{icon}</span>",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% <span color=\"#8fbcbb\"></span>",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
@@ -106,7 +107,7 @@
     // custom modules
     "custom/weather": {
         "exec": "curl 'https://wttr.in/?format=1'",
-        "interval": 1800
+        "interval": 600
     },
     "custom/power": {
         "format": "",
