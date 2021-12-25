@@ -1,3 +1,4 @@
+# Macbook
 # Config for sway
 
 font pango:Cantarell 10px # window border font
@@ -54,6 +55,7 @@ input "1452:657:bcm5974" {
     bindsym $mod+t exec $term
     bindsym $mod+r exec $menu
     bindsym $mod+p exec $screenshot
+    bindsym $mod+Shift+p exec grim -g "$(slurp)"
     bindsym $mod+q kill
     bindsym $mod+Escape exec $lock 
 

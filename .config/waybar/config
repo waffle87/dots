@@ -30,7 +30,7 @@
         "spacing": 5
     },
     "clock": {
-        "format": "<span color=\"#bf616a\"></span>  {:%H:%M  <span color=\"#bf616a\"></span> %e %b}",
+        "format": "<span color=\"#bf616a\"></span>  {:%H:%M  <span color=\"#bf616a\"></span> %b %e}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>",
     },

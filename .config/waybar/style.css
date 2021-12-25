@@ -1,20 +1,20 @@
 @keyframes blink-warning {
   70% {
-    color: @light;
+    color: @warning;
   }
   to {
-    color: @light;
+    color: @dark;
     background-color: @warning;
   }
 }
 
 @keyframes blink-critical {
     70% {
-      color: @light;
+      color: @warning;
     }
 
     to {
-        color: @light;
+        color: @dark;
         background-color: @critical;
     }
 }
@@ -103,8 +103,7 @@
 #cpu.warning,
 #temperature.warning,
 #battery.warning {
-    background: @warning;
-    color: @bg;
+    color: @warning;
 }
 
 /* Each warning that should blink */
@@ -219,8 +218,7 @@
 
 
 #pulseaudio.muted {
-    background: @orange;
-    color: @light;
+    color: @orange;
 }
 
 
