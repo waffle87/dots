@@ -19,11 +19,6 @@
     }
 }
 
-
-/* -----------------------------------------------------------------------------
- * Styles
- * -------------------------------------------------------------------------- */
-
 /* COLORS */
 @define-color light     #D8DEE9;
 @define-color bg        #2E3440;
@@ -51,7 +46,6 @@
     font-family: "Cantarell", "Font Awesome 5 Free";
     font-size: 13px;
     font-weight: bold;
-    /*border-bottom: 3px solid #3b4252;*/
 }
 
 /* Each module */
@@ -111,10 +105,6 @@
     animation-name: blink-warning;
     animation-duration: 3s;
 }
-
-/* And now modules themselves in their respective order */
-
-/* Workspaces stuff */
 
 #workspaces button {
     font-weight: bold; /* Bar wide setting is ignore for some reason... */

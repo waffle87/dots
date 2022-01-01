@@ -21,69 +21,33 @@
             "6": "<span color=\"#88c0d0\"></span>",
         }
     },
-    "sway/window": {
-        "format": "{}",
-        "max-length": 50, 
-        "tooltip": false
-    },
-    "tray": {
-        "spacing": 5
-    },
     "clock": {
         "format": "<span color=\"#bf616a\"></span>  {:%H:%M  <span color=\"#bf616a\"></span> %b %e}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>",
     },
-    "cpu": {
-        "interval": "1",      
-        "format": "  {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
-        "max-length": 13,
-        "min-length": 13,
-        "tooltip": false
-    },  
     "memory": {
         "format": "<span color=\"#a3be8c\"></span> {}%"
     },
     "temperature": {
-        //"thermal-zone": 1,
         "interval": "4",
         "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input",
-        "critical-threshold": 80,
+        "critical-threshold": 85,
         "format-critical": "  {temperatureC}°C",
-        "format": "<span color=\"#b48ead\">{icon}</span>  {temperatureC}°C",
+        "format": "<span color=\"#b48ead\"></span>  {temperatureC}°C",
         "format-icons": [""],
-        "max-length": 7,
         "min-length": 7
     },
     "network": {
-        // "interface": "wlan0", // (Optional) To force the use of this interface,
         "format-wifi": "<span color=\"#ebcb8b\"></span>  {essid}",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "family": "ipv4",
         "max-length": 12,
-        "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
-        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
+        "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}"
     },
     "pulseaudio": {
-        "scroll-step": 3, // %, can be a float
         "format": "<span color=\"#5e81ac\">{icon}</span> {volume}%",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        //"format-source": "{volume}% ",
-        //"format-source-muted": "",
-        //"format-source": "",
-        //"format-source-muted": "",
+        "format-muted": "  muted",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pactl set-sink-mute 0 toggle"
@@ -91,7 +55,6 @@
 
     "battery": {
         "states": {
-            //"good": 95,
             "warning": 20,
             "critical": 10
         },
@@ -99,8 +62,6 @@
         "format-charging": "{capacity}% <span color=\"#8fbcbb\"></span>",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     
@@ -112,7 +73,7 @@
     "custom/power": {
         "format": "",
         "interval": "once",
-        "on-click": "./.config/waybar/pm.sh"
+        "on-click": "$HOME/.config/waybar/pm.sh"
     },
     "custom/eth": {
         "format": "<span color=\"#d08770\"></span> {}",

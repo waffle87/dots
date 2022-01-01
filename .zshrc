@@ -17,8 +17,8 @@ export PROMPT_EOL_MARK="" # To avoid outputting % after unterminated lines
 bindkey -v
 
 # Alias
-alias gitoneline="git log --pretty=oneline"
 alias upgkbd="sudo kmonad kmonad/keymap/user/waffle/apple_laptop.kbd"
 alias zathrua="zathura"
+alias sudo="doas"
 alias neptune="nmcli connection up neptune"
 alias callisto="nmcli connection up callisto"
