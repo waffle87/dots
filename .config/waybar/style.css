@@ -4,18 +4,16 @@
   }
   to {
     color: @dark;
-    background-color: @warning;
   }
 }
 
 @keyframes blink-critical {
     70% {
-      color: @warning;
+      color: @critical;
     }
 
     to {
         color: @dark;
-        background-color: @critical;
     }
 }
 
@@ -87,8 +85,8 @@
 #memory.critical,
 #temperature.critical,
 #battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
+  animation-name: blink-critical;
+  animation-duration: 1s;
 }
 
 /* Each warning */
@@ -97,128 +95,128 @@
 #cpu.warning,
 #temperature.warning,
 #battery.warning {
-    color: @warning;
+  color: @warning;
 }
 
 /* Each warning that should blink */
 #battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
+  animation-name: blink-warning;
+  animation-duration: 2s;
 }
 
 #workspaces button {
-    font-weight: bold; /* Bar wide setting is ignore for some reason... */
-    padding: 0;
-    opacity: 0.3;
-    background: none;
-    font-size: 1em;
+  font-weight: bold; /* Bar wide setting is ignore for some reason... */
+  padding: 0;
+  opacity: 0.3;
+  background: none;
+  font-size: 1em;
 }
 
 #workspaces button.focused {
-    background: @workspacesfocused;
-    color: @blue;
-    opacity: 1;
-    padding: 0 0.4em;
+  background: @workspacesfocused;
+  color: @blue;
+  opacity: 1;
+  padding: 0 0.4em;
 }
 
 #workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
-    opacity: 1;
+  border-color: #c9545d;
+  color: #c9545d;
+  opacity: 1;
 }
 
 #window {
-    margin-right: 40px;
-    margin-left: 40px;
-    font-weight: normal;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-weight: normal;
 }
 
 #custom-weather {
-    background: @left_bg;
-    color: @bg;
-    font-weight: bold;
-    padding: 0 0.6em;
+  background: @left_bg;
+  color: @bg;
+  font-weight: bold;
+  padding: 0 0.6em;
 }
 
 #custom-eth {
-    background: @left_bg;
-    color: @bg;
-    font-weight: bold;
-    padding: 0 0.6em;
+  background: @left_bg;
+  color: @bg;
+  font-weight: bold;
+  padding: 0 0.6em;
 }
 
 #network {
-    background: @left_bg;
-    color: @bg;
+  background: @left_bg;
+  color: @bg;
 }
 
 #memory {
-    background: @rght_bg;
-    color: @light; 
+  background: @rght_bg;
+  color: @light; 
 }
 
 #cpu {
-    background: @rght_bg;
-    color: @light;
+  background: @rght_bg;
+  color: @light;
 }
 
 
-#cpu.critical {
-    color: @dark;
+#cpu.critical { 
+  color: @dark;
 }
 
 
 #temperature {
-    background: @rght_bg;
-    color: @light;
+  background: @rght_bg;
+  color: @light;
 }
 
 
 #temperature.critical {
-    background:  @critical;
+  background:  @critical;
 }
 
 
 #battery {
-    background: @rght_bg;
-    color: @light;
+  background: @rght_bg;
+  color: @light;
 }
 
 
 #clock {
-    background: @left_bg;
-    color: @bg;
+  background: @left_bg;
+  color: @bg;
 }
 
 
 #clock.date {
-    background: @dark;
+  background: @dark;
 }
 
 
 #clock.time {
-    background: @dark;
+  background: @dark;
 }
 
 
 #pulseaudio {
-    background: @rght_bg;
-    color: @light;
+  background: @rght_bg;
+  color: @light;
 }
 
 
 #pulseaudio.muted {
-    color: @orange;
+  color: @orange;
 }
 
 
 #pulseaudio.source-muted {
-    background: @orange;
-    color: @light;
+  background: @orange;
+  color: @light;
 }
 
 
 #tray {
-    background: @left_bg;
-    padding: 0 0.4em;
+  background: @left_bg;
+  padding: 0 0.4em;
 }

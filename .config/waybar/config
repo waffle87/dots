@@ -32,7 +32,7 @@
     "temperature": {
         "interval": "4",
         "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input",
-        "critical-threshold": 85,
+        "critical-threshold": 90,
         "format-critical": "  {temperatureC}°C",
         "format": "<span color=\"#b48ead\"></span>  {temperatureC}°C",
         "format-icons": [""],
@@ -48,6 +48,7 @@
         "format": "<span color=\"#5e81ac\">{icon}</span> {volume}%",
         "format-muted": "  muted",
         "format-icons": {
+            "headphone": "",
             "default": ["", "", ""]
         },
         "on-click": "pactl set-sink-mute 0 toggle"
