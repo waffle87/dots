@@ -69,7 +69,8 @@
     // custom modules
     "custom/weather": {
         "exec": "curl 'https://wttr.in/?format=1'",
-        "interval": 600
+        "interval": 600,
+        "max-length": 4
     },
     "custom/power": {
         "format": "",
@@ -92,5 +93,13 @@
     "escape": true,
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "bluetooth": {
+        "interval": 600,
+        "format": "{icon}",
+        "format-icons": {
+            "enabled": "",
+            "disabled": ""
+        }
     }
 }

@@ -20,5 +20,3 @@ bindkey -v
 alias upgkbd="sudo kmonad kmonad/keymap/user/waffle/apple_laptop.kbd"
 alias zathrua="zathura"
 alias sudo="doas"
-alias neptune="nmcli connection up neptune"
-alias callisto="nmcli connection up callisto"

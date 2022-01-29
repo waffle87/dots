@@ -43,6 +43,7 @@ exec mako
 
 ### Input configuration (man 5 sway-input)
 # You can get the names of your inputs by running: swaymsg -t get_inputs
+bindswitch lid:on input 1452:657:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad events enabled
 input "1452:657:bcm5974" {
        dwt enabled
        tap enabled
