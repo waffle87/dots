@@ -1,0 +1,13 @@
+layer=top
+font=mononoki Nerd Font 11
+background-color=#282a36
+text-color=#f8f8f2
+max-icon-size=48
+icon-location=right
+margin=0,30,25
+padding=15,10,15
+border-size=3
+border-color=#bd93f9
+progress-color=over #bd93f9
+border-radius=25
+default-timeout=10000

@@ -1,0 +1,86 @@
+{
+    "position": "bottom", 
+    "height": 30,
+    "output": "DP-1",
+    "modules-left": ["custom/power", "custom/switch-output", "memory", "cpu", "temperature"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["network", "pulseaudio", "custom/date", "clock"],
+    
+    // Modules configuration
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"format": "{icon}",
+	 	"persistent_workspaces": {
+	 		"1": [],
+	 		"2": [],
+	 		"3": [],
+	 		"4": [],
+	 		"5": [],
+	},
+         	"format-icons": {
+             		"1": "五",
+             		"2": "六",
+             		"3": "七",
+             		"4": "八",
+             		"5": "九",
+          }
+        },
+	"custom/date": {
+    		"format": "  {}",
+		"interval": 60,
+		"exec": "/home/jack/.config/waybar/date.sh"
+	},
+	"clock": {
+		"format": "  {:%H:%M}",
+        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	},
+	"network": {
+        	"format-wifi": "  {essid}",
+        	"format-ethernet": "  neptune",
+        	"format-disconnected": "  Disconnected",
+                "format-alt": " {ipaddr}/{cidr}",
+                "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
+                "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+        	"format-muted": " muted",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", ""]
+        },
+        "on-click": "pactl set-sink-mute 0 toggle"
+        },
+        "memory": {
+            "format": " {}%"
+        },
+        "temperature": {
+            "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+            "critical-threshold": 85,
+            "format-critical": " {temperatureC}°C",
+            "format": " {temperatureC}°C",
+        },
+        "cpu": {
+            "format": " {usage}%"
+        },
+        "custom/power": {
+            "format": "",
+            "on-click": "/home/jack/.config/waybar/power.sh"
+        },
+        "custom/switch-output": {
+            "format": "",
+            "on-click": "/home/jack/.config/waybar/output.sh"
+        },
+        "custom/media": {
+            "format": "{icon} {}",
+            "return-type": "json",
+            "max-length": 30,
+            "format-icons": {
+                "spotify": "",
+                "default": ""
+            },
+            "escape": true,
+            "exec": "/home/jack/.config/waybar/player.py 2> /dev/null"
+        }
+}

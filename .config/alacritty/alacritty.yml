@@ -1,0 +1,111 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+env:
+  TERM: alacritty
+
+# Window configuration
+window:
+  padding:
+    x: 7
+    y: 0
+  opacity: 1.0
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+  gtk_theme_variant: None
+
+scrolling:
+  history: 10000
+  multiplier: 3 # How many lines to jump when scrolling
+
+# Font configuration
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic 
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+
+  size: 12
+
+# Colors (Dracula)
+colors:
+  primary:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+    bright_foreground: '#ffffff'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#44475a'
+      background: '#50fa7b'
+    focused_match:
+      foreground: '#44475a'
+      background: '#ffb86c'
+    bar:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+  hints:
+    start:
+      foreground: '#282a36'
+      background: '#f1fa8c'
+    end:
+      foreground: '#f1fa8c'
+      background: '#282a36'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '#44475a'
+  normal:
+    black: '#21222c'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#bd93f9'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#f8f8f2'
+  bright:
+    black: '#6272a4'
+    red: '#ff6e6e'
+    green: '#69ff94'
+    yellow: '#ffffa5'
+    blue: '#d6acff'
+    magenta: '#ff92df'
+    cyan: '#a4ffff'
+    white: '#ffffff'
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  shape: Block
+  blinking: Off
+  unfocused_hollow: true
+  thickness: 0.15
+
+live_config_reload: true
+
+# Shell
+shell:
+  program: /usr/bin/zsh
+
+mouse:
+  hide_when_typing: false
