@@ -3,7 +3,7 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     // Module order
-    "modules-left": [ "clock", "custom/eth", "network", "custom/weather"],
+    "modules-left": [ "clock", "custom/ping", "network", "custom/weather"],
     "modules-center": ["sway/workspaces"],
     "modules-right": [ "memory", "temperature", "pulseaudio", "battery"],
     
@@ -70,7 +70,7 @@
     "custom/weather": {
         "exec": "curl 'https://wttr.in/?format=1'",
         "interval": 600,
-        "max-length": 4
+        "max-length": 8
     },
     "custom/power": {
         "format": "",
@@ -101,5 +101,13 @@
             "enabled": "",
             "disabled": ""
         }
+    },
+    "backlight": {
+      "format": "<span color=\"#d08770\"></span> {percent}% <span color=\"#d08770\"> </span> 20%",
+    },
+    "custom/ping": {
+        "format": "<span color=\"#d08770\"></span>  {}<span color=\"#3b4252\">ms</span>",
+        "exec": "$HOME/.config/waybar/ping.sh",
+        "interval": 30
     }
 }

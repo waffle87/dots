@@ -18,5 +18,7 @@ bindkey -v
 
 # Alias
 alias upgkbd="sudo kmonad kmonad/keymap/user/waffle/apple_laptop.kbd"
+alias disablekbd="swaymsg input 1452:657:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad events disabled"
+alias enablekbd="swaymsg input 1452:657:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad events enabled"
 alias zathrua="zathura"
 alias sudo="doas"

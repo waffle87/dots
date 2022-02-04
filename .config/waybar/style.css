@@ -53,7 +53,9 @@
 #memory,
 #network,
 #pulseaudio,
+#backlight,
 #custom-weather,
+#custom-ping,
 #custom-eth {
     padding-left: 0.6em;
     padding-right: 0.6em;
@@ -132,6 +134,13 @@
 }
 
 #custom-weather {
+  background: @left_bg;
+  color: @bg;
+  font-weight: bold;
+  padding: 0 0.6em;
+}
+
+#custom-ping {
   background: @left_bg;
   color: @bg;
   font-weight: bold;
@@ -219,4 +228,11 @@
 #tray {
   background: @left_bg;
   padding: 0 0.4em;
+}
+
+#backlight {
+  background: @left_bg;
+  color: @bg;
+  font-weight: bold;
+  padding: 0 0.6em;
 }

@@ -73,9 +73,11 @@ input "1452:657:bcm5974" {
     bindsym $mod+Shift+Escape exec swaynag -t warning -m 'Are you sure you want to exit sway session?' -b 'Yes, exit sway' 'swaymsg exit'
 
   # Brightness (requires brightnessctl)
-    bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
-    bindsym XF86MonBrightnessUp   exec brightnessctl set +10%
-    
+    bindsym XF86MonBrightnessDown exec brightnessctl -q set 10%-
+    bindsym XF86MonBrightnessUp   exec brightnessctl -q set +10%
+    bindsym XF86KbdBrightnessDown   exec brightnessctl -q --device='smc::kbd_backlight' set 10%-
+    bindsym XF86KbdBrightnessUp   exec brightnessctl -q --device='smc::kbd_backlight' set +10%
+
   # Audio
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
