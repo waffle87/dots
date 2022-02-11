@@ -41,7 +41,7 @@
 /* The whole bar */
 #waybar {
     background: @bg;
-    font-family: "Cantarell", "Font Awesome 5 Free";
+    font-family: "Cantarell", "Font Awesome 6 Free";
     font-size: 13px;
     font-weight: bold;
 }

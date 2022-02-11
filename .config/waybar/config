@@ -46,6 +46,7 @@
     },
     "pulseaudio": {
         "format": "<span color=\"#5e81ac\">{icon}</span> {volume}%",
+        "format-bluetooth": "<span color=\"#5e81ac\"></span> {volume}%",
         "format-muted": "  muted",
         "format-icons": {
             "headphone": "",
