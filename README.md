@@ -1,4 +1,4 @@
-<h3 align="center">nord dotfiles</h3>
+<h3 align='center'>nord dotfiles</h3>
 ![fetch](/img/fetch.png)
 programs/tools:
 - window manager: [sway](https://swaywm.org)
