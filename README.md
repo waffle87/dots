@@ -1,4 +1,4 @@
-###nord dotfiles
+### nord dotfiles
 programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
