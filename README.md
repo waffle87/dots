@@ -1,4 +1,5 @@
-### nord dotfiles
+<h3 align="center">nord dotfiles</h3>
+![fetch](/img/fetch.png)
 programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
@@ -12,5 +13,3 @@ programs/tools:
 - system monitor: [gotop](https://github.com/xxxserxxx/gotop.git)
 - file manager: [thunar](https://gitlab.xfce.org/xfce/thunar)
 - gtk theme: [nord](https://github.com/EliverLara/Nordic)
-
-![fetch](/img/fetch.png)
