@@ -13,4 +13,4 @@ programs/tools:
 - file manager: [thunar](https://gitlab.xfce.org/xfce/thunar)
 - gtk theme: [nord](https://github.com/EliverLara/Nordic)
 
-![fetch](~/img/fetch.png)
+![fetch](/img/fetch.png)
