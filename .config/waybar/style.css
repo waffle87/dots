@@ -88,7 +88,7 @@
 #temperature.critical,
 #battery.critical.discharging {
   animation-name: blink-critical;
-  animation-duration: 1s;
+  animation-duration: 0.75s;
 }
 
 /* Each warning */
@@ -103,7 +103,7 @@
 /* Each warning that should blink */
 #battery.warning.discharging {
   animation-name: blink-warning;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 #workspaces button {
