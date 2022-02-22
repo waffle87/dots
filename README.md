@@ -1,6 +1,6 @@
 ### nord dotfiles
 ![fetch](/img/fetch.png)
-programs/tools:
+#### programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
 - app launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
