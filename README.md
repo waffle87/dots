@@ -5,6 +5,7 @@
 - bar: [waybar](https://github.com/Alexays/Waybar)
 - app launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
 - notifications: [mako](https://github.com/emersion/mako)
+- lock screen: [swaylock-effects](https://github.com/mortie/swaylock-effects)
 - terminal: [alacritty](https://github.com/alacritty/alacritty)
 - shell: [zsh](https://github.com/zsh-users/zsh.git)
 - editor: [neovim](https://neovim.io) using [nvchad](https://nvchad.github.io)
