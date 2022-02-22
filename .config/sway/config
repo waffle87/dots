@@ -34,7 +34,7 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Dracula'
     gsettings set $gnome-schema icon-theme 'Dracula'
-    #gsettings set $gnome-schema cursor-theme ''
+    gsettings set $gnome-schema cursor-theme 'phinger-cursors-dark'
 }
 
 ### Key bindings
@@ -43,6 +43,7 @@ exec_always {
     bindsym $mod+f exec $browser
     bindsym $mod+r exec $menu
     bindsym $mod+p exec $screenshot
+    bindsym $mod+Shift+p exec grim -g "$(slurp)"
     bindsym $mod+q kill
 
     # Drag floating windows by holding down $mod and left mouse button.
