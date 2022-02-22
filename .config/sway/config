@@ -20,7 +20,6 @@ set $right l
 set $term alacritty
 set $menu wofi --show run --allow-images --lines=5 --prompts=""
 set $browser firefox
-set $lock swaylock --color=3b4252 --inside-color=3b4252 --key-hl-color=81A1C1 --inside-wrong-color=BF616A --ring-color=81a1c1 --inside-ver-color=ebcb8b --ring-ver-color=ebcb8b --inside-wrong-color=BF616A --ring-wrong-color=BF616A
 set $screenshot grim -g "$(slurp)" - | wl-copy
 
 # in quarantine...
@@ -58,7 +57,7 @@ input "1452:657:bcm5974" {
     bindsym $mod+p exec $screenshot
     bindsym $mod+Shift+p exec grim -g "$(slurp)"
     bindsym $mod+q kill
-    bindsym $mod+Escape exec $lock 
+    bindsym $mod+Escape exec swaylock
 
 
 
