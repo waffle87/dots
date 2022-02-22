@@ -1,0 +1,15 @@
+### dracula dotfiles
+
+#### programs/tools:
+- window manager: [sway](https://swaywm.org)
+- bar: [waybar](https://github.com/Alexays/Waybar)
+- app launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
+- notifications: [mako](https://github.com/emersion/mako)
+- terminal: [alacritty](https://github.com/alacritty/alacritty)
+- shell: [zsh](https://github.com/zsh-users/zsh.git)
+- editor: [neovim](https://neovim.io) using [nvchad](https://nvchad.github.io)
+- document viewer: [zathura](https://pwmt.org/projects/zathura/)
+- music player: [spotify-tui](https://github.com/Rigellute/spotify-tui) & spotify with [spicetify](https://spicetify.app)
+- system monitor: [gotop](https://github.com/xxxserxxx/gotop.git)
+- file manager: [thunar](https://gitlab.xfce.org/xfce/thunar)
+- gtk theme: [dracula](https://github.com/dracula/gtk.git)
