@@ -8,13 +8,13 @@
 }
 
 @keyframes blink-critical {
-    70% {
-      color: @critical;
-    }
+  70% {
+    color: @critical;
+  }
 
-    to {
-        color: @dark;
-    }
+  to {
+    color: @dark;
+  }
 }
 
 /* COLORS */
@@ -32,18 +32,18 @@
 
 /* Reset all styles */
 * {
-    border: none;
-    border-radius: 3px;
-    min-height: 0;
-    margin: 0.2em 0.3em 0.2em 0.3em;
+  border: none;
+  border-radius: 3px;
+  min-height: 0;
+  margin: 0.2em 0.3em 0.2em 0.3em;
 }
 
 /* The whole bar */
 #waybar {
-    background: @bg;
-    font-family: "Cantarell", "Font Awesome 6 Free";
-    font-size: 13px;
-    font-weight: bold;
+  background: @bg;
+  font-family: "Cantarell", "Font Awesome 6 Free";
+  font-size: 13px;
+  font-weight: bold;
 }
 
 /* Each module */
@@ -57,8 +57,8 @@
 #custom-weather,
 #custom-ping,
 #custom-eth {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
 
 /* Each module that should blink */
@@ -235,4 +235,13 @@
   color: @bg;
   font-weight: bold;
   padding: 0 0.6em;
+}
+
+tooltip {
+  background: rgba(76, 86, 106, 0.80);
+  border: 1px solid rgba(94, 129, 172, 0.80);
+}
+
+tooltip label {
+  color: #88c0d0;
 }
