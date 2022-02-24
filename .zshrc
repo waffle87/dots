@@ -15,7 +15,8 @@ export LANG=en_US.UTF-8
 export PROMPT_EOL_MARK="" # To avoid outputting % after unterminated lines
 
 # Alias
-alias l="ls -la"
+alias l="ls -lah --color=auto"
+alias ls="ls --color=auto"
 alias upgkbd="sudo kmonad kmonad/keymap/user/waffle/apple_laptop.kbd"
 alias disablekbd="swaymsg input 1452:657:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad events disabled"
 alias enablekbd="swaymsg input 1452:657:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad events enabled"
