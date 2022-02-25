@@ -9,8 +9,8 @@ zstyle :compinstall filename '/home/jack/.zshrc'
 autoload -Uz compinit
 compinit
 
-alias l="ls -la"
-#alias ls="ls --color=auto"
+alias l="ls -lah --color=auto"
+alias ls="ls --color=auto"
 alias pulsemixer="./pulsemixer"
 alias zathrua="zathura"
 alias sudo="doas"
