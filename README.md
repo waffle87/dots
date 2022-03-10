@@ -1,5 +1,4 @@
 ### nord dotfiles
-![fetch](/img/fetch.png)
 #### programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
