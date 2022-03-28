@@ -1,0 +1,65 @@
+{
+  "position": "top", 
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["clock", "custom/date"],
+  "modules-right": ["custom/wifi", "temperature", "pulseaudio", "battery"],
+  
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "format-icons": {
+      "default": "",
+      "focused": "",
+    }
+  },
+  "clock": {
+    "format": " {:%H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+  "custom/date": {
+    "format": "  {}",
+    "interval": 60,
+    "exec": "~/.config/scripts/date.sh"
+  },
+  "battery": {
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "custom/wifi": {
+    "format": "  {}",
+    "interval": 10,
+    "exec": "~/.config/scripts/network.sh"
+  },
+  "pulseaudio": {
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "format": "{icon} {volume}%",
+    "format-muted": " muted",
+      "format-icons": {
+        "headphone": "",
+	"default": ["", ""]
+      },
+  },
+  "temperature": {
+    "interval": "5",
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
+    "critical-threshold": 90,
+    "format-critical": " {temperatureC}°C",
+    "format": " {temperatureC}°C"
+  }
+}

@@ -1,0 +1,21 @@
+layer=top
+font=Cantarell 11
+markup=1
+anchor=top-right
+background-color=#1E1E28
+text-color=#DADAE8
+width=450
+height=200
+max-icon-size=96
+icon-location=right
+margin=20,20,0
+padding=15,15,15
+border-size=2
+border-color=#a4b9ef
+border-radius=15
+progress-color=over #332E41
+default-timeout=10000
+group-by=summary
+
+[mode=do-not-disturb]
+invisible=1
