@@ -1,3 +1,9 @@
+#!/bin/zsh
+
+if [ "$(tty)" = "/dev/tty1" ]; then
+  exec dbus-run-session sway
+fi
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
