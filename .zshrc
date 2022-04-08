@@ -21,8 +21,8 @@ export GPG_TTY=$(tty)
 export LANG=en_US.UTF-8
 export PROMPT_EOL_MARK=""
 eval "$(starship init zsh)"
-alias l="ls -lah --color=auto"
-alias ls="ls --color=auto"
+alias l="exa --icons -la"
+alias ls="exa --icons"
 alias sudo="doas"
 alias ememrge="emerge"
 alias fetch="neofetch && sleep 10"
