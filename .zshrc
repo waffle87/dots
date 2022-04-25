@@ -1,6 +1,6 @@
 HISTFILE=~/.histfile
-HISTSIZE=5000
-SAVEHIST=5000
+HISTSIZE=20000
+SAVEHIST=20000
 bindkey -v
 bindkey "^?" backward-delete-char
 zstyle ':completion:*' completer _complete _ignored
@@ -9,11 +9,12 @@ zstyle :compinstall filename '/home/jack/.zshrc'
 autoload -Uz compinit
 compinit
 
-alias l="ls -lah --color=auto"
-alias ls="ls --color=auto"
+alias l="exa --icons -la"
+alias ls="exa --icons"
 alias pulsemixer="./pulsemixer"
 alias zathrua="zathura"
 alias sudo="doas"
+alias fetch="neofetch && sleep 10"
 
 export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
