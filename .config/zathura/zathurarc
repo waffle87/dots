@@ -1,38 +1,43 @@
-set font "JetBrainsMono Nerd Font 10"
-set selection-notification "true"
-set selection-clipboard "clipboard"
-set guioptions "sv"
-set scroll-page-aware "true"
-set statusbar-home-tilde "true"
-set recolor "true"
-set adjust-open "width"
-set statusbar-h-padding 10
-set statusbar-v-padding 10
-set default-fg "#DADAE8"
-set default-bg "#1E1E28"
-set completion-bg "#332E41"
-set completion-fg "#DADAE8"
-set completion-highlight-bg "#575268"
-set completion-highlight-fg "#DADAE8"
-set completion-group-bg "#332E41"
-set completion-group-fg	"#A4B9EF"
-set statusbar-fg "#DADAE8"
-set statusbar-bg "#332E41"
-set notification-bg "#332E41"
-set notification-fg "#DADAE8"
-set notification-error-bg "#332E41"
-set notification-error-fg "#E38C8F"
-set notification-warning-bg "#332E41"
-set notification-warning-fg "#F9C096"
-set inputbar-fg	"#DADAE8"
-set inputbar-bg "#332E41"
-set recolor-lightcolor "#1E1E28"
-set recolor-darkcolor "#DADAE8"
-set index-fg "#DADAE8"
-set index-bg "#1E1E28"
-set index-active-fg "#DADAE8"
-set index-active-bg "#332E41"
-set render-loading-bg "#1E1E28"
-set render-loading-fg "#DADAE8"
-set highlight-color "#A4B9EF"
-set highlight-active-color "#E5B4E2"
+
+set font                        "JetBrainsMono Nerd Font 10"
+
+set default-bg                  "#1E1E2E"
+set default-fg                  "#302D41"
+
+set statusbar-fg                "#D9E0EE"
+set statusbar-bg                "#575268"
+
+set index-bg                    "#1E1E2E" 
+set index-fg                    "#D9E0EE" 
+set index-active-bg             "#96CDFB" 
+set index-active-fg             "#D9E0EE" 
+
+set inputbar-bg                 "#1E1E2E"
+set inputbar-fg                 "#B5E8E0"
+
+set notification-bg             "#1E1E2E"
+set notification-fg             "#B5E8E0"
+
+set notification-error-bg       "#1E1E2E"
+set notification-error-fg       "#F28FAD"
+
+set notification-warning-bg     "#1E1E2E"
+set notification-warning-fg     "#F28FAD"
+
+set highlight-color             "#F8BD96"
+set highlight-active-color      "#96CDFB"
+
+set completion-bg               "#302D41"
+set completion-fg               "#96CDFB"
+
+set completion-highlight-fg     "#B5E8E0"
+set completion-highlight-bg     "#96CDFB"
+
+set recolor-lightcolor          "#1E1E2E"
+set recolor-darkcolor           "#D9E0EE"
+
+set recolor                     "true"
+set recolor-keephue             "true"
+
+set selection-clipboard clipboard
+set first-page-column 1:1
