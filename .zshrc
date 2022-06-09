@@ -10,16 +10,19 @@ autoload -Uz compinit bashcompinit
 compinit
 bashcompinit
 
-eval "$(starship init zsh)" # Starship prompt
+eval "$(starship init zsh)" # starship prompt
+eval "$(zoxide init zsh)" # zoxide init
+
 export GPG_TTY=$TTY
 export LANG=en_US.UTF-8
-export PROMPT_EOL_MARK="" # To avoid outputting % after unterminated lines
+export PROMPT_EOL_MARK="" # to avoid outputting % after unterminated lines
 export BAT_THEME="Nord"
 
 # Alias
 alias l="exa --icons -la"
 alias ls="exa --icons"
 alias cat="bat --paging=never"
+alias cd="z"
 alias upgkbd="sudo kmonad kmonad/keymap/user/waffle/apple_laptop.kbd"
 alias disablekbd="swaymsg input 1452:657:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad events disabled"
 alias enablekbd="swaymsg input 1452:657:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad events enabled"

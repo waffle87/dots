@@ -74,7 +74,7 @@ input "1452:657:bcm5974" {
   # Brightness (requires brightnessctl)
     bindsym XF86MonBrightnessDown exec brightnessctl -q set 10%-
     bindsym XF86MonBrightnessUp   exec brightnessctl -q set +10%
-    bindsym XF86KbdBrightnessDown   exec brightnessctl -q --device='smc::kbd_backlight' set 10%-
+    bindsym XF86KbdBrightnessDown exec brightnessctl -q --device='smc::kbd_backlight' set 10%-
     bindsym XF86KbdBrightnessUp   exec brightnessctl -q --device='smc::kbd_backlight' set +10%
 
   # Audio
