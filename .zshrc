@@ -12,22 +12,27 @@ bindkey "^?" backward-delete-char
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle :compinstall filename '/home/jack/.zshrc'
-autoload -U compinit promptinit
+autoload -U compinit
 compinit
-promptinit; prompt gentoo
-zstyle ':completion::complete:*' use-cache 1
+
+eval "$(starship init zsh)" # starship prompt
+eval "$(zoxide init zsh)" # zoxide
 
 export GPG_TTY=$(tty)
 export LANG=en_US.UTF-8
 export PROMPT_EOL_MARK=""
-eval "$(starship init zsh)"
+export BAT_THEME="base16"
+
 alias l="exa --icons -la"
 alias ls="exa --icons"
+alias cat="bat --paging=never"
+alias cd="z"
 alias sudo="doas"
-alias ememrge="emerge"
+alias zathrua="zathura"
 alias fetch="neofetch && sleep 10"
 alias upgkbd="sudo kmonad kmonad/keymap/apple_laptop.kbd"
 alias firefox="firefox-bin"
 alias diff="diff --color=always"
+
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

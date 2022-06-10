@@ -1,20 +1,20 @@
-:root { /*https://github.com/catppuccin/catppuccin*/
-    --base00: #1e1e2e; /*black*/
-    --base01: #302d41; /*gray1*/
-    --base02: #575268; /*gray2*/
-    --base03: #6e6c7e; /*gray3*/
-    --base04: #988ba2; /*gray4*/
-    --base05: #c9cbff; /*lavender*/
-    --base06: #c9cbff; /*lavender*/
-    --base06: #d9e0ee; /*lavender*/
-    --base08: #f28fad; /*red*/
-    --base09: #f8bd96; /*peach*/
-    --base0A: #fae3b0; /*yellow*/
-    --base0B: #abe9be; /*green*/
-    --base0C: #b5e8e0; /*teal*/
-    --base0D: #96cdfb; /*blue*/
-    --base0E: #ddb6f2; /*mauve*/
-    --base0F: #e8a2af; /*maroon*/
+:root {    /* Catppuccin theme by @waffle87 */
+    --base00: #1e1e2e;
+    --base01: #313244;
+    --base02: #45475a;
+    --base03: #585b70;
+    --base04: #cdd6f4;
+    --base05: #cdd6f4;
+    --base06: #cdd6f4;
+    --base07: #89b4fa;
+    --base08: #89dceb;
+    --base09: #94e2d5;
+    --base0A: #89b4fa;
+    --base0B: #f38ba8;
+    --base0C: #fab387;
+    --base0D: #f9e2af;
+    --base0E: #a6e3a1;
+    --base0F: #cba6f7;
 
     --tridactyl-fg: var(--base05);
     --tridactyl-bg: var(--base00);
