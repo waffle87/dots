@@ -41,7 +41,7 @@ input "1452:588:bcm5974" {
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Catppuccin-blue'
-    #gsettings set $gnome-schema icon-theme 'catppuccin'
+    gsettings set $gnome-schema icon-theme 'catppuccin'
     gsettings set $gnome-schema cursor-theme 'Catppuccin-Mauve-Cursors'
     #gsettings set $gnome-schema font-name 'font_name'
 }
@@ -50,7 +50,7 @@ exec_always {
   # Applications
     bindsym $mod+f exec $browser
     bindsym $mod+t exec $term
-    bindsym $mod+r exec ~/.config/scripts/bemenu.sh
+    bindsym $mod+r exec wofi
     bindsym $mod+p exec $screenshot
     bindsym $mod+Shift+p exec grim -g "$(slurp)"
     bindsym $mod+q kill

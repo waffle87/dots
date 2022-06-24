@@ -30,7 +30,7 @@ alias cd="z"
 alias sudo="doas"
 alias zathrua="zathura"
 alias fetch="neofetch && sleep 10"
-alias upgkbd="sudo kmonad kmonad/keymap/apple_laptop.kbd"
+alias upgkbd="sudo kmonad ~/Documents/apple_laptop.kbd"
 alias firefox="firefox-bin"
 alias diff="diff --color=always"
 
