@@ -12,6 +12,7 @@ bashcompinit
 
 alias l="exa --icons -la"
 alias ls="exa --icons"
+alias cd="z"
 alias cat="bat --paging=never"
 alias pulsemixer="./pulsemixer"
 alias zathrua="zathura"
@@ -23,6 +24,7 @@ export PROMPT_EOL_MARK=""
 export BAT_THEME="Dracula"
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 source ~/waffle_git/qmk_firmware/util/qmk_tab_complete.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
