@@ -6,10 +6,10 @@ default_floating_border pixel 3
 gaps inner 9
 
 # class                 border  bground text    indicator child_border
-client.focused          #bd93f9 #bd93f9 #282a36 #bd93f9   #bd93f9
-client.unfocused        #44475a #44475a #282a36 #44475a   #44475a
-client.focused_inactive #44475A #44475A #282a36 #44475A   #44475A
-client.urgent           #ff5555 #ff5555 #282a36 #ff5555   #ff5555
+client.focused          #586e75 #586e75 #fdf6e3 #586e75   #586e75
+client.unfocused        #073642 #073642 #fdf6e3 #073642   #073642
+client.focused_inactive #073642 #073642 #fdf6e3 #073642   #073642
+client.urgent           #dc322f #dc322f #fdf6e3 #dc322f   #dc322f
 
 set $mod Mod4
 set $left h
@@ -21,10 +21,10 @@ set $menu wofi --show run --allow-images --lines=5 --prompts=""
 set $browser firefox
 set $screenshot grim -g "$(slurp)" - | wl-copy
 
-output DP-2 pos 1080 0 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/dracula_ghost.png fill
-output DP-1 pos 1080 1080 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/dracula_kraken.png fill
-output HDMI-A-1 transform 90 pos 0 550 bg /home/jack/Pictures/wallpaper/dracula_rainbow.png fill
-output DP-3 transform 270 pos 3000 360 bg /home/jack/Pictures/wallpaper/dracula_waves.png fill
+output DP-2 pos 1080 0 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/solarized_parking_lot.png fill
+output DP-1 pos 1080 1080 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/solarized_squares.png fill
+output HDMI-A-1 transform 90 pos 0 550 bg #002b36 solid_color
+output DP-3 transform 270 pos 3000 360 bg #002b36 solid_color
 focus output DP-1
 
 exec mako
@@ -32,8 +32,8 @@ exec mako
 # Apply GTK-3 themes
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Dracula'
-    gsettings set $gnome-schema icon-theme 'Dracula'
+    gsettings set $gnome-schema gtk-theme 'Solarized-Dark'
+    #gsettings set $gnome-schema icon-theme 'Solarized-Dark'
     gsettings set $gnome-schema cursor-theme 'phinger-cursors-dark'
 }
 

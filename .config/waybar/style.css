@@ -11,7 +11,7 @@ window#waybar {
 }
 
 #workspaces {
-  background-color: #282a36;
+  background-color: #002b36;
   margin: 5px;
   margin-left: 10px;
   border-radius: 5px;
@@ -19,18 +19,18 @@ window#waybar {
 
 #workspaces button {
   padding: 5px 10px;
-  color: #bd93f9;
+  color: #859900;
 }
 
 #workspaces button.focused {
-  color: #282a36;
-  background-color: #bd93f9;
+  color: #002b36;
+  background-color: #2aa198;
   border-radius: 5px;
 }
 
 #workspaces button:hover {
-  background-color: #8be9fd;
-  color: #44475a;
+  background-color: #268bd2;
+  color: #002b36;
   border-radius: 5px;
 }
 
@@ -43,7 +43,7 @@ window#waybar {
 #cpu,
 #custom-power,
 #custom-switch-output {
-  background-color: #282a36;
+  background-color: #002b36;
   padding: 5px 10px;
   margin: 5px 0px;
 }
@@ -58,45 +58,45 @@ tooltip label {
 }
 
 #custom-date {
-  color: #8be9fd;
+  color: #2aa198;
 }
 
 #clock {
-  color: #ff79c6;
+  color: #d33682;
   border-radius: 0px 5px 5px 0px;
   margin-right: 10px;
 }
 
 #network {
-  color: #b48ead;
+  color: #6c71c4;
   border-radius: 5px 0px 0px 5px;
 }
 
 #pulseaudio {
-  color: #ffb86c;
+  color: #b58900;
 }
 
 #temperature {
-  color: #f7768e;
+  color: #268bd2;
   border-radius: 0px 5px 5px 0px;
 }
 
 #custom-power {
-  color: #ff5555;
+  color: #dc322f;
   border-radius: 5px 0px 0px 5px;
   margin-left: 10px;
 }
 
 #custom-switch-output {
-  color: #bd93f9;
+  color: #6c71c4;
 }
 
 #cpu {
-  color: #50fa7b;
+  color: #859900;
 }
 
 #memory {
-  color: #f1fa8c;
+  color: #cb4b16;
 }
 
 /*#custom-media {
@@ -105,4 +105,3 @@ tooltip label {
   margin-left: 10px;
   border-radius: 5px;
 }*/
-

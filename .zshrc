@@ -17,11 +17,13 @@ alias cat="bat --paging=never"
 alias pulsemixer="./pulsemixer"
 alias zathrua="zathura"
 alias sudo="doas"
-alias fetch="neofetch && sleep 10"
+alias grep="rg"
+alias fetch="neofetch && sleep 5"
 
 export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
-export BAT_THEME="Dracula"
+export BAT_THEME="Solarized (dark)"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#657b83"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
