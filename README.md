@@ -5,11 +5,11 @@
 #### gotop
 ![gotop](/img/gotop.png)
 #### zathura
-![zathura](/img/zathura)
+![zathura](/img/zathura.png)
 #### browser
-![firefox](/img/browser)
+![firefox](/img/browser.png)
 #### spotify
-![spotify](/img/spotify)
+![spotify](/img/spotify.png)
 #### programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
