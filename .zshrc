@@ -15,8 +15,8 @@ zstyle :compinstall filename '/home/jack/.zshrc'
 autoload -U compinit
 compinit
 
-eval "$(starship init zsh)" # starship prompt
-eval "$(zoxide init zsh)" # zoxide
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 export GPG_TTY=$(tty)
 export LANG=en_US.UTF-8
@@ -28,9 +28,9 @@ alias ls="exa --icons"
 alias cat="bat --paging=never"
 alias cd="z"
 alias sudo="doas"
-alias zathrua="zathura"
-alias fetch="neofetch && sleep 10"
-alias upgkbd="sudo kmonad ~/Documents/apple_laptop.kbd"
+alias cloc="tokei"
+alias fetch="neofetch && sleep 5"
+alias upgkbd="sudo kmonad ~/.config/kmonad/apple_laptop.kbd"
 alias firefox="firefox-bin"
 alias diff="diff --color=always"
 
