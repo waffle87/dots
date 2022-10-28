@@ -17,9 +17,10 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $menu wofi --show run --allow-images --lines=5 --prompts=""
+set $menu wofi --show run --lines=7
 set $browser firefox
 set $screenshot grim -g "$(slurp)" - | wl-copy
+set $save_screenshot grim -g "$(slurp)"
 
 output DP-2 pos 1080 0 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/solarized_parking_lot.png fill
 output DP-1 pos 1080 1080 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/solarized_squares.png fill
@@ -27,7 +28,8 @@ output HDMI-A-1 transform 90 pos 0 550 bg #002b36 solid_color
 output DP-3 transform 270 pos 3000 360 bg #002b36 solid_color
 focus output DP-1
 
-exec mako
+exec /usr/bin/mako
+exec /usr/bin/easyeffects --gapplication-service
 
 # Apply GTK-3 themes
 set $gnome-schema org.gnome.desktop.interface
@@ -43,7 +45,7 @@ exec_always {
     bindsym $mod+f exec $browser
     bindsym $mod+r exec $menu
     bindsym $mod+p exec $screenshot
-    bindsym $mod+Shift+p exec grim -g "$(slurp)"
+    bindsym $mod+Shift+p exec $save_screenshot
     bindsym $mod+q kill
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -176,7 +178,6 @@ bindsym $mod+Shift+r mode "resize"
 #
 # Status Bar:
 #
-# Read `man 5 sway-bar` for more information about this section.
 bar {
   swaybar_command waybar
 }
