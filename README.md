@@ -8,8 +8,6 @@
 ![zathura](/img/zathura.png)
 #### browser
 ![firefox](/img/browser.png)
-#### spotify
-![spotify](/img/spotify.png)
 #### programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)

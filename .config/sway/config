@@ -31,6 +31,11 @@ exec gentoo-pipewire-launcher
 
 ### Input configuration (man 5 sway-input)
 # You can get the names of your inputs by running: swaymsg -t get_inputs
+input "1452:588:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad" {
+  xkb_layout us,ru
+  xkb_options grp:ctrls_toggle
+}
+
 input "1452:588:bcm5974" {
 	dwt enabled
 	tap enabled
