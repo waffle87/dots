@@ -21,19 +21,19 @@ set $browser firefox-bin
 set $screenshot grim -g "$(slurp)" - | wl-copy
 
 # Set wallpaper
-output * bg ~/Pictures/waves.png fill
+output * bg ~/Pictures/cat_term.png fill
 
 # Notification daemon
-exec mako
+exec /usr/bin/mako
 
 # Start pipewire
-exec gentoo-pipewire-launcher
+exec /usr/bin/gentoo-pipewire-launcher
 
 ### Input configuration (man 5 sway-input)
 # You can get the names of your inputs by running: swaymsg -t get_inputs
-input "1452:588:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad" {
+input type:keyboard {
   xkb_layout us,ru
-  xkb_options grp:ctrls_toggle
+  xkb_options grp:alts_toggle
 }
 
 input "1452:588:bcm5974" {
