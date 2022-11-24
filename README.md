@@ -1,6 +1,8 @@
 ### solarized dark dotfiles
-![fetch](https://raw.githubusercontent.com/waffle87/dots/pluto/img/fetch.png)
-### nvim
-![nvim](https://raw.githubusercontent.com/waffle87/dots/pluto/img/nvim.png)
-### zathura
-![zathura](https://raw.githubusercontent.com/waffle87/dots/pluto/img/zathura.png)
+![fetch](/img/fetch.png)
+#### nvim
+![nvim](/img/nvim.png)
+#### gotop
+![gotop](/img/gotop.png)
+#### zathura
+![zathura](/img/zathura.png)
