@@ -1,4 +1,4 @@
-# Desktop
+# Desktop (Arch)
 # Config for sway
 
 default_border pixel 3
@@ -23,7 +23,7 @@ set $screenshot grim -g "$(slurp)" - | wl-copy
 set $save_screenshot grim -g "$(slurp)"
 
 output DP-2 pos 1080 0 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/solarized_parking_lot.png fill
-output DP-1 pos 1080 1080 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/solarized_squares.png fill
+output DP-1 pos 1080 1080 res 1920x1080@143.992Hz bg /home/jack/Pictures/wallpaper/solarized_ferris.png fill
 output HDMI-A-1 transform 90 pos 0 550 bg #002b36 solid_color
 output DP-3 transform 270 pos 3000 360 bg #002b36 solid_color
 focus output DP-1
@@ -31,12 +31,15 @@ focus output DP-1
 exec /usr/bin/mako
 exec /usr/bin/easyeffects --gapplication-service
 
+input type:keyboard {
+  xkb_layout us,ru
+  xkb_options grp:alts_toggle
+}
+
 # Apply GTK-3 themes
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Solarized-Dark'
-    #gsettings set $gnome-schema icon-theme 'Solarized-Dark'
-    gsettings set $gnome-schema cursor-theme 'phinger-cursors-dark'
 }
 
 ### Key bindings
@@ -57,7 +60,7 @@ exec_always {
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
-  
+
   # Audio
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%

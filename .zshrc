@@ -1,7 +1,8 @@
+#!/usr/bin/zsh
 export HISTFILE=~/.zsh_history
 export HISTSIZE=20000
 export SAVEHIST=20000
-export LC_LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
 export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
 export BAT_THEME="Solarized (dark)"
@@ -19,18 +20,18 @@ autoload -Uz compinit bashcompinit
 compinit
 bashcompinit
 
-alias l="exa --icons -la"
-alias ls="exa --icons"
-alias cd="z"
-alias cat="bat --paging=never"
-alias zathrua="zathura"
-alias sudo="doas"
-alias cloc="tokei"
-alias fetch="neofetch && sleep 5"
-alias diff="diff --color=always"
-
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+# Alias
+alias l="exa --icons -la"
+alias ls="exa --icons"
+alias cat="bat --paging=never"
+alias cd="z"
+alias sudo="doas"
+alias cloc="tokei"
+alias diff="diff --color=always"
+alias fetch="neofetch && sleep 5"
 
 source ~/waffle_git/qmk_firmware/util/qmk_tab_complete.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

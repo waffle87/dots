@@ -1,9 +1,23 @@
-* {
-  border: none;
-  border-radius: 0;
-  font-family: "mononoki Nerd Font", "Font Awesome 5 Free";
+@define-color sol1   #002b36;
+@define-color sol2   #073642;
+@define-color grey1  #586e75;
+@define-color grey2  #657b83;
+@define-color grey3  #839496;
+@define-color grey4  #93a1a1;
+@define-color white1 #eee8d5;
+@define-color white2 #fdf6e3;
+@define-color red    #dc322f;
+@define-color orange #cb4b16;
+@define-color yellow #b58900;
+@define-color green  #859900;
+@define-color mint   #2aa198;
+@define-color blue   #268bd2;
+@define-color purple #6c71c4;
+@define-color pink   #d33682;
+
+#waybar {
+  font-family: "mononoki Nerd Font", "Font Awesome 6 Free";
   font-size: 14px;
-  min-height: 0;
 }
 
 window#waybar {
@@ -11,27 +25,25 @@ window#waybar {
 }
 
 #workspaces {
-  background-color: #002b36;
-  margin: 5px;
-  margin-left: 10px;
+  background-color: @sol1;
+  margin-bottom: 5px;
   border-radius: 5px;
 }
 
 #workspaces button {
+  border-radius: 5px;
   padding: 5px 10px;
-  color: #859900;
+  color: @green;
 }
 
 #workspaces button.focused {
-  color: #002b36;
-  background-color: #2aa198;
-  border-radius: 5px;
+  color: @sol1;
+  background-color: @mint;
 }
 
 #workspaces button:hover {
-  background-color: #268bd2;
-  color: #002b36;
-  border-radius: 5px;
+  background-color: @blue;
+  color: @sol1;
 }
 
 #custom-date, 
@@ -43,65 +55,43 @@ window#waybar {
 #cpu,
 #custom-power,
 #custom-switch-output {
-  background-color: #002b36;
+  background-color: @sol1;
   padding: 5px 10px;
-  margin: 5px 0px;
+  margin-bottom: 5px;
 }
 
 tooltip {
-  background: rgba(68, 71, 90, 0.65);
-  border: 1px solid rgba(98, 114, 164, 0.65);
-}
-
-tooltip label {
-  color: #8be9fd;
-}
-
-#custom-date {
-  color: #2aa198;
+  font-family: "mononoki Nerd Font";
+  color: @white1;
+  background-color: @sol2;
+  border: 2px solid @orange;
+  border-radius: 5px;
 }
 
 #clock {
-  color: #d33682;
+  color: @pink;
   border-radius: 0px 5px 5px 0px;
   margin-right: 10px;
 }
 
 #network {
-  color: #6c71c4;
+  color: @purple;
   border-radius: 5px 0px 0px 5px;
 }
 
-#pulseaudio {
-  color: #b58900;
-}
-
 #temperature {
-  color: #268bd2;
+  color: @blue;
   border-radius: 0px 5px 5px 0px;
 }
 
 #custom-power {
-  color: #dc322f;
+  color: @red;
   border-radius: 5px 0px 0px 5px;
   margin-left: 10px;
 }
 
-#custom-switch-output {
-  color: #6c71c4;
-}
-
-#cpu {
-  color: #859900;
-}
-
-#memory {
-  color: #cb4b16;
-}
-
-/*#custom-media {
-  background-color: #50fa7b;
-  margin: 5px;
-  margin-left: 10px;
-  border-radius: 5px;
-}*/
+#custom-switch-output { color: #6c71c4; }
+#cpu                  { color: #859900; }
+#memory               { color: #cb4b16; }
+#pulseaudio           { color: #b58900; }
+#custom-date          { color: #2aa198; }
