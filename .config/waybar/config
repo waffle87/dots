@@ -52,7 +52,7 @@
     "format-muted": " muted",
       "format-icons": {
         "headphone": "",
-	"default": ["", ""]
+        "default": ["", ""]
       },
   },
   "temperature": {

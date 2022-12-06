@@ -24,3 +24,20 @@
 - music player: [spotify-tui](https://github.com/Rigellute/spotify-tui) & spotify with [spicetify](https://spicetify.app)
 - system monitor: [gotop](https://github.com/xxxserxxx/gotop.git)
 - gtk theme: [catppuccin](https://github.com/catppuccin/gtk)
+- cursors: [reimu from touhou](https://www.gnome-look.org/p/1914275)
+
+#### `wpa_cli` notes
+```shell
+> scan
+...
+<3>CTRL-EVENT-SCAN-RESULTS
+> scan_results # run once above event appears
+bssid / freq / sig lvl / flags / ssid
+...
+> add_network
+#
+> set_network # ssid "my network"
+> set_network # psk "my psswd"
+> enable_network #
+> save_config
+```

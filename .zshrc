@@ -32,6 +32,7 @@ alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color=always"
 alias fetch="neofetch && sleep 5"
+alias clear="echo ctl+l you dunce"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

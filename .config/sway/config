@@ -45,10 +45,9 @@ input "1452:588:bcm5974" {
 # Apply GTK-3 themes
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Catppuccin-blue'
-    gsettings set $gnome-schema icon-theme 'catppuccin'
-    gsettings set $gnome-schema cursor-theme 'Catppuccin-Mauve-Cursors'
-    #gsettings set $gnome-schema font-name 'font_name'
+  gsettings set $gnome-schema gtk-theme 'Catppuccin-blue'
+  gsettings set $gnome-schema icon-theme 'catppuccin'
+  gsettings set $gnome-schema cursor-theme 'Reimu'
 }
 
 ### Key bindings
