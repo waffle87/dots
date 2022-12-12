@@ -26,7 +26,7 @@ window#waybar {
 
 #workspaces {
   background-color: @sol1;
-  margin-bottom: 5px;
+  margin-top: 5px;
   border-radius: 5px;
 }
 
@@ -57,7 +57,7 @@ window#waybar {
 #custom-switch-output {
   background-color: @sol1;
   padding: 5px 10px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 tooltip {

@@ -1,4 +1,7 @@
 #!/usr/bin/zsh
+if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+  exec sway
+fi
 export HISTFILE=~/.zsh_history
 export HISTSIZE=20000
 export SAVEHIST=20000

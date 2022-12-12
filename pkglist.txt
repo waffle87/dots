@@ -19,9 +19,9 @@ dfu-util
 discord
 discord-canary
 dosfstools
+dualsensectl
 easyeffects
 efibootmgr
-emptty
 exa
 fakeroot
 firefox
@@ -45,12 +45,14 @@ linux-headers
 lvm2
 make
 mako
+man-db
 mesa
 minecraft-launcher
 neofetch
 neovim
 nerd-fonts-complete
 networkmanager
+ninja
 nmap
 nodejs
 noto-fonts
@@ -61,6 +63,7 @@ npm
 opendoas
 openssh
 otf-font-awesome
+pacman-contrib
 pipewire
 pipewire-pulse
 playerctl

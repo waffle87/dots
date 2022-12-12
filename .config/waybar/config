@@ -1,6 +1,6 @@
 {
-  "position": "bottom",
-  "output": "DP-1",
+  "position": "top",
+  "output": "DP-3",
   "modules-left": ["custom/power", "custom/switch-output", "memory", "cpu", "temperature"],
   "modules-center": ["sway/workspaces"],
   "modules-right": ["network", "pulseaudio", "custom/date", "clock"],
