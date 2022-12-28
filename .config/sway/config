@@ -22,8 +22,9 @@ set $browser firefox
 set $screenshot grim -g "$(slurp)" - | wl-copy
 set $save_screenshot grim -g "$(slurp)"
 
-output DP-3 pos 0 570  bg ~/Pictures/wallpaper/solarized_parking_lot.png fill res 1920x1080
+output DP-3 pos 0 395  bg ~/Pictures/wallpaper/solarized_parking_lot.png fill res 1920x1080
 output DP-2 pos 1920 0 bg ~/Pictures/wallpaper/solarized_ferris.png      fill transform 270
+output DP-1 pos 3000 0 bg ~/Pictures/wallpaper/solarized_ferris.png      fill transform 270
 focus output DP-3
 
 exec /usr/bin/mako
