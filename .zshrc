@@ -34,7 +34,7 @@ alias cd="z"
 alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color=always"
-alias fetch="neofetch && sleep 5"
+alias fetch="clear && printf '\n\n' && neofetch && sleep 5"
 
 source ~/waffle_git/qmk_firmware/util/qmk_tab_complete.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
