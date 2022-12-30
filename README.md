@@ -1,13 +1,13 @@
 ### catppuccin dotfiles
-![fetch](~/.img/fetch.png)
+![fetch](.img/fetch.png)
 #### nvim
-![nvim](~/.img/nvim.png)
+![nvim](.img/nvim.png)
 #### gotop
-![gotop](~/.img/gotop.png)
+![gotop](.img/gotop.png)
 #### wofi
-![wofi](~/.img/wofi.png)
+![wofi](.img/wofi.png)
 #### zathura
-![zathura](~/.img/zathura.png)
+![zathura](.img/zathura.png)
 #### programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
