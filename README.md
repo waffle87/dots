@@ -1,15 +1,13 @@
 ### catppuccin dotfiles
-![fetch](/img/fetch.png)
+![fetch](~/.img/fetch.png)
 #### nvim
-![nvim](/img/nvim.png)
+![nvim](~/.img/nvim.png)
 #### gotop
-![gotop](/img/gotop.png)
+![gotop](~/.img/gotop.png)
 #### wofi
-![wofi](/img/wofi.png)
+![wofi](~/.img/wofi.png)
 #### zathura
-![zathura](/img/zathura.png)
-#### browser
-![firefox](/img/browser.png)
+![zathura](~/.img/zathura.png)
 #### programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
@@ -40,4 +38,11 @@ bssid / freq / sig lvl / flags / ssid
 > set_network # psk "my psswd"
 > enable_network #
 > save_config
+```
+
+#### tty colors
+(hex) colors can be set in `/etc/issue`:
+```
+]P01E1E2E]P1F38BA8]P2A6E3A1]P3F9E2AF]P489B4FA]P5F5C2E7]P694E2D5]P7BAC2DE[H[2J[3J
+This is \n.\O (\s \m \r) \t
 ```

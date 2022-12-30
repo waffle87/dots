@@ -21,7 +21,7 @@ set $browser firefox-bin
 set $screenshot grim -g "$(slurp)" - | wl-copy
 
 # Set wallpaper
-output * bg ~/Pictures/cat_term.png fill
+output * bg ~/.img/wallpaper/waves_mono.png fill
 
 # Notification daemon
 exec /usr/bin/mako

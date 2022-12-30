@@ -7,7 +7,6 @@ app-eselect/eselect-repository
 app-laptop/laptop-mode-tools
 app-laptop/tlp
 app-misc/brightnessctl
-app-misc/neofetch
 app-misc/spicetify-cli
 app-mobilephone/dfu-util
 app-portage/gentoolkit
@@ -52,7 +51,6 @@ media-sound/playerctl
 media-sound/spotify
 media-video/pipewire
 net-im/discord-bin
-net-im/discord-canary-bin
 net-misc/adjtimex
 net-misc/chrony
 net-misc/dhcpcd

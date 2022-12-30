@@ -1,6 +1,4 @@
- :root {
-
-   /* Minimal Functional Fox variables*/
+:root {
   --mff-bg: #1E1E2E;
   --mff-icon-color: #DDB6F2;
   --mff-nav-toolbar-padding: 8px;
@@ -25,10 +23,6 @@
   --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
   --mff-urlbar-results-url-color: #96CDFB;
-  /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
-  /*   --mff-urlbar-font-weight: 600; */
-
-  /* Overriden Firefox variables*/
   --autocomplete-popup-background: var(--mff-bg) !important;
   --default-arrowpanel-background: var(--mff-bg) !important;
   --default-arrowpanel-color: #fefefa !important;
@@ -100,7 +94,7 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 #tabbrowser-tabs {
-  --tab-loading-fill: #033433 !important;
+  --tab-loading-fill: #cba6f7 !important;
 
 }
 
@@ -108,15 +102,10 @@ hbox.tab-content[pinned=true] .tab-text {
   display: flex;
   overflow: hidden;
   justify-content: center;
-width: 50% !important;
+  width: 50% !important;
   max-width: 50% !important;
   min-width: 50% !important;
 }
-
-/* .tab-label-container::after {
-  content: "?" !important;
-
-} */
 
 .tab-line {
   display: none !important;
@@ -178,11 +167,11 @@ width: 50% !important;
 }
 
 .urlbarView-row[type="bookmark"] > span{
-  color: green !important;
+  color: #a6e3a1 !important;
 }
 
 .urlbarView-row[type="switchtab"] > span{
-  color: orange !important;
+  color: #fab387 !important;
 }
 
 .urlbarView-url, .search-panel-one-offs-container {

@@ -17,7 +17,7 @@ bindkey -v
 bindkey "^?" backward-delete-char
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle :compinstall filename '/home/jack/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 autoload -U compinit && compinit
 
 eval "$(starship init zsh)"
@@ -27,12 +27,11 @@ alias l="exa --icons -la"
 alias ls="exa --icons"
 alias cat="bat --paging=never"
 alias cd="z"
-alias upgkbd="sudo kmonad ~/.config/kmonad/apple_laptop.kbd"
+alias upgkbd="sudo kmonad ~/.config/apple_laptop.kbd"
 alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color=always"
-alias fetch="neofetch && sleep 5"
-alias clear="echo ctl+l you dunce"
+alias fetch="clear && printf '\n' && pfetch && sleep 10"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -1,6 +1,6 @@
 ignore-empty-password
 disable-caps-lock-text
-image=/home/jack/Pictures/buildings.jpeg
+image=~/.img/wallpaper/buildings.jpeg
 font=mononoki Nerd Font
 effect-blur=30x2
 fade-in=0.4
