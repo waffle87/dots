@@ -1,11 +1,5 @@
-style=/home/jack/.config/wofi/style.css
-show=drun
+show=run
 width=600
-height=400
-always_parse_args=true
-show_all=true
-print_command=true
-layer=overlay
-insensitivie=true
+height=265
 prompt=
 content_halign=center

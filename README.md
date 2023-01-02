@@ -1,8 +1,8 @@
 ### solarized dark dotfiles
-![fetch](/img/fetch.png)
+![fetch](/.img/fetch.png)
 #### nvim
-![nvim](/img/nvim.png)
+![nvim](/.img/nvim.png)
 #### gotop
-![gotop](/img/gotop.png)
+![gotop](/.img/gotop.png)
 #### zathura
-![zathura](/img/zathura.png)
+![zathura](/.img/zathura.png)

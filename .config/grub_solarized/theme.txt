@@ -1,0 +1,36 @@
+title-text: ""
+desktop-color: "#002b36"
+terminal-box: "terminal_box_*.png"
+terminal-font: "DejaVu Sans Bold 12"
+
++ boot_menu {
+  left = 10%
+  width = 80%
+  top = 25%
+  height = 50%
+  item_font = "DejaVu Sans Bold 12"
+  item_color = "#839496"
+  item_height = 32
+  item_icon_space = 8
+  item_spacing = 2
+  selected_item_font = "DejaVu Sans Bold 12"
+  selected_item_color= "#002B36"
+  selected_item_pixmap_style = "select_*.png"
+  icon_height = 32
+  icon_width = 32
+  scrollbar = true
+  scrollbar_width = 20
+  scrollbar_thumb = "slider_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  left = 15%
+  top = 85%
+  height = 15
+  width = 70%
+  fg_color = "#073642"
+  bg_color = "#586E75"
+  border_color = "#002B36"
+}
+

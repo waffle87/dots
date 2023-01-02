@@ -18,7 +18,7 @@ bindkey -v
 bindkey "^?" backward-delete-char
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle :compinstall filename '/home/jack/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit bashcompinit
 compinit
 bashcompinit

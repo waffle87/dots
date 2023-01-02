@@ -17,7 +17,6 @@ cmake
 dfu-programmer
 dfu-util
 discord
-discord-canary
 dosfstools
 dualsensectl
 easyeffects
@@ -48,7 +47,6 @@ mako
 man-db
 mesa
 minecraft-launcher
-neofetch
 neovim
 nerd-fonts-complete
 networkmanager
