@@ -1,19 +1,11 @@
-layer=top
-font=Cantarell 11
-markup=1
-anchor=top-right
-background-color=#1E1E28
-text-color=#DADAE8
+font=mononoki Nerd Font
+background-color=#1e1e2e
+text-color=#f5e0dc
 max-icon-size=48
 icon-location=right
-margin=20,20,0
-padding=15,15,15
+margin=0,30,25
+padding=15,10,15
 border-size=2
-border-color=#a4b9ef
+border-color=#eba0ac
 border-radius=15
-progress-color=over #332E41
-default-timeout=8000
-group-by=summary
-
-[mode=do-not-disturb]
-invisible=1
+default-timeout=10000

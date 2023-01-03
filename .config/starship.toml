@@ -1,0 +1,14 @@
+[package]
+disabled = true
+[python]
+disabled = true
+[rust]
+disabled = true
+[vagrant]
+disabled = true
+[lua]
+disabled = true
+[nodejs]
+disabled = true
+[cmake]
+disabled = true
