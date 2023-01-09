@@ -14,10 +14,6 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty
-set $browser firefox-bin
-set $screenshot grim -g "$(slurp)" - | wl-copy
-
 output * bg ~/.img/wallpaper/waves_mono.png fill
 
 exec /usr/bin/mako
