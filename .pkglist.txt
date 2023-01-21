@@ -50,7 +50,7 @@ media-gfx/imv
 media-sound/playerctl
 media-sound/spotify
 media-video/pipewire
-net-im/discord-bin
+net-im/discord
 net-misc/adjtimex
 net-misc/chrony
 net-misc/dhcpcd
