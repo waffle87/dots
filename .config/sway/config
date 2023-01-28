@@ -74,6 +74,20 @@ bindsym $mod+Control+$up    move container to output up
 # drag floating windows: $mod + left mouse button
 floating_modifier $mod normal
 
+# switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+
+# move focused window to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+
 # change whether windows open horizontally or
 # vertically to currently open windows, respectively
 bindsym $mod+b splith

@@ -32,10 +32,10 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
   "network": {
-    "format-wifi": "  {essid}",
+    "format-wifi": " {ipaddr}/{cidr}",
     "format-ethernet": "  neptune",
     "format-disconnected": "  Disconnected",
-    "format-alt": " {ipaddr}/{cidr}",
+    "format-alt": "  {essid}",
     "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
   },
