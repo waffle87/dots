@@ -7,6 +7,7 @@
 )
 
 (defalias
+   ;; home row mods
    a_alt  (tap-hold-next-release 170 a lalt)
    s_gui  (tap-hold-next-release 170 s lmet)
    d_ctl  (tap-hold-next-release 170 d lctl)
@@ -15,23 +16,19 @@
    k_ctl  (tap-hold-next-release 170 k rctl)
    l_gui  (tap-hold-next-release 170 l rmet)
    ;_alt  (tap-hold-next-release 170 ; ralt)
-   r_gui  (tap-hold-next-release 170 r lmet)
-   s_ctl  (tap-hold-next-release 170 s lctl)
-   t_sft  (tap-hold-next-release 170 t lsft)
-   n_sft  (tap-hold-next-release 170 n rsft)
-   e_ctl  (tap-hold-next-release 170 e rctl)
-   i_gui  (tap-hold-next-release 170 i rmet)
-   o_alt  (tap-hold-next-release 170 o ralt)
+
+   ;; layers
    tgnum  (layer-toggle num)
-   tgcmk  (layer-switch colemak)
    gaming (layer-switch game)
    def    (layer-switch default)
    lt1    (tap-hold 150 spc @tgnum)
+   ;; pseudo combo behaviour
    rr     (tap-hold-next 40 r (layer-toggle r_ent) :timeout-button r)
    uu     (tap-hold-next 40 u (layer-toggle u_ent) :timeout-button u)
    clipst C-S-v
 )
 
+;; base layer (don't touch this)
 (defsrc
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
@@ -47,16 +44,7 @@
   tab  q      w       e      @rr     t    y    @uu    i       o       p      [    ]    \
   caps @a_alt @s_gui  @d_ctl @f_sft  g    h    @j_sft @k_ctl  @l_gui  @;_alt '    ret
   lsft z      x       c      v       b    n    m      ,       .       /      rsft  up
-  p    lctl   @tgcmk  esc                 @lt1                     @clipst @gaming left down rght
-)
-
-(deflayer colemak
-  esc  brdn    brup    f3     f4      bldn blup prev   pp      next    mute   vold volu
-  grv  1       2       3      4       5    6    7      8       9       0      -    =    bspc
-  tab  q       w       f      p       g    j    l      u       y       ;      [    ]    \
-  caps @a_alt  @r_gui  @s_ctl @t_sft  d    h    @n_sft @e_ctl  @i_gui  @o_alt '    ret
-  lsft z       x       c      v       b    k    m      ,       .       /      rsft up
-  p    lctl   @def     esc                 @lt1                    @clipst @gaming left down rght
+  p    lctl   lalt    esc                 @lt1                     @clipst @gaming left down rght
 )
 
 (deflayer game

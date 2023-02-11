@@ -36,6 +36,8 @@ bssid / freq / sig lvl / flags / ssid
 #
 > set_network # ssid "my network"
 > set_network # psk "my psswd"
+# or if no password:
+> set_network # key_mgmt NONE
 > enable_network #
 > save_config
 ```
