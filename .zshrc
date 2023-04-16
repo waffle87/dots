@@ -5,6 +5,7 @@ fi
 export HISTFILE=~/.zsh_history
 export HISTSIZE=20000
 export SAVEHIST=20000
+export LANG=en_GB.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
@@ -27,7 +28,6 @@ alias l="exa --icons -la"
 alias ls="exa --icons"
 alias cat="bat --paging=never"
 alias cd="z"
-alias upgkbd="sudo kmonad ~/.config/apple_laptop.kbd"
 alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color=always"

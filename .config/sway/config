@@ -30,11 +30,14 @@ input "1452:588:bcm5974" {
 	middle_emulation enabled
 }
 
+bindswitch lid:off exec gtklock -d
+
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-  gsettings set $gnome-schema gtk-theme 'Catppuccin-blue'
-  gsettings set $gnome-schema icon-theme 'catppuccin'
-  gsettings set $gnome-schema cursor-theme 'Reimu'
+  gsettings set $gnome-schema gtk-theme 'catppuccin'
+  gsettings set $gnome-schema icon-theme 'catppuccin-icons'
+  gsettings set $gnome-schema cursor-theme 'sunity-cursors'
+  gsettings set $gnome-schema font 'mononoki Nerd Font 11'
 }
 
 ### key bindings 
@@ -49,7 +52,7 @@ bindsym $mod+f exec       firefox-bin
 bindsym $mod+r exec       wofi
 bindsym $mod+p exec       grim -g "$(slurp)" - | wl-copy
 bindsym $mod+Shift+p exec grim -g "$(slurp)"
-bindsym $mod+Escape  exec swaylock
+bindsym $mod+Escape  exec gtklock -d
 
 # audio
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%

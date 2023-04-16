@@ -35,6 +35,7 @@ dev-util/tokei
 dev-vcs/git
 dev-vcs/lazygit
 gui-apps/grim
+gui-apps/gtklock
 gui-apps/mako
 gui-apps/slurp
 gui-apps/swaybg
@@ -48,7 +49,6 @@ media-fonts/noto-cjk
 media-fonts/noto-emoji
 media-gfx/imv
 media-sound/playerctl
-media-sound/spotify
 media-video/pipewire
 net-im/discord
 net-misc/adjtimex
@@ -69,6 +69,7 @@ sys-boot/grub
 sys-devel/clang
 sys-devel/crossdev
 sys-devel/gcc
+sys-devel/gdb
 sys-firmware/b43-firmware
 sys-firmware/intel-microcode
 sys-kernel/genkernel
