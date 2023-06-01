@@ -1,0 +1,94 @@
+/**
+ * @name Zelk
+ * @version 1.2.2
+ * @description a smooth theme inspired by zorin
+ * @author schnensch
+ * @authorId 652801938374656013
+ * @source https://github.com/schnensch0/zelk
+ * @invite tMEcBhsNqA
+ */
+@import url(https://schnensch0.github.io/zelk/main.css);
+@import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+:root {
+  /* none: disabled / unset: enabled */
+  --scrollbars: none;
+  /* user notes */
+  --notes: none;
+  /* direct message box */
+  --message: none;
+  /* set to '4px solid' to show */
+  --embed-color: none;
+font-family: 'Roboto', sans-serif;
+  --border-radius-1: 10px;
+  --border-radius-2: 8px;
+}
+
+.theme-dark {
+  --accent-color: #B58900;
+  --background-1: #002B36;
+  --background-2: #073642;
+  --background-accent: #93A1A1;
+  --border-color: #586E75;
+}
+
+.theme-dark {
+  /* background */
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-1);
+  --background-secondary: var(--background-1);
+  --background-secondary-alt: var(--background-1);
+  --background-tertiary: var(--background-2);
+  --background-accent-gradient: var(--background-2);
+  --background-floating: var(--background-1);
+  --background-mentioned: #bde6fb10;
+  --background-mentioned-hover: #bde6fb15;
+  /* modifiers */
+  --background-modifier-hover: #586E75;
+  --background-modifier-active: #839496;
+  --background-modifier-selected: var(--accent-color);
+  --background-modifier-accent: transparent;
+  --background-message-hover: transparent;
+  /* text */
+  --text-normal: #E4E4E4;
+  --text-positive: var(--text-normal);
+  --text-muted: #93A1A1;
+  --text-link: #268BD2;
+  --interactive-selected: var(--background-primary);
+  --interactive-active: var(--text-normal);
+  --interactive-normal: var(--text-normal);
+  --interactive-muted: var(--button-background-active);
+  --channels-default: var(--text-muted);
+  --header-primary: var(--text-normal);
+  --header-secondary: var(--text-muted);
+  /* more */
+  --settings-icon-color: #657B83;
+  --control-brand-foreground: var(--accent-color);
+  --info-warning-foreground: var(--accent-color);
+  --tab-selected: #93A1A1;
+  --switch: #8A8A8A;
+  --activity-card-background: var(--background-1);
+  --brand-experiment: var(--accent-color) !important;
+  /* buttons */
+  --button-background: #6C71C4;
+  --button-background-hover: #2AA198;
+  --button-background-active: var(--text-muted);
+  --button-accent: var(--accent-color);
+  --button-accent-hover: #FDF6E3;
+  --button-accent-active: #8dd4f8;
+  --button-destructive: #fb7c7c;
+  --button-destructive-hover: #ff929b;
+  --button-destructive-active: #fa4a4a;
+}
+
+:root {
+  --outdated-122: none !important;
+}
+
+.userPopout-2j1gM4[style*="--user-background"] .banner-1YaD3N, .root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
+  height: 120px;
+  background: var(--background-tertiary) var(--user-background) var(--user-popout-position, center) center / cover !important;
+}
+.root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
+  height: 240px;
+}

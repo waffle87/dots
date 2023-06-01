@@ -16,7 +16,6 @@ cmake
 dfu-programmer
 dfu-util
 discord
-dosfstools
 easyeffects
 efibootmgr
 exa
@@ -24,13 +23,12 @@ fakeroot
 firefox
 fzf
 gcc
+gdb
 git
-gnome-keyring
 gotop
 grim
 grub
 imv
-inkscape
 kicad
 kicad-library
 lazygit
@@ -38,6 +36,7 @@ libtool
 linux
 linux-firmware
 linux-headers
+lsp-plugins
 lvm2
 make
 mako
@@ -62,7 +61,6 @@ pipewire-pulse
 playerctl
 python-pip
 ripgrep
-rust-analyzer
 rustup
 slurp
 spicetify-cli
@@ -77,7 +75,6 @@ usbutils
 vulkan-radeon
 waybar
 wget
-which
 wireless_tools
 wl-clipboard
 wofi
