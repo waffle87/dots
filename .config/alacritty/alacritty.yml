@@ -10,9 +10,8 @@ window:
     y: 5
   opacity: 1.0
   startup_mode: Windowed
-  title: Alacritty
+  title: alacritty
   dynamic_title: true
-  gtk_theme_variant: None
 
 scrolling:
   history: 10000
@@ -23,18 +22,6 @@ font:
   normal:
     family: JetBrains Mono
     style: Regular
-
-  bold:
-    family: JetBrains Mono
-    style: Bold
-
-  italic:
-    family: JetBrains Mono
-    style: Italic 
-
-  bold_italic:
-    family: JetBrains Mono
-    style: Bold Italic
 
   size: 12
 
@@ -86,6 +73,3 @@ live_config_reload: true
 # Shell
 shell:
   program: /bin/zsh
-
-mouse:
-  hide_when_typing: false

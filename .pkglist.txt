@@ -7,7 +7,6 @@ app-eselect/eselect-repository
 app-laptop/laptop-mode-tools
 app-laptop/tlp
 app-misc/brightnessctl
-app-misc/spicetify-cli
 app-mobilephone/dfu-util
 app-portage/gentoolkit
 app-shells/gentoo-zsh-completions
