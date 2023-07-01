@@ -41,6 +41,23 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+
+  {
+    "lervag/vimtex",
+    lazy = false,
+    config = function()
+      require("custom.configs.vimtex")
+    end,
+  },
+
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = { "rafamadriz/friendly-snippets" },
+    config = function()
+      require("custom.configs.luasnip")
+    end,
+    lazy = false,
+  },
 }
 
 return plugins

@@ -21,6 +21,9 @@ local sources = {
 
   -- json
   b.diagnostics.jsonlint,
+
+  -- latex
+  b.formatting.latexindent,
 }
 
 null_ls.setup {
