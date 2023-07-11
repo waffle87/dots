@@ -21,6 +21,9 @@ local sources = {
 
   -- json
   b.diagnostics.jsonlint,
+
+  -- latex
+  b.formatting.latexindent,
 }
 
 null_ls.setup {
@@ -28,7 +31,6 @@ null_ls.setup {
   sources = sources,
 }
 
-local notify = vim.notify
 vim.notify = function(msg, ...)
     if msg:match("warning: multiple different client offset_encodings") then
         return
