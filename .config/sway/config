@@ -15,9 +15,9 @@ set $down j
 set $up k
 set $right l
 
-output DP-3 pos 3000 0 bg ~/.img/wallpaper/ferris.png     fill transform 270
-output DP-2 pos 1920 0 bg ~/.img/wallpaper/ferris.png     fill transform 270
-output DP-1 pos 0 395  bg ~/.img/wallpaper/parkinglot.png fill res 1920x1080
+output DP-3 pos 3000 0 bg ~/.img/wallpaper/ferris.png      fill transform 270
+output DP-2 pos 1920 0 bg ~/.img/wallpaper/ferris.png      fill transform 270
+output DP-1 pos 0 395  bg ~/.img/wallpaper/parkinglot2.png fill res 1920x1080
 focus output DP-1
 
 exec /usr/bin/mako

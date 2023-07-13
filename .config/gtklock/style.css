@@ -1,0 +1,10 @@
+window {
+  background-image: url("/home/jack/.img/wallpaper/ferris_blur.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #002b36;
+  color: #0c586b;
+  font-family: "JetBrains Mono";
+  font-size: 12px;
+}

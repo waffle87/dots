@@ -28,6 +28,7 @@ git
 gotop
 grim
 grub
+gtklock
 imv
 kicad
 kicad-library
@@ -55,7 +56,6 @@ npm
 opendoas
 openssh
 otf-font-awesome
-pacman-contrib
 pipewire
 pipewire-pulse
 playerctl
@@ -67,7 +67,6 @@ spicetify-cli
 spotify
 steam
 sway
-thunar
 tokei
 tree
 unzip

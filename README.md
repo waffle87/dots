@@ -6,3 +6,5 @@
 ![gotop](/.img/gotop.png)
 #### zathura
 ![zathura](/.img/zathura.png)
+#### gtklock
+![lockscreen](/.img/lockscreen.png)
