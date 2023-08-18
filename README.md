@@ -8,6 +8,8 @@
 ![wofi](.img/wofi.png)
 #### zathura
 ![zathura](.img/zathura.png)
+#### gtklock
+![gtklock](.img/lockscreen.png)
 #### programs/tools:
 - window manager: [sway](https://swaywm.org)
 - bar: [waybar](https://github.com/Alexays/Waybar)
@@ -49,7 +51,7 @@ bssid / freq / sig lvl / flags / ssid
 This is \n.\O (\s \m \r) \t
 ```
 
-#### (gen)kernel update (since you i always forget)
+#### (gen)kernel update (since i always forget)
 ```shell
 eselect kernel list
 eselect kernel set <#>

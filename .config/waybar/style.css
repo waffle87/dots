@@ -1,3 +1,4 @@
+@import url("../colours.css");
 * {
   border-radius: 0;
   font-family: "mononoki Nerd Font", "Font Awesome 6 Free";
@@ -7,7 +8,7 @@
 
 window#waybar {
   background: transparent;
-  color: #DADAE8;
+  color: @rosewater;
 }
 
 tooltip {
@@ -15,7 +16,7 @@ tooltip {
   border-radius: 15px;
   border-width: 2px;
   border-style: solid;
-  border-color: #a4b9ef;
+  border-color: @lavender;
 }
 
 #workspaces {
@@ -27,54 +28,54 @@ tooltip {
   padding-left: 10px;
   padding-right: 10px;
   min-width: 0;
-  color: #f2cdcd;
+  color: @flamingo;
 }
 
 #workspaces button.focused {
-  color: #96cdfb;
+  color: @sapphire;
 }
 
 #workspaces button.urgent {
-  color: #89dceb;
+  color: @sky;
 }
 
 #workspaces button:hover {
-  color: #96cdfb;
+  color: @sapphire;
 }
 
 #clock, #custom-date, #battery, #custom-wifi,
 #pulseaudio, #workspaces, #temperature {
   padding: 2px 7px;
-  background: #302d41;
+  background: @surface0;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 #custom-wifi {
-  color: #89dceb;
+  color: @sky;
   padding-left: 15px;
   padding-right: 4px;
   border-radius: 15px 0px 0px 15px;
 }
 
-#pulseaudio { color: #abe9b3; }
-#temperature { color: #ddb6f2; }
+#pulseaudio { color: @green; }
+#temperature { color: @mauve; }
 
 #battery {
-  color: #f8bd96;
+  color: @peach;
   padding-right: 12px;
   margin-right: 5px;
   border-radius: 0px 15px 15px 0px;
 }
 
 #clock {
-  color: #96cdfb;
+  color: @sapphire;
   padding-left: 12px;
   border-radius: 15px 0px 0px 15px;
 }
 
 #custom-date {
-  color: #f28fad;
+  color: @red;
   padding-right: 12px;
   border-radius: 0px 15px 15px 0px;
 }

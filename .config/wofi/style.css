@@ -1,27 +1,10 @@
-@define-color bg #161320;
-@define-color bg-hover #1E1E2E;
-@define-color blue #96CDFB;
-@define-color sky #89DCEB;
-@define-color red #F28FAD;
-@define-color pink #F5C2E7;
-@define-color lavender #C9CBFF;
-@define-color rosewater #F5E0DC;
-@define-color flamingo #F2CDCD;
-@define-color fg #D9E0EE;
-@define-color green #ABE9B3;
-@define-color dark-fg #161320;
-@define-color peach #F8BD96;
-@define-color border @blue;
-@define-color gray2 #6E6C7E;
-@define-color black4 #575268;
-@define-color black3 #302D41;
-@define-color maroon #E8A2AF;
+@import url("../colours.css");
 
 #window {
   margin: 0px;
-  border: 2px solid @border;
+  border: 2px solid @sapphire;
   border-radius: 7px;
-  background-color: @bg;
+  background-color: @base;
   font-family: "mononoki Nerd Font Mono";
   font-size: 14px;
   background: rgb(30,30,46);
@@ -74,7 +57,7 @@
 #text {
   margin: 5px;
   border: none;
-  color: @fg;
+  color: @text;
 }
 
 #entry:selected {
@@ -85,6 +68,6 @@
 
 #text:selected {
   background-color: inherit;
-  color: @dark-fg;
+  color: @text;
   font-weight: normal;
 }

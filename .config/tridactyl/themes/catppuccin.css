@@ -23,11 +23,9 @@
     --tridactyl-highlight-box-bg: var(--base0B);
     --tridactyl-highlight-box-fg: var(--base00);
 
-    /* Hint character tags */
     --tridactyl-hintspan-fg: var(--base00) !important;
     --tridactyl-hintspan-bg: var(--base0A) !important;
 
-    /* Element Highlights */
     --tridactyl-hint-active-fg: none;
     --tridactyl-hint-active-bg: none;
     --tridactyl-hint-active-outline: none;
@@ -133,7 +131,6 @@
     border: unset !important;
     border: 1px var(--base0B) solid !important;
     font-size: 12pt !important;
-    /*font-weight: 200 !important;*/
     padding: 0.8ex !important;
 }
 
@@ -144,10 +141,3 @@
 #completions .focused .url {    background: var(--base0B);
     color: var(--base00);
 }
-/* #Ocean-normal { */
-/*  border-color: green !important; */
-/* } */
-
-/* #Ocean-insert { */
-/*  border-color: yellow !important; */
-/* } */
