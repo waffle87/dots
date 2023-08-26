@@ -4,7 +4,6 @@ app-admin/yadm
 app-arch/zip
 app-editors/neovim
 app-eselect/eselect-repository
-app-laptop/laptop-mode-tools
 app-laptop/tlp
 app-misc/brightnessctl
 app-mobilephone/dfu-util
@@ -24,10 +23,8 @@ cross-avr/binutils
 cross-avr/gcc
 dev-embedded/avrdude
 dev-embedded/dfu-programmer
-dev-haskell/stack-bin
 dev-lang/rust-bin
 dev-python/pip
-dev-util/ccache
 dev-util/pkgdev
 dev-util/rust-analyzer
 dev-util/tokei
@@ -38,7 +35,6 @@ gui-apps/gtklock
 gui-apps/mako
 gui-apps/slurp
 gui-apps/swaybg
-gui-apps/swaylock-effects
 gui-apps/waybar
 gui-apps/wl-clipboard
 gui-apps/wofi
@@ -50,7 +46,6 @@ media-gfx/imv
 media-sound/playerctl
 media-video/pipewire
 net-im/discord
-net-misc/adjtimex
 net-misc/chrony
 net-misc/dhcpcd
 net-misc/netifrc
@@ -60,7 +55,6 @@ net-wireless/wpa_supplicant
 sys-apps/bat
 sys-apps/exa
 sys-apps/hwloc
-sys-apps/mlocate
 sys-apps/pciutils
 sys-apps/ripgrep
 sys-auth/elogind
