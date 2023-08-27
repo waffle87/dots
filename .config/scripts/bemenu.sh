@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 black="#302D41" 
 sky="#89DCEB"
 mauve="#DDB6F2" 
