@@ -1,7 +1,7 @@
 {
-  "position": "top", 
-  "modules-left": ["sway/workspaces"],
-  "modules-center": ["clock", "custom/date"],
+  "position": "top",
+  "modules-left": ["clock", "custom/date", "custom/weather", "memory"],
+  "modules-center": ["sway/workspaces"],
   "modules-right": ["custom/wifi", "temperature", "pulseaudio", "battery"],
   
   "sway/workspaces": {
@@ -51,6 +51,17 @@
     "interval": 60,
     "exec": "~/.config/scripts/date.sh"
   },
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --hide-conditions",
+    "return-type": "json"
+  },
+  "memory": {
+    "interval": 30,
+    "format": " {}%"
+  },
   "battery": {
     "states": {
       "warning": 20,
@@ -78,7 +89,7 @@
   },
   "temperature": {
     "interval": "5",
-    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input",
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
     "critical-threshold": 90,
     "format-critical": " {temperatureC}°C",
     "format": " {temperatureC}°C"

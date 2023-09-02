@@ -19,10 +19,7 @@ tooltip {
   border-color: @lavender;
 }
 
-#workspaces {
-  margin-left: 5px;
-  border-radius: 15px;
-}
+#workspaces { border-radius: 15px; }
 
 #workspaces button {
   padding-left: 10px;
@@ -31,30 +28,20 @@ tooltip {
   color: @flamingo;
 }
 
-#workspaces button.focused {
-  color: @sapphire;
-}
+#workspaces button.focused { color: @sapphire; }
+#workspaces button.urgent { color: @sky; }
+#workspaces button:hover { color: @sapphire; }
 
-#workspaces button.urgent {
-  color: @sky;
-}
-
-#workspaces button:hover {
-  color: @sapphire;
-}
-
-#clock, #custom-date, #battery, #custom-wifi,
+#clock, #custom-date, #custom-weather, #memory, #battery, #custom-wifi,
 #pulseaudio, #workspaces, #temperature {
   padding: 2px 7px;
   background: @surface0;
   margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 #custom-wifi {
   color: @sky;
-  padding-left: 15px;
-  padding-right: 4px;
+  padding-left: 12px;
   border-radius: 15px 0px 0px 15px;
 }
 
@@ -69,13 +56,17 @@ tooltip {
 }
 
 #clock {
+  margin-left: 5px;
   color: @sapphire;
   padding-left: 12px;
   border-radius: 15px 0px 0px 15px;
 }
 
-#custom-date {
-  color: @red;
+#custom-date { color: @red; }
+#custom-weather { color: @yellow; }
+
+#memory {
+  color: @lavender; 
   padding-right: 12px;
   border-radius: 0px 15px 15px 0px;
 }

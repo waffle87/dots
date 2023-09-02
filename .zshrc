@@ -10,7 +10,8 @@ export LC_CTYPE=en_US.UTF-8
 export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
 export BAT_THEME="base16"
-export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
+path+=('/usr/local/texlive/2023/bin/x86_64-linux')
+export PATH
 
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS

@@ -27,6 +27,7 @@ input type:keyboard {
 input "1452:588:bcm5974" {
 	dwt enabled
 	tap enabled
+  natural_scroll disabled 
 	middle_emulation enabled
 }
 
