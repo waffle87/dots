@@ -1,12 +1,10 @@
 app-admin/doas
-app-admin/sysklogd
 app-admin/yadm
 app-arch/zip
 app-editors/neovim
 app-eselect/eselect-repository
 app-laptop/tlp
 app-misc/brightnessctl
-app-mobilephone/dfu-util
 app-portage/gentoolkit
 app-shells/gentoo-zsh-completions
 app-shells/zoxide
@@ -21,8 +19,6 @@ cross-arm-none-eabi/newlib
 cross-avr/avr-libc
 cross-avr/binutils
 cross-avr/gcc
-dev-embedded/avrdude
-dev-embedded/dfu-programmer
 dev-lang/rust-bin
 dev-python/pip
 dev-util/pkgdev
@@ -49,12 +45,11 @@ net-im/discord
 net-misc/chrony
 net-misc/dhcpcd
 net-misc/netifrc
+net-misc/rclone
 net-wireless/iw
-net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 sys-apps/bat
 sys-apps/exa
-sys-apps/hwloc
 sys-apps/pciutils
 sys-apps/ripgrep
 sys-auth/elogind
@@ -63,9 +58,7 @@ sys-devel/clang
 sys-devel/crossdev
 sys-devel/gcc
 sys-devel/gdb
-sys-firmware/b43-firmware
 sys-firmware/intel-microcode
-sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-power/acpi

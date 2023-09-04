@@ -50,18 +50,3 @@ bssid / freq / sig lvl / flags / ssid
 ]P01E1E2E]P1F38BA8]P2A6E3A1]P3F9E2AF]P489B4FA]P5F5C2E7]P694E2D5]P7BAC2DE[H[2J[3J
 This is \n.\O (\s \m \r) \t
 ```
-
-#### (gen)kernel update (since i always forget)
-```shell
-eselect kernel list
-eselect kernel set <#>
-cd /usr/src/linux
-genkernel all
-# install/config grub
-rm -r /usr/src/linux-x.y.z   \
-      /lib/modules/x.y.z     \
-      /boot/vmlinuz-x.y.z    \
-      /boot/System.map-x.y.z \
-      /boot/config-x.y.z     \
-      /boot/initramfs-x.y.z
-```
