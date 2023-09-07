@@ -15,8 +15,8 @@
 - bar: [waybar](https://github.com/Alexays/Waybar)
 - app launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
 - notifications: [mako](https://github.com/emersion/mako)
-- lock screen: [swaylock-effects](https://github.com/mortie/swaylock-effects)
-- keyboard manager: [kmonad](https://github.com/kmonad/kmonad)
+- lock screen: [gtklock](https://github.com/jovanlanik/gtklock)
+- keyboard manager: [keyd](https://github.com/rvaiya/keyd)
 - terminal: [alacritty](https://github.com/alacritty/alacritty)
 - shell: [zsh](https://github.com/zsh-users/zsh.git)
 - editor: [neovim](https://neovim.io) using [nvchad](https://nvchad.github.io)
@@ -47,6 +47,6 @@ bssid / freq / sig lvl / flags / ssid
 #### tty colors
 (hex) colors can be set in `/etc/issue`:
 ```
-]P01E1E2E]P1F38BA8]P2A6E3A1]P3F9E2AF]P489B4FA]P5F5C2E7]P694E2D5]P7BAC2DE[H[2J[3J
+\x1B]P01E1E2E\x1B]P1F38BA8\x1B]P2A6E3A1\x1B]P3F9E2AF\x1B]P489B4FA\x1B]P5F5C2E7\x1B]P694E2D5\x1B]P7BAC2DE\x1B[H\x1B[2J\x1B[3J
 This is \n.\O (\s \m \r) \t
 ```

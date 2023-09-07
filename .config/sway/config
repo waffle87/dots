@@ -14,10 +14,10 @@ set $down j
 set $up k
 set $right l
 
-output * bg ~/.img/wallpaper/coffeecat.png fill
+output * bg ~/.img/wallpaper/waves_mono.png fill
 
 exec /usr/bin/mako
-exec /usr/bin/gentoo-pipewire-launcher
+exec /usr/bin/gentoo-pipewire-launcher &
 
 input type:keyboard {
   xkb_layout us,ru
@@ -42,9 +42,6 @@ exec_always {
 }
 
 ### key bindings 
-# applications
-
-### key bindings
 # applications
 
 bindsym $mod+q kill
