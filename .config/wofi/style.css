@@ -1,73 +1,29 @@
-@import url("../colours.css");
-
 #window {
-  margin: 0px;
-  border: 2px solid @sapphire;
-  border-radius: 7px;
-  background-color: @base;
-  font-family: "mononoki Nerd Font Mono";
+  border: 3px solid #89dceb;
+  border-radius: 8px;
   font-size: 14px;
-  background: rgb(30,30,46);
-  background: linear-gradient(90deg, rgba(30,30,46,1) 26%, rgba(26,24,38,1) 55%, rgba(22,19,32,1) 91%); 
+  background: linear-gradient(90deg, rgba(30,30,46,1) 25%, rgba(26,24,38,1) 50%, rgba(22,19,32,1) 75%); 
 }
 
 #input {
   margin: 15px;
-  border: 2px solid @flamingo;
-  border-radius: 10px;
-  color: @lavender;
-  background: rgb(30,30,46);
-  background: linear-gradient(90deg, rgba(30,30,46,1) 43%, rgba(26,24,38,1) 82%, rgba(22,19,32,1) 91%); 
+  border: 3px solid #f2cdcd;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(30,30,46,1) 25%, rgba(26,24,38,1) 50%, rgba(22,19,32,1) 75%); 
 }
 
-#input:focus {
-  background: rgb(48,45,65);
-  background: linear-gradient(90deg, rgba(48,45,65,1) 19%, rgba(30,30,46,1) 77%, rgba(26,24,38,1) 100%); 
-}
-
-#input:focus image {
-  color: @flamingo;
-}
-
-#input image {
-  color: @lavender;
+#entry:selected {
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(201,203,255,1) 25%, rgba(245,224,220,1) 50%, rgba(242,205,205,1) 75%); 
 }
 
 #inner-box {
   margin: 5px;
-  border: none;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 7px;
-  background-color: inherit;
+  border-radius: 8px;
 }
 
-#outer-box {
-  margin: 5px;
-  border: none;
-  background-color: inherit;
-  border-radius: 7px;
-}
-
-#scroll {
-  margin: 0px;
-  border: none;
-}
-
-#text {
-  margin: 5px;
-  border: none;
-  color: @text;
-}
-
-#entry:selected {
-  border-radius: 10px;
-  background: rgb(201,203,255);
-  background: linear-gradient(90deg, rgba(201,203,255,1) 28%, rgba(245,224,220,1) 85%, rgba(242,205,205,1) 100%); 
-}
-
-#text:selected {
-  background-color: inherit;
-  color: @text;
-  font-weight: normal;
-}
+#outer-box { margin: 5px; }
+#text { margin: 5px; }
+#text:selected { color: #1e1e2e; }

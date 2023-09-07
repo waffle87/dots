@@ -51,10 +51,10 @@
     "interval": 60,
     "exec": "~/.config/scripts/date.sh"
   },
-  "custom/weather": {
-    "format": "{}°",
+  "custom/weather": { // https://github.com/bjesus/wttrbar
+    "format": "{}°C",
     "tooltip": true,
-    "interval": 3600,
+    "interval": 1800,
     "exec": "wttrbar --hide-conditions",
     "return-type": "json"
   },

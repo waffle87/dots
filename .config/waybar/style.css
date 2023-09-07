@@ -12,7 +12,7 @@ window#waybar {
 }
 
 tooltip {
-  background: #1e1e2e;
+  background: @base;
   border-radius: 15px;
   border-width: 2px;
   border-style: solid;
@@ -34,7 +34,7 @@ tooltip {
 
 #clock, #custom-date, #custom-weather, #memory, #battery, #custom-wifi,
 #pulseaudio, #workspaces, #temperature {
-  padding: 2px 7px;
+  padding: 2px 6px;
   background: @surface0;
   margin-top: 5px;
 }
@@ -56,9 +56,9 @@ tooltip {
 }
 
 #clock {
-  margin-left: 5px;
   color: @sapphire;
   padding-left: 12px;
+  margin-left: 5px;
   border-radius: 15px 0px 0px 15px;
 }
 
