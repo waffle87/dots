@@ -1,97 +1,58 @@
-@define-color sol1   #002b36;
-@define-color sol2   #073642;
-@define-color grey1  #586e75;
-@define-color grey2  #657b83;
-@define-color grey3  #839496;
-@define-color grey4  #93a1a1;
-@define-color white1 #eee8d5;
-@define-color white2 #fdf6e3;
-@define-color red    #dc322f;
-@define-color orange #cb4b16;
-@define-color yellow #b58900;
-@define-color green  #859900;
-@define-color mint   #2aa198;
-@define-color blue   #268bd2;
-@define-color purple #6c71c4;
-@define-color pink   #d33682;
+@import url("../colours.css");
 
-#waybar {
-  font-family: "mononoki Nerd Font", "Font Awesome 6 Free";
+* {
+  font-family: "JetBrains Mono", "Font Awesome 6 Free";
   font-size: 14px;
+  min-height: 0;
+  margin-bottom: 2px;
 }
 
-window#waybar {
-  background: transparent;
-}
+window#waybar { background: transparent; }
 
-#workspaces {
-  background-color: @sol1;
-  margin-top: 5px;
-  border-radius: 5px;
-}
-
-#workspaces button {
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: @green;
-}
-
-#workspaces button.focused {
-  color: @sol1;
-  background-color: @mint;
-}
-
-#workspaces button:hover {
-  background-color: @blue;
-  color: @sol1;
-}
-
-#custom-date, 
-#clock, 
-#pulseaudio, 
-#network, 
-#memory, 
-#temperature, 
-#cpu,
-#custom-power,
-#custom-switch-output {
-  background-color: @sol1;
-  padding: 5px 10px;
-  margin-top: 5px;
+#custom-power, #custom-switch-output, #memory, #cpu, #temperature, #custom-media, #network, #pulseaudio, #custom-date, #clock {
+  background: @base02;
+  padding: 8px;
 }
 
 tooltip {
-  font-family: "mononoki Nerd Font";
-  color: @white1;
-  background-color: @sol2;
-  border: 2px solid @orange;
-  border-radius: 5px;
-}
-
-#clock {
-  color: @pink;
-  border-radius: 0px 5px 5px 0px;
-  margin-right: 10px;
-}
-
-#network {
-  color: @purple;
-  border-radius: 5px 0px 0px 5px;
-}
-
-#temperature {
-  color: @blue;
-  border-radius: 0px 5px 5px 0px;
+  color: @base03;
+  background-color: @base2;
+  border: 3px solid @yellow;
+  border-radius: 8px;
 }
 
 #custom-power {
   color: @red;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 8px 0px 0px 8px;
   margin-left: 10px;
+  padding-left: 10px;
 }
 
-#custom-switch-output { color: #6c71c4; }
-#cpu                  { color: #859900; }
-#memory               { color: #cb4b16; }
-#pulseaudio           { color: #b58900; }
-#custom-date          { color: #2aa198; }
+#custom-switch-output { color: @orange; }
+#memory               { color: @yellow; }
+#cpu                  { color: @green; }
+
+#temperature {
+  color: @cyan;
+  border-radius: 0px 8px 8px 0px;
+}
+
+#custom-media {
+  border-radius: 8px;
+  color: @base3;
+}
+
+#network {
+  color: @blue;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#pulseaudio { color: #2660d2; }
+#custom-date { color: @violet; }
+
+#clock {
+  color: @magenta;
+  border-radius: 0px 8px 8px 0px;
+  margin-right: 10px;
+  padding-right: 10px;
+}

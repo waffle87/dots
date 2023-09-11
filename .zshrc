@@ -10,7 +10,8 @@ export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
 export BAT_THEME="Solarized (dark)"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#657b83"
-export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
+path+=('/usr/local/texlive/2023/bin/x86_64-linux')
+export PATH
 
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS

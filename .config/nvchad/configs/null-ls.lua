@@ -19,9 +19,6 @@ local sources = {
   -- python
   b.formatting.black,
 
-  -- json
-  b.diagnostics.jsonlint,
-
   -- latex
   b.formatting.latexindent,
 }

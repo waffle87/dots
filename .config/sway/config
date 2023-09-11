@@ -15,9 +15,9 @@ set $down j
 set $up k
 set $right l
 
-output DP-3 pos 3000 0 bg ~/.img/wallpaper/ferris.png      fill transform 270
-output DP-2 pos 1920 0 bg ~/.img/wallpaper/ferris.png      fill transform 270
-output DP-1 pos 0 395  bg ~/.img/wallpaper/parkinglot2.png fill res 1920x1080
+output DP-3 pos 3000 0 bg ~/.img/wallpaper/ferris.png fill transform 270
+output DP-2 pos 1920 0 bg ~/.img/wallpaper/ferris.png fill transform 270
+output DP-1 pos 0 395  bg #eee8d5                     solid_color res 1920x1080
 focus output DP-1
 
 exec /usr/bin/mako
@@ -32,6 +32,7 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
   gsettings set $gnome-schema gtk-theme 'Solarized-Dark'
   gsettings set $gnome-schema cursor-theme 'volantes_cursors'
+  gsettings set $gnome-schema font 'JetBrains Mono'
 }
 
 ### key bindings 
@@ -39,7 +40,7 @@ exec_always {
 bindsym $mod+q kill
 bindsym $mod+t exec       alacritty
 bindsym $mod+f exec       firefox
-bindsym $mod+r exec       wofi --show run --lines=7
+bindsym $mod+r exec       wofi
 bindsym $mod+p exec       grim -g "$(slurp)" - | wl-copy
 bindsym $mod+Shift+p exec grim -g "$(slurp)"
 
@@ -84,7 +85,8 @@ bindsym $mod+5 workspace number 5
 # move focused window to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+3 move container to workspace number 3:q
+
 bindsym $mod+Shift+4 move container to workspace number 4
 bindsym $mod+Shift+5 move container to workspace number 5
 

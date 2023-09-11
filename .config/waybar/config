@@ -1,35 +1,44 @@
 {
-  "position": "top",
+  "position": "bottom",
   "output": "DP-1",
   "modules-left": ["custom/power", "custom/switch-output", "memory", "cpu", "temperature"],
-  "modules-center": ["sway/workspaces"],
+  "modules-center": ["custom/media"],
   "modules-right": ["network", "pulseaudio", "custom/date", "clock"],
   "sway/workspaces": {
-    "all-outputs": true,
     "format": "{icon}",
-    "persistent_workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-    },
     "format-icons": {
-      "1": "五",
-      "2": "六",
-      "3": "七",
-      "4": "八",
-      "5": "九",
-      }
+      "default": "",
+    }
   },
   "custom/date": {
-    "format": "  {}",
+    "format": " {}",
     "interval": 60,
     "exec": "~/.config/scripts/date.sh"
   },
   "clock": {
-    "format": "  {:%H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": " {:%H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#002b36'><b>{}</b></span>",
+        "days": "<span color='#073642'><b>{}</b></span>",
+        "weeks": "<span color='#b58900'><b>W{}</b></span>",
+        "weekdays": "<span color='#859900'><b>{}</b></span>",
+        "today": "<span color='#dc322f'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions":  {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
   },
   "network": {
     "format-wifi": " {ipaddr}/{cidr}",
@@ -67,5 +76,15 @@
   "custom/switch-output": {
     "format": "",
     "on-click": "~/.config/scripts/output.sh"
+  },
+  "custom/media": {
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "exec": "~/.config/scripts/mediaplayer.py 2> /dev/null",
   }
 }

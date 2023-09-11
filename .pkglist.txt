@@ -60,6 +60,7 @@ pipewire
 pipewire-pulse
 playerctl
 python-pip
+rclone
 ripgrep
 rustup
 slurp
