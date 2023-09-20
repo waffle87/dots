@@ -20,7 +20,7 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: JetBrains Mono
+    family: JetBrainsMono
     style: Regular
 
   size: 12

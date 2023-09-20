@@ -49,7 +49,7 @@ net-misc/rclone
 net-wireless/iw
 net-wireless/wpa_supplicant
 sys-apps/bat
-sys-apps/exa
+sys-apps/eza
 sys-apps/pciutils
 sys-apps/ripgrep
 sys-auth/elogind

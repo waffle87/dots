@@ -26,8 +26,8 @@ autoload -U compinit && compinit
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-alias l="exa --icons -la"
-alias ls="exa --icons"
+alias l="eza -la"
+alias ls="eza"
 alias cat="bat --paging=never"
 alias cd="z"
 alias sudo="doas"
