@@ -1,3 +1,5 @@
+# cat /var/lib/portage/world > .pkglist.txt
+
 app-admin/doas
 app-admin/yadm
 app-arch/zip
@@ -22,7 +24,6 @@ cross-avr/gcc
 dev-lang/rust-bin
 dev-python/pip
 dev-util/pkgdev
-dev-util/rust-analyzer
 dev-util/tokei
 dev-vcs/git
 dev-vcs/lazygit
@@ -40,6 +41,7 @@ media-fonts/noto-cjk
 media-fonts/noto-emoji
 media-gfx/imv
 media-sound/playerctl
+media-video/ffmpeg
 media-video/pipewire
 net-im/discord
 net-misc/chrony
