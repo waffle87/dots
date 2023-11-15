@@ -8,7 +8,6 @@ app-eselect/eselect-repository
 app-laptop/tlp
 app-misc/brightnessctl
 app-portage/gentoolkit
-app-shells/gentoo-zsh-completions
 app-shells/zoxide
 app-shells/zsh
 app-shells/zsh-completions
@@ -23,10 +22,8 @@ cross-avr/binutils
 cross-avr/gcc
 dev-lang/rust-bin
 dev-python/pip
-dev-util/pkgdev
 dev-util/tokei
 dev-vcs/git
-dev-vcs/lazygit
 gui-apps/grim
 gui-apps/gtklock
 gui-apps/mako
@@ -40,7 +37,6 @@ media-fonts/noto
 media-fonts/noto-cjk
 media-fonts/noto-emoji
 media-gfx/imv
-media-sound/playerctl
 media-video/ffmpeg
 media-video/pipewire
 net-im/discord
