@@ -1,0 +1,12 @@
+# /etc/fstab: static file system information.
+UUID=E2CB-34DB					/boot				vfat		defaults		0	2
+UUID=5fa31d41-8dfa-4001-86e3-abee01dd7e9c	swap				swap		sw			0	0
+UUID=fbe60b1c-4485-46cf-aa88-be0c15494cac	/				ext4		noatime			0	1
+proc						/proc				proc		nosuid,noexec,nodev	0	0
+sysfs						/sys				sysfs		nosuid,noexec,nodev	0	0
+devpts						/dev/pts			devpts		gid=5,mode=620		0	0
+tmpfs						/run				tmpfs		defaults		0	0
+devtmpfs					/dev				devtmpfs	mode=0755,nosuid	0	0
+tmpfs						/dev/shm			tmpfs		nosuid,nodev		0	0
+cgroup2						/sys/fs/cgroup			cgroup2		nosuid,noexec,nodev	0	0
+efivarfs					/sys/firmware/efi/efivars	efivarfs	nosuid,noexec,nodev	0	0
