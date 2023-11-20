@@ -7,12 +7,6 @@ if test -z "${XDG_RUNTIME_DIR}"; then
 	fi
 fi
 
-export PATH
-
-eval "$(zoxide init zsh)"
-
-alias cd="z"
-
 export HISTFILE=~/.zsh_history
 export HISTSIZE=20000
 export SAVEHIST=20000

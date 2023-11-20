@@ -1,0 +1,29 @@
+#!/bin/sh
+. /lib/lsb/init-functions
+
+case "${1}" in
+   start)
+      log_info_msg "Starting keyd..."
+      start_daemon /usr/bin/keyd &
+      evaluate_retval
+      ;;
+
+   stop)
+      log_info_msg "Stopping keyd..."
+      killproc /usr/bin/keyd
+      evaluate_retval
+      ;;
+
+   restart)
+      ${0} stop
+      sleep 1
+      ${0} start
+      ;;
+
+   *)
+      echo "Usage: ${0} {start|stop|restart}"
+      exit 1
+      ;;
+esac
+
+exit 0

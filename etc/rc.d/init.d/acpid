@@ -1,0 +1,58 @@
+#!/bin/sh
+########################################################################
+# Begin acpid
+#
+# Description : ACPI event daemon boot script
+#
+# Author      : Igor Živković <contact@igor-zivkovic.from.hr>
+#
+# Version     : BLFS 8.0
+#
+########################################################################
+
+### BEGIN INIT INFO
+# Provides:            acpid
+# Required-Start:
+# Should-Start:        $syslog
+# Required-Stop:
+# Should-Stop:         $syslog
+# Default-Start:       2 3 4 5
+# Default-Stop:        0 1 6
+# Short-Description:   Starts Advanced Configuration and Power Interface event daemon
+# X-LFS-Provided-By:   BLFS
+### END INIT INFO
+
+. /lib/lsb/init-functions
+
+case "$1" in
+   start)
+      log_info_msg "Starting ACPI event daemon..."
+      start_daemon /usr/sbin/acpid
+      sleep 1
+      pidofproc -p "/run/acpid.pid" > /dev/null
+      evaluate_retval
+      ;;
+
+   stop)
+      log_info_msg "Stopping ACPI event daemon..."
+      killproc -p "/run/acpid.pid" /usr/sbin/acpid
+      evaluate_retval
+      ;;
+
+   restart)
+      $0 stop
+      sleep 1
+      $0 start
+      ;;
+
+   status)
+      statusproc /usr/sbin/acpid
+      ;;
+
+   *)
+      echo "Usage: $0 {start|stop|restart|status}"
+      exit 1
+      ;;
+esac
+
+# End acpid

@@ -1,0 +1,29 @@
+#!/bin/sh
+. /lib/lsb/init-functions
+
+case "${1}" in
+   start)
+      log_info_msg "Starting wpa_supplicant..."
+      start_daemon /sbin/wpa_supplicant -B -i eth0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+      evaluate_retval
+      ;;
+
+   stop)
+      log_info_msg "Stopping wpa_supplicant..."
+      killproc /sbin/wpa_supplicant
+      evaluate_retval
+      ;;
+
+   restart)
+      ${0} stop
+      sleep 1
+      ${0} start
+      ;;
+
+   *)
+      echo "Usage: ${0} {start|stop|restart}"
+      exit 1
+      ;;
+esac
+
+exit 0

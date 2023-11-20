@@ -1,0 +1,33 @@
+#!/bin/sh
+. /lib/lsb/init-functions
+
+case "${1}" in
+   start)
+      log_info_msg "Starting tlp..."
+      if ! pidofproc daemon_name_as_reported_by_ps >/dev/null; then
+         /usr/sbin/tlp init start
+      fi
+      evaluate_retval
+      ;;
+
+   stop)
+      log_info_msg "Stopping..."
+      if pidofproc daemon_name_as_reported_by_ps >/dev/null; then
+         /usr/sbin/tlp init stop
+      fi
+      evaluate_retval
+      ;;
+
+   restart)
+      ${0} stop
+      sleep 1
+      ${0} start
+      ;;
+
+   *)
+      echo "Usage: ${0} {start|stop|restart}"
+      exit 1
+      ;;
+esac
+
+exit 0
