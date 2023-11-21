@@ -10,6 +10,7 @@ export PROMPT_EOL_MARK=""
 path+=(/opt/rustc/bin)
 path+=(.local/bin)
 path+=(/usr/local/bin)
+path+=(/usr/sbin)
 export PATH
 
 setopt HIST_IGNORE_ALL_DUPS
