@@ -22,8 +22,8 @@ bindsym $mod+q kill
 bindsym $mod+t exec       st
 bindsym $mod+f exec       firefox
 bindsym $mod+r exec       dmenu_run
-#bindsym $mod+p exec       grim -g "$(slurp)" - | wl-copy
-#bindsym $mod+Shift+p exec grim -g "$(slurp)"
+bindsym $mod+p exec       maim -s | xclip -selection clipboard -t image/png -i
+bindsym $mod+Shift+p exec maim --select ~/Pictures/$(date +%s).png
 bindsym $mod+Escape  exec slock
 
 # audio

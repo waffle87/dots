@@ -1,1 +1,2 @@
-### lfs dotfiles
+### gruvbox dotfiles
+![fetch](.img/fetch.png)
