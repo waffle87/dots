@@ -7,7 +7,9 @@ gaps inner 9
 # class          border  backgr. text    flag    child_border
 client.focused   #458588 #458588 #7C6f64 #458588 #458588
 client.unfocused #928374 #928374 #7C6f64 #928374 #928374
-client.urgent    #CC241D #CC241D #7C6f64 #CC241D #CC241D 
+client.urgent    #CC241D #CC241D #7C6f64 #CC241D #CC241D
+
+exec_always --no-startup-id ~/.config/scripts/polybar.sh
 
 set $mod Mod4
 set $left h
