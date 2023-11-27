@@ -21,6 +21,7 @@ append_path '/opt/rustc/bin'
 append_path '/usr/local/go/bin'
 append_path '/usr/local/sbin'
 append_path '/usr/local/bin'
+append_path '/usr/sbin'
 append_path '/usr/bin'
 
 export PATH

@@ -11,6 +11,7 @@ export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
 export BAT_THEME="gruvbox-dark"
 path+=(.local/bin)
+path+=(/usr/local/texlive/2023/bin/x86_64-linux)
 export PATH
 
 setopt HIST_IGNORE_ALL_DUPS
