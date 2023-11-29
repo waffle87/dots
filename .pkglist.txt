@@ -16,9 +16,10 @@ cmake
 dfu-programmer
 dfu-util
 discord
+dosfstools
 easyeffects
 efibootmgr
-exa
+eza
 fakeroot
 firefox
 fzf
@@ -29,9 +30,9 @@ gotop
 grim
 grub
 gtklock
+hyprland
+imagemagick
 imv
-kicad
-kicad-library
 lazygit
 libtool
 linux
@@ -42,7 +43,6 @@ lvm2
 make
 mako
 mesa
-minecraft-launcher
 neovim
 nerd-fonts-complete
 networkmanager
@@ -52,7 +52,6 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
-npm
 opendoas
 openssh
 otf-font-awesome
@@ -67,7 +66,7 @@ slurp
 spicetify-cli
 spotify
 steam
-sway
+swaybg
 tokei
 tree
 unzip
