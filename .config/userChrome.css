@@ -1,55 +1,46 @@
 :root {
-  --mff-bg: #1E1E2E;
-  --mff-icon-color: #DDB6F2;
-  --mff-nav-toolbar-padding: 8px;
-  --mff-sidebar-bg: var(--mff-bg);
-  --mff-sidebar-color: #DDB6F2;
-  --mff-tab-border-radius: 0px;
-  --mff-tab-color: #96CDFB;
-  --mff-tab-font-family: "mononoki Nerd Font";
-  --mff-tab-font-size: 11pt;
-  --mff-tab-font-weight: 400;
-  --mff-tab-height: 32px;
-  --mff-tab-pinned-bg: #1E1E2E;
-  --mff-tab-selected-bg: #302D41;
-  --mff-tab-soundplaying-bg: #1E1E2E;
-  --mff-urlbar-color: #96CDFB;
-  --mff-urlbar-focused-color: #DDB6F2;
-  --mff-urlbar-font-family: "Cantarell", serif;
-  --mff-urlbar-font-size: 12pt;
-  --mff-urlbar-font-weight: 700;
-  --mff-urlbar-results-color: #B5E8E0;
-  --mff-urlbar-results-font-family: "mononoki Nerd Font";
-  --mff-urlbar-results-font-size: 12pt;
-  --mff-urlbar-results-font-weight: 700;
-  --mff-urlbar-results-url-color: #96CDFB;
-  --autocomplete-popup-background: var(--mff-bg) !important;
-  --default-arrowpanel-background: var(--mff-bg) !important;
+  --bg: #1E1E2E;
+  --icon-color: #DDB6F2;
+  --nav-toolbar-padding: 8px;
+  --sidebar-bg: var(--bg);
+  --sidebar-color: #DDB6F2;
+  --tab-border-radius: 0px;
+  --tab-color: #96CDFB;
+  --tab-font-family: "Mononoki Nerd Font";
+  --tab-font-size: 11pt;
+  --tab-font-weight: 400;
+  --tab-height: 32px;
+  --tab-pinned-bg: #1E1E2E;
+  --tab-selected-bg: #302D41;
+  --tab-soundplaying-bg: #1E1E2E;
+  --urlbar-color: #96CDFB;
+  --urlbar-focused-color: #DDB6F2;
+  --urlbar-font-family: "Mononoki Nerd Font";
+  --urlbar-font-size: 12pt;
+  --urlbar-font-weight: 700;
+  --urlbar-results-color: #B5E8E0;
+  --urlbar-results-font-family: "Mononoki Nerd Font";
+  --urlbar-results-font-size: 12pt;
+  --urlbar-results-font-weight: 700;
+  --urlbar-results-url-color: #96CDFB;
+  --autocomplete-popup-background: var(--bg) !important;
+  --default-arrowpanel-background: var(--bg) !important;
   --default-arrowpanel-color: #fefefa !important;
-  --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
+  --lwt-toolbarbutton-icon-fill: var(--icon-color) !important;
   --panel-disabled-color: #f9f9fa80;
-  --toolbar-bgcolor: var(--mff-bg) !important;
+  --toolbar-bgcolor: var(--bg) !important;
   --urlbar-separator-color: transparent !important;
 }
 
-/*
-  _____ _   ___ ___
- |_   _/_\ | _ ) __|
-   | |/ _ \| _ \__ \
-   |_/_/ \_\___/___/
-
-*/
-
 .tab-background[selected="true"] {
-  background: var(--mff-tab-selected-bg) !important;
+  background: var(--tab-selected-bg) !important;
 }
 
 .tab-background:not[visuallyselected] {
-  background: var(--mff-tab-selected-bg) !important;
+  background: var(--tab-selected-bg) !important;
   opacity: 0.5 !important;
 }
 
-/* This positions the tabs under the navaigator container */
 #titlebar {
   -moz-box-ordinal-group: 3 !important;
 }
@@ -73,18 +64,16 @@
 }
 
 .tab-text {
-  font-family: var(--mff-tab-font-family);
-  font-weight: var(--mff-tab-font-weight);
-  font-size: var(--mff-tab-font-size) !important;
-  color: var(--mff-tab-color);
+  font-family: var(--tab-font-family);
+  font-weight: var(--tab-font-weight);
+  font-size: var(--tab-font-size) !important;
+  color: var(--tab-color);
 }
 
-/* Hide the favicon for tabs */
 hbox.tab-content .tab-icon-image {
   display: none !important;
 }
 
-/* Show the favicon for tabs that are pinned */
 hbox.tab-content[pinned=true] .tab-icon-image {
   display: initial !important;
 }
@@ -112,18 +101,18 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 .tabbrowser-tab {
-  border-radius: var(--mff-tab-border-radius) !important;
+  border-radius: var(--tab-border-radius) !important;
   border-width: 0;
-  height: var(--mff-tab-height) !important;
+  height: var(--tab-height) !important;
   margin-bottom: 4px !important;
   margin-inline-end: 4px !important;
   margin-top: 4px !important;
-  max-height: var(--mff-tab-height) !important;
-  min-height: var(--mff-tab-height) !important;
+  max-height: var(--tab-height) !important;
+  min-height: var(--tab-height) !important;
 }
 
 .tabbrowser-tab[soundplaying="true"] {
-  background-color: var(--mff-tab-soundplaying-bg) !important;
+  background-color: var(--tab-soundplaying-bg) !important;
 }
 
 #tabs-newtab-button {
@@ -135,35 +124,24 @@ hbox.tab-content[pinned=true] .tab-text {
   display: none !important;
 }
 
-/*
-  _____ ___   ___  _    ___   _   ___
-|_   _/ _ \ / _ \| |  | _ ) /_\ | _ \
-  | || (_) | (_) | |__| _ \/ _ \|   /
-  |_| \___/ \___/|____|___/_/  \_\_|_\
-*/
-
 .urlbar-icon > image {
-  fill: var(--mff-icon-color) !important;
-  color: var(--mff-icon-color) !important;
+  fill: var(--icon-color) !important;
+  color: var(--icon-color) !important;
 }
 
 .toolbarbutton-text {
-  color: var(--mff-icon-color)  !important;
+  color: var(--icon-color)  !important;
 }
 .urlbar-icon {
-  color: var(--mff-icon-color)  !important;
+  color: var(--icon-color)  !important;
 
-}
-
-.toolbarbutton-icon {
-/* filter: drop-shadow(0 0 0.75rem crimson); */
 }
 
 #urlbar-results {
-  font-family: var(--mff-urlbar-results-font-family);
-  font-weight: var(--mff-urlbar-results-font-weight);
-  font-size: var(--mff-urlbar-results-font-size) !important;
-  color: var(--mff-urlbar-results-color) !important;
+  font-family: var(--urlbar-results-font-family);
+  font-weight: var(--urlbar-results-font-weight);
+  font-size: var(--urlbar-results-font-size) !important;
+  color: var(--urlbar-results-color) !important;
 }
 
 .urlbarView-row[type="bookmark"] > span{
@@ -175,10 +153,10 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 .urlbarView-url, .search-panel-one-offs-container {
-  color: var(--mff-urlbar-results-url-color) !important;
-  font-family: var(--mff-urlbar-font-family);
-  font-weight: var(--mff-urlbar-results-font-weight);
-  font-size: var(--mff-urlbar-font-size) !important;
+  color: var(--urlbar-results-url-color) !important;
+  font-family: var(--urlbar-font-family);
+  font-weight: var(--urlbar-results-font-weight);
+  font-size: var(--urlbar-font-size) !important;
 }
 
 .urlbarView-favicon, .urlbarView-type-icon {
@@ -186,10 +164,10 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 #urlbar-input {
-  font-size: var(--mff-urlbar-font-size) !important;
-  color: var(--mff-urlbar-color) !important;
-  font-family: var(--mff-urlbar-font-family) !important;
-  font-weight: var(--mff-urlbar-font-weight)!important;
+  font-size: var(--urlbar-font-size) !important;
+  color: var(--urlbar-color) !important;
+  font-family: var(--urlbar-font-family) !important;
+  font-weight: var(--urlbar-font-weight)!important;
   text-align: center !important;
 }
 
@@ -223,16 +201,16 @@ toolbar {
 }
 
 #urlbar-background {
-  background-color: var(--mff-bg) !important;
+  background-color: var(--bg) !important;
   border: none !important;
 }
 
 .toolbar-items {
-  background-color: var(--mff-bg) !important;
+  background-color: var(--bg) !important;
 }
 
 #sidebar-search-container {
-  background-color: var(--mff-sidebar-bg) !important;
+  background-color: var(--sidebar-bg) !important;
 }
 
 box.panel-arrowbox {
@@ -257,7 +235,7 @@ image#star-button {
 }
 
 toolbar#nav-bar {
-  padding: var(--mff-nav-toolbar-padding) !important;
+  padding: var(--nav-toolbar-padding) !important;
 }
 
 toolbar#nav-bar {
@@ -267,11 +245,10 @@ toolbar#nav-bar {
 #urlbar {
   max-width: 70% !important;
   margin: 0 15% !important;
-  /* 	position: unset!important; */;
 }
 
 #urlbar-input:focus {
-  color: var(--mff-urlbar-focused-color) !important;
+  color: var(--urlbar-focused-color) !important;
 }
 
 
@@ -284,28 +261,16 @@ toolbarbutton {
   box-shadow: none !important;
 }
 
-
-/*
-  ___ ___ ___  ___ ___   _   ___
- / __|_ _|   \| __| _ ) /_\ | _ \
- \__ \| || |) | _|| _ \/ _ \|   /
- |___/___|___/|___|___/_/ \_\_|_\
-*/
-
 .close-icon, .urlbar-icon {
-  fill: var(--mff-icon-color) !important;
+  fill: var(--icon-color) !important;
 }
 
 .sidebar-placesTree {
-  color: var(--mff-sidebar-color) !important;
-}
-
-#sidebar-switcher-target {
-/*   color: white !important; */
+  color: var(--sidebar-color) !important;
 }
 
 #sidebar-box {
-  --sidebar-background-color: var(--mff-sidebar-bg) !important;
+  --sidebar-background-color: var(--sidebar-bg) !important;
 }
 
 splitter#sidebar-splitter {
@@ -320,14 +285,6 @@ splitter#sidebar-splitter {
 image#sidebar-icon {
   display: none;
 }
-
-
-/*
-    _   ___ ___  _____      _____  _   _  _ ___ _
-   /_\ | _ \ _ \/ _ \ \    / / _ \/_\ | \| | __| |
-  / _ \|   /   / (_) \ \/\/ /|  _/ _ \| .` | _|| |__
- /_/ \_\_|_\_|_\\___/ \_/\_/ |_|/_/ \_\_|\_|___|____|
- */
 
 .panel-arrowcontent {
   padding: 0px !important;

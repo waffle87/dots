@@ -19,11 +19,6 @@ output * bg ~/.img/wallpaper/waves_mono.png fill
 exec /usr/bin/mako
 exec /usr/bin/gentoo-pipewire-launcher &
 
-input type:keyboard {
-  xkb_layout us,ru
-  xkb_options grp:alts_toggle
-}
-
 input "1452:588:bcm5974" {
   dwt enabled
   tap enabled
@@ -45,7 +40,7 @@ exec_always {
 # applications
 
 bindsym $mod+q kill
-bindsym $mod+t exec       alacritty
+bindsym $mod+t exec       st
 bindsym $mod+f exec       firefox-bin
 bindsym $mod+r exec       wofi
 bindsym $mod+p exec       grim -g "$(slurp)" - | wl-copy

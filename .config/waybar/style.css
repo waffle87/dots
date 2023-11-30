@@ -1,7 +1,7 @@
 @import url("../colours.css");
 * {
   border-radius: 0;
-  font-family: "mononoki Nerd Font", "Font Awesome 6 Free";
+  font-family: "Mononoki Nerd Font";
   font-size: 11pt;
   min-height: 0;
 }
