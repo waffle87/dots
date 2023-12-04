@@ -3,11 +3,12 @@
 default_border pixel 3
 default_floating_border pixel 3
 gaps inner 9
+font pango:JetBrainsMono Nerd Font 8
 
 # class          border  backgr. text    flag    child_border
-client.focused   #458588 #458588 #7C6f64 #458588 #458588
-client.unfocused #928374 #928374 #7C6f64 #928374 #928374
-client.urgent    #CC241D #CC241D #7C6f64 #CC241D #CC241D
+client.focused   #458588 #458588 #3C3836 #458588 #458588
+client.unfocused #928374 #928374 #3C3836 #928374 #928374
+client.urgent    #CC241D #CC241D #3C3836 #CC241D #CC241D
 
 exec_always --no-startup-id ~/.config/scripts/polybar.sh
 

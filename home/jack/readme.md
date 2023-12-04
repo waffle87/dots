@@ -6,3 +6,5 @@
 ![gotop](.img/gotop.png)
 #### dmenu
 ![dmenu](.img/dmenu.png)
+#### zathura
+![zathura](.img/zathura.png)

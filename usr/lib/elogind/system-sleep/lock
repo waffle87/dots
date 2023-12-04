@@ -1,0 +1,6 @@
+#!/bin/sh
+case $1/$2 in
+	pre/*)
+		/usr/local/bin/slock
+		;;
+esac
