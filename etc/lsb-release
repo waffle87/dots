@@ -1,0 +1,4 @@
+DISTRIB_ID="Linux From Scratch"
+DISTRIB_RELEASE="12.0"
+DISTRIB_CODENAME="kepler"
+DISTRIB_DESCRIPTION="Linux From Scratch"
