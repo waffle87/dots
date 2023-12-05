@@ -42,12 +42,12 @@
     }
   },
   "network": {
-    "format-wifi": " {ipaddr}/{cidr}",
+    "format-wifi": "  {ipaddr}/{cidr}",
     "format-ethernet": "  neptune",
-    "format-disconnected": "  Disconnected",
-    "format-alt": "  {essid}",
+    "format-disconnected": "󱚼  Disconnected",
+    "format-alt": " {essid}",
     "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -75,7 +75,7 @@
     "on-click": "~/.config/scripts/power.sh"
   },
   "custom/switch-output": {
-    "format": "",
+    "format": "",
     "on-click": "~/.config/scripts/output.sh"
   },
   "custom/media": {

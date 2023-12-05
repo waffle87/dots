@@ -39,8 +39,8 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 # Alias
-alias l="eza -la"
-alias ls="eza"
+alias l="eza --icons -la"
+alias ls="eza --icons"
 alias cat="bat --paging=never"
 alias cd="z"
 alias sudo="doas"

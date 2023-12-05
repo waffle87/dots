@@ -1,4 +1,4 @@
-set font                        "JetBrainsMono 10"
+set font                        "JetBrainsMono Nerd Font 10"
 set default-bg                  "#002B36"
 set default-fg                  "#93A1A1"
 set statusbar-fg                "#586E75"

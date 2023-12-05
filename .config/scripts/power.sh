@@ -1,2 +1,2 @@
 #!/bin/sh
-gtklock && systemctl suspend
+systemctl suspend && gtklock
