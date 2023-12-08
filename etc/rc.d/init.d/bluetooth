@@ -1,0 +1,56 @@
+#!/bin/sh
+. /lib/lsb/init-functions
+
+if [ -f "/etc/sysconfig/bluetooth" ]; then
+   . /etc/sysconfig/bluetooth
+fi
+
+BLUETOOTH=/usr/sbin/bluetoothd
+SDPTOOL=/usr/bin/sdptool
+HCIATTACH=/usr/bin/hciattach
+RFCOMM=/usr/bin/rfcomm
+
+UART_CONF=/etc/bluetooth/uart.conf
+RFCOMM_CONF=/etc/bluetooth/rfcomm.conf
+
+case "${1}" in
+   start)
+      log_info_msg "Starting Bluetooth daemon bluetoothd..."
+      pidlist=`pidofproc $BLUETOOTH`
+
+      if [  "${?}" = "0" ]; then
+        log_info_msg2 " Already running"
+        log_success_msg2
+        exit 0;
+      fi
+
+      # Start as background process and assume OK
+      $BLUETOOTH &
+      log_success_msg2
+
+      ;;
+
+   stop)
+
+      log_info_msg "Stopping Bluetooth daemon bluetoothd..."
+      killproc $BLUETOOTH
+      evaluate_retval
+      ;;
+
+   restart)
+      ${0} stop
+      sleep 1
+      ${0} start
+      ;;
+
+   status)
+      statusproc $BLUETOOTH
+      ;;
+
+   *)
+      echo "Usage: ${0} {start|stop|restart|status}"
+      exit 1
+      ;;
+esac
+
+exit 0
