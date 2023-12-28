@@ -17,14 +17,10 @@ export HISTSIZE=20000
 export SAVEHIST=20000
 export LANG=en_GB.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export GPG_TTY=$TTY
-export PROMPT_EOL_MARK=""
-export BAT_THEME="base16"
-export EDITOR=nvim
-export MOZ_ENABLE_WAYLAND=1
+export BAT_THEME="Nord"
+export GPG_TTY=$(tty)
 
-typeset -U PATH path
-path=("$HOME/.local/bin" "$path[@]")
+path+=("$HOME/.local/bin" "$path[@]")
 path+=('/usr/local/texlive/2023/bin/x86_64-linux')
 export PATH
 

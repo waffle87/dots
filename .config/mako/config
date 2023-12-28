@@ -1,11 +1,8 @@
-border-size=2
-margin=0,30,25
-border-radius=15
-padding=15,10,15
+margin=20
+border-radius=7
 max-icon-size=48
-text-color=#f5e0dc
-icon-location=right
-border-color=#eba0ac
+text-color=#D8DEE9
+border-color=#88c0d0
 default-timeout=10000
 font=mononoki Nerd Font
-background-color=#1e1e2e
+background-color=#3b4252

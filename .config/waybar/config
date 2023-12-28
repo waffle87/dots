@@ -1,97 +1,62 @@
 {
-  "position": "top",
-  "modules-left": ["clock", "custom/date", "custom/weather", "memory"],
-  "modules-center": ["sway/workspaces"],
-  "modules-right": ["custom/wifi", "temperature", "pulseaudio", "battery"],
-  
-  "sway/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
-    "format": "{icon}",
-    "persistent_workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": []
+    "battery": {
+        "format": "{icon}  {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-charging": "\uf0e7 {capacity}%",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
+        "states": {
+            "critical": 10,
+            "warning": 20
+        }
     },
-    "format-icons": {
-      "default": "",
-      "focused": "",
+    "clock": {
+        "format": "\uf017 {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/date": {
+        "exec": "~/.config/scripts/date.sh",
+        "format": "\uf073  {}",
+        "interval": 60
+    },
+    "custom/wifi": {
+        "exec": "~/.config/scripts/network.sh",
+        "format": "\uf1eb  {}",
+        "interval": 10
+    },
+    "modules-center": ["sway/workspaces"],
+    "modules-left": ["custom/wifi", "battery", "temperature"],
+    "modules-right": ["pulseaudio", "custom/date", "clock"],
+    "position": "top",
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": {
+            "default": ["\uf027", "\uf028"],
+            "headphone": "\uf025"
+        },
+        "format-muted": "\uf026 muted",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+    "sway/workspaces": {
+        "all-outputs": true,
+        "disable-scroll": true,
+        "format": "{icon}",
+        "format-icons": {
+            "default": "\uf068"
+        },
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": []
+        }
+    },
+    "temperature": {
+        "critical-threshold": 90,
+        "format": "\uf2c8 {temperatureC}\u00b0C",
+        "format-critical": "\uf071  {temperatureC}\u00b0C",
+        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input",
+        "interval": "5"
     }
-  },
-  "clock": {
-    "format": " {:%H:%M}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-      "mode": "year",
-      "mode-mon-col": 3,
-      "weeks-pos": "right",
-      "on-scroll": 1,
-      "on-click-right": "mode",
-      "format": {
-        "months": "<span color='#f5e0dc'><b>{}</b></span>",
-        "days": "<span color='#cba6f7'><b>{}</b></span>",
-        "weeks": "<span color='#94e2d5'><b>W{}</b></span>",
-        "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
-        "today": "<span color='#f38ba8'><b><u>{}</u></b></span>"
-      }
-    },
-    "actions":  {
-      "on-click-right": "mode",
-      "on-click-forward": "tz_up",
-      "on-click-backward": "tz_down",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    }
-  },
-  "custom/date": {
-    "format": "  {}",
-    "interval": 60,
-    "exec": "~/.config/scripts/date.sh"
-  },
-  "custom/weather": { // https://github.com/bjesus/wttrbar
-    "format": "{}°C",
-    "tooltip": true,
-    "interval": 1800,
-    "exec": "wttrbar --hide-conditions",
-    "return-type": "json"
-  },
-  "memory": {
-    "interval": 30,
-    "format": " {}%"
-  },
-  "battery": {
-    "states": {
-      "warning": 20,
-      "critical": 10
-    },
-    "format": "{icon}  {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
-  },
-  "custom/wifi": {
-    "format": "  {}",
-    "interval": 10,
-    "exec": "~/.config/scripts/network.sh"
-  },
-  "pulseaudio": {
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "format": "{icon} {volume}%",
-    "format-muted": " muted",
-      "format-icons": {
-        "headphone": "",
-        "default": ["", ""]
-      },
-  },
-  "temperature": {
-    "interval": "5",
-    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input",
-    "critical-threshold": 90,
-    "format-critical": " {temperatureC}°C",
-    "format": " {temperatureC}°C"
-  }
 }

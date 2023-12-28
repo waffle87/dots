@@ -8,7 +8,8 @@ M.ui = {
 	tabufline = {
 		lazyload = true,
 	},
-	theme = "catppuccin",
+	theme = "onenord",
+  theme_toggle = "onenord_light",
 }
 
 M.plugins = "custom.plugins"

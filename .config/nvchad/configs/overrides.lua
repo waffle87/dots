@@ -18,20 +18,14 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua stuff
     "lua-language-server",
     "stylua",
 
-    -- web dev stuff
-    "css-lsp",
-
-    -- c/cpp stuff
     "clangd",
     "clang-format",
   },
 }
 
--- git support in nvimtree
 M.nvimtree = {
   git = {
     enable = true,

@@ -1,0 +1,45 @@
+# general settings
+ title-text: ""
+ title-color: "#80C0D0"
+ message-font: "DejaVu Sans Regular 14"
+ message-color: "#BF616A"
+ message-bg-color: "#434C5E"
+ desktop-image: "background.png"
+ desktop-color: "#434C5E"
+ terminal-font: "DejaVu Sans Regular 14"
+
+
+# boot menu
++ boot_menu {
+  left = 28%
+  width = 50%
+  top = 22%
+  height = 45%	
+  item_font = "DroidLogo Regular 17"
+  item_color = "#BF616A"
+  selected_item_font = "DroidLogo Regular 17"
+  selected_item_color = "#81A1C1"
+  icon_width = 16
+  icon_height = 16
+  item_height = 33
+  item_padding = 20
+  item_icon_space = 5
+  item_spacing = 5
+  menu_pixmap_style = "boot_menu2_*.png"
+  selected_item_pixmap_style = "highlight_*.png"
+}
+
+# Show progress
++ progress_bar {
+  id = "__timeout__"
+  left = 0%
+  width = 100%
+  top = 99%
+  height = 31
+  show_text = false
+  text = ""
+  fg_color = "#A3BE8C"
+  bg_color = "#2E3440"
+  border_color = "#2E3440"
+  highlight_style = "progress_highlight_*.png"
+}

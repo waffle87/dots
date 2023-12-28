@@ -65,4 +65,3 @@ sys-process/gotop
 www-client/firefox-bin
 x11-drivers/xf86-video-intel
 x11-libs/gtk+
-x11-terms/alacritty

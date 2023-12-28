@@ -1,0 +1,39 @@
+{
+  "version": "1.12.0",
+  "squares": [],
+  "bool": {
+    "borders": true,
+    "alwaysopen": false,
+    "background_image": false,
+    "hide_gear_button": true
+  },
+  "style": {
+    "square_size": "175px",
+    "square_spacing": "6px",
+    "heading_font": "JetBrainsMono Nerd Font",
+    "link_font": "JetBrainsMono Nerd Font",
+    "heading_font_size": "14px",
+    "link_font_size": "14px",
+    "link_spacing": "undefined",
+    "background": "#2E3440",
+    "foreground": "#E5E9F0 ",
+    "heading_color": "#D08770",
+    "link_color": "#81A1C1",
+    "border_color": "#BF616A",
+    "border_width_normal": "0",
+    "border_width_hovered": "3px 0",
+    "border_radius": "0",
+    "square_shadow": "0",
+    "focus_color": "#D08770",
+    "focus_bg_color": "#3B4252",
+    "search_color": "#E5E9F0",
+    "search_bg_color": "#3B4252"
+  },
+  "ext": {
+    "images": [
+      "https://i.imgur.com/xeND8dJ.png"
+    ],
+    "size": "cover",
+    "filter": ""
+  }
+}

@@ -1,4 +1,4 @@
-### catppuccin dotfiles
+### nord dotfiles
 ![fetch](.img/fetch.png)
 #### nvim
 ![nvim](.img/nvim.png)

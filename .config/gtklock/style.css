@@ -1,9 +1,9 @@
 @import url("../colours.css");
 window {
-  background-image: url("/home/jack/.img/wallpaper/buildings_blur.png");
+  background-image: url("/home/jack/.img/wallpaper/sand_dunes_blur.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "mononoki Nerd Font";
-  color: @flamingo;
+  color: @base09;
 }

@@ -4,9 +4,9 @@ default_floating_border pixel 3
 gaps inner 9
 
 # class          border  backgr. text    flag    child_border
-client.focused   #ABE9B3 #ABE9B3 #1e1e2e #ABE9B3 #ABE9B3
-client.unfocused #988BA2 #988BA2 #1e1e2e #988BA2 #988BA2
-client.urgent    #F28FAD #F28FAD #1e1e2e #F28FAD #F28FAD 
+client.focused   #88C0D0 #88C0D0 #E5E9F0 #88C0D0 #88C0D0
+client.unfocused #3B4252 #3B4252 #E5E9F0 #3B4252 #3B4252
+client.urgent    #BF616A #BF616A #E5E9F0 #BF616A #BF616A 
 
 set $mod Mod4
 set $left h
@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 
-output * bg ~/.img/wallpaper/waves_mono.png fill
+output * bg /home/jack/.img/wallpaper/swirl.png fill
 
 exec /usr/bin/mako
 exec /usr/bin/gentoo-pipewire-launcher &
@@ -30,10 +30,10 @@ bindswitch lid:off exec gtklock -d
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-  gsettings set $gnome-schema gtk-theme 'catppuccin'
-  gsettings set $gnome-schema icon-theme 'catppuccin-icons'
-  gsettings set $gnome-schema cursor-theme 'sunity-cursors'
-  gsettings set $gnome-schema font 'mononoki Nerd Font 11'
+  gsettings set $gnome-schema gtk-theme 'nordic'
+# gsettings set $gnome-schema icon-theme 'nord_icons'
+  gsettings set $gnome-schema cursor-theme 'nord_cursors_light'
+  gsettings set $gnome-schema font 'JetBrainsMono Nerd Font'
 }
 
 ### key bindings 
