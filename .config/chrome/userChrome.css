@@ -1,7 +1,7 @@
 @import url("../colours.css");
 
 :root {
-  --bg: @base01;
+  --bg: @base00;
   --icon-color: @base05;
   --nav-toolbar-padding: 8px;
   --sidebar-bg: var(--bg);
