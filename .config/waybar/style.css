@@ -53,4 +53,4 @@ tooltip * {
 #pulseaudio.muted     { background-color: @base0B; }
 #battery              { background-color: @base0F; }
 #battery.warning      { color: @base0D; }
-#battery.critical     { color: @base0D; }
+#battery.critical     { color: @base0B; }
