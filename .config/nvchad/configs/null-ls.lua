@@ -21,6 +21,9 @@ local sources = {
 
 	-- latex
 	b.formatting.latexindent,
+
+  -- bash
+  b.formatting.beautysh,
 }
 
 null_ls.setup({
