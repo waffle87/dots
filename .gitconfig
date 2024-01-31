@@ -1,0 +1,12 @@
+[user]
+	name = jack
+	signingkey = 38FE2D9C474B1286
+	email = 0x6A73@pm.me
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+[core]
+	editor = nvim
+[advice]
+	skippedCherryPicks = false

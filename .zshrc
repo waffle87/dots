@@ -39,7 +39,7 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 # Alias
-alias l="eza --icons -la"
+alias l="eza -la --icons"
 alias ls="eza --icons"
 alias cat="bat --paging=never"
 alias cd="z"
