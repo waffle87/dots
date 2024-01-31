@@ -1,0 +1,17 @@
+[user]
+	name = Jack Sangdahl
+	email = 0x6A73@pm.me
+	signingkey = FC53C827D09C7050
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+[advice]
+	skippedCherryPicks = false
+[pager]
+	branch = false
+[pull]
+	ff = only
+	rebase = merges
