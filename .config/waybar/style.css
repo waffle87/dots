@@ -2,16 +2,16 @@
 
 * {
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 14px;
+  font-size: 13px;
   min-height: 0;
   margin-bottom: 2px;
 }
 
 window#waybar { background: transparent; }
 
-#custom-power, #custom-switch-output, #memory, #cpu, #temperature, #custom-media, #network, #pulseaudio, #custom-date, #clock {
+#custom-power, #custom-switch-output, #memory, #cpu, #temperature, #custom-media, #workspaces, #network, #pulseaudio, #custom-date, #clock {
   background: @base02;
-  padding: 8px;
+  padding: 0px 8px 0px 8px;
 }
 
 tooltip {
@@ -40,6 +40,20 @@ tooltip {
 #custom-media {
   border-radius: 8px;
   color: @base3;
+}
+
+#workspaces { border-radius: 8px; }
+
+#workspaces button {
+  color: @base01;
+}
+
+#workspaces button.active {
+  color: @base3;
+}
+
+#workspaces button.urgent {
+  color: @red;
 }
 
 #network {

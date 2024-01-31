@@ -58,6 +58,16 @@ local plugins = {
     end,
     lazy = false,
   },
+
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    ft = { "markdown" },
+    config = function()
+      require("custom.configs.markdown-preview")
+    end,
+  },
 }
 
 return plugins

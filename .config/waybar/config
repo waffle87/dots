@@ -1,16 +1,10 @@
 {
   "layer": "top",
   "position": "bottom",
-  "output": "DP-1",
+  "output": "DP-3",
   "modules-left": ["custom/power", "custom/switch-output", "memory", "cpu", "temperature"],
-  "modules-center": ["custom/media"],
+  "modules-center": ["hyprland/workspaces"],
   "modules-right": ["network", "pulseaudio", "custom/date", "clock"],
-  "sway/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "default": "",
-    }
-  },
   "custom/date": {
     "format": " {}",
     "interval": 60,
@@ -87,5 +81,15 @@
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "exec": "~/.config/scripts/mediaplayer.py 2> /dev/null",
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
   }
 }
