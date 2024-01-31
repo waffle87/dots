@@ -3,7 +3,15 @@
 .cmake
 .dbus
 .gnupg
-.local
+.local/bin
+.local/lib
+.local/state
+.local/share/man
+.local/share/nvim
+.local/share/recently-used.xbel
+.local/share/yadm
+.local/share/zathura
+.local/share/zoxide
 .mozilla
 .npm*
 .pki
