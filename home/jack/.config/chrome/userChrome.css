@@ -6,7 +6,7 @@
   --sidebar-color: #ebdbb2;
   --tab-border-radius: 0px;
   --tab-color: #ebdbb2;
-  --tab-font-family: "Mononoki Nerd Font", sans;
+  --tab-font-family: "Mononoki Nerd Font";
   --tab-font-size: 11pt;
   --tab-font-weight: 400;
   --tab-height: 32px;
@@ -15,11 +15,11 @@
   --tab-soundplaying-bg: #282828;
   --urlbar-color: #83a598;
   --urlbar-focused-color: #ebdbb2;
-  --urlbar-font-family: "Cantarell", serif;
+  --urlbar-font-family: "Mononoki Nerd Font";
   --urlbar-font-size: 12pt;
   --urlbar-font-weight: 700;
   --urlbar-results-color: #ebdbb2;
-  --urlbar-results-font-family: "mononoki Nerd Font", serif;
+  --urlbar-results-font-family: "Mononoki Nerd Font";
   --urlbar-results-font-size: 12pt;
   --urlbar-results-font-weight: 700;
   --urlbar-results-url-color: #d3869b;
