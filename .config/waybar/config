@@ -1,7 +1,6 @@
 {
     "battery": {
         "format": "{icon}  {capacity}%",
-        "format-alt": "{time} {icon}",
         "format-charging": "\uf0e7 {capacity}%",
         "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
         "states": {
@@ -11,7 +10,19 @@
     },
     "clock": {
         "format": "\uf017 {:%H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "format": {
+                "months": "<span color='#E5E9F0'><b>{}</b></span>",
+                "days": "<span color='#D8DEE9'><b>{}</b></span>",
+                "weeks": "<span color='#EBCB8B'><b>W{}</b></span>",
+                "weekdays": "<span color='#A3BE8C'><b>{}</b></span>",
+                "today": "<span color='#BF616A'><b><u>{}</u></b></span>"
+            }
+        }
     },
     "custom/date": {
         "exec": "~/.config/scripts/date.sh",
