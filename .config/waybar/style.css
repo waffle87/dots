@@ -29,7 +29,7 @@ tooltip * {
   color: @white1;
 }
 
-#custom-wifi,
+#network,
 #battery,
 #temperature,
 #workspaces,
@@ -46,7 +46,7 @@ tooltip * {
 #workspaces           { background-color: @base01; }
 #clock                { background-color: @base0E; }
 #custom-date          { background-color: @base0D; }
-#custom-wifi          { background-color: @base0A; }
+#network              { background-color: @base0A; }
 #temperature          { background-color: @base07; }
 #temperature.critical { background-color: @base0B; }
 #pulseaudio           { background-color: @base0C; }

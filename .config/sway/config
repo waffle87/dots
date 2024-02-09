@@ -28,14 +28,6 @@ input "1452:588:bcm5974" {
 
 bindswitch lid:off exec gtklock -d
 
-set $gnome-schema org.gnome.desktop.interface
-exec_always {
-  gsettings set $gnome-schema gtk-theme 'nordic'
-# gsettings set $gnome-schema icon-theme 'nord_icons'
-  gsettings set $gnome-schema cursor-theme 'nord_cursors_light'
-  gsettings set $gnome-schema font 'JetBrainsMono Nerd Font'
-}
-
 ### key bindings 
 # applications
 
@@ -64,7 +56,7 @@ bindsym XF86KbdBrightnessUp   exec brightnessctl -q --device='smc::kbd_backlight
 # reload configuration file
 bindsym $mod+Shift+c reload
 # exit wayland session
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+e exec swaynag -m 'confirm exit?' -b 'exit' 'swaymsg exit'
 
 # change focused container 
 bindsym $mod+$left  focus left

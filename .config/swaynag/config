@@ -1,0 +1,10 @@
+edge=bottom
+font=JetBrainsMono Nerd Font 10
+
+[error]
+background=3B4252
+border=BF616A
+button-background=3B4252
+text=BF616A
+button-text=BF616A
+border-bottom-size=0

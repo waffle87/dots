@@ -26,16 +26,15 @@
     },
     "custom/date": {
         "exec": "~/.config/scripts/date.sh",
-        "format": "\uf073  {}",
-        "interval": 60
+        "format": "\uf073  {}"
     },
-    "custom/wifi": {
-        "exec": "~/.config/scripts/network.sh",
-        "format": "\uf1eb  {}",
-        "interval": 10
+    "network": {
+        "format-wifi": "\uf1eb  {ipaddr}",
+        "format-disconnected": "\uf52f disconnected",
+        "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}",
     },
     "modules-center": ["sway/workspaces"],
-    "modules-left": ["custom/wifi", "battery", "temperature"],
+    "modules-left": ["network", "battery", "temperature"],
     "modules-right": ["pulseaudio", "custom/date", "clock"],
     "position": "top",
     "pulseaudio": {
