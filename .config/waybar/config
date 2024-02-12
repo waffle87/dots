@@ -1,95 +1,79 @@
 {
-  "layer": "top",
-  "position": "bottom",
-  "output": "DP-3",
-  "modules-left": ["custom/power", "custom/switch-output", "memory", "cpu", "temperature"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["network", "pulseaudio", "custom/date", "clock"],
-  "custom/date": {
-    "format": " {}",
-    "interval": 60,
-    "exec": "~/.config/scripts/date.sh"
-  },
-  "clock": {
-    "format": " {:%H:%M}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-      "mode": "year",
-      "mode-mon-col": 3,
-      "weeks-pos": "right",
-      "on-scroll": 1,
-      "on-click-right": "mode",
-      "format": {
-        "months": "<span color='#002b36'><b>{}</b></span>",
-        "days": "<span color='#073642'><b>{}</b></span>",
-        "weeks": "<span color='#b58900'><b>W{}</b></span>",
-        "weekdays": "<span color='#859900'><b>{}</b></span>",
-        "today": "<span color='#dc322f'><b><u>{}</u></b></span>"
-      }
+    "clock": {
+        "calendar": {
+            "format": {
+                "days": "<span color='#073642'><b>{}</b></span>",
+                "months": "<span color='#002b36'><b>{}</b></span>",
+                "today": "<span color='#dc322f'><b><u>{}</u></b></span>",
+                "weekdays": "<span color='#859900'><b>{}</b></span>",
+                "weeks": "<span color='#b58900'><b>W{}</b></span>"
+            },
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right"
+        },
+        "format": "\uf017 {:%H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
     },
-    "actions":  {
-      "on-click-right": "mode",
-      "on-click-forward": "tz_up",
-      "on-click-backward": "tz_down",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
+    "cpu": {
+        "format": "\uf2db {usage}%"
+    },
+    "custom/date": {
+        "exec": "~/.config/scripts/date.sh",
+        "format": "\uf133 {}",
+        "interval": 60
+    },
+    "custom/media": {
+        "escape": true,
+        "exec": "~/.config/scripts/mediaplayer.py 2> /dev/null",
+        "format": "{icon} {}",
+        "max-length": 40,
+        "on-click": "playerctl play-pause",
+        "on-scroll-down": "playerctl previous",
+        "on-scroll-up": "playerctl next",
+        "return-type": "json"
+    },
+    "custom/power": {
+        "format": "\uf011",
+        "on-click": "~/.config/scripts/power.sh"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "\uf192",
+            "default": "\uf111"
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+    "layer": "top",
+    "memory": {
+        "format": "\uf1c0 {}%"
+    },
+    "modules-center": ["hyprland/workspaces"],
+    "modules-left": ["custom/power", "memory", "cpu", "temperature", "network"],
+    "modules-right": ["custom/media", "pulseaudio", "custom/date", "clock"],
+    "network": {
+        "format-disconnected": "\udb85\udebc  disconnected",
+        "format-wifi": "\uf1eb  {ipaddr}/{cidr}",
+        "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
+    },
+    "output": "DP-3",
+    "position": "bottom",
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": {
+            "default": ["\uf027", "\uf028"],
+            "headphone": "\uf025"
+        },
+        "format-muted": "\uf026 muted",
+        "on-click": "~/.config/scripts/output.sh"
+    },
+    "temperature": {
+        "critical-threshold": 85,
+        "format": "\uf2c9 {temperatureC}\u00b0C",
+        "format-critical": "\uf071 {temperatureC}\u00b0C",
+        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input"
     }
-  },
-  "network": {
-    "format-wifi": "  {ipaddr}/{cidr}",
-    "format-ethernet": "  neptune",
-    "format-disconnected": "󱚼  Disconnected",
-    "format-alt": " {essid}",
-    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n {bandwidthUpBits}  {bandwidthDownBits}"
-  },
-  "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": " muted",
-    "format-icons": {
-      "headphone": "",
-      "default": ["", ""]
-    },
-    "on-click": "pactl set-sink-mute 0 toggle"
-  },
-  "memory": {
-    "format": " {}%"
-  },
-  "temperature": {
-    "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
-    "critical-threshold": 85,
-    "format-critical": " {temperatureC}°C",
-    "format": " {temperatureC}°C",
-  },
-  "cpu": {
-    "format": " {usage}%"
-  },
-  "custom/power": {
-    "format": "",
-    "on-click": "~/.config/scripts/power.sh"
-  },
-  "custom/switch-output": {
-    "format": "",
-    "on-click": "~/.config/scripts/output.sh"
-  },
-  "custom/media": {
-    "format": "{icon} {}",
-    "escape": true,
-    "return-type": "json",
-    "max-length": 40,
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous",
-    "exec": "~/.config/scripts/mediaplayer.py 2> /dev/null",
-  },
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "active": "",
-      "default": ""
-    },
-    "persistent-workspaces": {
-      "*": 5
-    }
-  }
 }
