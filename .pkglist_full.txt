@@ -48,7 +48,6 @@ yadm-3.2.2
 awk-4
 bc-0
 bzip2-1
-cpio-0
 gzip-1
 lex-0-r1
 ninja-1
@@ -59,9 +58,8 @@ yacc-1-r2
 /var/db/pkg/app-arch:
 brotli-1.1.0
 bzip2-1.0.8-r5
-cpio-2.15
 gzip-1.13
-libarchive-3.7.2
+libarchive-3.7.2-r2
 ncompress-5.0-r1
 tar-1.35
 unzip-6.0_p27-r1
@@ -71,7 +69,7 @@ zstd-1.5.5-r1
 
 /var/db/pkg/app-crypt:
 gcr-3.41.1-r2
-gnupg-2.4.4
+gnupg-2.4.4-r1
 gpgme-1.23.2
 libb2-0.98.1-r3
 libmd-1.1.0
@@ -89,6 +87,7 @@ eselect-iptables-20220320
 eselect-lib-bin-symlink-0.1.1-r1
 eselect-lua-4-r1
 eselect-mpg123-0.1-r1
+eselect-notify-send-0.1
 eselect-pinentry-0.7.3
 eselect-repository-14
 eselect-rust-20210703
@@ -105,10 +104,10 @@ mime-types-2.1.54
 pax-utils-1.3.7
 
 /var/db/pkg/app-portage:
-elt-patches-20240116
+elt-patches-20240213
 gemato-20.5
 gentoolkit-0.6.5
-getuto-1.10
+getuto-1.10.1
 portage-utils-0.96.1
 
 /var/db/pkg/app-shells:
@@ -135,23 +134,13 @@ mandoc-1.14.6
 manpager-1
 mupdf-1.23.7-r1
 ps2pkm-1.8_p20210325-r1
-scdoc-1.11.2-r1
+scdoc-1.11.3
 sgml-common-0.6.3-r7
 texlive-core-2021-r7
 tree-2.1.1
 xmlto-0.0.28-r11
 zathura-0.5.4
 zathura-pdf-mupdf-0.4.1
-
-/var/db/pkg/cross-arm-none-eabi:
-binutils-2.38-r2
-gcc-11.4.9999
-newlib-4.2.0.20211231
-
-/var/db/pkg/cross-avr:
-avr-libc-2.1.0
-binutils-2.38-r2
-gcc-8.5.0-r1
 
 /var/db/pkg/dev-build:
 autoconf-2.13-r8
@@ -164,7 +153,7 @@ cmake-3.28.3
 gtk-doc-am-1.33.2
 libtool-2.4.7-r2
 make-4.4.1-r1
-meson-1.3.1-r1
+meson-1.3.2
 meson-format-array-0
 ninja-1.11.1-r5
 
@@ -182,18 +171,18 @@ sqlite-3.45.1-r1
 gdb-14.1-r1
 
 /var/db/pkg/dev-lang:
-go-1.21.6
+go-1.22.0
 lua-5.1.5-r200
 lua-5.4.6
 luajit-2.1.0_beta3_p20220613
 mujs-1.3.4
 nasm-2.16.01-r1
 perl-5.38.2-r1
-python-3.11.8
-python-3.12.2
+python-3.11.8_p1
+python-3.12.2_p1
 python-exec-2.4.10
 python-exec-conf-2.4.6
-rust-bin-1.74.1
+rust-bin-1.75.0
 spidermonkey-115.7.0
 tcl-8.6.13-r1
 vala-0.56.14
@@ -204,7 +193,7 @@ date-3.0.0
 dbus-glib-0.112
 elfutils-0.190
 ell-0.62
-expat-2.5.0
+expat-2.6.0
 fribidi-1.0.13
 girara-0.4.2
 glib-2.78.4-r1
@@ -223,7 +212,7 @@ libatomic_ops-7.8.2
 libbsd-0.11.8
 libedit-20221030.3.1
 libevdev-1.13.1
-libffi-3.4.4-r4
+libffi-3.4.6
 libfmt-9.1.0-r1
 libgcrypt-1.10.3-r1
 libgit2-1.7.2
@@ -237,14 +226,14 @@ libltdl-2.4.7-r1
 libmpack-1.0.5-r5
 libnl-3.9.0
 libpcre-8.45-r3
-libpcre2-10.42-r2
+libpcre2-10.43
 libpipeline-1.5.7
 libsigc++-2.12.0
 libtasn1-4.19.0
 libtermkey-0.22-r2
 libunistring-1.1-r1
 libusb-1.0.27-r1
-libuv-1.47.0-r1
+libuv-1.48.0
 libvterm-0.3.3
 libxml2-2.12.5
 libxslt-1.1.39
@@ -255,7 +244,7 @@ msgpack-6.0.0-r1
 nettle-3.9.1
 npth-1.6-r2
 nspr-4.35-r2
-nss-3.97
+nss-3.98
 oniguruma-6.9.9
 openssl-3.2.1-r1
 popt-1.19-r1
@@ -271,7 +260,7 @@ zziplib-0.13.72-r4
 /var/db/pkg/dev-lua:
 lpeg-1.0.2-r101
 luv-1.45.0.0
-mpack-1.0.11
+mpack-1.0.12
 
 /var/db/pkg/dev-perl:
 Authen-SASL-2.170.0
@@ -366,7 +355,7 @@ cython-3.0.8
 docutils-0.20.1-r1
 editables-0.5
 ensurepip-pip-24.0
-ensurepip-setuptools-69.0.3
+ensurepip-setuptools-69.1.0
 ensurepip-wheels-100
 flit-core-3.9.0
 gentoo-common-1
@@ -392,12 +381,12 @@ pluggy-1.4.0
 pygments-2.17.2
 PySocks-1.7.1-r2
 requests-2.31.0
-setuptools-69.0.3
+setuptools-69.1.0
 setuptools-scm-8.0.4
 tomli-2.0.1-r1
 trove-classifiers-2024.1.31
 typing-extensions-4.9.0
-urllib3-2.2.0
+urllib3-2.2.0-r1
 wheel-0.42.0
 
 /var/db/pkg/dev-tex:
@@ -418,7 +407,7 @@ tokei-12.1.2
 wayland-scanner-1.22.0
 
 /var/db/pkg/dev-vcs:
-git-2.43.0
+git-2.43.2
 
 /var/db/pkg/gnome-base:
 dconf-0.40.0
@@ -441,7 +430,7 @@ gtk-layer-shell-0.8.2
 wlroots-0.17.1
 
 /var/db/pkg/gui-wm:
-sway-1.9_rc1
+sway-1.9_rc4
 
 /var/db/pkg/mail-mta:
 nullmailer-2.2-r2
@@ -458,9 +447,9 @@ graphite2-1.3.14_p20210810-r3
 imv-4.4.0-r1
 
 /var/db/pkg/media-libs:
-alsa-lib-1.2.10-r3
+alsa-lib-1.2.11
 alsa-topology-conf-1.2.5.1
-alsa-ucm-conf-1.2.10-r1
+alsa-ucm-conf-1.2.11
 fdk-aac-2.0.3
 flac-1.4.3
 fontconfig-2.15.0
@@ -480,10 +469,10 @@ libogg-1.3.5-r1
 libpng-1.6.42
 libpulse-17.0
 libsdl-1.2.68
-libsdl2-2.28.5
+libsdl2-2.28.5-r1
 libsndfile-1.2.2-r2
 libvorbis-1.3.7-r1
-mesa-24.0.0
+mesa-24.0.1
 openjpeg-2.5.0-r6
 opus-1.4
 sbc-2.0
@@ -494,7 +483,7 @@ lame-3.100-r3
 mpg123-base-1.32.3
 
 /var/db/pkg/media-video:
-ffmpeg-6.1.1-r2
+ffmpeg-6.1.1-r3
 pipewire-1.0.3
 wireplumber-0.4.17-r1
 
@@ -506,7 +495,7 @@ libidn2-2.3.7
 iptables-1.8.10
 
 /var/db/pkg/net-im:
-discord-0.0.42
+discord-0.0.43
 
 /var/db/pkg/net-libs:
 gnutls-3.8.3
@@ -518,7 +507,7 @@ libpsl-0.21.5
 libssh2-1.11.0-r2
 libtirpc-1.3.4-r2
 nghttp2-1.59.0
-nodejs-20.11.0
+nodejs-20.11.1
 
 /var/db/pkg/net-mail:
 mailutils-3.17
@@ -526,10 +515,10 @@ mailutils-3.17
 /var/db/pkg/net-misc:
 chrony-4.5
 curl-8.6.0-r1
-dhcpcd-10.0.6-r1
+dhcpcd-10.0.6-r2
 iputils-20240117
 netifrc-0.7.8
-openssh-9.6_p1-r2
+openssh-9.6_p1-r3
 rclone-1.63.1
 rsync-3.2.7-r4
 wget-1.21.4
@@ -557,7 +546,6 @@ acl-2.3.2-r1
 attr-2.5.2-r1
 baselayout-2.14-r2
 bat-0.24.0
-config-site-0
 coreutils-9.4-r1
 dbus-1.15.8
 diffutils-3.10
@@ -582,7 +570,7 @@ less-643-r1
 locale-gen-2.23-r1
 lsb-release-3.3
 man-db-2.12.0
-man-pages-6.05.01
+man-pages-6.06
 net-tools-2.10
 openrc-0.53
 pciutils-3.10.0
@@ -590,7 +578,7 @@ portage-3.0.61-r1
 ripgrep-14.1.0
 sandbox-2.38
 sed-4.9
-shadow-4.14.3
+shadow-4.14.5
 smartmontools-7.4
 systemd-utils-254.9-r1
 sysvinit-3.08
@@ -608,21 +596,19 @@ seatd-0.8.0
 
 /var/db/pkg/sys-boot:
 efibootmgr-18-r1
-grub-2.12-r1
 
 /var/db/pkg/sys-devel:
 -MERGING-gnuconfig-20230731
 bc-1.07.1-r6
-binutils-2.41-r5
+binutils-2.42-r1
 binutils-config-5.5
 bison-3.8.2-r2
 clang-17.0.6
 clang-common-17.0.6-r1
 clang-runtime-17.0.6
 clang-toolchain-symlinks-17
-crossdev-20240117
 flex-2.6.4-r6
-gcc-13.2.1_p20240113-r1
+gcc-13.2.1_p20240210
 gcc-config-2.11
 gettext-0.22.4
 gnuconfig-20230731
@@ -645,12 +631,11 @@ fuse-common-3.10.4
 udev-init-scripts-35
 
 /var/db/pkg/sys-kernel:
-gentoo-sources-6.7.4
-linux-firmware-20240115-r1
+linux-firmware-20240115-r3
 linux-headers-6.7
 
 /var/db/pkg/sys-libs:
-binutils-libs-2.41-r5
+binutils-libs-2.42-r1
 compiler-rt-17.0.6
 compiler-rt-sanitizers-17.0.6
 efivar-38
@@ -694,6 +679,7 @@ logger-0-r1
 mailx-4
 man-0-r4
 mta-1-r2
+notification-daemon-0
 openssh-0
 os-headers-0-r2
 package-manager-1
@@ -748,7 +734,7 @@ perl-Unicode-Collate-1.310.0-r1
 perl-version-0.992.900-r1
 perl-XSLoader-0.320.0
 pkgconfig-2-r1
-rust-1.74.1
+rust-1.75.0
 secret-service-0
 service-manager-1-r1
 ssh-0-r2
@@ -787,6 +773,7 @@ gtk+-3.24.41
 libdrm-2.4.120
 libfontenc-1.1.7
 libICE-1.1.1-r1
+libnotify-0.8.3
 libpciaccess-0.18
 libSM-1.2.4
 libX11-1.8.7
@@ -798,13 +785,13 @@ libXcursor-1.2.1
 libxcvt-0.1.2
 libXdamage-1.1.6
 libXdmcp-1.1.4-r2
-libXext-1.3.5
+libXext-1.3.6
 libXfixes-6.0.1
 libXfont2-2.0.6-r1
 libXft-2.3.8
 libXi-1.8.1
 libxkbcommon-1.6.0
-libxkbfile-1.1.2
+libxkbfile-1.1.3
 libXmu-1.1.4
 libXpm-3.5.17
 libXrandr-1.5.4
@@ -828,7 +815,7 @@ util-macros-1.20.0
 xbitmaps-1.1.3
 xdg-user-dirs-0.18
 xdg-utils-1.2.1
-xkeyboard-config-2.40-r1
+xkeyboard-config-2.41
 
 /var/db/pkg/x11-themes:
 adwaita-icon-theme-45.0

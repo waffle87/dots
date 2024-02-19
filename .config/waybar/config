@@ -26,7 +26,8 @@
     },
     "custom/date": {
         "exec": "~/.config/scripts/date.sh",
-        "format": "\uf073  {}"
+        "format": "\uf073  {}",
+        "interval": 60
     },
     "network": {
         "format-wifi": "\uf1eb  {ipaddr}",

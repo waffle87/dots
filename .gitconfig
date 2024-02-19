@@ -4,6 +4,7 @@
 	signingkey = FC53C827D09C7050
 [core]
 	editor = nvim
+	pager = less -F -X
 [commit]
 	gpgsign = true
 [gpg]
