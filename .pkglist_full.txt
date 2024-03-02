@@ -63,7 +63,7 @@ libarchive-3.7.2-r2
 ncompress-5.0-r1
 tar-1.35
 unzip-6.0_p27-r1
-xz-utils-5.4.6-r1
+xz-utils-5.6.0
 zip-3.0-r7
 zstd-1.5.5-r1
 
@@ -75,7 +75,7 @@ libb2-0.98.1-r3
 libmd-1.1.0
 libsecret-0.21.1
 p11-kit-0.25.3-r2
-pinentry-1.2.1-r4
+pinentry-1.2.1-r6
 rhash-1.4.4-r1
 
 /var/db/pkg/app-editors:
@@ -112,7 +112,7 @@ portage-utils-0.96.1
 
 /var/db/pkg/app-shells:
 bash-5.2_p26
-zoxide-0.9.2
+zoxide-0.9.4
 zsh-5.9-r6
 zsh-completions-0.34.0
 
@@ -183,16 +183,17 @@ python-3.12.2_p1
 python-exec-2.4.10
 python-exec-conf-2.4.6
 rust-bin-1.75.0
-spidermonkey-115.7.0
+spidermonkey-115.8.0
 tcl-8.6.13-r1
 vala-0.56.14
 
 /var/db/pkg/dev-libs:
 atk-2.46.0
+boehm-gc-8.2.6
 date-3.0.0
 dbus-glib-0.112
 elfutils-0.190
-ell-0.62
+ell-0.63
 expat-2.6.0
 fribidi-1.0.13
 girara-0.4.2
@@ -216,12 +217,12 @@ libffi-3.4.6
 libfmt-9.1.0-r1
 libgcrypt-1.10.3-r1
 libgit2-1.7.2
-libgpg-error-1.47-r1
+libgpg-error-1.48
 libgrapheme-2.0.2
 libgudev-238-r1
 libical-3.0.17
 libinput-1.25.0
-libksba-1.6.5
+libksba-1.6.6
 libltdl-2.4.7-r1
 libmpack-1.0.5-r5
 libnl-3.9.0
@@ -231,7 +232,7 @@ libpipeline-1.5.7
 libsigc++-2.12.0
 libtasn1-4.19.0
 libtermkey-0.22-r2
-libunistring-1.1-r1
+libunistring-1.2
 libusb-1.0.27-r1
 libuv-1.48.0
 libvterm-0.3.3
@@ -242,7 +243,7 @@ mpc-1.3.1
 mpfr-4.2.1
 msgpack-6.0.0-r1
 nettle-3.9.1
-npth-1.6-r2
+npth-1.7-r1
 nspr-4.35-r2
 nss-3.98
 oniguruma-6.9.9
@@ -351,11 +352,11 @@ YAML-Tiny-1.740.0
 /var/db/pkg/dev-python:
 certifi-3021.3.16-r4
 charset-normalizer-3.3.2
-cython-3.0.8
+cython-3.0.8-r1
 docutils-0.20.1-r1
 editables-0.5
 ensurepip-pip-24.0
-ensurepip-setuptools-69.1.0
+ensurepip-setuptools-69.1.1
 ensurepip-wheels-100
 flit-core-3.9.0
 gentoo-common-1
@@ -381,12 +382,12 @@ pluggy-1.4.0
 pygments-2.17.2
 PySocks-1.7.1-r2
 requests-2.31.0
-setuptools-69.1.0
+setuptools-69.1.1
 setuptools-scm-8.0.4
 tomli-2.0.1-r1
-trove-classifiers-2024.1.31
-typing-extensions-4.9.0
-urllib3-2.2.0-r1
+trove-classifiers-2024.2.23
+typing-extensions-4.10.0
+urllib3-2.2.1
 wheel-0.42.0
 
 /var/db/pkg/dev-tex:
@@ -407,7 +408,7 @@ tokei-12.1.2
 wayland-scanner-1.22.0
 
 /var/db/pkg/dev-vcs:
-git-2.43.2
+git-2.44.0
 
 /var/db/pkg/gnome-base:
 dconf-0.40.0
@@ -430,7 +431,7 @@ gtk-layer-shell-0.8.2
 wlroots-0.17.1
 
 /var/db/pkg/gui-wm:
-sway-1.9_rc4
+sway-1.9
 
 /var/db/pkg/mail-mta:
 nullmailer-2.2-r2
@@ -439,12 +440,12 @@ nullmailer-2.2-r2
 encodings-1.0.7
 font-util-1.4.1
 liberation-fonts-2.1.5
-noto-20231128
+noto-20240131
 noto-emoji-20231130
 
 /var/db/pkg/media-gfx:
 graphite2-1.3.14_p20210810-r3
-imv-4.4.0-r1
+imv-4.5.0
 
 /var/db/pkg/media-libs:
 alsa-lib-1.2.11
@@ -488,11 +489,11 @@ pipewire-1.0.3
 wireplumber-0.4.17-r1
 
 /var/db/pkg/net-dns:
-c-ares-1.26.0
+c-ares-1.27.0
 libidn2-2.3.7
 
 /var/db/pkg/net-firewall:
-iptables-1.8.10
+iptables-1.8.10-r1
 
 /var/db/pkg/net-im:
 discord-0.0.43
@@ -549,7 +550,7 @@ bat-0.24.0
 coreutils-9.4-r1
 dbus-1.15.8
 diffutils-3.10
-ed-1.20
+ed-1.20.1
 ethtool-6.7
 eza-0.17.2
 file-5.45-r4
@@ -574,13 +575,13 @@ man-pages-6.06
 net-tools-2.10
 openrc-0.53
 pciutils-3.10.0
-portage-3.0.61-r1
+portage-3.0.63
 ripgrep-14.1.0
 sandbox-2.38
 sed-4.9
 shadow-4.14.5
-smartmontools-7.4
-systemd-utils-254.9-r1
+smartmontools-7.4-r1
+systemd-utils-254.10
 sysvinit-3.08
 texinfo-7.1-r1
 usbutils-017
@@ -610,7 +611,7 @@ clang-toolchain-symlinks-17
 flex-2.6.4-r6
 gcc-13.2.1_p20240210
 gcc-config-2.11
-gettext-0.22.4
+gettext-0.22.5
 gnuconfig-20230731
 lld-17.0.6
 lld-toolchain-symlinks-17
@@ -631,7 +632,7 @@ fuse-common-3.10.4
 udev-init-scripts-35
 
 /var/db/pkg/sys-kernel:
-linux-firmware-20240115-r3
+linux-firmware-20240220-r2
 linux-headers-6.7
 
 /var/db/pkg/sys-libs:
@@ -640,7 +641,7 @@ compiler-rt-17.0.6
 compiler-rt-sanitizers-17.0.6
 efivar-38
 gdbm-1.23
-glibc-2.38-r10
+glibc-2.39-r1
 libcap-2.69-r1
 libomp-17.0.6
 libseccomp-2.5.5
@@ -741,9 +742,11 @@ ssh-0-r2
 tmpfiles-0-r5
 ttf-fonts-1-r2
 udev-217-r7
+w3m-1
 
 /var/db/pkg/www-client:
-firefox-bin-122.0.1
+firefox-bin-123.0
+w3m-0.5.3_p20230121
 
 /var/db/pkg/x11-apps:
 iceauth-1.0.9
@@ -760,7 +763,7 @@ xcb-proto-1.16.0
 xorg-drivers-21.1-r2
 xorg-proto-2023.2
 xorg-server-21.1.11
-xwayland-23.2.4
+xwayland-23.2.4-r1
 
 /var/db/pkg/x11-drivers:
 xf86-input-libinput-1.4.0
@@ -814,7 +817,7 @@ shared-mime-info-2.4-r1
 util-macros-1.20.0
 xbitmaps-1.1.3
 xdg-user-dirs-0.18
-xdg-utils-1.2.1
+xdg-utils-1.2.1-r1
 xkeyboard-config-2.41
 
 /var/db/pkg/x11-themes:

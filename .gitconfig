@@ -11,6 +11,7 @@
 	program = /usr/bin/gpg
 [advice]
 	skippedCherryPicks = false
+	forceDeleteBranch = false
 [pager]
 	branch = false
 [pull]

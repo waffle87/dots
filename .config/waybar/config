@@ -31,7 +31,7 @@
     },
     "network": {
         "format-wifi": "\uf1eb  {ipaddr}",
-        "format-disconnected": "\uf52f disconnected",
+        "format-disconnected": "\uf52f  disconnected",
         "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}",
     },
     "modules-center": ["sway/workspaces"],
