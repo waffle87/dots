@@ -6,6 +6,7 @@
 .local/bin
 .local/lib
 .local/state
+.local/zephyr-sdk-*
 .local/share/man
 .local/share/nvim
 .local/share/recently-used.xbel
@@ -23,4 +24,4 @@
 Documents
 Downloads
 Pictures
-waffle_git
+git

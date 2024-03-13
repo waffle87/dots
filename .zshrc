@@ -31,7 +31,6 @@ path+=("$HOME/.local/bin" "$path[@]")
 path+=('/usr/local/texlive/2023/bin/x86_64-linux')
 export PATH
 
-
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 
