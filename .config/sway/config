@@ -26,8 +26,6 @@ input "1452:588:bcm5974" {
   middle_emulation enabled
 }
 
-bindswitch lid:off exec gtklock -d
-
 ### key bindings 
 # applications
 

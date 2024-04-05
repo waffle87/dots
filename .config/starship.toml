@@ -16,3 +16,5 @@ disabled = true
 disabled = true
 [c]
 disabled = true
+[rlang]
+disabled = true
