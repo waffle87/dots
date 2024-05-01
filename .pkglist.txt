@@ -1,0 +1,418 @@
+Imath-3.1.11                   C++/Python lib of 2D/3D vector, matrix, math ops for computer graphics
+adwaita-icon-theme-42.0        GNOME Symbolic Icons
+aom-3.8.2                      AV1 reference encoder/decoder
+argp-standalone-1.5.0          Standalone version of arguments parsing functions from GLIBC
+at-spi2-core-2.50.2            Assistive Technology Service Provider Interface
+atkmm-2.28.0_1                 C++ wrapper for ATK API library
+avahi-app-0.8_2                Service discovery on a local network
+bash-5.2.26_1                  GNU Project's Bourne Again SHell
+basu-0.2.1                     sd-bus library, extracted from systemd
+bat-0.23.0_12                  Clone of cat with syntax highlighting
+binutils-2.40_5,1              GNU binary tools
+brotli-1.1.0,1                 Generic-purpose lossless compression algorithm
+bwn-firmware-kmod-0.1.2        Broadcom AirForce IEEE 802.11 Firmware Kernel Module
+ca_root_nss-3.93_2             Root certificate bundle from the Mozilla Project
+cairo-1.17.4_2,3               Vector graphics library with cross-device output support
+cairomm-1.12.2_6               C++ interface to cairo
+colord-1.4.7                   Manage color profiles to accurately color input/output devices
+consolekit2-1.2.6_3            Framework for defining and tracking users
+cups-2.4.7_2                   Common UNIX Printing System
+curl-8.7.1                     Command line tool and library for transferring data with URLs
+date-3.0.1_1                   Date and time library based on the C++11 (and beyond) <chrono> header
+dav1d-1.4.1                    Small and fast AV1 decoder
+dbus-1.14.10_5,1               Message bus system for inter-application communication
+dbus-glib-0.112_1              GLib bindings for the D-BUS messaging system
+dejavu-2.37_3                  Bitstream Vera Fonts clone with a wider range of characters
+desktop-file-utils-0.26_2      Couple of command line utilities for working with desktop entries
+doas-6.3p9_1                   Simple sudo alternative to run commands as another user
+drm-515-kmod-5.15.118_4        DRM drivers modules
+drm-kmod-20220907_3            Metaport of DRM modules for the linuxkpi-based KMS components
+duktape-lib-2.7.0              Embeddable Javascript engine (shared lib)
+efivar-0.15_9                  Tools and library to manipulate EFI variables
+encodings-1.1.0,1              X.Org Encoding fonts
+expat-2.6.2                    XML 1.0 parser written in C
+ffmpeg-6.1.1_5,1               Realtime audio/video encoder/converter and streaming server
+fftw3-3.3.10_5                 Fast C routines to compute the Discrete Fourier Transform
+fftw3-float-3.3.10_5           Fast Discrete Fourier Transform (Single Precision C Routines)
+firefox-125.0.3,2              Web browser based on the browser portion of Mozilla
+flac-1.4.3_1,1                 Free lossless audio codec
+font-awesome-6.2.1             Suite of pictographic icons from Font Awesome (free version)
+font-bh-ttf-1.0.3_5            X.Org Bigelow & Holmes TTF font
+font-misc-ethiopic-1.0.4       X.Org miscellaneous Ethiopic font
+font-misc-meltho-1.0.3_5       X.Org miscellaneous Meltho font
+fontconfig-2.15.0_2,1          XML-based font configuration API for X Windows
+freetype2-2.13.2               Free and portable TrueType font rendering engine
+fribidi-1.0.13_1               Free Implementation of the Unicode Bidirectional Algorithm
+fusefs-libs-2.9.9_2            FUSE allows filesystem implementation in userspace
+gcc13-13.2.0_4                 GNU Compiler Collection 13
+gdbm-1.23                      GNU database manager
+gdk-pixbuf2-2.42.10_2          Graphic library for GTK
+gettext-runtime-0.22.5         GNU gettext runtime libraries and programs
+giflib-5.2.1_1                 Tools and library routines for working with GIF images
+git-2.44.0                     Distributed source code management tool 
+glib-2.80.0,2                  Some useful routines of C programming (current stable version)
+glibmm-2.66.6,1                C++ interfaces for glib2
+gmp-6.3.0                      Free library for arbitrary precision arithmetic
+gnome_subr-1.0                 Common startup and shutdown subroutines used by GNOME scripts
+gnupg-2.4.4_1                  Complete and free PGP implementation
+gnutls-3.8.5_1                 GNU Transport Layer Security library
+gobject-introspection-1.78.1_2,1 Generate interface introspection data for GObject libraries
+gotop-4.1.4_15                 Terminal based graphical activity monitor inspired by gtop and vtop
+gpu-firmware-amd-kmod-aldebaran-20230625_2 Firmware modules for aldebaran AMD GPUs
+gpu-firmware-amd-kmod-arcturus-20230625_2 Firmware modules for arcturus AMD GPUs
+gpu-firmware-amd-kmod-banks-20230625_2 Firmware modules for banks AMD GPUs
+gpu-firmware-amd-kmod-beige-goby-20230625_2 Firmware modules for beige_goby AMD GPUs
+gpu-firmware-amd-kmod-bonaire-20230625_2 Firmware modules for bonaire AMD GPUs
+gpu-firmware-amd-kmod-carrizo-20230625_2 Firmware modules for carrizo AMD GPUs
+gpu-firmware-amd-kmod-cyan-skillfish2-20230625_2 Firmware modules for cyan_skillfish2 AMD GPUs
+gpu-firmware-amd-kmod-dcn-3-1-4-20230625_2 Firmware modules for dcn_3_1_4 AMD GPUs
+gpu-firmware-amd-kmod-dcn-3-1-5-20230625_2 Firmware modules for dcn_3_1_5 AMD GPUs
+gpu-firmware-amd-kmod-dcn-3-1-6-20230625_2 Firmware modules for dcn_3_1_6 AMD GPUs
+gpu-firmware-amd-kmod-dcn-3-2-0-20230625_2 Firmware modules for dcn_3_2_0 AMD GPUs
+gpu-firmware-amd-kmod-dcn-3-2-1-20230625_2 Firmware modules for dcn_3_2_1 AMD GPUs
+gpu-firmware-amd-kmod-dimgrey-cavefish-20230625_2 Firmware modules for dimgrey_cavefish AMD GPUs
+gpu-firmware-amd-kmod-fiji-20230625_2 Firmware modules for fiji AMD GPUs
+gpu-firmware-amd-kmod-gc-10-3-6-20230625_2 Firmware modules for gc_10_3_6 AMD GPUs
+gpu-firmware-amd-kmod-gc-10-3-7-20230625_2 Firmware modules for gc_10_3_7 AMD GPUs
+gpu-firmware-amd-kmod-gc-11-0-0-20230625_2 Firmware modules for gc_11_0_0 AMD GPUs
+gpu-firmware-amd-kmod-gc-11-0-1-20230625_2 Firmware modules for gc_11_0_1 AMD GPUs
+gpu-firmware-amd-kmod-gc-11-0-2-20230625_2 Firmware modules for gc_11_0_2 AMD GPUs
+gpu-firmware-amd-kmod-gc-11-0-3-20230625_2 Firmware modules for gc_11_0_3 AMD GPUs
+gpu-firmware-amd-kmod-gc-11-0-4-20230625_2 Firmware modules for gc_11_0_4 AMD GPUs
+gpu-firmware-amd-kmod-green-sardine-20230625_2 Firmware modules for green_sardine AMD GPUs
+gpu-firmware-amd-kmod-hainan-20230625_2 Firmware modules for hainan AMD GPUs
+gpu-firmware-amd-kmod-hawaii-20230625_2 Firmware modules for hawaii AMD GPUs
+gpu-firmware-amd-kmod-kabini-20230625_2 Firmware modules for kabini AMD GPUs
+gpu-firmware-amd-kmod-kaveri-20230625_2 Firmware modules for kaveri AMD GPUs
+gpu-firmware-amd-kmod-mullins-20230625_2 Firmware modules for mullins AMD GPUs
+gpu-firmware-amd-kmod-navi10-20230625_2 Firmware modules for navi10 AMD GPUs
+gpu-firmware-amd-kmod-navi12-20230625_2 Firmware modules for navi12 AMD GPUs
+gpu-firmware-amd-kmod-navi14-20230625_2 Firmware modules for navi14 AMD GPUs
+gpu-firmware-amd-kmod-navy-flounder-20230625_2 Firmware modules for navy_flounder AMD GPUs
+gpu-firmware-amd-kmod-oland-20230625_2 Firmware modules for oland AMD GPUs
+gpu-firmware-amd-kmod-picasso-20230625_2 Firmware modules for picasso AMD GPUs
+gpu-firmware-amd-kmod-pitcairn-20230625_2 Firmware modules for pitcairn AMD GPUs
+gpu-firmware-amd-kmod-polaris10-20230625_2 Firmware modules for polaris10 AMD GPUs
+gpu-firmware-amd-kmod-polaris11-20230625_2 Firmware modules for polaris11 AMD GPUs
+gpu-firmware-amd-kmod-polaris12-20230625_2 Firmware modules for polaris12 AMD GPUs
+gpu-firmware-amd-kmod-psp-13-0-0-20230625_2 Firmware modules for psp_13_0_0 AMD GPUs
+gpu-firmware-amd-kmod-psp-13-0-10-20230625_2 Firmware modules for psp_13_0_10 AMD GPUs
+gpu-firmware-amd-kmod-psp-13-0-11-20230625_2 Firmware modules for psp_13_0_11 AMD GPUs
+gpu-firmware-amd-kmod-psp-13-0-4-20230625_2 Firmware modules for psp_13_0_4 AMD GPUs
+gpu-firmware-amd-kmod-psp-13-0-5-20230625_2 Firmware modules for psp_13_0_5 AMD GPUs
+gpu-firmware-amd-kmod-psp-13-0-7-20230625_2 Firmware modules for psp_13_0_7 AMD GPUs
+gpu-firmware-amd-kmod-psp-13-0-8-20230625_2 Firmware modules for psp_13_0_8 AMD GPUs
+gpu-firmware-amd-kmod-raven-20230625_2 Firmware modules for raven AMD GPUs
+gpu-firmware-amd-kmod-raven2-20230625_2 Firmware modules for raven2 AMD GPUs
+gpu-firmware-amd-kmod-renoir-20230625_2 Firmware modules for renoir AMD GPUs
+gpu-firmware-amd-kmod-sdma-5-2-6-20230625_2 Firmware modules for sdma_5_2_6 AMD GPUs
+gpu-firmware-amd-kmod-sdma-5-2-7-20230625_2 Firmware modules for sdma_5_2_7 AMD GPUs
+gpu-firmware-amd-kmod-sdma-6-0-0-20230625_2 Firmware modules for sdma_6_0_0 AMD GPUs
+gpu-firmware-amd-kmod-sdma-6-0-1-20230625_2 Firmware modules for sdma_6_0_1 AMD GPUs
+gpu-firmware-amd-kmod-sdma-6-0-2-20230625_2 Firmware modules for sdma_6_0_2 AMD GPUs
+gpu-firmware-amd-kmod-sdma-6-0-3-20230625_2 Firmware modules for sdma_6_0_3 AMD GPUs
+gpu-firmware-amd-kmod-si58-20230625_2 Firmware modules for si58 AMD GPUs
+gpu-firmware-amd-kmod-sienna-cichlid-20230625_2 Firmware modules for sienna_cichlid AMD GPUs
+gpu-firmware-amd-kmod-smu-13-0-0-20230625_2 Firmware modules for smu_13_0_0 AMD GPUs
+gpu-firmware-amd-kmod-smu-13-0-10-20230625_2 Firmware modules for smu_13_0_10 AMD GPUs
+gpu-firmware-amd-kmod-smu-13-0-7-20230625_2 Firmware modules for smu_13_0_7 AMD GPUs
+gpu-firmware-amd-kmod-stoney-20230625_2 Firmware modules for stoney AMD GPUs
+gpu-firmware-amd-kmod-tahiti-20230625_2 Firmware modules for tahiti AMD GPUs
+gpu-firmware-amd-kmod-tonga-20230625_2 Firmware modules for tonga AMD GPUs
+gpu-firmware-amd-kmod-topaz-20230625_2 Firmware modules for topaz AMD GPUs
+gpu-firmware-amd-kmod-vangogh-20230625_2 Firmware modules for vangogh AMD GPUs
+gpu-firmware-amd-kmod-vcn-3-1-2-20230625_2 Firmware modules for vcn_3_1_2 AMD GPUs
+gpu-firmware-amd-kmod-vcn-4-0-0-20230625_2 Firmware modules for vcn_4_0_0 AMD GPUs
+gpu-firmware-amd-kmod-vcn-4-0-2-20230625_2 Firmware modules for vcn_4_0_2 AMD GPUs
+gpu-firmware-amd-kmod-vcn-4-0-4-20230625_2 Firmware modules for vcn_4_0_4 AMD GPUs
+gpu-firmware-amd-kmod-vega10-20230625_2 Firmware modules for vega10 AMD GPUs
+gpu-firmware-amd-kmod-vega12-20230625_2 Firmware modules for vega12 AMD GPUs
+gpu-firmware-amd-kmod-vega20-20230625_2 Firmware modules for vega20 AMD GPUs
+gpu-firmware-amd-kmod-vegam-20230625_2 Firmware modules for vegam AMD GPUs
+gpu-firmware-amd-kmod-verde-20230625_2 Firmware modules for verde AMD GPUs
+gpu-firmware-amd-kmod-yellow-carp-20230625_2 Firmware modules for yellow_carp AMD GPUs
+gpu-firmware-intel-kmod-alderlake-20230625 Firmware modules for alderlake Intel GPUs
+gpu-firmware-intel-kmod-broxton-20230625 Firmware modules for broxton Intel GPUs
+gpu-firmware-intel-kmod-cannonlake-20230625 Firmware modules for cannonlake Intel GPUs
+gpu-firmware-intel-kmod-dg1-20230625 Firmware modules for dg1 Intel GPUs
+gpu-firmware-intel-kmod-elkhartlake-20230625 Firmware modules for elkhartlake Intel GPUs
+gpu-firmware-intel-kmod-geminilake-20230625 Firmware modules for geminilake Intel GPUs
+gpu-firmware-intel-kmod-icelake-20230625 Firmware modules for icelake Intel GPUs
+gpu-firmware-intel-kmod-kabylake-20230625 Firmware modules for kabylake Intel GPUs
+gpu-firmware-intel-kmod-rocketlake-20230625 Firmware modules for rocketlake Intel GPUs
+gpu-firmware-intel-kmod-skylake-20230625 Firmware modules for skylake Intel GPUs
+gpu-firmware-intel-kmod-tigerlake-20230625 Firmware modules for tigerlake Intel GPUs
+gpu-firmware-kmod-20240401,1   Firmware modules for the drm-kmod drivers
+gpu-firmware-radeon-kmod-aruba-20220511 Firmware modules for aruba Radeon GPUs
+gpu-firmware-radeon-kmod-barts-20220511 Firmware modules for barts Radeon GPUs
+gpu-firmware-radeon-kmod-bonaire-20220511 Firmware modules for bonaire Radeon GPUs
+gpu-firmware-radeon-kmod-btc-20220511 Firmware modules for btc Radeon GPUs
+gpu-firmware-radeon-kmod-caicos-20220511 Firmware modules for caicos Radeon GPUs
+gpu-firmware-radeon-kmod-cayman-20220511 Firmware modules for cayman Radeon GPUs
+gpu-firmware-radeon-kmod-cedar-20220511 Firmware modules for cedar Radeon GPUs
+gpu-firmware-radeon-kmod-cypress-20220511 Firmware modules for cypress Radeon GPUs
+gpu-firmware-radeon-kmod-hainan-20220511 Firmware modules for hainan Radeon GPUs
+gpu-firmware-radeon-kmod-hawaii-20220511 Firmware modules for hawaii Radeon GPUs
+gpu-firmware-radeon-kmod-juniper-20220511 Firmware modules for juniper Radeon GPUs
+gpu-firmware-radeon-kmod-kabini-20220511 Firmware modules for kabini Radeon GPUs
+gpu-firmware-radeon-kmod-kaveri-20220511 Firmware modules for kaveri Radeon GPUs
+gpu-firmware-radeon-kmod-mullins-20220511 Firmware modules for mullins Radeon GPUs
+gpu-firmware-radeon-kmod-oland-20220511 Firmware modules for oland Radeon GPUs
+gpu-firmware-radeon-kmod-palm-20220511 Firmware modules for palm Radeon GPUs
+gpu-firmware-radeon-kmod-pitcairn-20220511 Firmware modules for pitcairn Radeon GPUs
+gpu-firmware-radeon-kmod-r100-20220511 Firmware modules for r100 Radeon GPUs
+gpu-firmware-radeon-kmod-r200-20220511 Firmware modules for r200 Radeon GPUs
+gpu-firmware-radeon-kmod-r300-20220511 Firmware modules for r300 Radeon GPUs
+gpu-firmware-radeon-kmod-r420-20220511 Firmware modules for r420 Radeon GPUs
+gpu-firmware-radeon-kmod-r520-20220511 Firmware modules for r520 Radeon GPUs
+gpu-firmware-radeon-kmod-r600-20220511 Firmware modules for r600 Radeon GPUs
+gpu-firmware-radeon-kmod-r700-20220511 Firmware modules for r700 Radeon GPUs
+gpu-firmware-radeon-kmod-redwood-20220511 Firmware modules for redwood Radeon GPUs
+gpu-firmware-radeon-kmod-rs600-20220511 Firmware modules for rs600 Radeon GPUs
+gpu-firmware-radeon-kmod-rs690-20220511 Firmware modules for rs690 Radeon GPUs
+gpu-firmware-radeon-kmod-rs780-20220511 Firmware modules for rs780 Radeon GPUs
+gpu-firmware-radeon-kmod-rv610-20220511 Firmware modules for rv610 Radeon GPUs
+gpu-firmware-radeon-kmod-rv620-20220511 Firmware modules for rv620 Radeon GPUs
+gpu-firmware-radeon-kmod-rv630-20220511 Firmware modules for rv630 Radeon GPUs
+gpu-firmware-radeon-kmod-rv635-20220511 Firmware modules for rv635 Radeon GPUs
+gpu-firmware-radeon-kmod-rv670-20220511 Firmware modules for rv670 Radeon GPUs
+gpu-firmware-radeon-kmod-rv710-20220511 Firmware modules for rv710 Radeon GPUs
+gpu-firmware-radeon-kmod-rv730-20220511 Firmware modules for rv730 Radeon GPUs
+gpu-firmware-radeon-kmod-rv740-20220511 Firmware modules for rv740 Radeon GPUs
+gpu-firmware-radeon-kmod-rv770-20220511 Firmware modules for rv770 Radeon GPUs
+gpu-firmware-radeon-kmod-sumo-20220511 Firmware modules for sumo Radeon GPUs
+gpu-firmware-radeon-kmod-sumo2-20220511 Firmware modules for sumo2 Radeon GPUs
+gpu-firmware-radeon-kmod-tahiti-20220511 Firmware modules for tahiti Radeon GPUs
+gpu-firmware-radeon-kmod-turks-20220511 Firmware modules for turks Radeon GPUs
+gpu-firmware-radeon-kmod-verde-20220511 Firmware modules for verde Radeon GPUs
+graphite2-1.3.14               Rendering capabilities for complex non-Roman writing systems
+grim-1.4.1_2                   Grab images from a Wayland compositor
+gsettings-desktop-schemas-42.0 Collection of globally shared GSetting schemas
+gstreamer1-1.22.10             Media applications framework
+gstreamer1-plugins-1.22.10_1   GStreamer written collection of plugins handling several media types
+gtk-layer-shell-0.8.2          GTK3 library for the Wayland layer-shell protocol
+gtk-update-icon-cache-3.24.31_1 Gtk-update-icon-cache utility from the Gtk+ toolkit
+gtk3-3.24.41                   Gimp Toolkit for X11 GUI (current stable version)
+gtkmm30-3.24.2_4               C++ wrapper for Gtk+3
+harfbuzz-8.4.0                 OpenType text shaping engine
+hicolor-icon-theme-0.17        High-color icon theme shell from the FreeDesktop project
+highway-1.1.0                  Performance-portable, length-agnostic SIMD with runtime dispatch
+http-parser-2.9.4              HTTP request/response parser written in C
+hwdata-0.381,1                 Database of IDs used in PCI, PNP and USB devices
+icu-74.2_1,1                   International Components for Unicode (from IBM)
+indexinfo-0.3.1                Utility to regenerate the GNU info page index
+iso-codes-4.15.0               Lists of the country, language, and currency iso names
+jackit-1.9.22_2                Low latency audio server
+jbigkit-2.1_2                  Lossless compression for bi-level images such as scanned pages, faxes
+jpeg-turbo-3.0.2               SIMD-accelerated JPEG codec which replaces libjpeg
+json-c-0.17                    JSON (JavaScript Object Notation) implementation in C
+json-glib-1.8.0                JSON (RFC 4627) interface for Glib
+jsoncpp-1.9.5                  JSON reader and writer library for C++
+keyd-2.4.3                     Key remapping daemon for evdev
+lame-3.100_5                   Fast MP3 encoder kit
+lcms2-2.16_1                   Accurate, fast, and small-footprint color management engine
+libICE-1.1.0_2,1               Inter Client Exchange library for X11
+libSM-1.2.3_1,1                Session Management library for X11
+libX11-1.8.7_1,1               X11 library
+libXau-1.0.9_1                 Authentication Protocol library for X11
+libXcomposite-0.4.6_1,1        X Composite extension library
+libXcursor-1.2.2               X client-side cursor loading library
+libXdamage-1.1.6               X Damage extension library
+libXdmcp-1.1.5                 X Display Manager Control Protocol library
+libXext-1.3.6,1                X11 Extension library
+libXfixes-6.0.0_1              X Fixes extension library
+libXfont2-2.0.5_1              X font library
+libXft-2.3.7_1                 Client-sided font API for X applications
+libXi-1.8_1,1                  X Input extension library
+libXinerama-1.1.4_3,1          X11 Xinerama library
+libXrandr-1.5.2_1              X Resize and Rotate extension library
+libXrender-0.9.10_2            X Render extension library
+libXt-1.3.0,1                  X Toolkit library
+libXtst-1.2.3_3                X Test extension
+libXv-1.0.12_1,1               X Video Extension library
+libXxf86vm-1.1.4_4             X Vidmode Extension
+libass-0.17.1_2                Portable ASS/SSA subtitle renderer
+libassuan-2.5.6                IPC library used by GnuPG and gpgme
+libdaemon-0.14_1               Lightweight C library that eases the writing of UNIX daemons
+libdatrie-0.2.13_2             Double-array trie implementation library
+libdbusmenu-16.04.0_8          GLib and Gtk Implementation of the DBusMenu protocol
+libdecor-0.2.2_3               Client-side decorations library for Wayland client
+libdeflate-1.20                Fast, whole-buffer DEFLATE-based compression library
+libdisplay-info-0.1.1          EDID and DisplayID library
+libdrm-2.4.120_1,1             Direct Rendering Manager library and headers
+libedit-3.1.20230828_1,1       Command line editor library
+libei-1.2.1                    Library for Emulated Input
+libepoll-shim-0.0.20230411     Small epoll implementation using kqueue
+libepoxy-1.5.9                 Library to handle OpenGL function pointer management
+libevdev-1.13.1                Linux Event Device library
+libevent-2.1.12                API for executing callback functions on events or timeouts
+libffi-3.4.4_1                 Foreign Function Interface
+libfmt-10.2.1                  Formatting library for C++
+libfontenc-1.1.8               The fontenc Library
+libgcrypt-1.10.3_1             General purpose cryptographic library based on the code from GnuPG
+libgit2-1.7.2                  Portable, pure C implementation of the Git core
+libglvnd-1.7.0                 GL Vendor-Neutral Dispatch library
+libgpg-error-1.48              Common error values for all GnuPG components
+libgudev-237                   GObject bindings for libudev
+libgusb-0.3.10_1               GUsb is a GObject wrapper for libusb1
+libiconv-1.17_1                Character set conversion library
+libidn2-2.3.7                  Implementation of IDNA2008 internationalized domain names
+libinotify-20211018_1          Kevent based inotify compatible library
+libinput-1.25.0                Generic input library
+libjxl-0.10.2                  JPEG XL reference encoder/decoder
+libksba-1.6.6                  Library to make X.509 certificates
+libliftoff-0.4.1               Lightweight KMS plane library
+libltdl-2.4.7                  System independent dlopen wrapper
+liblz4-1.9.4_1,1               LZ4 compression library, lossless and very fast
+libmpdclient-2.22              API library for interfacing MPD
+libmtdev-1.1.6_1               Multitouch Protocol Translation Library
+libnghttp2-1.61.0              HTTP/2.0 C Library
+libogg-1.3.5,4                 Ogg bitstream library
+libpaper-1.1.28_1              Library providing routines for paper size management
+libpci-3.12.0                  PCI configuration space I/O made easy
+libpciaccess-0.18              Generic PCI access library
+libplacebo-6.338.2             Reusable library for GPU-accelerated video/image rendering
+libpsl-0.21.5                  C library to handle the Public Suffix List
+librsvg2-rust-2.58.0_1         Library for parsing and rendering SVG vector-graphic files
+libsamplerate-0.2.2_1          Secret Rabbit Code: a Sample Rate Converter for audio
+libsigc++-2.12.0               Callback Framework for C++
+libsndfile-1.2.2_1             Reading and writing files containing sampled sound (like WAV or AIFF)
+libsoxr-0.1.3_3                High quality, one-dimensional sample-rate conversion library
+libssh2-1.11.0_1,3             Library implementing the SSH2 protocol
+libsysinfo-0.0.3_3             GNU libc's sysinfo port for FreeBSD
+libtasn1-4.19.0_1              ASN.1 structure parser library
+libtermkey-0.22_1              Easy processing of keyboard entry from terminal-based programs
+libthai-0.1.29_1               Thai language support library
+libudev-devd-0.5.2             libudev-compatible interface for devd
+libunibreak-6.1,1              Implementation of the line and word breaking algorithm for Unicode
+libunistring-1.2               Unicode string library
+libunwind-20240221             Generic stack unwinding library
+libuv-1.48.0                   Multi-platform support library with a focus on asynchronous I/O
+libv4l-1.23.0_3                Video4Linux library
+libva-2.21.0                   VAAPI wrapper and dummy driver
+libvdpau-1.5                   VDPAU wrapper and tracing library
+libvorbis-1.3.7_2,3            Audio compression codec library
+libvpx-1.14.0                  VP8/VP9 reference encoder/decoder
+libvterm-0.3.3                 Implementation of a VT220/xterm/ECMA-48 terminal emulator
+libwacom-1.5_1                 Adds tablet support to libinput
+libx264-0.164.3095             H.264/MPEG-4 AVC Video Encoding (Library)
+libxcb-1.16.1                  The X protocol C-language Binding (XCB) library
+libxcvt-0.1.2_2                Calculate VESA CVT mode lines
+libxkbcommon-1.6.0_2           Keymap handling library for toolkits and window systems
+libxkbfile-1.1.3               XKB file library
+libxml++-2.40.1_2,1            XML API for C++
+libxml2-2.11.7                 XML parser library for GNOME
+libxshmfence-1.3.2             Shared memory 'SyncFence' synchronization primitive
+libxslt-1.1.37_1               XML stylesheet transformation library
+llvm15-15.0.7_10               LLVM and Clang
+lsd-0.23.1_11                  Pretty ls alternative with support for icons
+lua53-5.3.6_1                  Powerful, efficient, lightweight, embeddable scripting language
+luajit-devel-2.1.0.20231112_1  Just-In-Time Compiler for Lua
+luv-1.48.0.2                   libuv bindings for lua
+mesa-dri-24.0.4_1              OpenGL hardware acceleration drivers for DRI2+
+mesa-libs-24.0.4               OpenGL libraries that support GLX and EGL clients
+mkfontscale-1.2.3              Creates an index of scalable font files for X
+mpc-1.3.1_1                    Library of complex numbers with arbitrarily high precision
+mpdecimal-4.0.0                C/C++ arbitrary precision decimal floating point libraries
+mpfr-4.2.1,1                   Library for multiple-precision floating-point computations
+mpg123-1.32.5                  Command-line player for MPEG Layer 1, 2, and 3 audio files
+msgpack-c-6.0.1                Efficient binary serialization, like JSON but smaller and faster
+neovim-0.9.5_1                 Next-generation Vim
+nettle-3.9.1                   Low-level cryptographic library
+npth-1.6                       New GNU Portable Threads
+nspr-4.35                      Platform-neutral API for system level and libc like functions
+nss-3.99                       Libraries to support development of security-enabled applications
+oniguruma-6.9.9                Regular expressions library compatible with POSIX/GNU/Perl
+openexr-3.2.4                  High dynamic-range (HDR) image file format
+opus-1.5.1                     IETF audio codec
+orc-0.4.34_1                   Library and toolset to operate arrays of data
+p11-kit-0.25.3_1               Library for loading and enumerating of PKCS#11 modules
+p5-Authen-SASL-2.17            Perl5 module for SASL authentication
+p5-CGI-4.64                    Handle Common Gateway Interface requests and responses
+p5-Clone-0.46                  Recursively copy Perl datatypes
+p5-Digest-HMAC-1.04            Perl5 interface to HMAC Message-Digest Algorithms
+p5-Encode-Locale-1.05          Determine the locale encoding
+p5-Error-0.17029               Error/exception handling in object-oriented programming style
+p5-GSSAPI-0.28_2               Perl extension providing access to the GSSAPIv2 library
+p5-HTML-Parser-3.82            Perl5 module for parsing HTML documents
+p5-HTML-Tagset-3.24            Some useful data table in parsing HTML
+p5-HTTP-Date-6.06              Conversion routines for the HTTP protocol date formats
+p5-HTTP-Message-6.45           Representation of HTTP style messages
+p5-IO-HTML-1.004               Open an HTML file with automatic charset detection
+p5-IO-Socket-IP-0.42           Drop-in replacement for IO::Socket::INET supporting IPv4 and IPv6
+p5-IO-Socket-SSL-2.085         Perl5 interface to SSL sockets
+p5-LWP-MediaTypes-6.04         Guess media type for a file or a URL
+p5-Mozilla-CA-20240313         Perl extension for Mozilla CA cert bundle in PEM format
+p5-Net-SSLeay-1.94             Perl5 interface to SSL
+p5-TimeDate-2.33,1             Perl5 module containing a better/faster date parser for absolute dates
+p5-URI-5.28                    Perl5 interface to Uniform Resource Identifier (URI) references
+pango-1.50.14                  Open-source framework for the layout and rendering of i18n text
+pangomm-2.40.1_6               C++ wrapper for Pango
+pciids-20240331                Database of all known IDs used in PCI devices
+pcre2-10.43                    Perl Compatible Regular Expressions library, version 2
+perl5-5.36.3_1                 Practical Extraction and Report Language
+pinentry-1.3.0                 Collection of simple PIN or passphrase entry dialogs
+pinentry-curses-1.3.0          Curses version of the GnuPG password dialog
+pipewire-1.0.4                 Server and user space API to deal with multimedia pipelines
+pixman-0.42.2                  Low-level pixel manipulation library
+pkg-1.21.2                     Package manager
+pkgconf-2.2.0,1                Utility to help to configure compiler and linker flags
+playerctl-2.3.1_2              MPRIS command-line controller and library
+png-1.6.43                     Library for manipulating PNG images
+polkit-124_3                   Framework for controlling access to system-wide components
+popt-1.19_1                    Getopt(3) like library with a number of enhancements, from Redhat
+pulseaudio-16.1_4              Sound server for UNIX
+py39-dbus-1.3.2                Python bindings for the D-BUS messaging system
+py39-evdev-1.6.0               Bindings to the Linux input handling subsystem
+py39-packaging-23.2            Core utilities for Python packages
+py39-pyudev-0.22.0             Pure Python libudev binding
+py39-setuptools-63.1.0_1       Python packages installer
+py39-six-1.16.0                Python 2 and 3 compatibility utilities
+pydbus-common-1.3.2            Common files for the Python bindings for the D-BUS messaging system
+python39-3.9.18_2              Interpreted object-oriented programming language
+rclone-1.66.0_2                Sync files to and from various cloud services
+readline-8.2.10                Library for editing command lines as they are typed
+ripgrep-14.1.0_1               Command line search tool
+rust-1.77.0                    Language with a focus on memory safety and concurrency
+seatd-0.8.0_1                  Minimal seat management daemon and universal library
+shaderc-2024.0                 GLSL/HLSL to SPIR-V shader compiler
+shared-mime-info-2.2_2         MIME types database from the freedesktop.org project
+slurp-1.5.0_1                  Select a region in a Wayland compositor
+sndio-1.9.0                    Small audio and MIDI framework from the OpenBSD project
+spdlog-1.13.0                  Super fast C++ logging library
+speexdsp-1.2.1                 Audio compression format designed for speech
+sqlite3-3.45.1,1               SQL database engine in a C library
+starship-1.18.2                Cross-shell prompt for astronauts
+svt-av1-2.0.0                  Scalable AV1 encoder
+sway-1.9                       i3-compatible Wayland compositor
+swaybg-1.2.0_1                 Wallpaper tool for Wayland compositors
+tiff-4.4.0_3                   Tools and library routines for working with TIFF images
+tokei-12.1.2_30                Display statistics about your code
+tree-sitter-0.22.2             Incremental parser generator
+unibilium-2.1.1_1              Terminfo parsing library
+upower-1.90.2_1                D-Bus daemon for simplifying power management tasks
+uv-0.1.15_1                    Extremely fast Python package installer and resolver, written in Rust
+vmaf-3.0.0                     Perceptual video quality assessment based on multi-method fusion
+vulkan-loader-1.3.282          Driver loader for the Vulkan graphics API
+waybar-0.9.24_3                Highly customizable Wayland bar for Sway and wlroots-based compositors
+wayland-1.22.0                 Core Wayland window system code and protocol
+webp-1.3.2_1                   Google WebP image format conversion tool
+webrtc-audio-processing0-0.3.1_3 AudioProcessing module from WebRTC project (legacy version)
+wlroots-0.17.3                 Modular Wayland compositor library
+x265-3.5_1                     H.265/High Efficiency Video Coding (HEVC) format
+xcb-util-0.4.1,1               Module with libxcb/libX11 extension/replacement libraries
+xcb-util-errors-1.0.1          Pretty-print XCB codes
+xcb-util-renderutil-0.3.10     Convenience functions for the Render extension
+xcb-util-wm-0.4.2              Framework for window manager implementation
+xkbcomp-1.4.7                  Compile XKB keyboard description
+xkeyboard-config-2.41_4        X Keyboard Configuration Database
+xorg-fonts-truetype-7.7_1      X.Org TrueType fonts
+xorgproto-2023.2               X Window System unified protocol definitions
+xwayland-23.2.6,1              X11 server as Wayland client
+xxhash-0.8.2_1                 Extremely fast non-cryptographic hash algorithm
+yadm-3.1.1_1                   Yet Another Dotfiles Manager
+zoxide-0.9.0_11                Fast cd alternative that learns your habits
+zsh-5.9_4                      The Z shell
+zsh-autosuggestions-0.7.0      Fish-like autosuggestions for Zsh
+zsh-syntax-highlighting-0.8.0,1 Fish shell syntax highlighting for Zsh
+zstd-1.5.6                     Fast real-time compression algorithm

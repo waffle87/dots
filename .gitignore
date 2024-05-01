@@ -1,0 +1,11 @@
+.cache
+.dbus
+.gnupg
+.local
+.ssh
+.zcompdump
+.zsh_history
+Documents
+Downloads
+git
+Pictures

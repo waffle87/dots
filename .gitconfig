@@ -1,0 +1,16 @@
+[user]
+	name = jack
+	email = 0x6A73@pm.me
+	signingkey = 578D2F9CAD1D7BB9 
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[advice]
+	skippedCherryPicks = false
+	forceDeleteBranch = false
+[pull]
+	ff = only
+	rebase = merges
