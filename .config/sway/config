@@ -4,9 +4,9 @@ default_floating_border pixel 3
 gaps inner 9
 
 # class          border  backgr. text    flag    child_border
-client.focused   #A6DA95 #A6DA95 #24273A #A6DA95 #A6DA95
-client.unfocused #CAD3F5 #CAD3F5 #24273A #CAD3F5 #CAD3F5
-client.urgent    #ED8796 #ED8796 #24273A #ED8796 #ED8796
+client.focused   #A7C080 #A7C080 #272E33 #A7C080 #A7C080
+client.unfocused #D3C6AA #D3C6AA #272E33 #D3C6AA #D3C6AA
+client.urgent    #E67E80 #E67E80 #272E33 #E67E80 #E67E80
 
 set $mod Mod4
 set $left h
@@ -17,14 +17,13 @@ set $right l
 output * bg /home/jack/.img/wallpaper/waves_mono.png fill
 
 exec /usr/local/bin/mako
-# exec /usr/bin/gentoo-pipewire-launcher &
 
-#input "1452:588:bcm5974" {
-#  dwt enabled
-#  tap enabled
-#  natural_scroll disabled 
-#  middle_emulation enabled
-#}
+input "1452:588:bcm5974" {
+  dwt enabled
+  tap enabled
+  natural_scroll disabled 
+  middle_emulation enabled
+}
 
 ### key bindings 
 # applications
@@ -46,10 +45,10 @@ bindsym XF86AudioNext        exec playerctl next
 bindsym XF86AudioPrev        exec playerctl previous
 
 # lighting
-bindsym XF86MonBrightnessDown exec brightnessctl -q set 10%-
-bindsym XF86MonBrightnessUp   exec brightnessctl -q set +10%
-bindsym XF86KbdBrightnessDown exec brightnessctl -q --device='smc::kbd_backlight' set 10%-
-bindsym XF86KbdBrightnessUp   exec brightnessctl -q --device='smc::kbd_backlight' set +10%
+bindsym XF86MonBrightnessDown exec backlight -f /dev/backlight/backlight0 decr 10
+bindsym XF86MonBrightnessUp   exec backlight -f /dev/backlight/backlight0 incr 10
+# bindsym XF86KbdBrightnessDown exec brightnessctl -q --device='smc::kbd_backlight' set 10%-
+# bindsym XF86KbdBrightnessUp   exec brightnessctl -q --device='smc::kbd_backlight' set +10%
 
 # reload configuration file
 bindsym $mod+Shift+c reload

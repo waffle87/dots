@@ -1,8 +1,16 @@
 .cache
 .cargo
+.config/glib-2.0
+.config/pulse
+.config/rclone
+.config/yadm
 .dbus
 .gnupg
-.local
+.local/bin
+.local/share/nvim
+.local/share/yadm
+.local/share/zoxide
+.local/state
 .python_history
 .ssh
 .zcompdump

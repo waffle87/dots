@@ -1,0 +1,10 @@
+edge=bottom
+font=Mononoki Nerd Font 10
+
+[error]
+background=3B4252
+border=BF616A
+button-background=2E383C
+text=E67E80
+button-text=E67E80
+border-bottom-size=0
