@@ -1,0 +1,11 @@
+border-size=2
+margin=0,30,25
+border-radius=15
+padding=15,10,15
+max-icon-size=48
+text-color=#CAD3F5
+icon-location=right
+border-color=#ED8796
+default-timeout=10000
+font=mononoki Nerd Font
+background-color=#24273A

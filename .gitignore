@@ -1,7 +1,9 @@
 .cache
+.cargo
 .dbus
 .gnupg
 .local
+.python_history
 .ssh
 .zcompdump
 .zsh_history

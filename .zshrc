@@ -24,10 +24,10 @@ export HISTSIZE=20000
 export SAVEHIST=20000
 export LANG=en_GB.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export BAT_THEME="Nord"
+export BAT_THEME="base16"
 export GPG_TTY=$(tty)
 
-path+=("$HOME/.local/bin" "$path[@]")
+path+=("$HOME/.local/bin" "$HOME/.cargo/bin" "$path[@]")
 export PATH
 
 setopt HIST_IGNORE_ALL_DUPS

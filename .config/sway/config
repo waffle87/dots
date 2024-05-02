@@ -4,9 +4,9 @@ default_floating_border pixel 3
 gaps inner 9
 
 # class          border  backgr. text    flag    child_border
-client.focused   #88C0D0 #88C0D0 #E5E9F0 #88C0D0 #88C0D0
-client.unfocused #3B4252 #3B4252 #E5E9F0 #3B4252 #3B4252
-client.urgent    #BF616A #BF616A #E5E9F0 #BF616A #BF616A 
+client.focused   #A6DA95 #A6DA95 #24273A #A6DA95 #A6DA95
+client.unfocused #CAD3F5 #CAD3F5 #24273A #CAD3F5 #CAD3F5
+client.urgent    #ED8796 #ED8796 #24273A #ED8796 #ED8796
 
 set $mod Mod4
 set $left h
@@ -14,9 +14,9 @@ set $down j
 set $up k
 set $right l
 
-# output * bg /home/jack/.img/wallpaper/swirl.png fill
+output * bg /home/jack/.img/wallpaper/waves_mono.png fill
 
-# exec /usr/bin/mako
+exec /usr/local/bin/mako
 # exec /usr/bin/gentoo-pipewire-launcher &
 
 #input "1452:588:bcm5974" {
@@ -31,11 +31,11 @@ set $right l
 
 bindsym $mod+q kill
 bindsym $mod+t exec       st
-# bindsym $mod+f exec       firefox-bin
-# bindsym $mod+r exec       wofi
-# bindsym $mod+p exec       grim -g "$(slurp)" - | wl-copy
-# bindsym $mod+Shift+p exec grim -g "$(slurp)"
-# bindsym $mod+Escape  exec gtklock -d
+bindsym $mod+f exec       firefox
+bindsym $mod+r exec       wofi
+bindsym $mod+p exec       grim -g "$(slurp)" - | wl-copy
+bindsym $mod+Shift+p exec grim -g "$(slurp)"
+bindsym $mod+Escape  exec gtklock -d
 
 # audio
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -113,8 +113,8 @@ bindsym $mod+n move scratchpad
 # cycle through windows in scratchpad
 bindsym $mod+Shift+n scratchpad show
 
-bar {
-  swaybar_command waybar
-}
+#bar {
+#  swaybar_command waybar
+#}
 
 include /etc/sway/config.d/*

@@ -1,0 +1,72 @@
+@import url("../colours.css");
+* {
+  border-radius: 0;
+  font-family: "Mononoki Nerd Font";
+  font-size: 11pt;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @rosewater;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @lavender;
+}
+
+#workspaces { border-radius: 15px; }
+
+#workspaces button {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 0;
+  color: @flamingo;
+}
+
+#workspaces button.focused { color: @sapphire; }
+#workspaces button.urgent { color: @sky; }
+#workspaces button:hover { color: @sapphire; }
+
+#clock, #custom-date, #custom-weather, #memory, #battery, #custom-wifi,
+#pulseaudio, #workspaces, #temperature {
+  padding: 2px 6px;
+  background: @surface0;
+  margin-top: 5px;
+}
+
+#custom-wifi {
+  color: @sky;
+  padding-left: 12px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#pulseaudio { color: @green; }
+#temperature { color: @mauve; }
+
+#battery {
+  color: @peach;
+  padding-right: 12px;
+  margin-right: 5px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+#clock {
+  color: @sapphire;
+  padding-left: 12px;
+  margin-left: 5px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#custom-date { color: @red; }
+#custom-weather { color: @yellow; }
+
+#memory {
+  color: @lavender; 
+  padding-right: 12px;
+  border-radius: 0px 15px 15px 0px;
+}

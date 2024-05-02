@@ -1,0 +1,29 @@
+#window {
+  border: 3px solid #7DC4E4;
+  border-radius: 8px;
+  font-size: 14px;
+  background: linear-gradient(90deg, rgba(30,30,46,1) 25%, rgba(26,24,38,1) 50%, rgba(22,19,32,1) 75%); 
+}
+
+#input {
+  margin: 15px;
+  border: 3px solid #CAD3F5;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(30,30,46,1) 25%, rgba(26,24,38,1) 50%, rgba(22,19,32,1) 75%); 
+}
+
+#entry:selected {
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(201,203,255,1) 25%, rgba(245,224,220,1) 50%, rgba(242,205,205,1) 75%); 
+}
+
+#inner-box {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+}
+
+#outer-box { margin: 5px; }
+#text { margin: 5px; }
+#text:selected { color: #24273A; }
