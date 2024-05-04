@@ -7,10 +7,14 @@
 .dbus
 .gnupg
 .local/bin
+.local/share/applications
+.local/share/mime
 .local/share/nvim
 .local/share/yadm
+.local/share/zathura
 .local/share/zoxide
 .local/state
+.mozilla
 .python_history
 .ssh
 .zcompdump

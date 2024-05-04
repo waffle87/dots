@@ -5,7 +5,7 @@ gaps inner 9
 
 # class          border  backgr. text    flag    child_border
 client.focused   #A7C080 #A7C080 #272E33 #A7C080 #A7C080
-client.unfocused #D3C6AA #D3C6AA #272E33 #D3C6AA #D3C6AA
+client.unfocused #9DA9A0 #9DA9A0 #272E33 #9DA9A0 #9DA9A0
 client.urgent    #E67E80 #E67E80 #272E33 #E67E80 #E67E80
 
 set $mod Mod4
@@ -14,11 +14,11 @@ set $down j
 set $up k
 set $right l
 
-output * bg /home/jack/.img/wallpaper/waves_mono.png fill
+output * bg /home/jack/.img/wallpaper/fog_forest.png fill
 
 exec /usr/local/bin/mako
 
-input "1452:588:bcm5974" {
+input "1452:657:Trackpad_/_Boot" {
   dwt enabled
   tap enabled
   natural_scroll disabled 
@@ -112,8 +112,8 @@ bindsym $mod+n move scratchpad
 # cycle through windows in scratchpad
 bindsym $mod+Shift+n scratchpad show
 
-#bar {
-#  swaybar_command waybar
-#}
+bar {
+  swaybar_command waybar
+}
 
 include /etc/sway/config.d/*

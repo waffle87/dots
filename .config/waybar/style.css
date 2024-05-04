@@ -8,65 +8,64 @@
 
 window#waybar {
   background: transparent;
-  color: @rosewater;
+  color: @base19;
 }
 
 tooltip {
-  background: @base;
+  background: @base02;
   border-radius: 15px;
-  border-width: 2px;
+  border-width: 3px;
   border-style: solid;
-  border-color: @lavender;
+  border-color: @base17;
 }
 
 #workspaces { border-radius: 15px; }
-
 #workspaces button {
   padding-left: 10px;
   padding-right: 10px;
   min-width: 0;
-  color: @flamingo;
+  color: @base18;
 }
 
-#workspaces button.focused { color: @sapphire; }
-#workspaces button.urgent { color: @sky; }
-#workspaces button:hover { color: @sapphire; }
+#workspaces button.focused { color: @base16; }
+#workspaces button.urgent { color: @base12; }
+#workspaces button:hover { color: @base17; }
 
-#clock, #custom-date, #custom-weather, #memory, #battery, #custom-wifi,
-#pulseaudio, #workspaces, #temperature {
+#clock, #custom-date, #custom-weather, #memory, #battery, #custom-net,
+#pulseaudio, #workspaces, #custom-cpu_temp {
   padding: 2px 6px;
-  background: @surface0;
+  background: @base02;
   margin-top: 5px;
 }
 
-#custom-wifi {
-  color: @sky;
+#custom-net {
+  color: @base15;
   padding-left: 12px;
   border-radius: 15px 0px 0px 15px;
 }
 
-#pulseaudio { color: @green; }
-#temperature { color: @mauve; }
+#custom-cpu_temp { color: @base14; }
+#pulseaudio { color: @base13; }
 
 #battery {
-  color: @peach;
+  color: @base12;
   padding-right: 12px;
   margin-right: 5px;
   border-radius: 0px 15px 15px 0px;
 }
 
 #clock {
-  color: @sapphire;
+  color: @base12;
   padding-left: 12px;
   margin-left: 5px;
   border-radius: 15px 0px 0px 15px;
 }
 
-#custom-date { color: @red; }
-#custom-weather { color: @yellow; }
+#custom-date { color: @base13; }
+#custom-weather { color: @base14; }
 
 #memory {
-  color: @lavender; 
+  color: @base15; 
   padding-right: 12px;
   border-radius: 0px 15px 15px 0px;
 }

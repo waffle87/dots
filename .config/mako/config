@@ -1,7 +1,6 @@
-border-size=2
-margin=0,30,25
+border-size=3
 border-radius=15
-padding=15,10,15
+padding=15
 max-icon-size=48
 text-color=#D3C6AA
 icon-location=right

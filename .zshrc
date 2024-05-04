@@ -8,23 +8,22 @@ if test -z "${XDG_RUNTIME_DIR}"; then
     fi
 fi
 
-#if [ ! -S ~/.ssh/ssh_auth_sock ]; then
-#  eval "$(ssh-agent)"
-#  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
-#fi
-#export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-#ssh-add -l > /dev/null || ssh-add
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval "$(ssh-agent)"
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l > /dev/null || ssh-add
 
-#if [ "$(tty)" = "/dev/tty1" ]; then
-#  exec dbus-run-session sway
-#fi
+if [ "$(tty)" = "/dev/ttyv0" ]; then
+  exec dbus-run-session sway
+fi
 
 export HISTFILE=~/.zsh_history
 export HISTSIZE=20000
-export SAVEHIST=20000
 export LANG=en_GB.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export BAT_THEME="base16"
+export BAT_THEME="ansi"
 export GPG_TTY=$(tty)
 
 path+=("$HOME/.local/bin" "$HOME/.cargo/bin" "$path[@]")

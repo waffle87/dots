@@ -1,0 +1,23 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-8OA7M2.desktop
+x-scheme-handler/https=userapp-Firefox-8OA7M2.desktop
+x-scheme-handler/chrome=userapp-Firefox-8OA7M2.desktop
+text/html=userapp-Firefox-8OA7M2.desktop
+application/x-extension-htm=userapp-Firefox-8OA7M2.desktop
+application/x-extension-html=userapp-Firefox-8OA7M2.desktop
+application/x-extension-shtml=userapp-Firefox-8OA7M2.desktop
+application/xhtml+xml=userapp-Firefox-8OA7M2.desktop
+application/x-extension-xhtml=userapp-Firefox-8OA7M2.desktop
+application/x-extension-xht=userapp-Firefox-8OA7M2.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Firefox-8OA7M2.desktop;
+x-scheme-handler/https=userapp-Firefox-8OA7M2.desktop;
+x-scheme-handler/chrome=userapp-Firefox-8OA7M2.desktop;
+text/html=userapp-Firefox-8OA7M2.desktop;
+application/x-extension-htm=userapp-Firefox-8OA7M2.desktop;
+application/x-extension-html=userapp-Firefox-8OA7M2.desktop;
+application/x-extension-shtml=userapp-Firefox-8OA7M2.desktop;
+application/xhtml+xml=userapp-Firefox-8OA7M2.desktop;
+application/x-extension-xhtml=userapp-Firefox-8OA7M2.desktop;
+application/x-extension-xht=userapp-Firefox-8OA7M2.desktop;

@@ -1,0 +1,34 @@
+set font                        "Mononoki Nerd Font 10"
+
+set default-bg                  "#272E33"
+set default-fg                  "#D3C6AA"
+
+set statusbar-fg                "#D3C6AA"
+set statusbar-bg                "#2E383C"
+
+set inputbar-bg                 "#2E383C"
+set inputbar-fg                 "#D3C6AA"
+
+set notification-bg             "#2E383C"
+set notification-fg             "#D3C6AA"
+
+set notification-error-bg       "#2E383C"
+set notification-error-fg       "#D3C6AA"
+
+set notification-warning-bg     "#2E383C"
+set notification-warning-fg     "#D3C6AA"
+
+set highlight-color             "#7FBBB3"
+set highlight-active-color      "#272E33"
+
+set completion-bg               "#2E383C"
+set completion-fg               "#D3C6AA"
+
+set completion-highlight-fg     "#272E33"
+set completion-highlight-bg     "#2E383C"
+
+set recolor-lightcolor          "#2E383C"
+set recolor-darkcolor           "#D3C6AA"
+
+set recolor                     "true"
+set recolor-keephue             "false"
