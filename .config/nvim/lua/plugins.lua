@@ -48,6 +48,7 @@ return {
 	},
 	{
 		"lervag/vimtex",
+		lazy = false,
 		config = function()
 			require("configs.vimtex")
 		end,
