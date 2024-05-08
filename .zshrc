@@ -50,7 +50,7 @@ alias cd="z"
 alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color=always"
-alias fetch="clear && printf '\n' && pfetch && sleep 10"
+alias fetch="clear && printf '\n' && neofetch && sleep 10"
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

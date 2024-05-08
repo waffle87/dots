@@ -2,7 +2,6 @@
 .cargo
 .config/glib-2.0
 .config/mimeapps.list
-.config/nvim
 .config/pulse
 .config/rclone
 .config/yadm
