@@ -27,8 +27,7 @@ export LC_CTYPE=en_US.UTF-8
 export BAT_THEME="Nord"
 export GPG_TTY=$(tty)
 
-path+=("$HOME/.local/bin" "$path[@]")
-path+=('/usr/local/texlive/2023/bin/x86_64-linux')
+path+=("$HOME/.local/bin" "/usr/local/texlive/2023/bin/x86_64-linux" "$path[@]")
 export PATH
 
 setopt HIST_IGNORE_ALL_DUPS
@@ -54,5 +53,5 @@ alias cloc="tokei"
 alias diff="diff --color=always"
 alias fetch="clear && printf '\n' && pfetch && sleep 10"
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh

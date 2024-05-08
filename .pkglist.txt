@@ -8,7 +8,8 @@ app-misc/brightnessctl
 app-portage/gentoolkit
 app-shells/zoxide
 app-shells/zsh
-app-shells/zsh-completions
+app-shells/zsh-autosuggestions
+app-shells/zsh-syntax-highlighting
 app-text/zathura
 app-text/zathura-pdf-mupdf
 dev-debug/gdb
@@ -32,9 +33,7 @@ media-gfx/imv
 media-libs/harfbuzz
 media-libs/libsdl
 media-video/ffmpeg
-net-dns/bind-tools
 net-im/discord
-net-libs/nodejs
 net-misc/chrony
 net-misc/rclone
 net-wireless/wpa_supplicant
