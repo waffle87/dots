@@ -7,6 +7,8 @@
 [gpg]
 	program = /usr/bin/gpg
 [core]
-	editor = nvim
+  editor = nvim
+  pager = less -F -X
 [advice]
-	skippedCherryPicks = false
+  skippedCherryPicks = false
+	forceDeleteBranch = false

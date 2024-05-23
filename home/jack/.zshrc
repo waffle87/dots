@@ -1,7 +1,17 @@
 #!/bin/zsh
+
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval "$(ssh-agent)"
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l > /dev/null || ssh-add
+
 if [ "$(tty)" = "/dev/tty1" ]; then
+  rm ~/.serverauth.*
   exec startx
 fi
+
 export HISTFILE=~/.zsh_history
 export HISTSIZE=20000
 export SAVEHIST=20000
@@ -10,8 +20,8 @@ export LC_CTYPE=en_US.UTF-8
 export GPG_TTY=$TTY
 export PROMPT_EOL_MARK=""
 export BAT_THEME="gruvbox-dark"
-path+=(.local/bin)
-path+=(/usr/local/texlive/2023/bin/x86_64-linux)
+
+path+=(".local/bin" "/usr/local/texlive/2023/bin/x86_64-linux" "$path[@]")
 export PATH
 
 setopt HIST_IGNORE_ALL_DUPS

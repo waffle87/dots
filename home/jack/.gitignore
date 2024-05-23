@@ -1,5 +1,6 @@
 .cache
 .cargo
+.gdb_history
 .gnupg
 .lesshst
 .local/bin
@@ -15,6 +16,7 @@
 .local/share/zathura
 .local/share/zoxide
 .mozilla
+.npm
 .serverauth*
 .ssh
 .wget-hsts
@@ -25,4 +27,4 @@
 Documents
 Downloads
 Pictures
-waffle_git
+git

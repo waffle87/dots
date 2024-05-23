@@ -1,3 +1,3 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/jack/.img/wallpaper/maze.png' &
+feh --no-fehbg --bg-fill '/etc/img/wallpaper/maze.png' &
 exec /usr/bin/i3
