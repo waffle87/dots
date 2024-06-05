@@ -23,7 +23,7 @@ return {
 				"css-lsp",
 				"prettier",
 				"bash-language-server",
-				"marksman",
+				"texlab",
 			},
 		},
 	},

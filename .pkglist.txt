@@ -2,7 +2,6 @@ app-admin/doas
 app-admin/yadm
 app-arch/zip
 app-editors/neovim
-app-eselect/eselect-repository
 app-laptop/tlp
 app-misc/brightnessctl
 app-portage/gentoolkit
@@ -22,7 +21,6 @@ gui-apps/grim
 gui-apps/gtklock
 gui-apps/mako
 gui-apps/slurp
-gui-apps/swaybg
 gui-apps/waybar
 gui-apps/wl-clipboard
 gui-apps/wofi
@@ -30,13 +28,10 @@ gui-wm/sway
 media-fonts/noto
 media-fonts/noto-emoji
 media-gfx/imv
-media-libs/harfbuzz
-media-libs/libsdl
-media-video/ffmpeg
 net-im/discord
 net-misc/chrony
 net-misc/rclone
-net-wireless/wpa_supplicant
+net-wireless/iwd
 sys-apps/bat
 sys-apps/lsd
 sys-apps/ripgrep
@@ -46,11 +41,8 @@ sys-devel/clang
 sys-firmware/intel-microcode
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
-sys-power/acpi
 sys-power/thermald
 sys-process/gotop
 www-client/firefox-bin
-x11-base/xwayland
 x11-drivers/xf86-video-intel
 x11-libs/libnotify
-x11-libs/pixman

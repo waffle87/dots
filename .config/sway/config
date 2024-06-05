@@ -113,6 +113,9 @@ bindsym $mod+n move scratchpad
 # cycle through windows in scratchpad
 bindsym $mod+Shift+n scratchpad show
 
+# disable trackpad
+bindsym $mod+m input type:touchpad events toggle enabled disabled
+
 bar {
   swaybar_command waybar
 }

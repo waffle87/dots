@@ -1,0 +1,5 @@
+station list
+station wlan0 show
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect "HOME-9FA0"
