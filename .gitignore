@@ -9,11 +9,14 @@
 .local/zephyr-sdk-*
 .local/share/man
 .local/share/nvim
+.local/share/iwctl
 .local/share/recently-used.xbel
 .local/share/yadm
+.local/share/warpd
 .local/share/zathura
 .local/share/zoxide
 .mozilla
+.thunderbird
 .npm*
 .pki
 .ssh

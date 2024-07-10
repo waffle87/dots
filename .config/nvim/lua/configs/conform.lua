@@ -1,6 +1,6 @@
 local options = {
 	formatters_by_ft = {
-		python = { "black" },
+		python = { "ruff_format" },
 		rust = { "rustfmt" },
 		lua = { "stylua" },
 		cpp = { "clang-format" },

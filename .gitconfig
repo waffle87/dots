@@ -1,6 +1,6 @@
 [user]
 	name = Jack Sangdahl
-	email = 0x6A73@pm.me
+	email = jack@pngu.org
 	signingkey = FC53C827D09C7050
 [core]
 	editor = nvim

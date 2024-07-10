@@ -51,6 +51,11 @@ bindsym XF86MonBrightnessUp   exec brightnessctl -q set +10%
 bindsym XF86KbdBrightnessDown exec brightnessctl -q --device='smc::kbd_backlight' set 10%-
 bindsym XF86KbdBrightnessUp   exec brightnessctl -q --device='smc::kbd_backlight' set +10%
 
+# warpd
+bindsym $mod+z exec warpd --hint
+bindsym $mod+x exec warpd --normal
+bindsym $mod+c exec warpd --grid
+
 # reload configuration file
 bindsym $mod+Shift+c reload
 # exit wayland session
