@@ -1,0 +1,10 @@
+edge=bottom
+font=JetBrainsMono Nerd Font 10
+
+[error]
+background=073642
+border=DC322F
+button-background=073642
+text=DC322F
+button-text=DC322F
+border-bottom-size=0

@@ -1,0 +1,85 @@
+{
+    "clock": {
+        "calendar": {
+            "format": {
+                "days": "<span color='#073642'><b>{}</b></span>",
+                "months": "<span color='#002b36'><b>{}</b></span>",
+                "today": "<span color='#dc322f'><b><u>{}</u></b></span>",
+                "weekdays": "<span color='#859900'><b>{}</b></span>",
+                "weeks": "<span color='#b58900'><b>W{}</b></span>"
+            },
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right"
+        },
+        "format": "\uf017 {:%H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+        "format": "\uf2db {usage}%"
+    },
+    "custom/date": {
+        "exec": "~/.config/scripts/date.sh",
+        "format": "\uf133 {}",
+        "interval": 60
+    },
+    "custom/media": {
+        "escape": true,
+        "exec": "~/.config/scripts/mediaplayer.py 2> /dev/null",
+        "format": "{icon} {}",
+        "max-length": 40,
+        "on-click": "playerctl play-pause",
+        "on-scroll-down": "playerctl previous",
+        "on-scroll-up": "playerctl next",
+        "return-type": "json"
+    },
+    "custom/power": {
+        "format": "\uf011",
+        "on-click": "loginctl suspend"
+    },
+    "sway/workspaces": {
+        "all-outputs": true,
+        "disable-scroll": true,
+        "format": "{icon}",
+        "format-icons": {
+            "focused": "\uf192",
+	    "default": "\uf111"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "layer": "top",
+    "memory": {
+        "format": "\uf1c0 {}%"
+    },
+    "modules-center": ["sway/workspaces"],
+    "modules-left": ["custom/power", "memory", "cpu", "temperature", "network"],
+    "modules-right": ["custom/media", "wireplumber", "custom/date", "clock"],
+    "network": {
+        "format-disconnected": "\udb85\udebc  disconnected",
+        "format-wifi": "\uf1eb  {ipaddr}/{cidr}",
+        "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
+    },
+    "output": "DP-3",
+    "position": "bottom",
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-icons": {
+            "default": ["\uf027", "\uf028"],
+            "headphone": "\uf025"
+        },
+        "format-muted": "\uf026 muted",
+        "on-click": "~/.config/scripts/output.sh"
+    },
+    "temperature": {
+        "critical-threshold": 85,
+        "format": "\uf2c9 {temperatureC}\u00b0C",
+        "format-critical": "\uf071 {temperatureC}\u00b0C",
+        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input"
+    }
+}

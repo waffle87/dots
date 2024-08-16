@@ -1,0 +1,6 @@
+[Default Applications]
+text/html=firefox-bin.desktop
+x-scheme-handler/http=firefox-bin.desktop
+x-scheme-handler/https=firefox-bin.desktop
+x-scheme-handler/about=firefox-bin.desktop
+x-scheme-handler/unknown=firefox-bin.desktop

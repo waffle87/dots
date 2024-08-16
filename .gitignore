@@ -1,0 +1,16 @@
+.cache
+.gnupg
+.lesshst
+.local
+.mozilla
+.pki
+.spicetify
+.ssh
+.var
+.wget-hsts
+.zcompdump
+.zsh_history
+Documents
+Downloads
+git
+Pictures

@@ -1,0 +1,19 @@
+[user]
+	name = Jack Sangdahl
+	email = jack@pngu.org
+	signingkey = FC53C827D09C7050
+[core]
+	editor = nvim
+	pager = less -F -X
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+[advice]
+	skippedCherryPicks = false
+	forceDeleteBranch = false
+[pager]
+	branch = false
+[pull]
+	ff = only
+	rebase = merges

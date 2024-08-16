@@ -1,0 +1,100 @@
+@import url("../colours.css");
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  min-height: 0;
+  margin-bottom: 2px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#custom-power,
+#memory,
+#cpu,
+#temperature,
+#custom-media,
+#workspaces,
+#network,
+#wireplumber,
+#custom-date,
+#clock {
+  background: @base02;
+  padding: 0px 5px 0px 5px;
+}
+
+tooltip {
+  background-color: @base2;
+  border: 3px solid @yellow;
+  border-radius: 8px;
+}
+
+tooltip * {
+  color: @base01;
+  text-shadow: none;
+}
+
+#custom-power {
+  color: @red;
+  border-radius: 8px 0px 0px 8px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+#memory {
+  color: @orange;
+}
+#cpu {
+  color: @yellow;
+}
+#temperature {
+  color: @green;
+}
+
+#network {
+  color: @cyan;
+  border-radius: 0px 8px 8px 0px;
+}
+
+#custom-media {
+  border-radius: 8px;
+  color: @base3;
+}
+
+#workspaces {
+  border-radius: 8px;
+}
+
+#workspaces button {
+  color: @base3;
+  padding: 8px;
+}
+
+#workspaces button.active {
+  color: @base3;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#custom-media {
+  color: #2660d2;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#wireplumber {
+  color: @blue;
+}
+#custom-date {
+  color: @violet;
+}
+
+#clock {
+  color: @magenta;
+  border-radius: 0px 8px 8px 0px;
+  margin-right: 10px;
+  padding-right: 10px;
+}
