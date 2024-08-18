@@ -16,7 +16,7 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
 if [ "$(tty)" = "/dev/tty1" ]; then
-  exec dbus-run-session --autolaunch=$(cat /var/lib/dbus/machine-id) sway
+  exec dbus-run-session sway
 fi
 
 export HISTFILE=~/.zsh_history

@@ -3,6 +3,7 @@
 .lesshst
 .local
 .mozilla
+.npm
 .pki
 .spicetify
 .ssh
