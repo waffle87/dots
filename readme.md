@@ -10,5 +10,7 @@ for more info, please see [website](https://pngu.org/gentoo)
 ![wofi](.img/wofi.png)
 #### zathura
 ![zathura](.img/zathura.png)
+#### spotify
+![spotify](.img/spotify.png)
 #### gtklock
 ![gtklock](.img/lockscreen.png)
