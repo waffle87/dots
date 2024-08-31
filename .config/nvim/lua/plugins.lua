@@ -41,6 +41,7 @@ return {
 				"bash",
 				"html",
 				"markdown",
+				"scala",
 			},
 		},
 	},

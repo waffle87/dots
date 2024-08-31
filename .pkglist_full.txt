@@ -1,139 +1,244 @@
 
 /var/db/pkg/acct-group:
-audio-0-r3    disk-0-r3    kmem-0-r3  lpadmin-0-r3     netdev-0-r3    plugdev-0-r3  render-0-r3  sshd-0-r3  usb-0-r3
-cdrom-0-r3    floppy-0-r1  kvm-0-r3   man-0-r3         ntp-0-r3       polkitd-0-r3  root-0-r2    tape-0-r3  video-0-r3
-dialout-0-r3  input-0-r3   lp-0-r3    messagebus-0-r3  nullmail-0-r2  portage-0-r2  sgx-0-r2     tty-0-r3   
+audio-0-r3    keyd-2.4.3    messagebus-0-r3  portage-0-r2  tty-0-r3
+cdrom-0-r3    kmem-0-r3     netdev-0-r3      render-0-r3   usb-0-r3
+dialout-0-r3  kvm-0-r3      ntp-0-r3         root-0-r2     video-0-r3
+disk-0-r3     lp-0-r3       nullmail-0-r2    sgx-0-r2      
+floppy-0-r1   lpadmin-0-r3  plugdev-0-r3     sshd-0-r3     
+input-0-r3    man-0-r3      polkitd-0-r3     tape-0-r3     
 
 /var/db/pkg/acct-user:
-man-1-r3  messagebus-0-r3  ntp-0-r3  nullmail-0-r2  polkitd-0-r3  portage-0-r3  sshd-0-r3
+man-1-r3         ntp-0-r3       polkitd-0-r3  sshd-0-r3
+messagebus-0-r3  nullmail-0-r2  portage-0-r3  
 
 /var/db/pkg/app-accessibility:
-at-spi2-core-2.50.2
+at-spi2-core-2.52.0
 
 /var/db/pkg/app-admin:
-doas-6.8.2  eselect-1.4.27-r1  metalog-20230719  perl-cleaner-2.31-r2  yadm-3.2.2
+doas-6.8.2         metalog-20230719      yadm-3.2.2
+eselect-1.4.27-r1  perl-cleaner-2.31-r2  
 
 /var/db/pkg/app-alternatives:
-awk-4  bc-0  bzip2-1  cpio-0  gzip-1  lex-0-r1  ninja-1  sh-0  tar-0  yacc-1-r2
+awk-4  bzip2-1  gzip-1    ninja-1  tar-0
+bc-0   cpio-0   lex-0-r1  sh-0     yacc-1-r2
 
 /var/db/pkg/app-arch:
-bzip2-1.0.8-r5  cpio-2.15  gzip-1.13  libarchive-3.7.4  ncompress-5.0-r1  tar-1.35  unzip-6.0_p27-r1  xz-utils-5.6.2-r1  zstd-1.5.6
+bzip2-1.0.8-r5  libarchive-3.7.4  unzip-6.0_p27-r1
+cpio-2.15       ncompress-5.0-r1  xz-utils-5.6.2-r1
+gzip-1.13-r1    tar-1.35          zstd-1.5.6
 
 /var/db/pkg/app-crypt:
-gcr-3.41.1-r2  gnupg-2.4.5-r2  gpgme-1.23.2  libb2-0.98.1-r3  libmd-1.1.0  libsecret-0.21.1  p11-kit-0.25.3-r2  pinentry-1.3.0-r3  rhash-1.4.4-r1
+gcr-3.41.1-r2   libb2-0.98.1-r3   p11-kit-0.25.3-r2
+gnupg-2.4.5-r2  libmd-1.1.0       pinentry-1.3.1
+gpgme-1.23.2    libsecret-0.21.1  rhash-1.4.4-r1
 
 /var/db/pkg/app-editors:
-neovim-0.10.0
+neovim-0.10.1
 
 /var/db/pkg/app-eselect:
-eselect-fontconfig-20220403  eselect-lib-bin-symlink-0.1.1-r1  eselect-mpg123-0.1-r1    eselect-pinentry-0.7.4  eselect-vi-20221122
-eselect-iptables-20220320    eselect-lua-4-r1                  eselect-notify-send-0.1  eselect-rust-20210703   
+eselect-fontconfig-20220403       eselect-pinentry-0.7.4
+eselect-iptables-20220320         eselect-repository-14
+eselect-lib-bin-symlink-0.1.1-r1  eselect-rust-20210703
+eselect-lua-4-r1                  eselect-vi-20221122
+eselect-mpg123-0.1-r1             eselect-wxwidgets-20230114-r1
+eselect-notify-send-0.1           
 
 /var/db/pkg/app-laptop:
 tlp-1.5.0
 
 /var/db/pkg/app-misc:
-brightnessctl-0.5.1  ca-certificates-20240203.3.98  editor-wrapper-4-r1  mime-types-2.1.54  pax-utils-1.3.7
+brightnessctl-0.5.1            editor-wrapper-4-r1  mime-types-2.1.54
+ca-certificates-20240203.3.98  keyd-2.5.0           pax-utils-1.3.7
 
 /var/db/pkg/app-portage:
-elt-patches-20240512  gemato-20.6  gentoolkit-0.6.7  getuto-1.13  portage-utils-0.97
+elt-patches-20240721  gentoolkit-0.6.7  portage-utils-0.97
+gemato-20.6           getuto-1.13       
 
 /var/db/pkg/app-shells:
-bash-5.2_p26-r6  zoxide-0.9.4  zsh-5.9-r6  zsh-autosuggestions-0.7.0-r2  zsh-syntax-highlighting-0.8.0
+bash-5.2_p32  zsh-5.9-r6                    zsh-syntax-highlighting-0.8.0
+zoxide-0.9.4  zsh-autosuggestions-0.7.0-r2  
 
 /var/db/pkg/app-text:
-asciidoc-10.2.0                    docbook-xml-dtd-4.2-r3             docbook-xsl-stylesheets-1.79.1-r4  scdoc-1.11.3          zathura-pdf-mupdf-0.4.1
-build-docbook-catalog-2.4          docbook-xml-dtd-4.3-r2             libpaper-2.1.3                     sgml-common-0.6.3-r7  
-docbook-dsssl-stylesheets-1.79-r4  docbook-xml-dtd-4.4-r3             mandoc-1.14.6                      texlive-core-2023-r9  
-docbook-sgml-dtd-3.0-r5            docbook-xml-dtd-4.5-r2             manpager-1                         xmlto-0.0.28-r11      
-docbook-xml-dtd-4.1.2-r7           docbook-xsl-ns-stylesheets-1.79.1  mupdf-1.24.1                       zathura-0.5.4         
+asciidoc-10.2.0                    gspell-1.12.2
+build-docbook-catalog-2.4          hunspell-1.7.2-r1
+docbook-dsssl-stylesheets-1.79-r4  iso-codes-4.16.0
+docbook-sgml-dtd-3.0-r5            libpaper-2.1.3
+docbook-xml-dtd-4.1.2-r7           mandoc-1.14.6
+docbook-xml-dtd-4.2-r3             manpager-1
+docbook-xml-dtd-4.3-r2             mupdf-1.24.1
+docbook-xml-dtd-4.4-r3             poppler-data-0.4.12
+docbook-xml-dtd-4.5-r2             scdoc-1.11.3
+docbook-xsl-ns-stylesheets-1.79.1  sgml-common-0.6.3-r7
+docbook-xsl-stylesheets-1.79.1-r4  texlive-core-2023-r10
+doxygen-1.11.0                     xmlto-0.0.28-r11
+enchant-2.6.1                      zathura-0.5.4
+ghostscript-gpl-10.03.1            zathura-pdf-mupdf-0.4.3
 
 /var/db/pkg/dev-build:
-autoconf-2.13-r8  autoconf-archive-2023.02.20  automake-1.16.5-r2         cmake-3.30.0       libtool-2.4.7-r4  meson-1.4.1           ninja-1.12.1
-autoconf-2.72-r1  autoconf-wrapper-20231224    automake-wrapper-20240607  gtk-doc-am-1.33.2  make-4.4.1-r1     meson-format-array-0  
+autoconf-2.13-r8             b2-5.2.1           meson-format-array-0
+autoconf-2.72-r1             cmake-3.30.1       ninja-1.12.1
+autoconf-archive-2023.02.20  gtk-doc-am-1.33.2  
+autoconf-wrapper-20231224    libtool-2.4.7-r4   
+automake-1.17-r1             make-4.4.1-r1      
+automake-wrapper-20240607    meson-1.5.1        
 
 /var/db/pkg/dev-cpp:
 atkmm-2.28.3  cairomm-1.14.4  glibmm-2.66.7  gtkmm-3.24.9  pangomm-2.46.3
 
 /var/db/pkg/dev-db:
-sqlite-3.46.0
+sqlite-3.46.0  unixODBC-2.3.12
 
 /var/db/pkg/dev-debug:
-gdb-14.2-r1
+gdb-15.1
 
 /var/db/pkg/dev-lang:
-go-1.22.5       luajit-2.1.1716656478  nasm-2.16.03  python-3.12.4_p2     python-exec-2.4.10      rust-bin-1.79.0        tcl-8.6.14
-lua-5.1.5-r200  mujs-1.3.4             perl-5.40.0   python-3.13.0_beta3  python-exec-conf-2.4.6  spidermonkey-115.12.0  vala-0.56.17
+go-1.22.5              perl-5.40.0             spidermonkey-115.13.0
+lua-5.1.5-r200         python-3.12.4_p3        swig-4.2.1
+luajit-2.1.1716656478  python-3.13.0_rc1_p1    tcl-8.6.14
+mujs-1.3.5             python-exec-2.4.10      vala-0.56.17
+nasm-2.16.03           python-exec-conf-2.4.6  
+orc-0.4.38             rust-bin-1.79.0         
 
 /var/db/pkg/dev-libs:
-atk-2.46.0                    gobject-introspection-common-1.78.1  libedit-20221030.3.1  libltdl-2.4.7-r1   libxslt-1.1.39    ptexenc-1.4.3_p20230311
-boehm-gc-8.2.6                gumbo-0.12.1                         libevdev-1.13.2       libmpack-1.0.5-r5  lzo-2.10          spdlog-1.14.1
-date-3.0.0                    icu-74.2                             libffi-3.4.6          libnl-3.9.0        mpc-1.3.1         tree-sitter-0.22.6
-dbus-glib-0.112               inih-58                              libfido2-1.13.0       libpcre-8.45-r3    mpdecimal-4.0.0   unibilium-2.1.1-r1
-double-conversion-3.3.0       json-c-0.17                          libfmt-9.1.0-r2       libpcre2-10.44-r1  mpfr-4.2.1        vala-common-0.56.17
-elfutils-0.191-r1             json-glib-1.8.0                      libgcrypt-1.11.0      libpipeline-1.5.7  msgpack-6.0.0-r1  wayland-1.23.0
-ell-0.66                      jsoncpp-1.9.5                        libgit2-1.8.1         libsigc++-2.12.0   nettle-3.10       wayland-protocols-1.36
-expat-2.6.2                   kpathsea-6.3.5_p20230311             libgpg-error-1.50     libtasn1-4.19.0    npth-1.7-r1       zziplib-0.13.76
-fribidi-1.0.13                libassuan-3.0.0                      libgrapheme-2.0.2     libunistring-1.2   nspr-4.35-r2      
-girara-0.4.2                  libatomic_ops-7.8.2                  libgudev-238-r2       libusb-1.0.27-r1   nss-3.101.1       
-glib-2.78.6                   libbsd-0.11.8                        libical-3.0.18        libuv-1.48.0       oniguruma-6.9.9   
-gmp-6.3.0-r1                  libcbor-0.11.0                       libinput-1.26.1       libvterm-0.3.3     openssl-3.2.2     
-gobject-introspection-1.78.1  libclc-18.1.8                        libksba-1.6.7         libxml2-2.12.8     popt-1.19-r1      
+atk-2.46.0                           libmpack-1.0.5-r5
+boehm-gc-8.2.6                       libnl-3.10.0
+boost-1.85.0-r1                      libpcre-8.45-r3
+date-3.0.0                           libpcre2-10.44-r1
+dbus-glib-0.112                      libpipeline-1.5.7
+double-conversion-3.3.0              libsigc++-2.12.0
+elfutils-0.191-r1                    libtasn1-4.19.0
+ell-0.67                             libunistring-1.2
+expat-2.6.2                          libusb-1.0.27-r1
+fribidi-1.0.13                       libutf8proc-2.9.0
+girara-0.4.2                         libuv-1.48.0
+glib-2.78.6                          libvterm-0.3.3
+gmp-6.3.0-r1                         libxml2-2.12.8
+gobject-introspection-1.78.1         libxslt-1.1.39
+gobject-introspection-common-1.78.1  lzo-2.10
+gumbo-0.12.1                         mpc-1.3.1
+icu-75.1                             mpdecimal-4.0.0
+inih-58                              mpfr-4.2.1
+jemalloc-5.3.0-r1                    msgpack-6.0.0-r1
+json-c-0.17                          nettle-3.10
+json-glib-1.8.0                      npth-1.7-r1
+jsoncpp-1.9.5                        nspr-4.35-r2
+kpathsea-6.3.5_p20230311             nss-3.103
+libassuan-3.0.0                      oniguruma-6.9.9
+libatomic_ops-7.8.2                  openssl-3.3.1-r2
+libbsd-0.11.8                        popt-1.19-r1
+libcbor-0.11.0                       ptexenc-1.4.3_p20230311
+libclc-18.1.8                        spdlog-1.14.1
+libedit-20221030.3.1                 tree-sitter-0.22.6
+libevdev-1.13.2                      tree-sitter-bash-0.21.0-r1
+libffi-3.4.6                         tree-sitter-c-0.21.4
+libfido2-1.13.0                      tree-sitter-lua-0.1.0
+libfmt-9.1.0-r2                      tree-sitter-markdown-0.2.3
+libgcrypt-1.11.0                     tree-sitter-python-0.21.0-r1
+libgit2-1.8.1                        tree-sitter-query-0.4.0
+libgpg-error-1.50                    tree-sitter-vim-0.4.0
+libgrapheme-2.0.2                    tree-sitter-vimdoc-3.0.0
+libgudev-238-r2                      unibilium-2.1.1-r1
+libical-3.0.18                       vala-common-0.56.17
+libinput-1.26.1                      wayland-1.23.0
+libksba-1.6.7                        wayland-protocols-1.36
+libltdl-2.4.7-r1                     zziplib-0.13.77
 
 /var/db/pkg/dev-lua:
 lpeg-1.0.2-r101  luv-1.45.0.0  mpack-1.0.12
 
 /var/db/pkg/dev-perl:
-Authen-SASL-2.170.0                 File-BaseDir-0.90.0           MailTools-2.210.0                     Role-Tiny-2.2.4
-B-Hooks-EndOfScope-0.280.0          File-DesktopEntry-0.220.0-r1  MIME-Charset-1.13.1                   Socket6-0.290.0
-Capture-Tiny-0.480.0-r1             File-HomeDir-1.6.0            Module-Build-0.423.400                Specio-0.480.0
-Class-Data-Inheritable-0.90.0       File-Listing-6.160.0          Module-Implementation-0.90.0-r1       Sub-Exporter-0.991.0
-Class-XSAccessor-1.190.0-r3         File-MimeInfo-0.330.0         Module-Runtime-0.16.0-r1              Sub-Exporter-Progressive-0.1.13-r1
-Clone-0.460.0                       File-Slurper-0.14.0           Mozilla-CA-20999999-r1                Sub-Identify-0.140.0-r1
-Config-AutoConf-0.320.0             File-Which-1.270.0            MRO-Compat-0.150.0                    Sub-Install-0.929.0
-CPAN-Meta-Check-0.18.0              HTML-Parser-3.820.0           namespace-autoclean-0.290.0           Sub-Name-0.270.0
-Data-OptList-0.114.0                HTML-Tagset-3.240.0           namespace-clean-0.270.0-r1            Sub-Quote-2.6.8
-Devel-Caller-2.70.0                 HTTP-Cookies-6.110.0          Net-HTTP-6.230.0                      Test-Fatal-0.17.0
-Devel-CheckLib-1.160.0-r1           HTTP-Date-6.60.0              Net-SSLeay-1.940.0                    TimeDate-2.330.0-r1
-Devel-GlobalDestruction-0.140.0-r1  HTTP-Message-6.460.0          Package-Stash-0.400.0                 Try-Tiny-0.310.0
-Devel-LexAlias-0.50.0-r1            HTTP-Negotiate-6.10.0-r2      Package-Stash-XS-0.300.0              Unicode-LineBreak-2019.1.0
-Devel-StackTrace-2.40.0             IO-HTML-1.4.0                 PadWalker-2.500.0                     URI-5.280.0
-Digest-HMAC-1.40.0                  IO-Socket-INET6-2.730.0       Params-Util-1.102.0                   Variable-Magic-0.640.0
-Dist-CheckConflicts-0.110.0-r1      IO-Socket-SSL-2.85.0          Params-ValidationCompiler-0.310.0-r1  WWW-RobotRules-6.20.0-r2
-Encode-Locale-1.50.0-r1             IPC-System-Simple-1.300.0     Perl-Tidy-20240511.0.0                XML-Parser-2.470.0
-Error-0.170.290                     libwww-perl-6.770.0           PerlIO-utf8_strict-0.10.0             XString-0.5.0
-Eval-Closure-0.140.0-r1             Log-Dispatch-2.710.0          Ref-Util-0.204.0                      YAML-Tiny-1.740.0
-Exception-Class-1.450.0             LWP-MediaTypes-6.40.0         Ref-Util-XS-0.117.0                   
-ExtUtils-HasCompiler-0.25.0         LWP-Protocol-https-6.140.0    Regexp-IPv6-0.30.0-r2                 
+Authen-SASL-2.170.0                 LWP-Protocol-https-6.140.0
+B-Hooks-EndOfScope-0.280.0          MailTools-2.210.0
+Capture-Tiny-0.480.0-r1             MIME-Charset-1.13.1
+Class-Data-Inheritable-0.90.0       Module-Build-0.423.400
+Class-XSAccessor-1.190.0-r3         Module-Implementation-0.90.0-r1
+Clone-0.460.0                       Module-Runtime-0.16.0-r1
+Config-AutoConf-0.320.0             MRO-Compat-0.150.0
+CPAN-Meta-Check-0.18.0              namespace-autoclean-0.290.0
+Data-OptList-0.114.0                namespace-clean-0.270.0-r1
+Devel-Caller-2.70.0                 Net-HTTP-6.230.0
+Devel-CheckLib-1.160.0-r1           Net-SSLeay-1.940.0
+Devel-GlobalDestruction-0.140.0-r1  Package-Stash-0.400.0
+Devel-LexAlias-0.50.0-r1            Package-Stash-XS-0.300.0
+Devel-StackTrace-2.40.0             PadWalker-2.500.0
+Digest-HMAC-1.40.0                  Params-Util-1.102.0
+Dist-CheckConflicts-0.110.0-r1      Params-ValidationCompiler-0.310.0-r1
+Encode-Locale-1.50.0-r1             Perl-Tidy-20240511.0.0
+Error-0.170.290                     PerlIO-utf8_strict-0.10.0
+Eval-Closure-0.140.0-r1             Ref-Util-0.204.0
+Exception-Class-1.450.0             Ref-Util-XS-0.117.0
+ExtUtils-HasCompiler-0.25.0         Regexp-IPv6-0.30.0-r2
+File-BaseDir-0.90.0                 Role-Tiny-2.2.4
+File-DesktopEntry-0.220.0-r1        Socket6-0.290.0
+File-HomeDir-1.6.0                  Specio-0.480.0
+File-Listing-6.160.0                Sub-Exporter-0.991.0
+File-MimeInfo-0.330.0               Sub-Exporter-Progressive-0.1.13-r1
+File-Slurper-0.14.0                 Sub-Identify-0.140.0-r1
+File-Which-1.270.0                  Sub-Install-0.929.0
+HTML-Parser-3.820.0                 Sub-Name-0.270.0
+HTML-Tagset-3.240.0                 Sub-Quote-2.6.8
+HTTP-Cookies-6.110.0                Test-Fatal-0.17.0
+HTTP-Date-6.60.0                    TimeDate-2.330.0-r1
+HTTP-Message-6.460.0                Try-Tiny-0.310.0
+HTTP-Negotiate-6.10.0-r2            Unicode-LineBreak-2019.1.0
+IO-HTML-1.4.0                       URI-5.280.0
+IO-Socket-INET6-2.730.0             Variable-Magic-0.640.0
+IO-Socket-SSL-2.88.0                WWW-RobotRules-6.20.0-r2
+IPC-System-Simple-1.300.0           XML-Parser-2.470.0
+libwww-perl-6.770.0                 XString-0.5.0
+Log-Dispatch-2.710.0                YAML-Tiny-1.740.0
+LWP-MediaTypes-6.40.0               
 
 /var/db/pkg/dev-python:
-black-24.4.2-r1             flit-core-3.9.0                 jaraco-functools-4.0.1  olefile-0.47        pygments-2.18.0             urllib3-2.2.2
-certifi-3021.3.16-r4        gentoo-common-1                 jaraco-text-3.12.1      ordered-set-4.1.0   PySocks-1.7.1-r2            uv-0.2.18
-charset-normalizer-3.3.2    gpep517-16                      jedi-0.19.1             packaging-24.1      python-lsp-jsonrpc-1.1.2    wheel-0.43.0
-click-8.1.7                 hatch-fancy-pypi-readme-24.1.0  jinja-3.1.4             parso-0.8.4         python-lsp-server-1.11.0    
-cython-3.0.10               hatch-vcs-0.4.0                 lxml-5.2.2              pathspec-0.12.1     requests-2.32.3             
-docstring-to-markdown-0.15  hatchling-1.25.0                mako-1.3.5              pillow-10.4.0       setuptools-70.2.0           
-docutils-0.21.2             idna-3.7                        markupsafe-2.1.5        platformdirs-4.2.2  setuptools-scm-8.1.0        
-editables-0.5               installer-0.7.0                 more-itertools-10.3.0   pluggy-1.5.0        trove-classifiers-2024.7.2  
-ensurepip-pip-24.1.1        jaraco-context-5.3.0            mypy_extensions-1.0.0   ply-3.11-r2         ujson-5.10.0                
+certifi-3024.7.22           more-itertools-10.3.0       urllib3-2.2.2
+chardet-5.2.0               olefile-0.47                uv-0.2.30
+charset-normalizer-3.3.2    ordered-set-4.1.0           wheel-0.44.0
+cython-3.0.10               packaging-24.1              wxpython-4.2.1-r2
+docstring-to-markdown-0.15  parso-0.8.4                 
+docutils-0.21.2             pathspec-0.12.1             
+editables-0.5               pillow-10.4.0               
+ensurepip-pip-24.2          platformdirs-4.2.2          
+flit-core-3.9.0             pluggy-1.5.0                
+gentoo-common-1             ply-3.11-r2                 
+gpep517-16                  pygments-2.18.0             
+hatchling-1.25.0            PySocks-1.7.1-r2            
+idna-3.7                    python-lsp-jsonrpc-1.1.2    
+installer-0.7.0             python-lsp-server-1.11.0    
+jaraco-context-5.3.0        requests-2.32.3             
+jaraco-functools-4.0.2      setuptools-72.1.0           
+jaraco-text-4.0.0           setuptools-scm-8.1.0        
+jedi-0.19.1_p20240706       sip-6.8.6                   
+jinja-3.1.4                 six-1.16.0-r1               
+lazy-object-proxy-1.10.0    snakeoil-0.10.8             
+lxml-5.2.2                  tree-sitter-0.22.3          
+mako-1.3.5                  trove-classifiers-2024.7.2  
+markupsafe-2.1.5            ujson-5.10.0                
 
 /var/db/pkg/dev-util:
-desktop-file-utils-0.27-r1  gtk-doc-1.33.2-r1              patchelf-0.18.0          spirv-llvm-translator-17.0.0-r2
-gdbus-codegen-2.78.6        gtk-update-icon-cache-3.24.42  pkgconf-2.2.0            spirv-tools-1.3.283.0
-glib-utils-2.78.6           intel_clc-24.1.2               re2c-3.1                 tokei-12.1.2
-gperf-3.1-r2                itstool-2.0.7-r2               spirv-headers-1.3.283.0  wayland-scanner-1.23.0
+desktop-file-utils-0.27-r1     pkgconf-2.2.0
+gdbus-codegen-2.78.6           pkgdev-0.2.10-r1
+glib-utils-2.78.6              re2c-3.1
+gperf-3.1-r2                   ruff-0.5.5
+gtk-doc-1.33.2-r1              spirv-headers-1.3.290.0
+gtk-update-icon-cache-3.24.42  spirv-llvm-translator-18.1.3
+intel_clc-24.1.5               spirv-tools-1.3.290.0
+itstool-2.0.7-r2               tokei-12.1.2
+patchelf-0.18.0                uftrace-0.16
+pkgcheck-0.10.30               wayland-scanner-1.23.0
 
 /var/db/pkg/dev-vcs:
 git-2.45.2
 
 /var/db/pkg/gnome-base:
-dconf-0.40.0  gnome-keyring-42.1-r2  librsvg-2.57.3
+dconf-0.40.0  gnome-keyring-46.2  librsvg-2.58.2
 
 /var/db/pkg/gui-apps:
-grim-1.4.1  gtklock-3.0.0-r1  mako-1.9.0  slurp-1.5.0  swaybg-1.2.1  waybar-0.10.3  wl-clipboard-2.2.1-r1  wofi-1.4.1
+grim-1.4.1        mako-1.9.0   swaybg-1.2.1   wl-clipboard-2.2.1-r1
+gtklock-3.0.0-r1  slurp-1.5.0  waybar-0.10.3  wofi-1.4.1
 
 /var/db/pkg/gui-libs:
-display-manager-init-1.1.2  gtk-layer-shell-0.8.2  gtk-session-lock-0.2.0-r5  libdecor-0.2.2-r1  wlroots-0.17.4
+display-manager-init-1.1.2  gtk-session-lock-0.2.0-r5  wlroots-0.17.4
+gtk-layer-shell-0.8.2       libdecor-0.2.2-r1          
 
 /var/db/pkg/gui-wm:
 sway-1.9-r1
@@ -142,16 +247,27 @@ sway-1.9-r1
 nullmailer-2.2-r2
 
 /var/db/pkg/media-fonts:
-encodings-1.1.0  font-util-1.4.1  liberation-fonts-2.1.5  noto-20240531  noto-emoji-20231130-r1
+encodings-1.1.0  liberation-fonts-2.1.5  noto-emoji-20231130-r1
+font-util-1.4.1  noto-20240731           urw-fonts-20230503-r1
 
 /var/db/pkg/media-gfx:
 graphite2-1.3.14_p20210810-r3  imv-4.5.0  potrace-1.16-r1
 
 /var/db/pkg/media-libs:
-alsa-lib-1.2.12             fontconfig-2.15.0  jbig2dec-0.20          libglvnd-1.7.0       libpulse-17.0        libvorbis-1.3.7-r1  sbc-2.0
-alsa-topology-conf-1.2.5.1  freetype-2.13.2    lcms-2.16-r1           libjpeg-turbo-3.0.3  libsdl-1.2.68        mesa-24.1.2         speexdsp-1.2.1
-alsa-ucm-conf-1.2.12        gd-2.3.3-r4        libdisplay-info-0.2.0  libogg-1.3.5-r1      libsdl2-2.30.3       openjpeg-2.5.2      tiff-4.6.0-r1
-flac-1.4.3                  harfbuzz-9.0.0     libepoxy-1.5.10-r3     libpng-1.6.43        libsndfile-1.2.2-r2  opus-1.5.2          
+alsa-lib-1.2.12              gstreamer-1.22.11       libvorbis-1.3.7-r1
+alsa-topology-conf-1.2.5.1   harfbuzz-9.0.0          mesa-24.1.5
+alsa-ucm-conf-1.2.12         jbig2dec-0.20           openjpeg-2.5.2
+flac-1.4.3                   lcms-2.16-r1            opus-1.5.2
+fontconfig-2.15.0            libdisplay-info-0.2.0   sbc-2.0
+freeglut-3.6.0               libepoxy-1.5.10-r3      speexdsp-1.2.1
+freetype-2.13.2              libglvnd-1.7.0          tiff-4.6.0-r1
+gd-2.3.3-r4                  libjpeg-turbo-3.0.3-r1  
+glew-2.2.0-r1                libogg-1.3.5-r1         
+glm-1.0.1                    libpng-1.6.43           
+glu-9.0.3                    libpulse-17.0           
+graphene-1.10.8-r1           libsdl-1.2.68           
+gst-plugins-bad-1.22.11-r1   libsdl2-2.30.3          
+gst-plugins-base-1.22.11-r1  libsndfile-1.2.2-r2     
 
 /var/db/pkg/media-plugins:
 alsa-plugins-1.2.12
@@ -160,73 +276,102 @@ alsa-plugins-1.2.12
 lame-3.100-r3  mpg123-base-1.32.3  pulseaudio-daemon-17.0-r1
 
 /var/db/pkg/media-video:
-ffmpeg-6.1.1-r7
+ffmpeg-6.1.1-r8
 
 /var/db/pkg/net-dns:
-c-ares-1.31.0  libidn2-2.3.7  openresolv-3.13.2-r1
+c-ares-1.32.2  libidn-1.42  libidn2-2.3.7  openresolv-3.13.2-r1
 
 /var/db/pkg/net-firewall:
 iptables-1.8.10-r1
 
 /var/db/pkg/net-im:
-discord-0.0.58-r2
+discord-0.0.63
 
 /var/db/pkg/net-libs:
-gnutls-3.8.5-r1  http-parser-2.9.4-r2  libasyncns-0.8-r4  libmnl-1.0.5  libnsl-2.0.1  libpsl-0.21.5  libssh2-1.11.0-r2  libtirpc-1.3.4-r2  nghttp2-1.62.1
+gnutls-3.8.6-r1       libmnl-1.0.5   libssh2-1.11.0-r2  nghttp3-1.4.0
+http-parser-2.9.4-r2  libnsl-2.0.1   libtirpc-1.3.4-r2  
+libasyncns-0.8-r4     libpsl-0.21.5  nghttp2-1.62.1     
 
 /var/db/pkg/net-mail:
 mailutils-3.17
 
 /var/db/pkg/net-misc:
-chrony-4.5  curl-8.8.0-r1  iputils-20240117  openssh-9.8_p1-r1  rclone-1.67.0  rsync-3.3.0  wget-1.24.5
+chrony-4.5     iputils-20240117   rclone-1.67.0   wget-1.24.5
+curl-8.9.1-r1  openssh-9.8_p1-r2  rsync-3.3.0-r1  
 
 /var/db/pkg/net-print:
 cups-2.4.10
 
 /var/db/pkg/net-wireless:
-bluez-5.76-r1  iw-6.7  iwd-2.18  wireless-regdb-20240508
+bluez-5.77  iw-6.7  iwd-2.19  wireless-regdb-20240508
 
 /var/db/pkg/perl-core:
 File-Temp-0.231.100-r1
+
+/var/db/pkg/sci-electronics:
+electronics-menu-1.0-r1  kicad-footprints-8.0.3  ngspice-40
+kicad-8.0.3              kicad-symbols-8.0.3     
+
+/var/db/pkg/sci-libs:
+opencascade-7.8.1
 
 /var/db/pkg/sec-keys:
 openpgp-keys-gentoo-release-20240703
 
 /var/db/pkg/sys-apps:
-acl-2.3.2-r1     ed-1.20.2             groff-1.23.0          kbd-2.6.4           man-pages-6.06   sed-4.9-r1            util-linux-2.40.1-r3
-attr-2.5.2-r1    ethtool-6.9           hdparm-9.65-r2        kmod-32-r2          net-tools-2.10   shadow-4.14.7         which-2.21
-baselayout-2.15  file-5.45-r4          help2man-1.49.3       less-661            openrc-0.54.2    smartmontools-7.4-r1  
-bat-0.24.0-r1    findutils-4.10.0      hwdata-0.383          locale-gen-2.23-r1  pciutils-3.13.0  systemd-utils-255.8   
-coreutils-9.5    gawk-5.3.0-r1         install-xattr-0.8-r1  lsb-release-3.3     portage-3.0.65   sysvinit-3.09         
-dbus-1.15.8      gentoo-functions-1.6  iproute2-6.9.0        lsd-1.1.2-r1        ripgrep-14.1.0   texinfo-7.1-r1        
-diffutils-3.10   grep-3.11-r1          iucode_tool-2.3.1-r1  man-db-2.12.1       sandbox-2.39     usbutils-017          
+acl-2.3.2-r1            hdparm-9.65-r2        openrc-0.54.2
+attr-2.5.2-r1           help2man-1.49.3       pciutils-3.13.0
+baselayout-2.15         hwdata-0.383          pkgcore-0.12.27
+bat-0.24.0-r1           install-xattr-0.8-r1  portage-3.0.65-r1
+coreutils-9.5           iproute2-6.10.0       ripgrep-14.1.0-r1
+dbus-1.15.8             iucode_tool-2.3.1-r1  sandbox-2.39
+diffutils-3.10          kbd-2.6.4             sed-4.9-r1
+ed-1.20.2               kmod-32-r2            shadow-4.14.8
+ethtool-6.9             less-661              smartmontools-7.4-r1
+file-5.45-r4            locale-gen-2.23-r1    systemd-utils-255.10
+findutils-4.10.0        lsb-release-3.3       sysvinit-3.09
+gawk-5.3.0-r1           lsd-1.1.2-r1          texinfo-7.1-r1
+gentoo-functions-1.7.1  man-db-2.12.1         usbutils-017
+grep-3.11-r1            man-pages-6.06        util-linux-2.40.2
+groff-1.23.0            net-tools-2.10        which-2.21
 
 /var/db/pkg/sys-auth:
-elogind-252.9-r2  pam_u2f-1.3.0  pambase-20240128  passwdqc-2.0.3-r1  polkit-124-r1  seatd-0.8.0
+elogind-252.9-r2  pambase-20240128   polkit-124-r1
+pam_u2f-1.3.0     passwdqc-2.0.3-r1  seatd-0.8.0
 
 /var/db/pkg/sys-boot:
 efibootmgr-18-r1
 
 /var/db/pkg/sys-devel:
--MERGING-gnuconfig-20230731  clang-17.0.6          clang-toolchain-symlinks-17  gettext-0.22.5             llvm-18.1.8                 m4-1.4.19-r2
-bc-1.07.1-r6                 clang-18.1.8          clang-toolchain-symlinks-18  gnuconfig-20240101         llvm-common-18.1.8          patch-2.7.6-r5
-binutils-2.42-r2             clang-common-18.1.8   flex-2.6.4-r6                lld-18.1.8                 llvm-toolchain-symlinks-17  
-binutils-config-5.5          clang-runtime-17.0.6  gcc-14.1.1_p20240622         lld-toolchain-symlinks-18  llvm-toolchain-symlinks-18  
-bison-3.8.2-r2               clang-runtime-18.1.8  gcc-config-2.11              llvm-17.0.6                llvmgold-18                 
+-MERGING-gnuconfig-20230731  flex-2.6.4-r6                  llvmgold-18
+bc-1.07.1-r6                 gcc-14.2.0                     m4-1.4.19-r2
+binutils-2.42-r2             gcc-config-2.11                patch-2.7.6-r5
+binutils-2.43                gettext-0.22.5                 
+binutils-config-5.5.2        gnuconfig-20240101             
+bison-3.8.2-r2               lld-18.1.8                     
+clang-18.1.8                 lld-toolchain-symlinks-18      
+clang-common-18.1.8-r1       llvm-18.1.8-r4                 
+clang-runtime-18.1.8         llvm-common-18.1.8             
+clang-toolchain-symlinks-18  llvm-toolchain-symlinks-18-r1  
 
 /var/db/pkg/sys-firmware:
-intel-microcode-20240531_p20240526-r1
+intel-microcode-20240531_p20240526-r2
 
 /var/db/pkg/sys-fs:
 e2fsprogs-1.47.1  fuse-3.16.2  fuse-common-3.10.4  udev-init-scripts-35
 
 /var/db/pkg/sys-kernel:
-gentoo-sources-6.9.7  linux-firmware-20240610-r2  linux-headers-6.9
+linux-firmware-20240709-r1  linux-headers-6.9
 
 /var/db/pkg/sys-libs:
-binutils-libs-2.42-r2  compiler-rt-sanitizers-17.0.6  gdbm-1.24      libomp-18.1.8        mtdev-1.1.7            readline-8.2_p10
-compiler-rt-17.0.6     compiler-rt-sanitizers-18.1.8  glibc-2.39-r9  libseccomp-2.5.5-r1  ncurses-6.4_p20240414  timezone-data-2024a-r1
-compiler-rt-18.1.8     efivar-38                      libcap-2.70    libxcrypt-4.4.36-r3  pam-1.6.1              zlib-1.3.1-r1
+binutils-libs-2.43             libseccomp-2.5.5-r1
+compiler-rt-18.1.8             libxcrypt-4.4.36-r3
+compiler-rt-sanitizers-18.1.8  mtdev-1.1.7
+efivar-39                      ncurses-6.4_p20240414
+gdbm-1.24                      pam-1.6.1
+glibc-2.40                     readline-8.2_p13
+libcap-2.70                    timezone-data-2024a-r1
+libomp-18.1.8                  zlib-1.3.1-r1
 
 /var/db/pkg/sys-power:
 linux-x86-power-tools-4.20  thermald-2.5.7  upower-1.90.4-r1
@@ -235,47 +380,81 @@ linux-x86-power-tools-4.20  thermald-2.5.7  upower-1.90.4-r1
 gotop-4.2.0  procps-4.0.4-r1  psmisc-23.7
 
 /var/db/pkg/virtual:
-acl-0-r2                     package-manager-1                    perl-ExtUtils-ParseXS-3.510.0-r1  perl-Scalar-List-Utils-1.630.0-r1  ttf-fonts-1-r2
-dev-manager-0-r2             pager-0-r1                           perl-File-Path-2.180.0-r3         perl-Storable-3.320.0-r1           udev-217-r7
-editor-0-r7                  perl-Carp-1.540.0-r1                 perl-File-Spec-3.900.0            perl-Sys-Syslog-0.360.0-r4         w3m-1
-freedesktop-icon-theme-0-r4  perl-Compress-Raw-Bzip2-2.212.0      perl-File-Temp-0.231.100-r1       perl-Test-Harness-3.480.0          
-libc-1-r1                    perl-Compress-Raw-Zlib-2.212.0-r1    perl-Getopt-Long-2.570.0-r1       perl-Test-Simple-1.302.199         
-libcrypt-2-r1                perl-CPAN-2.360.0-r1                 perl-IO-1.550.0                   perl-Text-ParseWords-3.310.0-r3    
-libelf-3-r1                  perl-CPAN-Meta-2.150.10-r8           perl-IO-Compress-2.212.0          perl-Time-HiRes-1.977.700          
-libiconv-0-r2                perl-CPAN-Meta-Requirements-2.143.0  perl-IO-Socket-IP-0.420.0         perl-Time-Local-1.350.0            
-libintl-0-r2                 perl-CPAN-Meta-YAML-0.18.0-r10       perl-JSON-PP-4.160.0-r2           perl-Unicode-Collate-1.310.0-r2    
-libudev-251-r2               perl-Data-Dumper-2.189.0             perl-libnet-3.150.0-r1            perl-version-0.993.0               
-libusb-1-r2                  perl-Digest-MD5-2.580.100_rc-r1      perl-Math-BigInt-2.3.2            perl-XSLoader-0.320.0-r1           
-logger-0-r1                  perl-Digest-SHA-6.40.0-r1            perl-MIME-Base64-3.160.100_rc-r1  pkgconfig-3                        
-mailx-4                      perl-Encode-3.210.0-r1               perl-Module-Load-0.360.0-r4       resolvconf-1                       
-man-0-r4                     perl-Exporter-5.780.0                perl-Module-Metadata-1.0.38       rust-1.79.0                        
-mta-1-r2                     perl-ExtUtils-CBuilder-0.280.240     perl-parent-0.241.0-r1            secret-service-0                   
-notification-daemon-0        perl-ExtUtils-Install-2.220.0-r1     perl-Parse-CPAN-Meta-2.150.10-r8  service-manager-1-r1               
-openssh-0                    perl-ExtUtils-MakeMaker-7.700.0-r1   perl-Perl-OSType-1.10.0-r8        ssh-0-r2                           
-os-headers-0-r2              perl-ExtUtils-Manifest-1.750.0       perl-podlators-5.10.200_rc        tmpfiles-0-r5                      
+acl-0-r2                             perl-File-Path-2.180.0-r3
+dev-manager-0-r2                     perl-File-Spec-3.900.0
+editor-0-r7                          perl-File-Temp-0.231.100-r1
+freedesktop-icon-theme-0-r4          perl-Getopt-Long-2.570.0-r1
+glu-9.0-r2                           perl-IO-1.550.0
+libc-1-r1                            perl-IO-Compress-2.212.0
+libcrypt-2-r1                        perl-IO-Socket-IP-0.420.0
+libelf-3-r1                          perl-JSON-PP-4.160.0-r2
+libiconv-0-r2                        perl-libnet-3.150.0-r1
+libintl-0-r2                         perl-Math-BigInt-2.3.2
+libudev-251-r2                       perl-MIME-Base64-3.160.100_rc-r1
+libusb-1-r2                          perl-Module-Load-0.360.0-r4
+logger-0-r1                          perl-Module-Metadata-1.0.38
+mailx-4                              perl-parent-0.241.0-r1
+man-0-r4                             perl-Parse-CPAN-Meta-2.150.10-r8
+mta-1-r2                             perl-Perl-OSType-1.10.0-r8
+notification-daemon-0                perl-podlators-5.10.200_rc
+opengl-7.0-r2                        perl-Scalar-List-Utils-1.630.0-r1
+openssh-0                            perl-Storable-3.320.0-r1
+os-headers-0-r2                      perl-Sys-Syslog-0.360.0-r4
+package-manager-1                    perl-Test-Harness-3.480.0
+pager-0-r1                           perl-Test-Simple-1.302.199
+perl-Carp-1.540.0-r1                 perl-Text-ParseWords-3.310.0-r3
+perl-Compress-Raw-Bzip2-2.212.0      perl-Time-HiRes-1.977.700
+perl-Compress-Raw-Zlib-2.212.0-r1    perl-Time-Local-1.350.0
+perl-CPAN-2.360.0-r1                 perl-Unicode-Collate-1.310.0-r2
+perl-CPAN-Meta-2.150.10-r8           perl-version-0.993.0
+perl-CPAN-Meta-Requirements-2.143.0  perl-XSLoader-0.320.0-r1
+perl-CPAN-Meta-YAML-0.18.0-r10       pkgconfig-3
+perl-Data-Dumper-2.189.0             resolvconf-1
+perl-Digest-MD5-2.580.100_rc-r1      rust-1.79.0
+perl-Digest-SHA-6.40.0-r1            secret-service-0
+perl-Encode-3.210.0-r1               service-manager-1-r2
+perl-Exporter-5.780.0                ssh-0-r2
+perl-ExtUtils-CBuilder-0.280.240     tmpfiles-0-r5
+perl-ExtUtils-Install-2.220.0-r1     ttf-fonts-1-r2
+perl-ExtUtils-MakeMaker-7.700.0-r1   udev-217-r7
+perl-ExtUtils-Manifest-1.750.0       w3m-1
+perl-ExtUtils-ParseXS-3.510.0-r1     
 
 /var/db/pkg/www-client:
-firefox-bin-127.0.2  w3m-0.5.3_p20230121
+firefox-bin-128.0.3  w3m-0.5.3_p20230121
 
 /var/db/pkg/x11-apps:
-iceauth-1.0.10  mkfontscale-1.2.3  xauth-1.1.3  xinit-1.4.2  xkbcomp-1.4.7  xprop-1.2.7  xrdb-1.2.2  xset-1.2.5
+iceauth-1.0.10     xauth-1.1.3  xkbcomp-1.4.7  xrdb-1.2.2
+mkfontscale-1.2.3  xinit-1.4.2  xprop-1.2.7    xset-1.2.5
 
 /var/db/pkg/x11-base:
-xcb-proto-1.17.0  xorg-drivers-21.1-r2  xorg-proto-2024.1  xorg-server-21.1.13-r1  xwayland-24.1.0
+xcb-proto-1.17.0      xorg-proto-2024.1       xwayland-24.1.1
+xorg-drivers-21.1-r2  xorg-server-21.1.13-r1  
 
 /var/db/pkg/x11-drivers:
 xf86-input-libinput-1.4.0  xf86-video-intel-2.99.917_p20230201
 
 /var/db/pkg/x11-libs:
-cairo-1.18.0           libnotify-0.8.3      libxcb-1.17.0        libXext-1.3.6       libxkbfile-1.1.3     libxshmfence-1.3.2  pixman-0.43.4
-gdk-pixbuf-2.42.10-r1  libpciaccess-0.18.1  libXcomposite-0.4.6  libXfixes-6.0.1     libXmu-1.2.1         libXt-1.3.0         xcb-util-keysyms-0.4.1
-gtk+-3.24.42           libSM-1.2.4          libXcursor-1.2.2     libXfont2-2.0.6-r1  libXpm-3.5.17        libXtst-1.2.4       xcb-util-wm-0.4.2
-libdrm-2.4.122         libX11-1.8.9         libxcvt-0.1.2        libXft-2.3.8        libXrandr-1.5.4      libXv-1.0.12        xtrans-1.5.0
-libfontenc-1.1.8       libXau-1.0.11        libXdamage-1.1.6     libXi-1.8.1         libXrender-0.9.11    libXxf86vm-1.1.5    
-libICE-1.1.1-r1        libXaw-1.0.16        libXdmcp-1.1.5       libxkbcommon-1.7.0  libXScrnSaver-1.2.4  pango-1.52.2        
+cairo-1.18.0         libXcursor-1.2.2    libXrender-0.9.11
+gdk-pixbuf-2.42.12   libxcvt-0.1.2       libXScrnSaver-1.2.4
+gtk+-3.24.42-r1      libXdamage-1.1.6    libxshmfence-1.3.2
+libdrm-2.4.122       libXdmcp-1.1.5      libXt-1.3.0
+libfontenc-1.1.8     libXext-1.3.6       libXtst-1.2.5
+libICE-1.1.1-r1      libXfixes-6.0.1     libXv-1.0.12
+libnotify-0.8.3      libXfont2-2.0.7     libXxf86vm-1.1.5
+libpciaccess-0.18.1  libXft-2.3.8        pango-1.52.2
+libSM-1.2.4          libXi-1.8.1         pixman-0.43.4
+libX11-1.8.10        libxkbcommon-1.7.0  wxGTK-3.2.5
+libXau-1.0.11        libxkbfile-1.1.3    xcb-util-keysyms-0.4.1
+libXaw-1.0.16        libXmu-1.2.1        xcb-util-wm-0.4.2
+libxcb-1.17.0        libXpm-3.5.17       xtrans-1.5.0
+libXcomposite-0.4.6  libXrandr-1.5.4     
 
 /var/db/pkg/x11-misc:
-compose-tables-1.8.9  shared-mime-info-2.4-r1  util-macros-1.20.1  xbitmaps-1.1.3  xdg-user-dirs-0.18  xdg-utils-1.2.1-r2  xkeyboard-config-2.42
+compose-tables-1.8.10    xbitmaps-1.1.3      xkeyboard-config-2.42
+shared-mime-info-2.4-r1  xdg-user-dirs-0.18  
+util-macros-1.20.1       xdg-utils-1.2.1-r6  
 
 /var/db/pkg/x11-themes:
-adwaita-icon-theme-45.0  hicolor-icon-theme-0.17
+adwaita-icon-theme-46.2         hicolor-icon-theme-0.17
+adwaita-icon-theme-legacy-46.2  

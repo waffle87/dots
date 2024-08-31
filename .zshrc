@@ -27,7 +27,12 @@ export LC_CTYPE=en_US.UTF-8
 export BAT_THEME="Nord"
 export GPG_TTY=$(tty)
 
-path+=("$HOME/.local/bin" "/usr/local/texlive/2023/bin/x86_64-linux" "$path[@]")
+path+=(
+"$HOME/.local/bin"
+"$HOME/.local/qmk_toolchains_linuxX64/bin"
+"$HOME/.local/share/coursier/bin"
+"/usr/local/texlive/2023/bin/x86_64-linux"
+"$path[@]")
 export PATH
 
 setopt HIST_IGNORE_ALL_DUPS
