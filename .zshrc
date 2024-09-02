@@ -27,7 +27,11 @@ export BAT_THEME="Solarized (dark)"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#657B83"
 export GPG_TTY=$(tty)
 
-path+=("$HOME/.local/bin" "$HOME/.local/qmk_toolchains_linuxX64/bin" "$path[@]")
+path+=(
+"$HOME/.local/bin"
+"$HOME/.local/qmk_toolchains_linuxX64/bin"
+"$HOME/.local/share/coursier/bin"
+"$path[@]")
 export PATH
 
 setopt HIST_IGNORE_ALL_DUPS

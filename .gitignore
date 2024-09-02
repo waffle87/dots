@@ -1,5 +1,9 @@
 .cache
+.cmake
+.gentoo
 .gnupg
+.ipython
+.jupyter
 .lesshst
 .local
 .mozilla

@@ -18,3 +18,7 @@ disabled = true
 disabled = true
 [rlang]
 disabled = true
+[scala]
+disabled = true
+[java]
+disabled = true
