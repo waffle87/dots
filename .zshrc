@@ -31,6 +31,7 @@ path+=(
 "$HOME/.local/bin"
 "$HOME/.local/qmk_toolchains_linuxX64/bin"
 "$HOME/.local/share/coursier/bin"
+"$HOME/.deno/bin"
 "/usr/local/texlive/2023/bin/x86_64-linux"
 "$path[@]")
 export PATH
@@ -53,7 +54,7 @@ alias ls="lsd"
 alias tree="lsd --tree"
 alias cat="bat --paging=never"
 alias cd="z"
-alias vim="nvim"
+alias vi="nvim"
 alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color=always"

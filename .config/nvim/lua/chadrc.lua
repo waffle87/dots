@@ -16,4 +16,15 @@ M.ui = {
 	nvdash = { load_on_startup = true },
 }
 
+M.mason.pkgs = {
+	"lua-language-server",
+	"stylua",
+	"html-lsp",
+	"css-lsp",
+	"prettier",
+	"texlab",
+	"ruff",
+	"python-lsp-server",
+}
+
 return M

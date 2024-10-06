@@ -7,6 +7,7 @@ local options = {
 		c = { "clang-format" },
 		css = { "prettier" },
 		html = { "prettier" },
+		scala = { "scalafmt" },
 	},
 	format_on_save = {
 		timeout_ms = 500,

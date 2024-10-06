@@ -14,20 +14,6 @@ return {
 		end,
 	},
 	{
-		"williamboman/mason.nvim",
-		opts = {
-			ensure_installed = {
-				"lua-language-server",
-				"stylua",
-				"html-lsp",
-				"css-lsp",
-				"prettier",
-				"bash-language-server",
-				"texlab",
-			},
-		},
-	},
-	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
 			ensure_installed = {

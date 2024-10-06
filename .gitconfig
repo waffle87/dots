@@ -17,3 +17,5 @@
 [pull]
 	ff = only
 	rebase = merges
+[format]
+	signOff = true

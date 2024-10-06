@@ -17,6 +17,7 @@ set $right l
 output * bg /home/jack/.img/wallpaper/swirl.png fill
 
 exec /usr/bin/mako
+exec /usr/bin/gentoo-pipewire-launcher &
 
 input "1452:588:bcm5974" {
   dwt enabled
