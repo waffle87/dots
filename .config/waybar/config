@@ -18,6 +18,11 @@
     "cpu": {
         "format": "\uf2db {usage}%"
     },
+    "custom/time": {
+        "exec": "~/.config/scripts/clock.sh",
+        "format": "\uf017 {}",
+        "interval": 60
+    },
     "custom/date": {
         "exec": "~/.config/scripts/date.sh",
         "format": "\uf133 {}",
@@ -29,8 +34,8 @@
         "format": "{icon} {}",
         "max-length": 40,
         "on-click": "playerctl play-pause",
-        "on-scroll-down": "playerctl previous",
-        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl next",
+        "on-scroll-up": "playerctl previous",
         "return-type": "json"
     },
     "custom/power": {
@@ -59,11 +64,13 @@
     },
     "modules-center": ["sway/workspaces"],
     "modules-left": ["custom/power", "memory", "cpu", "temperature", "network"],
-    "modules-right": ["custom/media", "wireplumber", "custom/date", "clock"],
+    "modules-right": ["custom/media", "wireplumber", "custom/date", "custom/time"],
     "network": {
         "format-disconnected": "\udb85\udebc  disconnected",
         "format-wifi": "\uf1eb  {ipaddr}/{cidr}",
-        "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
+        "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}",
+        "format-ethernet": "\uf1eb  {ipaddr}/{cidr}",
+        "tooltip-format-ethernet": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
     },
     "output": "DP-3",
     "position": "bottom",

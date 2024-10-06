@@ -3,10 +3,20 @@ local M = {}
 
 M.ui = {
 	theme = "solarized_dark",
-	theme_toggle = { "onenord", "onenord_light" },
 	statusline = { theme = "vscode_colored" },
 	tabufline = { lazyload = true },
 	nvdash = { load_on_startup = true },
+}
+
+M.mason.pkgs = {
+	"lua-language-server",
+	"stylua",
+	"html-lsp",
+	"css-lsp",
+	"prettier",
+	"texlab",
+	"ruff",
+	"python-lsp-server",
 }
 
 return M

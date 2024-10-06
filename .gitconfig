@@ -6,7 +6,7 @@
 	editor = nvim
 	pager = less -F -X
 [commit]
-	gpgsign = true
+  gpgsign = true
 [gpg]
 	program = /usr/bin/gpg
 [advice]
@@ -17,3 +17,5 @@
 [pull]
 	ff = only
 	rebase = merges
+[format]
+	singOff = true

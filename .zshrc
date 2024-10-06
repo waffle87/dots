@@ -51,6 +51,7 @@ alias l="lsd -la"
 alias ls="lsd"
 alias tree="lsd --tree"
 alias cat="bat --paging=never"
+alias vi="nvim"
 alias cd="z"
 alias sudo="doas"
 alias cloc="tokei"
@@ -59,3 +60,5 @@ alias fetch="clear && printf '\n' && pfetch && sleep 10"
 
 source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+
+export PATH=$PATH:/home/jack/.spicetify

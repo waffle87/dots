@@ -1,4 +1,5 @@
 .cache
+.cargo
 .cmake
 .gentoo
 .gnupg
@@ -9,6 +10,7 @@
 .mozilla
 .npm
 .pki
+.sbt
 .spicetify
 .ssh
 .var

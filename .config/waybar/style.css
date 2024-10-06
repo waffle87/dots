@@ -20,7 +20,7 @@ window#waybar {
 #network,
 #wireplumber,
 #custom-date,
-#clock {
+#custom-time {
   background: @base02;
   padding: 0px 5px 0px 5px;
 }
@@ -92,7 +92,7 @@ tooltip * {
   color: @violet;
 }
 
-#clock {
+#custom-time {
   color: @magenta;
   border-radius: 0px 8px 8px 0px;
   margin-right: 10px;
