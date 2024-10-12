@@ -32,7 +32,6 @@ path+=(
 "$HOME/.local/qmk_toolchains_linuxX64/bin"
 "$HOME/.local/share/coursier/bin"
 "$HOME/.deno/bin"
-"/usr/local/texlive/2023/bin/x86_64-linux"
 "$path[@]")
 export PATH
 

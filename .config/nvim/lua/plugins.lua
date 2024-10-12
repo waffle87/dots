@@ -28,14 +28,8 @@ return {
 				"html",
 				"markdown",
 				"scala",
+				"typst",
 			},
 		},
-	},
-	{
-		"lervag/vimtex",
-		lazy = false,
-		config = function()
-			require("configs.vimtex")
-		end,
 	},
 }

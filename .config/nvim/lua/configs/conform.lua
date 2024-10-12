@@ -8,6 +8,7 @@ local options = {
 		css = { "prettier" },
 		html = { "prettier" },
 		scala = { "scalafmt" },
+		typ = { "typstfmt" },
 	},
 	format_on_save = {
 		timeout_ms = 500,

@@ -22,9 +22,10 @@ M.mason.pkgs = {
 	"html-lsp",
 	"css-lsp",
 	"prettier",
-	"texlab",
 	"ruff",
 	"python-lsp-server",
+	"typst-lsp",
+	"typstfmt",
 }
 
 return M

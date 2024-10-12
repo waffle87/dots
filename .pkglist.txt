@@ -14,7 +14,6 @@ app-shells/zsh-autosuggestions
 app-shells/zsh-syntax-highlighting
 app-text/zathura
 app-text/zathura-pdf-mupdf
-dev-debug/gdb
 dev-embedded/avrdude
 dev-embedded/dfu-programmer
 dev-java/openjdk-bin
@@ -22,7 +21,6 @@ dev-lang/rust-bin
 dev-python/uv
 dev-util/pkgdev
 dev-util/tokei
-dev-util/uftrace
 gui-apps/grim
 gui-apps/gtklock
 gui-apps/mako
