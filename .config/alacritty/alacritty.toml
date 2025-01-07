@@ -1,0 +1,19 @@
+[general]
+import = [
+  "colours.toml",
+  "fonts.toml"
+]
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+
+[selection]
+save_to_clipboard = true
+
+[window]
+decorations = "none"
+dynamic_padding = true
+
+[window.padding]
+x = 8
+y = 8

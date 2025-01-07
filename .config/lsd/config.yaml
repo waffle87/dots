@@ -1,0 +1,15 @@
+# lsd configuration
+
+blocks:
+  - permission
+  - size
+  - user
+  - date
+  - name
+
+color:
+  theme: custom
+
+date: '+%d %b %Y %H:%M'
+
+size: short
