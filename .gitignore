@@ -4,7 +4,7 @@
 .config/*iscord
 .config/Electron
 .config/kicad
-.config/nvim
+.config/nvim/lazy-lock.json
 .config/pulse
 .config/typstfmt
 .config/weechat

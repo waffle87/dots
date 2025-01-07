@@ -56,6 +56,7 @@ openssh
 openssh-openrc
 pipewire
 pipewire-jack
+pipewire-pulse
 prettier
 python-uv
 ripgrep
@@ -73,8 +74,10 @@ typst
 unzip
 waybar
 wayland
+weechat
 wl-clipboard
 wofi
+xdg-utils
 xorg-xwayland
 yadm
 zathura
