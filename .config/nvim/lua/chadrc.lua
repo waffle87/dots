@@ -11,6 +11,7 @@ M.mason.pkgs = {
 	"python-lsp-server",
 	"tinymist",
 	"typstfmt",
+	"prettier",
 }
 
 return M

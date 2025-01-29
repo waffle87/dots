@@ -10,8 +10,6 @@ chrony
 chrony-openrc
 clang
 cmake
-connman
-connman-openrc
 cryptsetup
 cryptsetup-openrc
 dfu-programmer
@@ -52,12 +50,12 @@ noto-fonts-emoji
 npm
 opendoas
 openrc
+openresolv
 openssh
 openssh-openrc
 pipewire
 pipewire-jack
 pipewire-pulse
-prettier
 python-uv
 ripgrep
 slurp
@@ -74,7 +72,6 @@ typst
 unzip
 waybar
 wayland
-weechat
 wl-clipboard
 wofi
 xdg-utils

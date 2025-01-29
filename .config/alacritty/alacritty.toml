@@ -17,3 +17,8 @@ dynamic_padding = true
 [window.padding]
 x = 8
 y = 8
+
+[keyboard]
+bindings = [
+  { key = "T", mods = "Control", action = "CreateNewWindow" },
+]
