@@ -5,3 +5,4 @@ x-scheme-handler/https=firefox-bin.desktop
 x-scheme-handler/about=firefox-bin.desktop
 x-scheme-handler/unknown=firefox-bin.desktop
 x-scheme-handler/obsidian=obsidian.desktop
+x-scheme-handler/betterdiscord=discord.desktop

@@ -2,11 +2,11 @@
     "clock": {
         "calendar": {
             "format": {
-                "days": "<span color='#073642'><b>{}</b></span>",
-                "months": "<span color='#002b36'><b>{}</b></span>",
-                "today": "<span color='#dc322f'><b><u>{}</u></b></span>",
-                "weekdays": "<span color='#859900'><b>{}</b></span>",
-                "weeks": "<span color='#b58900'><b>W{}</b></span>"
+                "days": "<span color='#5E5E5E'><b>{}</b></span>",
+                "months": "<span color='#4A4A4A'><b>{}</b></span>",
+                "today": "<span color='#F85552'><b><u>{}</u></b></span>",
+                "weekdays": "<span color='#8DA101'><b>{}</b></span>",
+                "weeks": "<span color='#DFA000'><b>W{}</b></span>"
             },
             "mode": "year",
             "mode-mon-col": 3,
@@ -14,14 +14,6 @@
         },
         "format": "\uf017 {:%H:%M}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>"
-    },
-    "cpu": {
-        "format": "\uf2db {usage}%"
-    },
-    "custom/time": {
-        "exec": "~/.config/scripts/clock.sh",
-        "format": "\uf017 {}",
-        "interval": 60
     },
     "custom/date": {
         "exec": "~/.config/scripts/date.sh",
@@ -38,10 +30,6 @@
         "on-scroll-up": "playerctl previous",
         "return-type": "json"
     },
-    "custom/power": {
-        "format": "\uf011",
-        "on-click": "loginctl suspend"
-    },
     "sway/workspaces": {
         "all-outputs": true,
         "disable-scroll": true,
@@ -55,16 +43,15 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": []
+            "5": [],
+            "6": [],
+            "7": []
         }
     },
     "layer": "top",
-    "memory": {
-        "format": "\uf1c0 {}%"
-    },
     "modules-center": ["sway/workspaces"],
-    "modules-left": ["custom/power", "memory", "cpu", "temperature", "network"],
-    "modules-right": ["custom/media", "wireplumber", "custom/date", "custom/time"],
+    "modules-left": ["temperature", "wireplumber", "network"],
+    "modules-right": ["custom/media", "custom/date", "clock"],
     "network": {
         "format-disconnected": "\udb85\udebc  disconnected",
         "format-wifi": "\uf1eb  {ipaddr}/{cidr}",
@@ -72,7 +59,7 @@
         "format-ethernet": "\uf1eb  {ipaddr}/{cidr}",
         "tooltip-format-ethernet": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
     },
-    "output": "DP-3",
+    "output": "DP-1",
     "position": "bottom",
     "wireplumber": {
         "format": "{icon} {volume}%",

@@ -2,78 +2,62 @@
 
 * {
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 14px;
+  font-size: 12px;
   min-height: 0;
-  margin-bottom: 2px;
 }
 
 window#waybar {
-  background: transparent;
+  background-color: @base01;
 }
 
-#custom-power,
-#memory,
-#cpu,
 #temperature,
-#custom-media,
-#workspaces,
-#network,
 #wireplumber,
+#network,
+#workspaces,
+#custom-media,
 #custom-date,
-#custom-time {
-  background: @base02;
+#clock {
+  color: @base0D;
   padding: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 5px;
 }
 
 tooltip {
-  background-color: @base2;
-  border: 3px solid @yellow;
-  border-radius: 8px;
+  background-color: @base01;
+  border: 3px solid @base0B;
+  border-radius: 0px;
 }
 
 tooltip * {
-  color: @base01;
+  color: @base0B;
   text-shadow: none;
 }
 
-#custom-power {
-  color: @red;
-  border-radius: 8px 0px 0px 8px;
+#temperature {
   margin-left: 10px;
-  padding-left: 10px;
+  border-top: 3px solid @red;
 }
 
-#memory {
-  color: @orange;
-}
-#cpu {
-  color: @yellow;
-}
-#temperature {
-  color: @green;
+#wireplumber {
+  border-top: 3px solid @orange;
 }
 
 #network {
-  color: @cyan;
-  border-radius: 0px 8px 8px 0px;
-}
-
-#custom-media {
-  border-radius: 8px;
-  color: @base3;
+  border-top: 3px solid @yellow;
 }
 
 #workspaces {
-  border-radius: 8px;
+  border-top: 3px solid @green;
 }
 
 #workspaces button {
-  color: @base3;
-  padding: 8px;
+  color: @base0B;
+  padding: 6px;
+  border-radius: 0px;
 }
 
 #workspaces button.active {
-  color: @base3;
+  color: @base0B;
 }
 
 #workspaces button.urgent {
@@ -81,20 +65,14 @@ tooltip * {
 }
 
 #custom-media {
-  color: #2660d2;
-  border-radius: 8px 0px 0px 8px;
+  border-top: 3px solid @blue;
 }
 
-#wireplumber {
-  color: @blue;
-}
 #custom-date {
-  color: @violet;
+  border-top: 3px solid @aqua;
 }
 
-#custom-time {
-  color: @magenta;
-  border-radius: 0px 8px 8px 0px;
+#clock {
   margin-right: 10px;
-  padding-right: 10px;
+  border-top: 3px solid @purple;
 }

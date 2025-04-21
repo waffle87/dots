@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "e-ink",
+  "theme": {
+    "images": {
+      "additional_backgrounds": [
+        "images/bg-005-f5f3cf677b1f132c75ddc7bd319dd1fc.svg"
+      ]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": [
+        "top"
+      ],
+      "additional_backgrounds_tiling": [
+        "repeat"
+      ]
+    },
+    "colors": {
+      "toolbar": "rgb(204, 204, 204)",
+      "toolbar_text": "rgb(71, 71, 71)",
+      "frame": "rgb(184, 184, 184)",
+      "tab_background_text": "rgb(94, 94, 94)",
+      "toolbar_field": "rgb(194, 194, 194)",
+      "toolbar_field_text": "rgb(84, 84, 84)",
+      "tab_line": "rgb(154, 154, 154)",
+      "popup": "rgb(194, 194, 194)",
+      "popup_text": "rgb(71, 71, 71)",
+      "button_background_active": "rgb(194, 194, 194)",
+      "button_background_hover": "rgb(194, 194, 194)",
+      "icons_attention": "rgb(248, 85, 82)",
+      "icons": "rgb(74, 74, 74)",
+      "ntp_background": "rgb(204, 204, 204)",
+      "ntp_text": "rgb(84, 84, 84)",
+      "popup_highlight_text": "rgb(84, 84, 84)",
+      "popup_highlight": "rgb(58, 148, 197)",
+      "tab_loading": "rgb(154, 154, 154)"
+    }
+  }
+}
