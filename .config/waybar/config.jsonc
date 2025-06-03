@@ -31,6 +31,7 @@
   },
   "network": {
     "interface": "wlan0",
+    "family": "ipv4",
     "format": "\uf1eb  {ipaddr}",
     "format-disconnected": "\uf52f  disconnected",
     "tooltip-format": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}",

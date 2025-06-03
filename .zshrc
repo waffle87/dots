@@ -18,6 +18,8 @@ export LANG=en_GB.UTF-8
 export GPG_TTY=$(tty)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#4C566A"
 export BAT_THEME="Nord"
+export LESSHISTFILE="$HOME/.local/share/less-history"
+export PYTHON_HISTORY="$HOME/.local/share/python-history"
 
 path+=(
 "$HOME/.local/bin"

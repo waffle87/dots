@@ -5,12 +5,10 @@ M.base46 = {
 }
 
 M.mason.pkgs = {
-	"lua-language-server",
-	"stylua",
 	"ruff",
 	"python-lsp-server",
 	"tinymist",
-	"typstfmt",
+	"typstyle",
 	"prettier",
 }
 

@@ -7,14 +7,16 @@
 .config/nvim/lazy-lock.json
 .config/pulse
 .config/typstfmt
+.config/Vencord
 .config/weechat
 .gnupg
 .local
 .mozilla
 .npm
 .pki
-.python_history
 .ssh
+.thunderbird
+.yarn
 Documents
 Downloads
 git

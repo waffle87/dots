@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 
-output * bg $HOME/.img/wallpaper/fish.png fill
+output * bg $HOME/.img/wallpaper/swirl.png fill
 
 input "1452:657:bcm5974" {
   dwt enabled
@@ -40,7 +40,7 @@ exec_always {
 bindsym $mod+q kill
 bindsym $mod+t exec       alacritty
 bindsym $mod+f exec       firefox
-bindsym $mod+r exec       wofi
+bindsym $mod+r exec       fuzzel
 bindsym $mod+p exec       grim -g "$(slurp)" - | wl-copy
 bindsym $mod+Shift+p exec grim -g "$(slurp)"
 bindsym $mod+Escape  exec gtklock -d
