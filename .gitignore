@@ -13,6 +13,8 @@
 .sbt
 .spicetify
 .ssh
+.steam*
+.thunderbird
 .var
 .wget-hsts
 .zcompdump
