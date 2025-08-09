@@ -1,89 +1,83 @@
-alacritty
-artix-archlinux-support
-avrdude
-base
-bat
-brightnessctl
-broadcom-wl-dkms
-chrony
-chrony-openrc
-clang
-cmake
-cryptsetup
-cryptsetup-openrc
-dfu-programmer
-dfu-util
-discord
-docker
-docker-compose
-docker-openrc
-dosfstools
-efibootmgr
-elogind-openrc
-fakeroot
-firefox
-fuse3
-fuzzel
-fzf
-git
-grim
-grub
-gtklock
-imv
-intel-ucode
-iwd
-iwd-openrc
-kicad
-kicad-library
-kicad-library-3d
-linux-firmware
-linux-lts
-linux-lts-headers
-llvm
-lsd
-mako
-man-db
-meson
-neovim
-ninja
-nodejs
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-npm
-opendoas
-openrc
-openresolv
-openssh
-openssh-openrc
-pipewire
-pipewire-jack
-pipewire-pulse
-python-uv
-ripgrep
-slurp
-starship
-sway
-swaybg
-thermald
-thermald-openrc
-thunderbird
-tlp
-tlp-openrc
-tokei
-typst
-unzip
-waybar
-wayland
-weechat
-wl-clipboard
-xdg-utils
-xorg-xwayland
-yadm
-zathura
-zathura-pdf-mupdf
-zfs-dkms
-zoxide
-zsh
-zsh-autosuggestions
-zsh-syntax-highlighting
+alacritty                         # Terminal
+artix-archlinux-support           # Required for installing any Arch packages
+avrdude                           # Required for QMK
+base                              # Provides all base utilities. Pretty much all needed
+bat                               # /bin/cat alternative
+brightnessctl                     # To control keyboard/display brightness
+broadcom-wl-dkms                  # Provides wl WiFi driver
+chrony                            # Time syncrhonisation
+chrony-openrc                     # Time syncrhonisation service
+clang                             # Compiler
+cmake                             # Required for ZMK
+cryptsetup                        # Required for dmcrypt/device-mapper separate swap partition
+cryptsetup-openrc                 # Service for aforementioned
+dfu-programmer                    # Required for QMK
+dfu-util                          # Required for QMK
+discord                           # Messaging platform
+dos2unix                          # Used for formatting some KiCad production files
+efibootmgr                        # Required to modify EFI entries (eg. EFI Stubs)
+fakeroot                          # Required for Pacman operations
+firefox                           # Webbrowser
+flatpak                           # Package manager to provide things that don't work under Pacman
+fuzzel                            # Application launcher
+fzf                               # Used by Zoxide
+git                               # VCS
+grim                              # Screenshot tool
+grub                              # Bootloader
+gtklock                           # Lockscreen
+imv                               # Display images
+intel-ucode                       # CPU microcode
+iwd                               # WiFi system
+iwd-openrc                        # WiFi system service
+linux-firmware-broadcom           # Firmware for Broadcom hardware (network, bluetooth, touchpad, etc.)
+linux-firmware-cirrus             # Firmware for Cirrus hardware (audio)
+linux-firmware-intel              # Firmware for various Intel hardware
+linux-lts                         # LTS kernel locked at 6.6.62 for ZFS compatibility
+linux-lts-headers                 # LTS kernel headers locked at 6.6.62 for ZFS compatibility
+llvm                              # Compiler infrastructure
+lsd                               # /bin/ls alternative
+mako                              # Notification daemon
+man-db                            # Provides manpages
+meson                             # Required by ZMK
+neovim                            # Editor
+ninja                             # Required by ZMK
+noto-fonts                        # Variety of common fonts
+noto-fonts-cjk                    # Fonts of Asian dialects
+noto-fonts-emoji                  # Emojis
+npm                               # Required by some Mason (neovim) packages (python-lsp-server & prettier)
+opendoas                          # /sbin/sudo alternative
+openrc                            # Init system & service manager
+openresolv                        # Name resolving required by IWD
+openssh                           # SSH
+openssh-openrc                    # SSH service
+pacman-contrib                    # Provides Pacman utilities (eg. paccache)
+pipewire                          # Required for audio
+pipewire-jack                     # Required for audio
+pipewire-pulse                    # Required for audio
+ripgrep                           # /bin/grep alternative
+slurp                             # Screenshot selection tool
+starship                          # Shell prompt
+sway                              # Window manager
+swaybg                            # Required to set graphical backgrounds
+thermald                          # Temperature manager
+thermald-openrc                   # Temperature manager service
+thunderbird                       # Mail & CalDAV client
+tlp                               # Battery manager
+tlp-openrc                        # Battery manager service
+tokei                             # Utility to count lines of code
+typst                             # Text processing utility
+unzip                             # Unpack zip archives
+uv                                # Python manager
+waybar                            # Window manager bar
+weechat                           # Messaging platform
+wl-clipboard                      # Wayland clipboard manager
+xdg-utils                         # Desktop integrations
+xorg-xwayland                     # Compatibility layer for X programs (Discord, Flatpak packages)
+yadm                              # Dotfile manager
+zathura                           # PDF viewer
+zathura-pdf-mupdf                 # PDF protocol for viewer
+zfs-dkms                          # ZFS kernel modules
+zoxide                            # /bin/cd replacement
+zsh                               # Shell
+zsh-autosuggestions               # Auto-completion for shell
+zsh-syntax-highlighting           # Syntax highlighting for shell
