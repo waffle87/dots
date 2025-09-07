@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 
-output * bg $HOME/.img/wallpaper/swirl.png fill
+output * bg $HOME/.img/wallpaper/fish.png fill
 
 input "1452:657:bcm5974" {
   dwt enabled

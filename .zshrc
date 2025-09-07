@@ -24,6 +24,7 @@ export PYTHON_HISTORY="$HOME/.local/share/python-history"
 path+=(
 "$HOME/.local/bin"
 "$HOME/.local/qmk_toolchains_linuxX64/bin"
+"$HOME/.local/qmk_flashutils_linuxX64"
 "$path[@]")
 export PATH
 

@@ -2,10 +2,14 @@ local options = {
 	formatters_by_ft = {
 		css = { "prettier" },
 		html = { "prettier" },
-		python = { "ruff_format" },
+		python = {
+			"ruff_fix",
+			"ruff_format",
+			"ruff_organize_imports",
+		},
 		cpp = { "clang-format" },
 		c = { "clang-format" },
-		typst = { "typstyle" },
+		lua = { "stylua" },
 	},
 	format_on_save = {
 		timeout_ms = 500,

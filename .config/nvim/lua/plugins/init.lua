@@ -18,10 +18,20 @@ return {
 				"html",
 				"css",
 				"python",
-				"rust",
 				"cpp",
 				"c",
-				"bash",
+			},
+		},
+	},
+	{
+		"williamboman/mason.nvim",
+		opts = {
+			ensure_installed = {
+				"ruff",
+				"python-lsp-server",
+				"prettier",
+				"lua-language-server",
+				"stylua",
 			},
 		},
 	},

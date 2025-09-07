@@ -1,6 +1,5 @@
 alacritty                         # Terminal
 artix-archlinux-support           # Required for installing any Arch packages
-avrdude                           # Required for QMK
 base                              # Provides all base utilities. Pretty much all needed
 bat                               # /bin/cat alternative
 brightnessctl                     # To control keyboard/display brightness
@@ -11,8 +10,6 @@ clang                             # Compiler
 cmake                             # Required for ZMK
 cryptsetup                        # Required for dmcrypt/device-mapper separate swap partition
 cryptsetup-openrc                 # Service for aforementioned
-dfu-programmer                    # Required for QMK
-dfu-util                          # Required for QMK
 discord                           # Messaging platform
 dos2unix                          # Used for formatting some KiCad production files
 efibootmgr                        # Required to modify EFI entries (eg. EFI Stubs)
@@ -45,6 +42,7 @@ noto-fonts                        # Variety of common fonts
 noto-fonts-cjk                    # Fonts of Asian dialects
 noto-fonts-emoji                  # Emojis
 npm                               # Required by some Mason (neovim) packages (python-lsp-server & prettier)
+obsidian                          # Notes taking application
 opendoas                          # /sbin/sudo alternative
 openrc                            # Init system & service manager
 openresolv                        # Name resolving required by IWD
@@ -65,7 +63,6 @@ thunderbird                       # Mail & CalDAV client
 tlp                               # Battery manager
 tlp-openrc                        # Battery manager service
 tokei                             # Utility to count lines of code
-typst                             # Text processing utility
 unzip                             # Unpack zip archives
 uv                                # Python manager
 waybar                            # Window manager bar

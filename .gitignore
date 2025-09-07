@@ -5,6 +5,7 @@
 .config/Electron
 .config/kicad
 .config/nvim/lazy-lock.json
+.config/obsidian
 .config/pulse
 .config/typstfmt
 .config/Vencord
