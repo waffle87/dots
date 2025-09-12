@@ -17,9 +17,18 @@ export SAVEHIST=20000
 export LANG=en_GB.UTF-8
 export GPG_TTY=$(tty)
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#4C566A"
-export BAT_THEME="Nord"
 export LESSHISTFILE="$HOME/.local/share/less-history"
 export PYTHON_HISTORY="$HOME/.local/share/python-history"
+
+if [ -n "$SSH_CLIENT"] || [ -n "$SSH_TTY" ]; then
+  export BAT_THEME="Nord"
+  alias vi="nvim"
+
+else
+  export BAT_THEME="base16"
+  alias vi="nvim --clean"
+fi
+
 
 path+=(
 "$HOME/.local/bin"
@@ -45,7 +54,6 @@ alias l="lsd -la"
 alias ls="lsd"
 alias tree="lsd --tree"
 alias cat="bat --paging=never"
-alias vi="nvim"
 alias cd="z"
 alias sudo="doas"
 alias cloc="tokei"

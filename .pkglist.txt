@@ -1,4 +1,3 @@
-alacritty                         # Terminal
 artix-archlinux-support           # Required for installing any Arch packages
 base                              # Provides all base utilities. Pretty much all needed
 bat                               # /bin/cat alternative
@@ -67,6 +66,7 @@ unzip                             # Unpack zip archives
 uv                                # Python manager
 waybar                            # Window manager bar
 weechat                           # Messaging platform
+wezterm                           # Terminal
 wl-clipboard                      # Wayland clipboard manager
 xdg-utils                         # Desktop integrations
 xorg-xwayland                     # Compatibility layer for X programs (Discord, Flatpak packages)
