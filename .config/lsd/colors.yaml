@@ -1,0 +1,18 @@
+permission:
+  read: "#98c379"
+  write: "#e5c07b"
+  exec: "#e06c75"
+  no-access: "#565c64"
+size:
+  none: "#565c64"
+  small: "#98c379"
+  medium: "#e5c07b"
+  large: "#d19a66"
+user: "#c678dd"
+date:
+  hour-old: "#61afef"
+  day-old: "#61afef"
+  older: "#61afef"
+links:
+  valid: "#98c379"
+  invalid: "#e06c75"
