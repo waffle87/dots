@@ -14,7 +14,6 @@ dos2unix                          # Used for formatting some KiCad production fi
 efibootmgr                        # Required to modify EFI entries (eg. EFI Stubs)
 fakeroot                          # Required for Pacman operations
 firefox                           # Webbrowser
-flatpak                           # Package manager to provide things that don't work under Pacman
 fuzzel                            # Application launcher
 fzf                               # Used by Zoxide
 git                               # VCS
@@ -30,6 +29,7 @@ linux-firmware-cirrus             # Firmware for Cirrus hardware (audio)
 linux-firmware-intel              # Firmware for various Intel hardware
 linux-lts                         # LTS kernel locked at 6.6.62 for ZFS compatibility
 linux-lts-headers                 # LTS kernel headers locked at 6.6.62 for ZFS compatibility
+lldb                              # Debugger
 llvm                              # Compiler infrastructure
 lsd                               # /bin/ls alternative
 mako                              # Notification daemon
@@ -41,7 +41,6 @@ noto-fonts                        # Variety of common fonts
 noto-fonts-cjk                    # Fonts of Asian dialects
 noto-fonts-emoji                  # Emojis
 npm                               # Required by some Mason (neovim) packages (python-lsp-server & prettier)
-obsidian                          # Notes taking application
 opendoas                          # /sbin/sudo alternative
 openrc                            # Init system & service manager
 openresolv                        # Name resolving required by IWD
@@ -51,6 +50,7 @@ pacman-contrib                    # Provides Pacman utilities (eg. paccache)
 pipewire                          # Required for audio
 pipewire-jack                     # Required for audio
 pipewire-pulse                    # Required for audio
+pkgconf                           # Build utility
 ripgrep                           # /bin/grep alternative
 slurp                             # Screenshot selection tool
 starship                          # Shell prompt

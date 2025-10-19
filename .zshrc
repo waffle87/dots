@@ -61,5 +61,10 @@ alias diff="diff --color=always"
 alias fetch="clear && printf '\n' && pfetch && sleep 10"
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 
+take() {
+    mkdir -p $1
+    cd $1
+}
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
