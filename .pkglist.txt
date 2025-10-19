@@ -1,6 +1,7 @@
 artix-archlinux-support           # Required for installing any Arch packages
 base                              # Provides all base utilities. Pretty much all needed
 bat                               # /bin/cat alternative
+bear                              # Tool to generate clangd compilation database
 brightnessctl                     # To control keyboard/display brightness
 broadcom-wl-dkms                  # Provides wl WiFi driver
 chrony                            # Time syncrhonisation

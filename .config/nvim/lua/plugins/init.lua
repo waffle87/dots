@@ -20,6 +20,7 @@ return {
 				"python",
 				"cpp",
 				"c",
+				"make",
 				"verilog",
 			},
 		},
