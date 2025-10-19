@@ -24,6 +24,9 @@ imv                               # Display images
 intel-ucode                       # CPU microcode
 iwd                               # WiFi system
 iwd-openrc                        # WiFi system service
+kicad                             # KiCad EDA
+kicad-library                     # KiCad symbols & footprints
+kicad-library-3d                  # KiCad 3d models
 linux-firmware-broadcom           # Firmware for Broadcom hardware (network, bluetooth, touchpad, etc.)
 linux-firmware-cirrus             # Firmware for Cirrus hardware (audio)
 linux-firmware-intel              # Firmware for various Intel hardware
@@ -64,6 +67,7 @@ tlp-openrc                        # Battery manager service
 tokei                             # Utility to count lines of code
 unzip                             # Unpack zip archives
 uv                                # Python manager
+verilator                         # Verilog compiler
 waybar                            # Window manager bar
 weechat                           # Messaging platform
 wezterm                           # Terminal
