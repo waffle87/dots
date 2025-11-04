@@ -8,6 +8,7 @@ local options = {
 		cpp = { "clang-format" },
 		c = { "clang-format" },
 		lua = { "stylua" },
+		v = { "verible-verilog-format" },
 	},
 	format_on_save = {
 		timeout_ms = 500,

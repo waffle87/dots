@@ -11,6 +11,7 @@ export PYTHON_HISTORY="$HOME/.local/share/python_history"
 
 path=(
   "/opt/homebrew/bin"
+  "$HOME/.local/bin"
   "$HOME/.local/qmk_toolchains_macosARM64/bin"
   "$HOME/.local/qmk_flashutils_macosARM64"
   "$path[@]"
@@ -39,7 +40,12 @@ alias vi="nvim"
 alias cd="z"
 alias diff="diff --color=always"
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
-alias python="python3"
+alias python="python3.13"
+
+take() {
+  mkdir $1
+  z $1
+}
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

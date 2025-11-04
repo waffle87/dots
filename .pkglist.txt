@@ -1,0 +1,15 @@
+bat
+bear
+gnupg
+lsd
+neovim
+pkgconf
+ripgrep
+starship
+uv
+verilator
+yadm
+zoxide
+zsh-autosuggestions
+zsh-syntax-highlighting
+zstd

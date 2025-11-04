@@ -4,6 +4,7 @@
 .config/yadm
 .DS_Store
 .gnupg
+.lldb
 .local
 .ssh
 .terminfo

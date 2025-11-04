@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
+local config = wezterm.config_builder()
 local act = wezterm.action
-local config = {}
 
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 14
