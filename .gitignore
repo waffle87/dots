@@ -6,7 +6,8 @@
 .gnupg
 .lldb
 .local
-.ssh
+.ssh/id*
+.ssh/known_hosts*
 .terminfo
 .Trash
 .zcompdump
