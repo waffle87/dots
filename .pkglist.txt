@@ -12,6 +12,7 @@ cryptsetup                        # Required for dmcrypt/device-mapper separate 
 cryptsetup-openrc                 # Service for aforementioned
 discord                           # Messaging platform
 dos2unix                          # Used for formatting some KiCad production files
+dracut                            # Used to generate UKI
 efibootmgr                        # Required to modify EFI entries (eg. EFI Stubs)
 fakeroot                          # Required for Pacman operations
 firefox                           # Webbrowser
@@ -19,7 +20,6 @@ fuzzel                            # Application launcher
 fzf                               # Used by Zoxide
 git                               # VCS
 grim                              # Screenshot tool
-grub                              # Bootloader
 gtklock                           # Lockscreen
 imv                               # Display images
 intel-ucode                       # CPU microcode
