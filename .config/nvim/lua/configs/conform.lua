@@ -1,14 +1,16 @@
 local options = {
 	formatters_by_ft = {
-		python = { "ruff_format" },
-		rust = { "rustfmt" },
-		lua = { "stylua" },
-		cpp = { "clang-format" },
-		c = { "clang-format" },
 		css = { "prettier" },
 		html = { "prettier" },
-		json = { "prettier" },
-		typ = { "typstfmt" },
+		python = {
+			"ruff_fix",
+			"ruff_format",
+			"ruff_organize_imports",
+		},
+		cpp = { "clang-format" },
+		c = { "clang-format" },
+		lua = { "stylua" },
+		v = { "verible-verilog-format" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
@@ -16,4 +18,4 @@ local options = {
 	},
 }
 
-require("conform").setup(options)
+return options

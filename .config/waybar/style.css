@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: @base01;
+  background-color: @base02;
 }
 
 #temperature,
@@ -17,19 +17,19 @@ window#waybar {
 #custom-media,
 #custom-date,
 #clock {
-  color: @base0D;
+  color: @base2;
   padding: 0px 5px 0px 5px;
   margin: 0px 5px 0px 5px;
 }
 
 tooltip {
-  background-color: @base01;
-  border: 3px solid @base0B;
+  background-color: @base2;
+  border: 3px solid @cyan;
   border-radius: 0px;
 }
 
 tooltip * {
-  color: @base0B;
+  color: @base03;
   text-shadow: none;
 }
 
@@ -51,13 +51,13 @@ tooltip * {
 }
 
 #workspaces button {
-  color: @base0B;
+  color: @base2;
   padding: 6px;
   border-radius: 0px;
 }
 
 #workspaces button.active {
-  color: @base0B;
+  color: @base2;
 }
 
 #workspaces button.urgent {
@@ -69,10 +69,10 @@ tooltip * {
 }
 
 #custom-date {
-  border-top: 3px solid @aqua;
+  border-top: 3px solid @cyan;
 }
 
 #clock {
   margin-right: 10px;
-  border-top: 3px solid @purple;
+  border-top: 3px solid @violet;
 }

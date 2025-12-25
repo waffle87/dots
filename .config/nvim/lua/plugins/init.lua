@@ -2,14 +2,11 @@ return {
 	{
 		"stevearc/conform.nvim",
 		event = "BufWritePre",
-		config = function()
-			require("configs.conform")
-		end,
+		opts = require("configs.conform"),
 	},
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			require("nvchad.configs.lspconfig").defaults()
 			require("configs.lspconfig")
 		end,
 	},
@@ -21,18 +18,23 @@ return {
 				"html",
 				"css",
 				"python",
-				"rust",
 				"cpp",
 				"c",
-				"bash",
-				"html",
-				"markdown",
-				"typst",
+				"make",
+				"verilog",
 			},
 		},
 	},
 	{
-		"xiyaowong/transparent.nvim",
-		lazy = false,
+		"williamboman/mason.nvim",
+		opts = {
+			ensure_installed = {
+				"lua-language-server",
+				"python-lsp-server",
+				"ruff",
+				"stylua",
+				"verible",
+			},
+		},
 	},
 }

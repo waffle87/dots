@@ -2,13 +2,11 @@
 default_border pixel 3
 default_floating_border pixel 3
 gaps inner 9
-blur enable
-blur_radius 8
 
 # class          border  backgr. text    flag    child_border
-client.focused   #474747 #474747 #CCCCCC #474747 #474747
-client.unfocused #909090 #909090 #CCCCCC #909090 #909090
-client.urgent    #F85552 #F85552 #CCCCCC #F85552 #F85552 
+client.focused   #6C71C4 #6C71C4 #FDF6E3 #6C71C4 #6C71C4
+client.unfocused #586E75 #586E75 #FDF6E3 #586E75 #586E75
+client.urgent    #DC322F #DC322F #FDF6E3 #DC322F #DC322F 
 
 set $mod Mod4
 set $left h
@@ -16,17 +14,17 @@ set $down j
 set $up k
 set $right l
 
-output * bg /home/jack/.img/wallpaper/eye.png fill
+output * bg /home/jack/.img/wallpaper/isometric.png fill
 
 exec /usr/bin/mako
-exec flatpak run com.github.wwmm.easyeffects --gapplication-service &
+# exec flatpak run com.github.wwmm.easyeffects --gapplication-service &
 exec /usr/bin/gentoo-pipewire-launcher &
 
 ### key bindings 
 # applications
 
 bindsym $mod+q       kill
-bindsym $mod+t       exec alacritty
+bindsym $mod+t       exec wezterm
 bindsym $mod+f       exec firefox-bin
 bindsym $mod+r       exec fuzzel
 bindsym $mod+p       exec grim -g "$(slurp)" - | wl-copy

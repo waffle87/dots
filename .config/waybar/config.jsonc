@@ -53,6 +53,7 @@
     "modules-left": ["temperature", "wireplumber", "network"],
     "modules-right": ["custom/media", "custom/date", "clock"],
     "network": {
+	"family": "ipv4",
         "format-disconnected": "\udb85\udebc  disconnected",
         "format-wifi": "\uf1eb  {ipaddr}/{cidr}",
         "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}",

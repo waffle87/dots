@@ -12,6 +12,7 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   eval "$(ssh-agent)"
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
+
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
@@ -25,25 +26,22 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=20000
 export SAVEHIST=20000
 export LANG=en_GB.UTF-8
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#868686"
-export ZSH_HIGHLIGHT_STYLES[arg0]="fg=#474747"
-export ZSH_HIGHLIGHT_STYLES[redirection]="fg=#474747"
-export ZSH_HIGHLIGHT_STYLES[reserved-word]="fg=#474747"
-export ZSH_HIGHLIGHT_STYLES[suffix-alias]="fg=#474747"
-export ZSH_HIGHLIGHT_STYLES[global-alias]="fg=#474747"
-export ZSH_HIGHLIGHT_STYLES[precommand]="fg=#474747"
-export ZSH_HIGHLIGHT_STYLES[single-quoted-argument]="fg=#686868"
-export ZSH_HIGHLIGHT_STYLES[double-quoted-argument]="fg=#686868"
-export ZSH_HIGHLIGHT_STYLES[unknown-token]="fg=#F85552"
-# export BAT_THEME="Solarized (dark)"
 export GPG_TTY=$(tty)
-export LESSHISTFILE=-
-export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31'
+
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  export BAT_THEME="base16"
+  unset ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE
+  alias vi="nvim --clean"
+else
+  export BAT_THEME="Solarized (dark)"
+  export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#657B83"
+  alias vi="nvim"
+fi
 
 path+=(
 "$HOME/.local/bin"
+"$HOME/.local/qmk_flashutils_linuxX64"
 "$HOME/.local/qmk_toolchains_linuxX64/bin"
-"$HOME/.local/share/coursier/bin"
 "$path[@]")
 export PATH
 
@@ -59,18 +57,23 @@ autoload -U compinit && compinit
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval  "$(direnv hook zsh)"
 
 alias l="lsd -la"
 alias ls="lsd"
 alias tree="lsd --tree"
 alias cat="bat --paging=never"
-alias vi="nvim"
 alias cd="z"
 alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color=always"
 alias fetch="clear && printf '\n' && pfetch && sleep 10"
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
+
+take () {
+  mkdir -p $1
+  cd $1
+}
 
 source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh

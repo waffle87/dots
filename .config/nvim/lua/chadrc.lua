@@ -1,23 +1,45 @@
----@type ChadrcConfig
 local M = {}
 
-M.ui = {
+M.base46 = {
 	theme = "solarized_dark",
-	statusline = { theme = "vscode_colored" },
-	tabufline = { lazyload = true },
-	nvdash = { load_on_startup = true },
+	hl_override = {
+		Comment = { italic = true },
+		["@comment"] = { italic = true },
+	},
 }
 
-M.mason.pkgs = {
-	"lua-language-server",
-	"stylua",
-	"html-lsp",
-	"css-lsp",
-	"prettier",
-	"ruff",
-	"python-lsp-server",
-	"tinymist",
-	"typstfmt",
+M.ui = {
+	cmp = {
+		style = "atom_colored",
+	},
+	telescope = {
+		style = "bordered",
+	},
+	statusline = {
+		theme = "minimal",
+	},
+}
+
+M.term = {
+	sizes = {
+		vsp = 0.4,
+	},
+}
+
+M.nvdash = {
+	load_on_startup = true,
+	header = {
+		"           ▄ ▄                   ",
+		"       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+		"       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+		"    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+		"  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+		"  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+		"▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+		"█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+		"    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+		"                                 ",
+	},
 }
 
 return M
