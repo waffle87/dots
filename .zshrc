@@ -49,6 +49,7 @@ autoload -U compinit && compinit
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
 
 alias l="lsd -la"
 alias ls="lsd"

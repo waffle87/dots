@@ -10,6 +10,7 @@ clang                             # Compiler
 cmake                             # Required for ZMK
 cryptsetup                        # Required for dmcrypt/device-mapper separate swap partition
 cryptsetup-openrc                 # Service for aforementioned
+direnv                            # Used to automatically activate venv's
 discord                           # Messaging platform
 dos2unix                          # Used for formatting some KiCad production files
 dracut                            # Used to generate UKI
