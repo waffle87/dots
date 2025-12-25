@@ -30,6 +30,7 @@ autoload -U compinit && compinit
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias l="lsd -la"
