@@ -4,6 +4,7 @@ direnv
 gnupg
 lsd
 neovim
+node
 pkgconf
 ripgrep
 starship
@@ -13,4 +14,3 @@ yadm
 zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
-zstd

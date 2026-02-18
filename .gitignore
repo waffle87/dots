@@ -6,6 +6,7 @@
 .gnupg
 .lldb
 .local
+.npm
 .ssh/id*
 .ssh/known_hosts*
 .terminfo

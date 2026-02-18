@@ -14,10 +14,10 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
 			ensure_installed = {
-				"bash",
 				"c",
 				"cpp",
 				"css",
+				"bash",
 				"html",
 				"lua",
 				"make",
@@ -32,6 +32,7 @@ return {
 			ensure_installed = {
 				"clang-format",
 				"lua-language-server",
+				"prettierd",
 				"python-lsp-server",
 				"ruff",
 				"stylua",
