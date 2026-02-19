@@ -30,10 +30,12 @@ return {
 		"williamboman/mason.nvim",
 		opts = {
 			ensure_installed = {
+				"basedpyright",
 				"clang-format",
+				"css-lsp",
+				"html-lsp",
 				"lua-language-server",
-				"prettierd",
-				"python-lsp-server",
+				"oxfmt",
 				"ruff",
 				"stylua",
 				"verible",
