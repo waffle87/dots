@@ -6,7 +6,6 @@ brightnessctl                     # To control keyboard/display brightness
 broadcom-wl-dkms                  # Provides wl WiFi driver
 chrony                            # Time syncrhonisation
 chrony-openrc                     # Time syncrhonisation service
-clang                             # Compiler
 cmake                             # Required for ZMK
 cryptsetup                        # Required for dmcrypt/device-mapper separate swap partition
 cryptsetup-openrc                 # Service for aforementioned
@@ -22,6 +21,7 @@ fzf                               # Used by Zoxide
 git                               # VCS
 grim                              # Screenshot tool
 gtklock                           # Lockscreen
+imagemagick                       # Image utilities
 imv                               # Display images
 intel-ucode                       # CPU microcode
 iwd                               # WiFi system
@@ -45,7 +45,7 @@ ninja                             # Required by ZMK
 noto-fonts                        # Variety of common fonts
 noto-fonts-cjk                    # Fonts of Asian dialects
 noto-fonts-emoji                  # Emojis
-npm                               # Required by some Mason (neovim) packages (python-lsp-server & prettier)
+npm                               # Required by some Mason (Neovim) packages (oxfmt, {css,html}-lsp)
 opendoas                          # /sbin/sudo alternative
 openrc                            # Init system & service manager
 openresolv                        # Name resolving required by IWD
