@@ -14,13 +14,14 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
 			ensure_installed = {
-				"lua",
-				"html",
-				"css",
-				"python",
-				"cpp",
 				"c",
+				"cpp",
+				"css",
+				"bash",
+				"html",
+				"lua",
 				"make",
+				"python",
 				"verilog",
 			},
 		},
@@ -29,8 +30,12 @@ return {
 		"williamboman/mason.nvim",
 		opts = {
 			ensure_installed = {
+				"basedpyright",
+				"clang-format",
+				"css-lsp",
+				"html-lsp",
 				"lua-language-server",
-				"python-lsp-server",
+				"oxfmt",
 				"ruff",
 				"stylua",
 				"verible",
