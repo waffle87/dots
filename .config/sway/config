@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 
-output * bg $HOME/.img/wallpaper/fish.png fill
+output * bg $HOME/.img/wallpaper/swirl.png fill
 
 input "1452:657:bcm5974" {
   dwt enabled
@@ -23,10 +23,11 @@ input "1452:657:bcm5974" {
   middle_emulation enabled
 }
 
-exec /usr/bin/pipewire &
-exec /usr/bin/pipewire-pulse &
-exec /usr/bin/wireplumber &
+exec /usr/bin/pipewire
+exec /usr/bin/pipewire-pulse
+exec /usr/bin/wireplumber
 exec /usr/bin/mako
+exec /usr/bin/gammastep
 
 exec_always {
   gsettings set $gnome-schema gtk-theme 'nordic'

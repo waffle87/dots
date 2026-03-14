@@ -11,6 +11,7 @@ local options = {
 			"ruff_format",
 			"ruff_organize_imports",
 		},
+		typst = { "typstyle" },
 		v = { "verible-verilog-format" },
 	},
 	format_on_save = {

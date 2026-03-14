@@ -11,6 +11,9 @@ cryptsetup                        # Required for dmcrypt/device-mapper separate 
 cryptsetup-openrc                 # Service for aforementioned
 direnv                            # Used to automatically activate venv's
 discord                           # Messaging platform
+docker                            # Docker container support
+docker-compose                    # Utilities to allow for Docker Compose
+docker-openrc                     # Service for Docker
 dos2unix                          # Used for formatting some KiCad production files
 dracut                            # Used to generate UKI
 efibootmgr                        # Required to modify EFI entries (eg. EFI Stubs)
@@ -18,6 +21,7 @@ fakeroot                          # Required for Pacman operations
 firefox                           # Webbrowser
 fuzzel                            # Application launcher
 fzf                               # Used by Zoxide
+gammastep                         # Blue light reduction
 git                               # VCS
 grim                              # Screenshot tool
 gtklock                           # Lockscreen
@@ -67,6 +71,7 @@ thunderbird                       # Mail & CalDAV client
 tlp                               # Battery manager
 tlp-openrc                        # Battery manager service
 tokei                             # Utility to count lines of code
+typst                             # Document processing
 unzip                             # Unpack zip archives
 uv                                # Python manager
 verilator                         # Verilog compiler
