@@ -44,7 +44,7 @@ alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 alias python="python3.13"
 
 take() {
-  mkdir $1
+  mkdir -p $1
   z $1
 }
 

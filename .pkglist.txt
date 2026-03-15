@@ -8,6 +8,7 @@ node
 pkgconf
 ripgrep
 starship
+typst
 uv
 verilator
 yadm
