@@ -24,12 +24,15 @@ tooltip * {
 #workspaces button.focused {
   color: @base08;
 }
+
 #workspaces button.urgent {
   color: @base0B;
 }
+
 #workspaces button:hover {
   color: @base0F;
 }
+
 #workspaces button {
   padding: 0px 5px;
   color: @white1;
@@ -51,33 +54,43 @@ tooltip * {
 #workspaces {
   background-color: @base00;
 }
+
 #clock {
   background-color: @base0E;
 }
+
 #custom-date {
   background-color: @base0D;
 }
+
 #network {
   background-color: @base0A;
 }
+
 #temperature {
   background-color: @base07;
 }
+
 #temperature.critical {
   background-color: @base0B;
 }
+
 #wireplumber {
   background-color: @base0C;
 }
+
 #wireplumber.muted {
   background-color: @base0B;
 }
+
 #battery {
   background-color: @base0F;
 }
+
 #battery.warning {
   color: @base0D;
 }
+
 #battery.critical {
   color: @base0B;
 }

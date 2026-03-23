@@ -29,11 +29,15 @@ exec /usr/bin/wireplumber
 exec /usr/bin/mako
 exec /usr/bin/gammastep
 
+set $gnome-schema org.gnome.desktop.interface
 exec_always {
-  gsettings set $gnome-schema gtk-theme 'nordic'
-  gsettings set $gnome-schema cursor-theme 'nordic_cursors'
-  gsettings set $gnome-schema font-name 'JetBrainsMono Nerd Font 10'
+  /usr/bin/gsettings set $gnome-schema gtk-theme 'Nordic'
+  /usr/bin/gsettings set $gnome-schema cursor-theme 'Nordzy-cursors'
+  /usr/bin/gsettings set $gnome-schema icon-theme 'Nordic'
+  /usr/bin/gsettings set $gnome-schema font-name 'JetBrainsMono Nerd Font 10'
 }
+
+seat seat0 xcursor_theme Nordzy-cursors 24
 
 ### key bindings 
 # applications
