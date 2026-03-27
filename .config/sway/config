@@ -17,8 +17,19 @@ set $right l
 output * bg /home/jack/.img/wallpaper/isometric.png fill
 
 exec /usr/bin/mako
+exec /usr/bin/gammastep
 # exec flatpak run com.github.wwmm.easyeffects --gapplication-service &
 exec /usr/bin/gentoo-pipewire-launcher &
+
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+  /usr/bin/gsettings set $gnome-schema gtk-theme 'Solarized-Orange-gtk-theme-iconpack'
+  # /usr/bin/gsettings set $gnome-schema cursor-theme ''
+  /usr/bin/gsettings set $gnome-schema icon-theme 'Solarized-Orange-gtk-theme-iconpack'
+  /usr/bin/gsettings set $gnome-schema font-name 'JetBrainsMono Nerd Font 10'
+}
+
+# seat seat0 xcursor_theme Nordzy-cursors 24
 
 ### key bindings 
 # applications
