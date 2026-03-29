@@ -21,6 +21,11 @@ exec /usr/bin/gammastep
 # exec flatpak run com.github.wwmm.easyeffects --gapplication-service &
 exec /usr/bin/gentoo-pipewire-launcher &
 
+exec /usr/libexec/xdg-desktop-portal-gtk -r
+exec /usr/libexec/xdg-desktop-portal-wlr -r
+exec /usr/libexec/flatpak-portal -r
+exec "sh -c 'sleep 5;exec /usr/libexec/xdg-desktop-portal -r'"
+
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
   /usr/bin/gsettings set $gnome-schema gtk-theme 'Solarized-Orange-gtk-theme-iconpack'

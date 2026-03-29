@@ -14,6 +14,7 @@ app-shells/zoxide
 app-shells/zsh
 app-shells/zsh-autosuggestions
 app-shells/zsh-syntax-highlighting
+app-text/typst
 app-text/zathura
 app-text/zathura-pdf-mupdf
 dev-python/eyed3
@@ -24,6 +25,7 @@ dev-util/pkgdev
 dev-util/tokei
 gui-apps/fuzzel
 gui-apps/grim
+gui-apps/gtklock
 gui-apps/mako
 gui-apps/slurp
 gui-apps/swaybg
@@ -43,6 +45,7 @@ net-im/discord
 net-irc/weechat
 net-libs/nodejs
 net-misc/chrony
+net-misc/rclone
 net-wireless/iwd
 sci-electronics/verilator
 sys-apps/bat
@@ -50,9 +53,11 @@ sys-apps/flatpak
 sys-apps/lsd
 sys-apps/ripgrep
 sys-apps/usbutils
+sys-apps/xdg-desktop-portal-gtk
 sys-boot/efibootmgr
 sys-fs/dosfstools
 sys-kernel/gentoo-kernel
 sys-kernel/linux-firmware
 www-client/firefox-bin
+x11-misc/gammastep
 x11-terms/wezterm

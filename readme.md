@@ -1,4 +1,4 @@
-# Solarisedd Dark dotfiles for Gentoo Desktop
+# Solarized Dark dotfiles for Gentoo Desktop
 
 ![fetch image](.img/fetch.png)
 
