@@ -30,13 +30,27 @@
         "on-scroll-up": "playerctl previous",
         "return-type": "json"
     },
+    "layer": "top",
+    "modules-center": ["sway/workspaces"],
+    "modules-left": ["temperature", "wireplumber", "network"],
+    "modules-right": ["custom/media", "custom/date", "clock"],
+    "network": {
+        "family": "ipv4",
+        "format-disconnected": "\udb85\udebc  disconnected",
+        "format-ethernet": "\uf1eb  {ipaddr}/{cidr}",
+        "format-wifi": "\uf1eb  {ipaddr}/{cidr}",
+        "tooltip-format-ethernet": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}",
+        "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
+    },
+    "output": "HDMI-A-1",
+    "position": "bottom",
     "sway/workspaces": {
         "all-outputs": true,
         "disable-scroll": true,
         "format": "{icon}",
         "format-icons": {
-            "focused": "\uf192",
-	    "default": "\uf111"
+            "default": "\uf111",
+            "focused": "\uf192"
         },
         "persistent-workspaces": {
             "1": [],
@@ -48,20 +62,12 @@
             "7": []
         }
     },
-    "layer": "top",
-    "modules-center": ["sway/workspaces"],
-    "modules-left": ["temperature", "wireplumber", "network"],
-    "modules-right": ["custom/media", "custom/date", "clock"],
-    "network": {
-	"family": "ipv4",
-        "format-disconnected": "\udb85\udebc  disconnected",
-        "format-wifi": "\uf1eb  {ipaddr}/{cidr}",
-        "tooltip-format-wifi": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}",
-        "format-ethernet": "\uf1eb  {ipaddr}/{cidr}",
-        "tooltip-format-ethernet": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
+    "temperature": {
+        "critical-threshold": 85,
+        "format": "\uf2c9 {temperatureC}\u00b0C",
+        "format-critical": "\uf071 {temperatureC}\u00b0C",
+        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input"
     },
-    "output": "DP-1",
-    "position": "bottom",
     "wireplumber": {
         "format": "{icon} {volume}%",
         "format-icons": {
@@ -70,11 +76,5 @@
         },
         "format-muted": "\uf026 muted",
         "on-click": "~/.config/scripts/output.sh"
-    },
-    "temperature": {
-        "critical-threshold": 85,
-        "format": "\uf2c9 {temperatureC}\u00b0C",
-        "format-critical": "\uf071 {temperatureC}\u00b0C",
-        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input"
     }
 }

@@ -40,6 +40,7 @@ return {
 				"ruff",
 				"stylua",
 				"tinymist",
+				"tree-sitter-cli",
 				"typstyle",
 				"verible",
 			},

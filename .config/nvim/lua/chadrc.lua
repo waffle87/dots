@@ -20,12 +20,6 @@ M.ui = {
 	},
 }
 
-M.term = {
-	sizes = {
-		vsp = 0.4,
-	},
-}
-
 M.nvdash = {
 	load_on_startup = true,
 	header = {
