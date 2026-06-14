@@ -18,8 +18,7 @@ output * bg /home/jack/.img/wallpaper/isometric.png fill
 
 exec /usr/bin/mako
 exec /usr/bin/gammastep
-# exec flatpak run com.github.wwmm.easyeffects --gapplication-service &
-exec /usr/bin/gentoo-pipewire-launcher &
+exec gentoo-pipewire-launcher restart &
 
 exec /usr/libexec/xdg-desktop-portal-gtk -r
 exec /usr/libexec/xdg-desktop-portal-wlr -r

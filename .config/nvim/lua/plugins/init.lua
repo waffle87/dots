@@ -23,7 +23,7 @@ return {
 				"make",
 				"python",
 				"typst",
-				"verilog",
+				"systemverilog",
 			},
 		},
 	},

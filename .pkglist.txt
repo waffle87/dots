@@ -1,7 +1,6 @@
 app-admin/doas
 app-admin/yadm
 app-arch/zip
-app-backup/restic
 app-containers/docker
 app-containers/docker-cli
 app-containers/docker-compose
@@ -23,7 +22,6 @@ dev-python/uv
 dev-util/bear
 dev-util/pkgdev
 dev-util/tokei
-dev-util/tree-sitter-cli
 gui-apps/fuzzel
 gui-apps/grim
 gui-apps/gtklock
@@ -45,7 +43,7 @@ net-im/discord
 net-irc/weechat
 net-libs/nodejs
 net-misc/chrony
-net-misc/rclone
+net-misc/dhcpcd
 net-wireless/iwd
 sci-electronics/verilator
 sys-apps/bat
