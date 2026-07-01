@@ -2,6 +2,9 @@ artix-archlinux-support
 base
 bat
 bear
+bluez
+bluez-openrc
+bluez-utils
 brightnessctl
 broadcom-wl-dkms
 chrony
@@ -81,6 +84,7 @@ verilator
 waybar
 weechat
 wezterm
+wireguard-openrc
 wl-clipboard
 xdg-utils
 xorg-xwayland

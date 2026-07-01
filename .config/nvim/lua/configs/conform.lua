@@ -12,7 +12,7 @@ local options = {
 			"ruff_organize_imports",
 		},
 		typst = { "typstyle" },
-		v = { "verible-verilog-format" },
+		v = { "verible" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
