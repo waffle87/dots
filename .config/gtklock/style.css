@@ -1,0 +1,10 @@
+@import url("../colours.css");
+
+window {
+  background-image: url("/home/jack/.img/wallpaper/mountain_blur.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "JetBrainsMono Nerd Font";
+  color: @base09;
+}

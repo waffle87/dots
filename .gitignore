@@ -1,0 +1,15 @@
+.cache
+.config/dconf
+.config/kicad
+.config/mozilla
+.config/nvim/lazy-lock.json
+.gnupg
+.local
+.npm
+.ssh
+.zcompdump
+.zsh_history
+Documents
+Downloads
+git
+Pictures

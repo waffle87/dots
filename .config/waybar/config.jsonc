@@ -1,0 +1,75 @@
+{
+  "battery": {
+    "format": "{icon}  {capacity}%",
+    "format-charging": "\uf0e7 {capacity}%",
+    "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
+    "states": {
+      "critical": 10,
+      "warning": 20
+    }
+  },
+  "clock": {
+    "format": "\uf017 {:%H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "format": {
+        "months": "<span color='#E5E9F0'><b>{}</b></span>",
+        "days": "<span color='#D8DEE9'><b>{}</b></span>",
+        "weeks": "<span color='#EBCB8B'><b>W{}</b></span>",
+        "weekdays": "<span color='#A3BE8C'><b>{}</b></span>",
+        "today": "<span color='#BF616A'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  "custom/date": {
+    "exec": "$HOME/.config/waybar/date.sh",
+    "format": "\uf073  {}",
+    "interval": 60
+  },
+  "network": {
+    "interface": "wlan0",
+    "family": "ipv4",
+    "format": "\uf1eb  {ipaddr}",
+    "format-disconnected": "\uf52f  disconnected",
+    "tooltip-format": "\uf1eb  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n\uf093 {bandwidthUpBits} \uf019 {bandwidthDownBits}"
+  },
+  "modules-center": ["sway/workspaces"],
+  "modules-left": ["network", "battery", "temperature"],
+  "modules-right": ["wireplumber", "custom/date", "clock"],
+  "position": "top",
+  "wireplumber": {
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "format": "{icon} {volume}%",
+    "format-muted": "\uf026 muted",
+    "format-icons": {
+      "default": ["\uf027", "\uf028"],
+      "headphone": "\uf025"
+    }
+  },
+  "sway/workspaces": {
+    "all-outputs": true,
+    "disable-scroll": true,
+    "format": "{icon}",
+    "format-icons": {
+      "default": "\uf068"
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    }
+  },
+  "temperature": {
+    "critical-threshold": 90,
+    "format": "\uf2c8 {temperatureC}\u00b0C",
+    "format-critical": "\uf071  {temperatureC}\u00b0C",
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
+    "interval": "5"
+  }
+}

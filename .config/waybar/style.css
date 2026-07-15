@@ -1,0 +1,96 @@
+@import url("../colours.css");
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+tooltip {
+  background-color: @base03;
+  border-width: 3px;
+  border-color: @base0A;
+}
+
+tooltip * {
+  color: @base05;
+  text-shadow: none;
+}
+
+#workspaces button.focused {
+  color: @base08;
+}
+
+#workspaces button.urgent {
+  color: @base0B;
+}
+
+#workspaces button:hover {
+  color: @base0F;
+}
+
+#workspaces button {
+  padding: 0px 5px;
+  color: @white1;
+}
+
+#network,
+#battery,
+#temperature,
+#workspaces,
+#wireplumber,
+#custom-date,
+#clock {
+  margin: 5px 5px 0px 5px;
+  border-radius: 60px;
+  padding: 2px 8px;
+  color: @base02;
+}
+
+#workspaces {
+  background-color: @base00;
+}
+
+#clock {
+  background-color: @base0E;
+}
+
+#custom-date {
+  background-color: @base0D;
+}
+
+#network {
+  background-color: @base0A;
+}
+
+#temperature {
+  background-color: @base07;
+}
+
+#temperature.critical {
+  background-color: @base0B;
+}
+
+#wireplumber {
+  background-color: @base0C;
+}
+
+#wireplumber.muted {
+  background-color: @base0B;
+}
+
+#battery {
+  background-color: @base0F;
+}
+
+#battery.warning {
+  color: @base0D;
+}
+
+#battery.critical {
+  color: @base0B;
+}
