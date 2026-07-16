@@ -1,12 +1,15 @@
 .cache
 .config/dconf
 .config/kicad
+.config/mimeapps.list
 .config/mozilla
 .config/nvim/lazy-lock.json
+.config/systemd
 .gnupg
 .local
 .npm
 .ssh
+.thunderbird
 .zcompdump
 .zsh_history
 Documents
