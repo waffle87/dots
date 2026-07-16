@@ -25,6 +25,7 @@ input type:touchpad {
 
 exec /usr/bin/mako
 exec /usr/bin/gammastep
+exec /usr/bin/swayidle
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {

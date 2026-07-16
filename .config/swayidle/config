@@ -1,0 +1,3 @@
+timeout 30 'brightnessctl -sd apple::kbd_backlight set 0' resume 'brightnessctl -rd apple::kbd_backlight'
+timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+timeout 600 'gtklock -d'

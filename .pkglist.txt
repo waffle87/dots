@@ -5,7 +5,6 @@ base
 bat
 bear
 brightnessctl
-cmake
 cups
 direnv
 discord
@@ -18,9 +17,7 @@ fzf
 gammastep
 git
 grim
-grub
 gtklock
-imagemagick
 imv
 intel-ucode
 iwd
@@ -29,8 +26,6 @@ kicad
 kicad-library
 kicad-library-3d
 linux-firmware
-linux-lts-t2
-linux-lts-t2-headers
 linux-t2
 linux-t2-headers
 lldb
@@ -40,10 +35,7 @@ make
 mako
 man-db
 meld
-mesa-utils
-meson
 neovim
-ninja
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -51,15 +43,16 @@ npm
 opendoas
 openssh
 pacman-contrib
-patch
 pkgconf
 ripgrep
 slurp
 starship
 sway
 swaybg
+swayidle
 t2fanrd
 thunderbird
+tiny-dfr
 tlp
 tokei
 ttf-jetbrains-mono-nerd
@@ -67,8 +60,8 @@ typst
 unzip
 uv
 waybar
-wget
 wl-clipboard
+xdg-utils
 xorg-xwayland
 yadm
 zoxide
