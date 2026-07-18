@@ -8,6 +8,7 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
 if [ "$(tty)" = "/dev/tty1" ]; then
+  export WLR_DRM_DEVICES=/dev/dri/card1
   exec dbus-run-session sway
 fi
 

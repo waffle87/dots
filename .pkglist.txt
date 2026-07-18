@@ -4,10 +4,11 @@ apple-t2-audio-config
 base
 bat
 bear
+bluez
+bluez-utils
 brightnessctl
 cups
 direnv
-discord
 docker
 docker-compose
 efibootmgr
@@ -40,6 +41,7 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+ntp
 opendoas
 openssh
 pacman-contrib
@@ -62,7 +64,6 @@ uv
 waybar
 wl-clipboard
 xdg-utils
-xorg-xwayland
 yadm
 zoxide
 zsh
