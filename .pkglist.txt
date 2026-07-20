@@ -11,6 +11,7 @@ cups
 direnv
 docker
 docker-compose
+dos2unix
 efibootmgr
 firefox
 fuzzel
@@ -41,7 +42,6 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 npm
-ntp
 opendoas
 openssh
 pacman-contrib

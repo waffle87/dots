@@ -23,6 +23,11 @@ input type:touchpad {
   middle_emulation enabled
 }
 
+input "1133:45089:Logitech_Pebble_Mouse" {
+  pointer_accel 0.5
+  accel_profile flat
+}
+
 exec /usr/bin/mako
 exec /usr/bin/gammastep
 exec /usr/bin/swayidle
