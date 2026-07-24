@@ -4,6 +4,7 @@
 .config/mimeapps.list
 .config/mozilla
 .config/nvim/lazy-lock.json
+.config/obsidian
 .config/systemd
 .gnupg
 .local
