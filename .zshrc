@@ -26,7 +26,7 @@ WORDCHARS=${WORDCHARS//[\/]}
 
 autoload -Uz edit-command-line
 zle -N edit-command-line
-bindkey -M vicmd 'nv' edit-command-line
+bindkey -M vicmd 'p' edit-command-line
 
 alias l="lsd -la"
 alias ls="lsd"
@@ -42,6 +42,7 @@ alias cloc="tokei"
 alias diff="diff --color"
 alias -g G='| rg'
 alias -g L='| less'
+alias -g C='| wl-copy'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 
 gco() {

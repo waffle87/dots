@@ -1,15 +1,17 @@
 [user]
-	name = Jack Sangdahl
-	email = jack@pngu.org
-	signingkey = FC53C827D09C7050
+  name = Jack Sangdahl
+  email = jack@pngu.org
+  signingkey = FC53C827D09C7050
 [core]
-	pager = delta
+  pager = delta
 [interactive]
-	diffFilter = delta --color-only
+  diffFilter = delta --color-only
+[include]
+  path = ~/.config/nord-delta.gitconfig
 [delta]
-	navigate = true
+  navigate = true
   dark = true
   line-numbers = true
-  theme = Nord
+  features = nord-theme
 [merge]
-	conflictStyle = zdiff3
+  conflictStyle = zdiff3
