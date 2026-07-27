@@ -1,61 +1,61 @@
-#!/bin/zsh
-
-if [ ! -S ~/.ssh/ssh_auth_sock ]; then
-  eval "$(ssh-agent)"
-  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+autoload -Uz compinit
+if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
 fi
-export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-ssh-add -l > /dev/null || ssh-add
+zstyle ':completion:*' completer _complete _ignored
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zmodload zsh/complist
+zstyle ':completion:*' menu select
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-if [ "$(tty)" = "/dev/tty1" ]; then
-  export WLR_DRM_DEVICES=/dev/dri/card1
-  exec dbus-run-session sway
-fi
-
-export HISTFILE=~/.zsh_history
-export HISTSIZE=20000
-export SAVEHIST=20000
-export BAT_THEME="Nord"
-export LESSHISTFILE="$HOME/.local/share/less-history"
-export PYTHON_HISTORY="$HOME/.local/share/python-history"
-
-path+=(
-"$HOME/.local/bin"
-"$HOME/.local/qmk_toolchains_linuxX64/bin"
-"$HOME/.local/qmk_flashutils_linuxX64"
-"$path[@]")
-export PATH
-
+setopt EXTENDED_GLOB
+setopt SHARE_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
+setopt EXTENDED_HISTORY
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+setopt HIST_IGNORE_SPACE
 
 bindkey -v
 bindkey "^?" backward-delete-char
-zstyle ':completion:*' completer _complete _ignored
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle :compinstall filename '~/.zshrc'
-autoload -U compinit && compinit
+export KEYTIMEOUT=1
+WORDCHARS=${WORDCHARS//[\/]}
 
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
-eval "$(direnv hook zsh)"
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd 'nv' edit-command-line
 
 alias l="lsd -la"
 alias ls="lsd"
 alias tree="lsd --tree"
+alias find="fd"
 alias cat="bat --paging=never"
 alias bcat="/bin/cat"
-alias cd="z"
+alias ps="procs"
+alias sed="sd"
 alias vi="nvim"
 alias sudo="doas"
 alias cloc="tokei"
-alias diff="diff --color=always"
+alias diff="diff --color"
+alias -g G='| rg'
+alias -g L='| less'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 
-take() {
-    mkdir -p $1
-    z $1
+gco() {
+  git branch --all | grep -v HEAD | sed 's#.*/##' | fzf | xargs git checkout
 }
+
+take() {
+  mkdir -p "$1" && cd "$1"
+}
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
+eval "$(direnv hook zsh)"
+eval "$(fzf --zsh)"
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

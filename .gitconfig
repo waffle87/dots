@@ -3,4 +3,13 @@
 	email = jack@pngu.org
 	signingkey = FC53C827D09C7050
 [core]
-	editor = nvim
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+  dark = true
+  line-numbers = true
+  theme = Nord
+[merge]
+	conflictStyle = zdiff3

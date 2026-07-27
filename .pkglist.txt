@@ -1,7 +1,6 @@
 alacritty
 alsa-utils
 apple-bcm-firmware
-apple-t2-audio-config
 base
 bat
 bear
@@ -16,11 +15,13 @@ docker
 docker-compose
 dos2unix
 efibootmgr
+fd
 firefox
 fuzzel
 fzf
 gammastep
 git
+git-delta
 grim
 gtklock
 imv
@@ -51,7 +52,9 @@ openssh
 pacman-contrib
 pkgconf
 powertop
+procs
 ripgrep
+sd
 slurp
 starship
 sway
@@ -60,11 +63,11 @@ swayidle
 t2fanrd
 thunderbird
 tlp
-tokei
 ttf-jetbrains-mono-nerd
 typst
 unzip
 uv
+vivid
 waybar
 wl-clipboard
 xdg-utils
