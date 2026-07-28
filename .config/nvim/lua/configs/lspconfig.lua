@@ -7,7 +7,6 @@ local servers = {
 	"html",
 	"lua_ls",
 	"tinymist",
-	"verible",
 }
 
 vim.lsp.enable(servers)

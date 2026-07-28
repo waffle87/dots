@@ -39,7 +39,7 @@ exec_always {
 # applications
 
 bindsym $mod+q       kill
-bindsym $mod+t       exec wezterm
+bindsym $mod+t       exec alacritty
 bindsym $mod+f       exec firefox-bin
 bindsym $mod+r       exec fuzzel
 bindsym $mod+p       exec grim -g "$(slurp)" - | wl-copy

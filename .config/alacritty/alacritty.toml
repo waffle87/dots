@@ -1,0 +1,19 @@
+[general]
+import = [ "~/.config/alacritty/colours.toml" ]
+
+[window]
+padding = {x = 5, y = 5}
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular"}
+size = 10
+
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Control", action = "Paste"},
+  { key = "T", mods = "Control | Shift", action = "SpawnNewInstance"},
+  { key = "F", mods = "Control", action = "SearchForward"}
+]
