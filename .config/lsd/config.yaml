@@ -1,5 +1,3 @@
-# lsd configuration
-
 blocks:
   - permission
   - size

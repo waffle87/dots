@@ -1,6 +1,9 @@
 bat
 bear
 direnv
+fd
+fzf
+git-delta
 gnupg
 lsd
 neovim
@@ -10,7 +13,7 @@ ripgrep
 starship
 typst
 uv
-verilator
+vivid
 yadm
 zoxide
 zsh-autosuggestions

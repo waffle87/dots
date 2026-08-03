@@ -1,21 +1,19 @@
 [user]
-	name = Jack Sangdahl
-	email = jack@pngu.org
-	signingkey = FC53C827D09C7050
+  name = Jack Sangdahl
+  email = jack@pngu.org
+  signingkey = FC53C827D09C7050
 [core]
-	editor = nvim
-	pager = less -F -X
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[include]
+  path = ~/.config/onedark-delta.gitconfig
+[delta]
+  navigate = true
+  dark = true
+  line-numbers = true
+  features = onedark-theme
+[merge]
+  conflictStyle = zdiff3
 [commit]
-	gpgsign = true
-[advice]
-	skippedCherryPicks = false
-	forceDeleteBranch = false
-[pager]
-	branch = false
-[pull]
-	ff = only
-	rebase = merges
-[format]
-	singOff = true
-[init]
-	defaultBranch = master
+  gpgsign = true

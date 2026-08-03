@@ -1,0 +1,34 @@
+[delta "onedark-theme"]
+  dark = true
+  syntax-theme = OneHalfDark
+  file-modified-label = [*]
+  file-added-label = [+]
+  file-removed-label = [-]
+  file-copied-label = [==]
+  file-renamed-label = [->]
+  file-style = omit
+  hunk-header-decoration-style = "#61afef" ul
+  hunk-header-file-style = "#56b6c2" ul bold
+  hunk-header-line-number-style = "#e5c07b" box bold
+  hunk-header-style = file line-number syntax bold italic
+  plus-style = "#98c379"
+  plus-emph-style = "#353b45" "#98c379"
+  minus-style = "#e06c75"
+  minus-emph-style = "#353b45" "#e06c75"
+  line-numbers = true
+  line-numbers-minus-style = "#e06c75"
+  line-numbers-plus-style = "#98c379"
+  line-numbers-left-style = "#61afef"
+  line-numbers-right-style = "#61afef"
+  line-numbers-zero-style = "#c8ccd4"
+  zero-style = syntax
+  whitespace-error-style = "#353b45" bold
+  blame-code-style = syntax
+  blame-format = "{author:<18} {commit:<6} {timestamp:<15}"
+  blame-palette = "#282c34" "#353b45" "#3e4451"
+  merge-conflict-begin-symbol = ~
+  merge-conflict-end-symbol = ~
+  merge-conflict-ours-diff-header-style = "#e5c07b" bold
+  merge-conflict-ours-diff-header-decoration-style = "#61afef" box
+  merge-conflict-theirs-diff-header-style = "#e5c07b" bold
+  merge-conflict-theirs-diff-header-decoration-style = "#61afef" box

@@ -9,12 +9,6 @@ config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 config.native_macos_fullscreen_mode = true
 
--- config.leader = {
--- 	key = "a",
--- 	mods = "CTRL",
--- 	timeout_milliseconds = 1000,
--- }
-
 config.keys = {
 	{
 		key = "v",
@@ -40,24 +34,6 @@ config.keys = {
 		key = "w",
 		mods = "SUPER",
 		action = act.CloseCurrentPane({ confirm = false }),
-	},
-	{
-		key = "C",
-		mods = "SUPER|SHIFT",
-		action = act.ClearScrollback("ScrollbackOnly"),
-	},
-	{
-		key = "C",
-		mods = "SUPER|SHIFT",
-		action = act.ClearScrollback("ScrollbackAndViewport"),
-	},
-	{
-		key = "C",
-		mods = "SUPER|SHIFT",
-		action = act.Multiple({
-			act.ClearScrollback("ScrollbackAndViewport"),
-			act.SendKey({ key = "L", mods = "CTRL" }),
-		}),
 	},
 }
 
