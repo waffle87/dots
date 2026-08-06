@@ -31,11 +31,12 @@ return {
 		opts = {
 			ensure_installed = {
 				"basedpyright",
+				"biome",
 				"clang-format",
 				"css-lsp",
 				"html-lsp",
 				"lua-language-server",
-				"oxfmt",
+				"mdformat",
 				"ruff",
 				"stylua",
 				"tinymist",

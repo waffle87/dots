@@ -8,6 +8,7 @@ bluez
 bluez-utils
 brightnessctl
 btrfs-progs
+ca-certificates-mozilla
 cups
 direnv
 dkms
@@ -24,6 +25,7 @@ git
 git-delta
 grim
 gtklock
+imagemagick
 imv
 intel-ucode
 iwd
@@ -47,6 +49,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 obsidian
+opencode
 opendoas
 openssh
 pacman-contrib
@@ -70,6 +73,7 @@ uv
 vivid
 waybar
 wl-clipboard
+wl-mirror
 xdg-utils
 yadm
 zoxide

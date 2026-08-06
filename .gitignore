@@ -5,6 +5,7 @@
 .config/mozilla
 .config/nvim/lazy-lock.json
 .config/obsidian
+.config/opencode
 .config/systemd
 .gnupg
 .local

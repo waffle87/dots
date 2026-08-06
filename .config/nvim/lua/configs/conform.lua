@@ -1,11 +1,12 @@
 local options = {
+
 	formatters_by_ft = {
 		cpp = { "clang-format" },
 		c = { "clang-format" },
-		css = { "oxfmt" },
-		html = { "oxfmt" },
+		css = { "biome" },
+		html = { "biome" },
 		lua = { "stylua" },
-		markdown = { "oxfmt" },
+		markdown = { "mdformat" },
 		python = {
 			"ruff_fix",
 			"ruff_format",

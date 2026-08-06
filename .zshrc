@@ -37,10 +37,11 @@ alias bcat="/bin/cat"
 alias ps="procs"
 alias sed="sd"
 alias vi="nvim"
+alias vic="nvim --clean"
 alias sudo="doas"
 alias cloc="tokei"
 alias diff="diff --color"
-alias -g G='| rg'
+alias -g R='| rg'
 alias -g L='| less'
 alias -g C='| wl-copy'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
