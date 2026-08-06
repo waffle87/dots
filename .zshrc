@@ -35,8 +35,10 @@ alias find="fd"
 alias cat="bat --paging=never"
 alias bcat="/bin/cat"
 alias vi="nvim"
+alias vic="nvim --clean"
 alias diff="diff --color"
-alias -g G='| rg'
+alias python="python3.13"
+alias -g R='| rg'
 alias -g L='| less'
 alias -g C='| pbcopy'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"

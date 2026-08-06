@@ -1,6 +1,7 @@
 .cache
 .CFUserTextEncoding
 .config/nvim/lazy-lock.json
+.config/opencode
 .config/yadm
 .DS_Store
 .gnupg
