@@ -7,9 +7,10 @@ git-delta
 gnupg
 lsd
 neovim
-node
+opencode
 pkgconf
-ripgrep
+python@3.14
+rsync
 starship
 typst
 uv
