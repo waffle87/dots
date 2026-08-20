@@ -57,6 +57,7 @@ pkgconf
 powertop
 procs
 ripgrep
+rsync
 sd
 slurp
 starship
@@ -66,6 +67,7 @@ swayidle
 t2fanrd
 thunderbird
 tlp
+tokei
 ttf-jetbrains-mono-nerd
 typst
 unzip

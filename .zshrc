@@ -47,7 +47,7 @@ alias -g C='| wl-copy'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 
 gco() {
-  git branch --all | grep -v HEAD | sed 's#.*/##' | fzf | xargs git checkout
+  git branch --all | grep -v HEAD | /bin/sed 's#.*/##' | fzf | xargs git checkout
 }
 
 take() {
