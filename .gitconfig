@@ -15,3 +15,5 @@
   features = nord-theme
 [merge]
   conflictStyle = zdiff3
+[commit]
+  gpgsign = true

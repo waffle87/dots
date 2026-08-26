@@ -6,6 +6,7 @@
 .config/nvim/lazy-lock.json
 .config/obsidian
 .config/opencode
+.config/qmk
 .config/systemd
 .gnupg
 .local
@@ -13,6 +14,7 @@
 .pki
 .ssh
 .thunderbird
+.unison
 .zcompdump
 .zsh_history
 Documents

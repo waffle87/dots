@@ -70,6 +70,7 @@ tlp
 tokei
 ttf-jetbrains-mono-nerd
 typst
+unison
 unzip
 uv
 vivid

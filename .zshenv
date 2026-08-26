@@ -5,6 +5,7 @@ export BAT_THEME="Nord"
 export LESSHISTFILE="$HOME/.local/share/less-history"
 export PYTHON_HISTORY="$HOME/.local/share/python-history"
 export LS_COLORS="$(vivid generate ansi)"
+export GPG_TTY=$(tty)
 export EDITOR=nvim
 export VISUAL=nvim
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
