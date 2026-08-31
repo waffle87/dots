@@ -69,7 +69,6 @@
     "critical-threshold": 90,
     "format": "\uf2c8 {temperatureC}\u00b0C",
     "format-critical": "\uf071  {temperatureC}\u00b0C",
-    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
     "interval": "5"
   }
 }

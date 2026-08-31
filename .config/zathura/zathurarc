@@ -1,0 +1,44 @@
+set font                        "JetBrainsMono Nerd Font 10"
+
+set notification-error-bg       "#bf616a"
+set notification-error-fg       "#2e3440"
+set notification-warning-bg     "#ebcb8b"
+set notification-warning-fg     "#2e3440"
+set notification-bg             "#2e3440"
+set notification-fg             "#d8dee9"
+
+set completion-bg               "#2e3440"
+set completion-fg               "#d8dee9"
+set completion-group-bg         "#3b4252"
+set completion-group-fg         "#d8dee9"
+set completion-highlight-bg     "#88c0d0"
+set completion-highlight-fg     "#2e3440"
+
+set index-bg                    "#2e3440"
+set index-fg                    "#d8dee9"
+set index-active-bg             "#88c0d0"
+set index-active-fg             "#2e3440"
+
+set inputbar-bg                 "#2e3440"
+set inputbar-fg                 "#d8dee9"
+set statusbar-bg                "#3b4252"
+set statusbar-fg                "#d8dee9"
+
+set highlight-color             "#ebcb8b"
+set highlight-active-color      "#88c0d0"
+
+set default-bg                  "#2e3440"
+set default-fg                  "#d8dee9"
+
+set recolor                     "true"
+set recolor-lightcolor          "#2e3440"
+set recolor-darkcolor           "#d8dee9"
+
+set incremental-search          "true"
+set window-title-home-tilde     "true"
+set selection-clipboard         "clipboard"
+
+set statusbar-basename          "true"
+set statusbar-home-tilde        "true"
+set statusbar-h-padding         "5"
+set statusbar-v-padding         "5"

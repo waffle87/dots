@@ -1,6 +1,6 @@
 export HISTFILE=~/.zsh_history
-export HISTSIZE=20000
-export SAVEHIST=20000
+export HISTSIZE=75000
+export SAVEHIST=75000
 export BAT_THEME="Nord"
 export LESSHISTFILE="$HOME/.local/share/less-history"
 export PYTHON_HISTORY="$HOME/.local/share/python-history"

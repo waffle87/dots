@@ -79,6 +79,7 @@ wl-clipboard
 wl-mirror
 xdg-utils
 yadm
+zathura-pdf-mupdf
 zoxide
 zsh
 zsh-autosuggestions
