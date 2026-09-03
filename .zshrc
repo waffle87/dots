@@ -34,6 +34,7 @@ alias tree="lsd --tree"
 alias find="fd"
 alias cat="bat --paging=never"
 alias bcat="/bin/cat"
+alias sed="sd"
 alias vi="nvim"
 alias vic="nvim --clean"
 alias diff="diff --color"
@@ -44,7 +45,7 @@ alias -g C='| pbcopy'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 
 gco() {
-  git branch --all | grep -v HEAD | sed 's#.*/##' | fzf | xargs git checkout
+  git branch --all | grep -v HEAD | /usr/bin/sed 's#.*/##' | fzf | xargs git checkout
 }
 
 take() {

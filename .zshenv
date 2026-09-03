@@ -10,8 +10,8 @@ path=(
 
 export PATH
 export HISTFILE=~/.zsh_history
-export HISTSIZE=20000
-export SAVEHIST=20000
+export HISTSIZE=50000
+export SAVEHIST=50000
 export BAT_THEME="OneHalfDark"
 export LESSHISTFILE="$HOME/.local/share/less-history"
 export PYTHON_HISTORY="$HOME/.local/share/python-history"

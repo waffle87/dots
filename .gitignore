@@ -12,6 +12,7 @@
 .ssh/known_hosts*
 .terminfo
 .Trash
+.unison
 .zcompdump
 .zsh_history
 .zsh_sessions

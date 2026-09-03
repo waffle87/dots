@@ -11,8 +11,10 @@ opencode
 pkgconf
 python@3.14
 rsync
+sd
 starship
 typst
+unison
 uv
 vivid
 yadm
