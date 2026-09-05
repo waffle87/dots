@@ -45,6 +45,7 @@ alias -g R='| rg'
 alias -g L='| less'
 alias -g C='| wl-copy'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
+alias netup="sudo modprobe -r brcmfmac_wcc && sleep 2 && sudo modprobe brcmfmac_wcc"
 
 gco() {
   git branch --all | grep -v HEAD | /bin/sed 's#.*/##' | fzf | xargs git checkout
