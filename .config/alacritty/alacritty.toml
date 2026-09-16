@@ -17,3 +17,6 @@ bindings = [
   { key = "T", mods = "Control | Shift", action = "SpawnNewInstance"},
   { key = "F", mods = "Control", action = "SearchForward"}
 ]
+
+[env]
+TERM = "xterm-256color"
