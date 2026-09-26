@@ -65,8 +65,7 @@
     "temperature": {
         "critical-threshold": 85,
         "format": "\uf2c9 {temperatureC}\u00b0C",
-        "format-critical": "\uf071 {temperatureC}\u00b0C",
-        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input"
+        "format-critical": "\uf071 {temperatureC}\u00b0C"
     },
     "wireplumber": {
         "format": "{icon} {volume}%",

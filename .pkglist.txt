@@ -46,7 +46,6 @@ net-im/discord
 net-irc/weechat
 net-libs/nodejs
 net-misc/chrony
-net-misc/dhcpcd
 net-misc/yt-dlp
 net-wireless/iwd
 sys-apps/bat

@@ -1,6 +1,6 @@
 export HISTFILE=~/.zsh_history
-export HISTSIZE=20000
-export SAVEHIST=20000
+export HISTSIZE=75000
+export SAVEHIST=75000
 export BAT_THEME="Solarized (dark)"
 export LESSHISTFILE="$HOME/.local/share/less-history"
 export PYTHON_HISTORY="$HOME/.local/share/python-history"
@@ -8,6 +8,7 @@ export LS_COLORS="$(vivid generate solarized-dark)"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#657B83"
 export EDITOR=nvim
 export VISUAL=nvim
+export GPG_TTY=$(tty)
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=fg:#eee8d5,fg+:#fdf6e3,bg:#002b36,bg+:#073642

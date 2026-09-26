@@ -15,3 +15,5 @@
   features = solarized-theme
 [merge]
   conflictStyle = zdiff3
+[commit]
+	gpgsign = true
