@@ -82,6 +82,7 @@ wl-clipboard
 wl-mirror
 xdg-utils
 xorg-xwayland
+yaak
 yadm
 zathura-pdf-mupdf
 zoxide
