@@ -4,6 +4,7 @@ local options = {
 		c = { "clang-format" },
 		css = { "biome" },
 		html = { "biome" },
+		javascript = { "clang-format" },
 		lua = { "stylua" },
 		markdown = { "mdformat" },
 		python = {
