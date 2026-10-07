@@ -30,6 +30,7 @@ imagemagick
 imv
 intel-ucode
 iwd
+jq
 keyd
 kicad
 kicad-library
@@ -52,7 +53,6 @@ npm
 obsidian
 opencode
 opendoas
-openresolv
 openssh
 pacman-contrib
 pkgconf
@@ -66,6 +66,7 @@ starship
 sway
 swaybg
 swayidle
+systemd-resolvconf
 t2fanrd
 thunderbird
 tlp
