@@ -17,6 +17,7 @@ docker
 docker-compose
 dos2unix
 efibootmgr
+eza
 fd
 firefox
 fuzzel
@@ -40,7 +41,6 @@ linux-t2
 linux-t2-headers
 lldb
 llvm
-lsd
 make
 mako
 man-db
@@ -70,7 +70,6 @@ systemd-resolvconf
 t2fanrd
 thunderbird
 tlp
-tokei
 ttf-jetbrains-mono-nerd
 typst
 unison

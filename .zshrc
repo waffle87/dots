@@ -28,9 +28,9 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd 'p' edit-command-line
 
-alias l="lsd -la"
-alias ls="lsd"
-alias tree="lsd --tree"
+alias l="eza --long --all --git --icons=auto"
+alias ls="eza"
+alias tree="eza --tree"
 alias find="fd"
 alias cat="bat --paging=never"
 alias bcat="/bin/cat"
@@ -39,7 +39,7 @@ alias sed="sd"
 alias vi="nvim"
 alias vic="nvim --clean"
 alias sudo="doas"
-alias cloc="tokei"
+alias cloc="eza --code"
 alias diff="diff --color"
 alias -g R='| rg'
 alias -g L='| less'
