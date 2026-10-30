@@ -14,10 +14,10 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
 			ensure_installed = {
+				"bash",
 				"c",
 				"cpp",
 				"css",
-				"bash",
 				"html",
 				"javascript",
 				"lua",
@@ -32,12 +32,12 @@ return {
 		opts = {
 			ensure_installed = {
 				"basedpyright",
-				"biome",
 				"clang-format",
 				"css-lsp",
 				"html-lsp",
 				"lua-language-server",
 				"mdformat",
+				"prettier",
 				"ruff",
 				"stylua",
 				"tinymist",
