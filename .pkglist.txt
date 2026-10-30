@@ -1,14 +1,13 @@
 bat
-bear
 direnv
+eza
 fd
 fzf
 git-delta
 gnupg
-lsd
 neovim
+node
 opencode
-pkgconf
 python@3.14
 rsync
 sd
@@ -17,6 +16,7 @@ typst
 unison
 uv
 vivid
+wireguard-tools
 yadm
 zoxide
 zsh-autosuggestions
