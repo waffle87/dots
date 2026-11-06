@@ -64,7 +64,6 @@ alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 
 if   _has pbcopy; then alias -g C='| pbcopy'
 elif _has wl-copy; then alias -g C='| wl-copy'
-elif _has xclip;   then alias -g C='| xclip -selection clipboard'
 fi
 
 gco() {
