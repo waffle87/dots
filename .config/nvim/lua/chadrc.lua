@@ -4,9 +4,6 @@ local M = {}
 M.base46 = {
 	theme = ok and loc.theme,
 	hl_override = {
-		Normal = {
-			bg = "one_bg",
-		},
 		Comment = { italic = true },
 		["@comment"] = { italic = true },
 	},

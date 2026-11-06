@@ -1,4 +1,3 @@
-# Theme palette and tool themes (machine-specific file, may be absent)
 [[ -f ~/.config/theme.zsh ]] && source ~/.config/theme.zsh
 
 _has() { (( $+commands[$1] )) }
@@ -47,7 +46,6 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd 'p' edit-command-line
 
-# Aliases (unchanged from yours)
 alias l="eza --long --all --git --icons=auto"
 alias ls="eza"
 alias tree="eza --tree"
@@ -64,7 +62,6 @@ alias -g R='| rg'
 alias -g L='| less'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
 
-# Portable clipboard
 if   _has pbcopy; then alias -g C='| pbcopy'
 elif _has wl-copy; then alias -g C='| wl-copy'
 elif _has xclip;   then alias -g C='| xclip -selection clipboard'
@@ -83,10 +80,8 @@ _has zoxide   && eval "$(zoxide init zsh --cmd cd)"
 _has direnv   && eval "$(direnv hook zsh)"
 _has fzf      && eval "$(fzf --zsh)"
 
-# Machine-specific overrides (Homebrew shellenv on macOS, etc.)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-# Plugins (syntax-highlighting must come last)
 _source_first() {
   local f
   for f in "$@"; do
