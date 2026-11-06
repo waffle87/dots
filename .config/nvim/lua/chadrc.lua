@@ -1,12 +1,14 @@
 local ok, loc = pcall(require, "localtheme")
+loc = ok and loc or {}
+
 local M = {}
 
 M.base46 = {
-	theme = ok and loc.theme,
-	hl_override = {
+	theme = loc.theme,
+	hl_override = vim.tbl_deep_extend("force", {
 		Comment = { italic = true },
 		["@comment"] = { italic = true },
-	},
+	}, loc.hl_override or {}),
 }
 
 M.ui = {

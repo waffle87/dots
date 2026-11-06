@@ -21,7 +21,6 @@ if (( ${+THEME[bg]} )); then
   --color=border:${THEME[border]},label:${THEME[muted]},query:${THEME[fg]}"
 fi
 
-# Completion
 autoload -Uz compinit
 if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then
   compinit
