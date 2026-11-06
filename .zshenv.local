@@ -1,0 +1,6 @@
+path=(
+  /opt/homebrew/bin
+  "$HOME/.local/qmk_toolchains_macosARM64/bin"
+  "$HOME/.local/qmk_flashutils_macosARM64"
+  $path
+)

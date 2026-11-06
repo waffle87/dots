@@ -1,3 +1,28 @@
+# Theme palette and tool themes (machine-specific file, may be absent)
+[[ -f ~/.config/theme.zsh ]] && source ~/.config/theme.zsh
+
+_has() { (( $+commands[$1] )) }
+
+export GPG_TTY=$TTY
+
+if _has vivid && [[ -n $VIVID_THEME ]]; then
+  export LS_COLORS="$(vivid generate $VIVID_THEME)"
+fi
+
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND='fd --type d --hidden --exclude .git'
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+export FZF_DEFAULT_OPTS='--border="rounded" --border-label="" --preview-window="border-rounded"
+  --prompt="> " --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
+if (( ${+THEME[bg]} )); then
+  FZF_DEFAULT_OPTS+=" --color=fg:${THEME[fg]},fg+:${THEME[fg]},bg:${THEME[bg]},bg+:${THEME[bg_alt]}
+  --color=hl:${THEME[blue]},hl+:${THEME[cyan]},info:${THEME[yellow]},marker:${THEME[green]}
+  --color=prompt:${THEME[red]},spinner:${THEME[orange]},pointer:${THEME[purple]},header:${THEME[fg_dim]}
+  --color=border:${THEME[border]},label:${THEME[muted]},query:${THEME[fg]}"
+fi
+
+# Completion
 autoload -Uz compinit
 if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then
   compinit
@@ -10,14 +35,8 @@ zmodload zsh/complist
 zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-setopt EXTENDED_GLOB
-setopt SHARE_HISTORY
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_FIND_NO_DUPS
-setopt EXTENDED_HISTORY
-setopt HIST_REDUCE_BLANKS
-setopt HIST_VERIFY
-setopt HIST_IGNORE_SPACE
+setopt EXTENDED_GLOB SHARE_HISTORY HIST_IGNORE_ALL_DUPS HIST_FIND_NO_DUPS \
+       EXTENDED_HISTORY HIST_REDUCE_BLANKS HIST_VERIFY HIST_IGNORE_SPACE
 
 bindkey -v
 bindkey "^?" backward-delete-char
@@ -28,6 +47,7 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd 'p' edit-command-line
 
+# Aliases (unchanged from yours)
 alias l="eza --long --all --git --icons=auto"
 alias ls="eza"
 alias tree="eza --tree"
@@ -42,8 +62,13 @@ alias cloc="eza --code"
 alias python="python3"
 alias -g R='| rg'
 alias -g L='| less'
-alias -g C='| pbcopy'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
+
+# Portable clipboard
+if   _has pbcopy; then alias -g C='| pbcopy'
+elif _has wl-copy; then alias -g C='| wl-copy'
+elif _has xclip;   then alias -g C='| xclip -selection clipboard'
+fi
 
 gco() {
   git branch --all | grep -v HEAD | /usr/bin/sed 's#.*/##' | fzf | xargs git checkout
@@ -53,11 +78,28 @@ take() {
   mkdir -p "$1" && cd "$1"
 }
 
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh --cmd cd)"
-eval "$(direnv hook zsh)"
-eval "$(fzf --zsh)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+_has starship && eval "$(starship init zsh)"
+_has zoxide   && eval "$(zoxide init zsh --cmd cd)"
+_has direnv   && eval "$(direnv hook zsh)"
+_has fzf      && eval "$(fzf --zsh)"
 
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Machine-specific overrides (Homebrew shellenv on macOS, etc.)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# Plugins (syntax-highlighting must come last)
+_source_first() {
+  local f
+  for f in "$@"; do
+    [[ -r $f ]] && { source "$f"; return }
+  done
+}
+_source_first \
+  /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh \
+  /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh \
+  /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh \
+  /usr/share/zsh/site-contrib/zsh-autosuggestions/zsh-autosuggestions.zsh
+_source_first \
+  /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh \
+  /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh \
+  /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh \
+  /usr/share/zsh/site-contrib/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

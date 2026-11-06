@@ -1,7 +1,8 @@
+local ok, loc = pcall(require, "localtheme")
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = ok and loc.theme,
 	hl_override = {
 		Normal = {
 			bg = "one_bg",

@@ -7,12 +7,12 @@
 [interactive]
   diffFilter = delta --color-only
 [include]
-  path = ~/.config/onedark-delta.gitconfig
+  path = ~/.config/delta-theme.gitconfig
 [delta]
   navigate = true
   dark = true
   line-numbers = true
-  features = onedark-theme
+  features = theme
 [merge]
   conflictStyle = zdiff3
 [commit]

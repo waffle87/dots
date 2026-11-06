@@ -1,4 +1,4 @@
-[delta "onedark-theme"]
+[delta "theme"]
   dark = true
   syntax-theme = OneHalfDark
   file-modified-label = [*]
