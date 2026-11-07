@@ -1,0 +1,11 @@
+setopt extendedglob
+
+for card in /sys/class/drm/card[0-9]##(N); do
+  if [[ -e "$card/device/driver" ]]; then
+    driver=${${(f)"$(readlink -f "$card/device/driver")"}:t}
+    if [[ "$driver" == "i915" ]]; then
+      export WLR_DRM_DEVICES="/dev/dri/${card:t}"
+      break
+    fi
+  fi
+done

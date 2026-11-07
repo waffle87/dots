@@ -1,4 +1,4 @@
-[delta "nord-theme"]
+[delta "theme"]
   dark = true
   syntax-theme = Nord
   file-modified-label = [*]

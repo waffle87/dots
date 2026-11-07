@@ -27,6 +27,7 @@ git
 git-delta
 grim
 gtklock
+hydra
 imagemagick
 imv
 intel-ucode
@@ -46,6 +47,7 @@ mako
 man-db
 meld
 neovim
+nmap
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -78,11 +80,11 @@ uv
 vivid
 waybar
 wireguard-tools
+wireshark-qt
 wl-clipboard
 wl-mirror
 xdg-utils
 xorg-xwayland
-yaak
 yadm
 zathura-pdf-mupdf
 zoxide

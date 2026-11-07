@@ -1,0 +1,2 @@
+alias netup="sudo modprobe -r brcmfmac_wcc && sleep 2 && sudo modprobe brcmfmac_wcc"
+alias ps="procs"

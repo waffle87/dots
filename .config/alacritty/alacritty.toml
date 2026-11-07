@@ -1,5 +1,5 @@
 [general]
-import = [ "~/.config/alacritty/nord.toml" ]
+import = [ "~/.config/alacritty/theme.toml" ]
 
 [window]
 padding = {x = 5, y = 5}

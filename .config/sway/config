@@ -1,20 +1,12 @@
-# laptop
 default_border pixel 3
 default_floating_border pixel 3
 gaps inner 9
-
-# class          border  backgr. text    flag    child_border
-client.focused   #88C0D0 #88C0D0 #E5E9F0 #88C0D0 #88C0D0
-client.unfocused #3B4252 #3B4252 #E5E9F0 #3B4252 #3B4252
-client.urgent    #BF616A #BF616A #E5E9F0 #BF616A #BF616A 
 
 set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
-
-output * bg $HOME/.img/wallpaper/swirl.png fill
 
 input type:touchpad {
   dwt enabled
@@ -23,23 +15,9 @@ input type:touchpad {
   middle_emulation enabled
 }
 
-input "1133:45089:Logitech_Pebble_Mouse" {
-  pointer_accel 0.5
-  accel_profile flat
-}
-
-exec /usr/bin/mako
-exec /usr/bin/gammastep
-exec /usr/bin/swayidle
-
-set $gnome-schema org.gnome.desktop.interface
-exec_always {
-  /usr/bin/gsettings set $gnome-schema gtk-theme 'Nordic-Polar'
-  /usr/bin/gsettings set $gnome-schema cursor-theme 'Nordzy-cursors'
-  /usr/bin/gsettings set $gnome-schema font-name 'JetBrainsMono Nerd Font 10'
-}
-
-seat seat0 xcursor_theme Nordzy-cursors 24
+exec mako
+exec gammastep
+exec swayidle
 
 ### key bindings 
 # applications
@@ -63,8 +41,6 @@ bindsym XF86AudioPrev        exec playerctl previous
 # lighting
 bindsym XF86MonBrightnessDown exec brightnessctl -q set 10%-
 bindsym XF86MonBrightnessUp   exec brightnessctl -q set +10%
-bindsym XF86KbdBrightnessDown exec brightnessctl -q --device='apple::kbd_backlight' set 10%-
-bindsym XF86KbdBrightnessUp   exec brightnessctl -q --device='apple::kbd_backlight' set +10%
 
 # reload configuration file
 bindsym $mod+Shift+c reload
@@ -132,4 +108,5 @@ bar {
   swaybar_command waybar
 }
 
+include ~/.config/sway/config.d/*
 include /etc/sway/config.d/*
