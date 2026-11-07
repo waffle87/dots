@@ -22,6 +22,7 @@ return {
 				"javascript",
 				"lua",
 				"make",
+				"markdown",
 				"python",
 				"typst",
 			},

@@ -3,7 +3,6 @@ local options = {
 		cpp = { "clang-format" },
 		c = { "clang-format" },
 		css = { "prettier" },
-		handlebars = { "djlint" },
 		html = { "prettier" },
 		javascript = { "prettier" },
 		lua = { "stylua" },
@@ -14,17 +13,6 @@ local options = {
 			"ruff_organize_imports",
 		},
 		typst = { "typstyle" },
-	},
-	formatters = {
-		djlint = {
-			command = "djlint",
-			args = {
-				"--reformat",
-				"--profile=handlebars",
-				"-",
-			},
-			stdin = true,
-		},
 	},
 	format_on_save = {
 		timeout_ms = 500,
