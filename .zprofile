@@ -1,0 +1,14 @@
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval "$(ssh-agent)"
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+
+ssh-add -l > /dev/null || ssh-add
+
+[[ -f ~/.zprofile.local ]] && source ~/.zprofile.local
+
+if [ "$(tty)" = "/dev/tty1" ]; then
+  exec dbus-run-session sway
+fi
