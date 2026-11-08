@@ -5,6 +5,7 @@ app-containers/docker
 app-containers/docker-cli
 app-containers/docker-compose
 app-eselect/eselect-repository
+app-misc/zellij
 app-portage/gentoolkit
 app-shells/direnv
 app-shells/fzf
@@ -24,7 +25,6 @@ dev-util/bear
 dev-util/git-delta
 dev-util/meld
 dev-util/pkgdev
-dev-util/tokei
 gui-apps/fuzzel
 gui-apps/grim
 gui-apps/mako
@@ -43,15 +43,14 @@ media-gfx/imv
 media-sound/playerctl
 media-video/mpv
 net-im/discord
-net-irc/weechat
 net-libs/nodejs
 net-misc/chrony
 net-misc/yt-dlp
 net-wireless/iwd
 sys-apps/bat
+sys-apps/eza
 sys-apps/fd
 sys-apps/flatpak
-sys-apps/lsd
 sys-apps/ripgrep
 sys-apps/usbutils
 sys-apps/xdg-desktop-portal-gtk
