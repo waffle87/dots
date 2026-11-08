@@ -1,17 +1,13 @@
 #!/bin/sh
-T="$HOME/.config/yadm/templates"
-OS=$(uname -s | tr '[:upper:]' '[:lower:]')
-
-seed() {  # seed <template> <dest>
-    [ -f "$T/$1" ] || return 0
-    [ -e "$2" ] && return 0
-    mkdir -p "$(dirname "$2")"
-    cp "$T/$1" "$2"
-    echo "Seeded $2: edit it for this machine"
-}
+. "$HOME/.config/yadm/lib.sh"
 
 seed theme.zsh                "$HOME/.config/theme.zsh"
 seed "zshenv.local.$OS"       "$HOME/.zshenv.local"
 seed "zshrc.local.$OS"        "$HOME/.zshrc.local"
 seed localtheme.lua           "$HOME/.config/nvim/lua/localtheme.lua"
 seed delta-theme.gitconfig    "$HOME/.config/delta-theme.gitconfig"
+
+# Layer-specific hooks
+for f in "$HOME"/.config/yadm/bootstrap.d/*.sh; do
+    [ -x "$f" ] && "$f"
+done
