@@ -65,6 +65,9 @@ if   _has pbcopy; then alias -g C='| pbcopy'
 elif _has wl-copy; then alias -g C='| wl-copy'
 fi
 
+if _has doas; then alias sudo="doas"
+fi
+
 gco() {
   git branch --all | grep -v HEAD | /usr/bin/sed 's#.*/##' | fzf | xargs git checkout
 }
