@@ -56,7 +56,6 @@ alias vi="nvim"
 alias vic="nvim --clean"
 alias diff="diff --color"
 alias cloc="eza --code"
-alias python="python3"
 alias -g R='| rg'
 alias -g L='| less'
 alias glp="git log --pretty=format:'%ad (%h) by %an, %s' --date=iso"
