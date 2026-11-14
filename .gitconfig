@@ -7,13 +7,13 @@
 [interactive]
   diffFilter = delta --color-only
 [include]
-  path = ~/.config/solarized-delta.gitconfig
+  path = ~/.config/delta-theme.gitconfig
 [delta]
   navigate = true
   dark = true
   line-numbers = true
-  features = solarized-theme
+  features = theme
 [merge]
   conflictStyle = zdiff3
 [commit]
-	gpgsign = true
+  gpgsign = true

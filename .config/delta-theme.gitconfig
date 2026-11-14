@@ -1,4 +1,4 @@
-[delta "solarized-theme"]
+[delta "theme"]
   dark = true
   syntax-theme = Solarized (dark)
   file-modified-label = [*]

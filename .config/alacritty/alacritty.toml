@@ -1,5 +1,5 @@
 [general]
-import = [ "~/.config/alacritty/colours.toml" ]
+import = [ "~/.config/alacritty/theme.toml" ]
 
 [window]
 padding = {x = 5, y = 5}
@@ -17,3 +17,6 @@ bindings = [
   { key = "T", mods = "Control | Shift", action = "SpawnNewInstance"},
   { key = "F", mods = "Control", action = "SearchForward"}
 ]
+
+[env]
+TERM = "xterm-256color"

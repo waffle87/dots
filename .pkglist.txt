@@ -30,6 +30,7 @@ gui-apps/grim
 gui-apps/mako
 gui-apps/slurp
 gui-apps/swaybg
+gui-apps/swayidle
 gui-apps/waybar
 gui-apps/wl-clipboard
 gui-libs/xdg-desktop-portal-wlr
