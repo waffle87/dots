@@ -80,10 +80,10 @@ zstd-1.5.7-r1
 
 /var/db/pkg/app-containers:
 containerd-2.4.2
-docker-29.9.3
-docker-cli-29.9.3
-docker-compose-5.7.0
-runc-1.5.2
+docker-29.10.0
+docker-cli-29.10.0
+docker-compose-5.7.1
+runc-1.5.3
 
 /var/db/pkg/app-crypt:
 gcr-3.41.2-r2
@@ -252,7 +252,7 @@ libbsd-0.11.8
 libdbusmenu-16.04.0-r4
 libedit-20240808.3.1
 libevdev-1.14.0
-libffi-3.8.0
+libffi-3.8.1
 libfmt-12.2.1
 libgcrypt-1.12.4
 libgit2-1.9.7
@@ -289,7 +289,7 @@ oniguruma-6.9.10
 openssl-3.6.5
 popt-1.19-r1
 simdjson-5.1.1
-snowball-stemmer-3.1.1
+snowball-stemmer-3.2.0
 spdlog-1.17.0
 tllist-1.1.0
 tree-sitter-0.26.13
@@ -414,7 +414,7 @@ py-landlock-0.1.1
 pybind11-3.1.0
 pycairo-1.29.2
 pycparser-3.12
-pycryptodome-4.4.0
+pycryptodome-4.5.0
 pyelftools-0.33
 pygments-2.21.0
 pygobject-3.58.1
@@ -439,7 +439,7 @@ sphinxcontrib-qthelp-2.0.0-r1
 sphinxcontrib-serializinghtml-2.0.0-r1
 tabulate-0.10.0
 tomlkit-0.15.2
-tree-sitter-0.26.1
+tree-sitter-0.26.1-r1
 trove-classifiers-2026.9.21.13
 uc-micro-py-2.0.0
 urllib3-2.8.0
@@ -453,7 +453,7 @@ yt-dlp-ejs-0.8.0
 bear-4.2.2
 cargo-c-0.10.26
 debugedit-5.4
-desktop-file-utils-0.28-r1
+desktop-file-utils-0.29
 gdbus-codegen-2.88.4
 git-delta-0.19.2
 glib-utils-2.88.4
@@ -467,7 +467,7 @@ meld-3.24.1
 ostree-2025.7
 pahole-1.32
 pkgcheck-0.10.49
-pkgconf-3.0.7
+pkgconf-3.0.11
 pkgdev-0.2.19
 re2c-3.1
 spirv-headers-1.4.363.0
@@ -572,7 +572,7 @@ libpng-1.6.59-r1
 libpulse-17.0
 libsndfile-1.2.2-r2
 libvorbis-1.3.7-r2
-mesa-26.2.6
+mesa-26.2.7
 openjpeg-2.5.4-r1
 opus-1.6.1
 shaderc-2026.4
@@ -585,7 +585,7 @@ mpg123-base-1.33.7
 playerctl-2.4.1-r1
 
 /var/db/pkg/media-video:
-ffmpeg-9.0.2
+ffmpeg-9.0.2-r1
 mpv-0.42.0
 pipewire-1.6.11
 wireplumber-0.5.19
@@ -662,7 +662,7 @@ fd-10.5.2
 file-5.48
 findutils-4.11.0
 flatpak-1.18.4
-gawk-5.4.1-r1
+gawk-5.4.2
 gentoo-functions-1.7.7
 grep-3.12
 groff-1.25.0
@@ -675,10 +675,10 @@ kmod-34.2
 less-710
 locale-gen-3.10
 lsb-release-3.3
-man-db-2.13.1-r1
+man-db-2.13.3
 man-pages-6.19
 net-tools-2.10
-openrc-0.64.1
+openrc-0.64.1-r1
 pciutils-3.15.0
 pkgcore-0.12.48
 portage-3.0.83-r1
@@ -750,6 +750,7 @@ timezone-data-2026f
 zlib-1.4
 
 /var/db/pkg/sys-process:
+gotop-4.2.0
 procps-4.0.6
 procs-0.14.9
 psmisc-23.7
@@ -815,7 +816,7 @@ w3m-1
 zlib-1.3.1-r1
 
 /var/db/pkg/www-client:
-firefox-bin-160.0
+firefox-bin-160.0.1
 w3m-0.5.6
 
 /var/db/pkg/x11-apps:

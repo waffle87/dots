@@ -58,6 +58,7 @@ sys-apps/xdg-desktop-portal-gtk
 sys-boot/efibootmgr
 sys-kernel/gentoo-kernel
 sys-kernel/linux-firmware
+sys-process/gotop
 sys-process/procs
 www-client/firefox-bin
 x11-libs/libnotify
