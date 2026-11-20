@@ -6,6 +6,7 @@ local servers = {
 	"cssls",
 	"html",
 	"lua_ls",
+	"rust_analyzer",
 	"tinymist",
 	"vtsls",
 }
