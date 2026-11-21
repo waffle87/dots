@@ -12,6 +12,7 @@ local options = {
 			"ruff_format",
 			"ruff_organize_imports",
 		},
+		rust = { "rustfmt" },
 		typst = { "typstyle" },
 	},
 	format_on_save = {

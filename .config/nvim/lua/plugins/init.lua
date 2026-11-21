@@ -16,7 +16,6 @@ return {
 			ensure_installed = {
 				"bash",
 				"c",
-				"cpp",
 				"css",
 				"html",
 				"javascript",
@@ -24,6 +23,7 @@ return {
 				"make",
 				"markdown",
 				"python",
+				"rust",
 				"typst",
 			},
 		},
