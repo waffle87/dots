@@ -62,6 +62,7 @@ powertop
 procs
 ripgrep
 rsync
+rustup
 sd
 slurp
 starship

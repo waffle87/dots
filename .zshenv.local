@@ -1,6 +1,7 @@
 path=(
   "$HOME/.local/bin"
-  "$HOME/.local/qmk_toolchains_linuxX64/bin"
   "$HOME/.local/qmk_flashutils_linuxX64"
+  "$HOME/.local/qmk_toolchains_linuxX64/bin"
+  "$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin"
   $path
 )
